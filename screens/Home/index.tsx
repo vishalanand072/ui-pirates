@@ -1,6 +1,7 @@
 import HomeHero from "./hero";
 import HomeCard from "./card";
 import Hero from "./animation.tsx/Hero";
+import ReviewPage from "./reviews";
 // import ScrollAnimation from "./animation.tsx/rightScroll";
 import ScrollSection from "./animation.tsx/rightScroll";
 const HomePage = () => {
@@ -8,8 +9,10 @@ const HomePage = () => {
     <>
       {/* <HomeHero />
             <HomeCard /> */}
-      <Hero />
-      <ScrollSection />
+      {/* <Hero />
+      <ScrollSection /> */}
+      <ReviewPage />
+      
     </>
   );
 };
