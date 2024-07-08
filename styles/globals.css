@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* @import '../node_modules/locomotive-scroll/dist/locomotive-scroll'; */
+/* html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-stopped{overflow:hidden}.lenis.lenis-scrolling iframe{pointer-events:none} */
 
 html,
 body,
@@ -91,6 +92,30 @@ body {
   color: var(--primaryTextColor);
 }
 
-/* reviews */
+.mainDiv {
+  color: white;
+  /* width: 100dvw; */
+  overflow-x: hidden;
+  /* height: 100%; */
+  background: #3b3b3b;
+  border-color: #3b3b3b;
+  user-select: none;
+  @apply py-12 pl-4;
+}
 
+.screen-max-width {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  max-width: 1120px;
+}
 
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .video-carousel_container {
+    @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh];
+  }
+}
