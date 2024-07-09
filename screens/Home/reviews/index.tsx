@@ -22,7 +22,7 @@ const ReviewPage = () => {
             </p>
           </div>
           <br className="h-8"></br>
-          <div className="container">
+          <div className="container px-12 mx-auto z-11">
             <MagicCardDemo />
           </div>
           <DotPattern
