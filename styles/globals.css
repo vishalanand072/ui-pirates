@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import '../node_modules/locomotive-scroll/dist/locomotive-scroll'; */
-/* html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-stopped{overflow:hidden}.lenis.lenis-scrolling iframe{pointer-events:none} */
 
 html,
 body,
@@ -15,7 +13,7 @@ body,
 }
 
 :root {
-  --backgroundColor: #292929;
+  /* --backgroundColor: #292929; */
   --primaryColor: #0aa1ff;
   --primaryTextColor: #e6e6e6;
 

@@ -1,7 +1,8 @@
 import HomeHero from "./hero";
 import HomeCard from "./card";
 import Hero from "./animation.tsx/Hero";
-// import ScrollAnimation from "./animation.tsx/rightScroll";
+import HeroComp from "./hero/heroComp";
+import ReviewPage from "./reviews";
 import ScrollSection from "./animation.tsx/rightScroll";
 import VideoCarousel from "./animation.tsx/videoCarosal";
 import DivScroll from "./animation.tsx/divScroll";
@@ -11,15 +12,19 @@ const HomePage = () => {
   return (
     <>
       <HeroImage />
-      {/* <Hero /> */}
+      {/* <HeroComp /> */}
 
       {/* <Dan /> */}
       <ScrollSection />
 
       <VideoCarousel />
       {/* <DivScroll /> */}
+      {/* <HomeHero />
+            <HomeCard /> */}
+      {/* <Hero />
+      <ScrollSection /> */}
+      <ReviewPage />
     </>
   );
 };
-
 export default HomePage;
