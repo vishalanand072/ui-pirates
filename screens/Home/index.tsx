@@ -11,6 +11,14 @@ import Dan from "./animation.tsx/Descriotion";
 const HomePage = () => {
   return (
     <>
+      {/* <HomeHero /> */}
+      {/* <HomeCard /> */}
+      <Hero />
+    </>
+  );
+};
+  return (
+    <>
       <HeroImage />
       {/* <Hero /> */}
 
@@ -29,4 +37,6 @@ const HomePage = () => {
   );
 };
 
+>>>>>>> 6c63efef2da26a53c5accde1ae6e7c06f24aad1e
 export default HomePage;
+
