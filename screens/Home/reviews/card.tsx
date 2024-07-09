@@ -4,7 +4,7 @@ import { Logo } from "@/components/icons";
 
 export default function ReviewCard() {
   return (
-    <Card className="max-w-[400px] p-3 pt-1 pr-2 pb-1 pl-2  shadow-lg">
+    <Card className="p-3 pt-1 pr-2 pb-1 pl-2  shadow-lg bg-red-400">
       <CardHeader className="relative flex gap-3">
         <Image
           alt="nextui logo"
@@ -15,14 +15,21 @@ export default function ReviewCard() {
         />
         <div className="flex flex-col">
           <p className="text-md font-extrabold font-nahomi">Eden Hazani</p>
-          <p className="text-small text-default-500">Xperiti | VP Research and Development</p>
+          <p className="text-small text-default-500">
+            Xperiti | VP Research and Development
+          </p>
         </div>
         <div className="absolute top-0 right-0 m-2">
           <Logo />
         </div>
       </CardHeader>
       <CardBody>
-        <p className="text-sm font-bold">Wonderful to work with, very experienced with UI/UX design. Was very open to work in the flow we requested that required actual Angular coding from his team as well, and stood up to the challenge of working with a remot...</p>
+        <p className="text-sm font-bold">
+          Wonderful to work with, very experienced with UI/UX design. Was very
+          open to work in the flow we requested that required actual Angular
+          coding from his team as well, and stood up to the challenge of working
+          with a remot...
+        </p>
       </CardBody>
     </Card>
   );
