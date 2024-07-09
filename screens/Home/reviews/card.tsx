@@ -4,7 +4,7 @@ import { Logo } from "@/components/icons";
 
 export default function ReviewCard() {
   return (
-    <Card className="max-w-[400px] p-3 pt-1 pr-2 pb-1 pl-2 bg-white bg-opacity-100 shadow-lg">
+    <Card className="max-w-[400px] p-3 pt-1 pr-2 pb-1 pl-2 bg-opacity-100 shadow-lg">
       <CardHeader className="relative flex gap-3">
         <Image
           alt="nextui logo"
