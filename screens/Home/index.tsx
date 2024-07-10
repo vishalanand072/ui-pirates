@@ -12,7 +12,7 @@ import Hero from "./hero/index";
 const HomePage = () => {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <HeroImage />
       {/* <HeroComp /> */}
 
