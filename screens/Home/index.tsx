@@ -8,6 +8,7 @@ import VideoCarousel from "./animation.tsx/videoCarosal";
 import DivScroll from "./animation.tsx/divScroll";
 import HeroImage from "./animation.tsx/HeroImage";
 import Dan from "./animation.tsx/Descriotion";
+import DivAnimation from "./animation.tsx/divAnimation";
 const HomePage = () => {
   return (
     <>
@@ -17,13 +18,16 @@ const HomePage = () => {
       {/* <Dan /> */}
       <ScrollSection />
 
-      <VideoCarousel />
+      {/* <VideoCarousel /> */}
       {/* <DivScroll /> */}
       {/* <HomeHero />
             <HomeCard /> */}
       {/* <Hero />
       <ScrollSection /> */}
       <ReviewPage />
+      {/* <div>
+        <DivAnimation />
+      </div> */}
     </>
   );
 };
