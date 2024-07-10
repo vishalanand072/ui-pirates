@@ -1,12 +1,12 @@
-import { nextui } from '@nextui-org/theme'
+import { colors, nextui } from "@nextui-org/theme";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './screens/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./screens/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -14,8 +14,137 @@ module.exports = {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-geist-mono)"],
       },
+      // colors: {
+      //   primary: colors.primary,
+      //   secondary: colors.secondary,
+      //   success: "black",
+      //   warning: colors.warning,
+      //   error: colors.error,
+      //   light: colors.light,
+      //   dark: colors.dark,
+      //   muted: colors.muted,
+      //   text: colors.text,
+      //   background: colors.background,
+      //   surface: colors.surface,
+      //   onPrimary: "#7828C8",
+      //   onSecondary: colors.onSecondary,
+      //   onSuccess: colors.onSuccess,
+      //   onWarning: colors.onWarning,
+      //   onError: colors.onError,
+      //   onLight: colors.onLight,
+      //   onDark: colors.onDark,
+      //   onMuted: colors.onMuted,
+      //   onText: colors.onText,
+      //   onBackground: colors.onBackground,
+      //   onSurface: colors.onSurface,
+      // },
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
-}
+  plugins: [
+    nextui({
+      defaultTheme: "light", // default theme from the themes object
+      defaultExtendTheme: "light", // default theme to extend on custom themes
+      themes: {
+        dark: {
+          colors: {
+            primary: {
+              50: "#fee7ef",
+              100: "#fdd0df",
+              200: "#faa0bf",
+              300: "#ff6868",
+              400: "#ef4747",
+              500: "#f31260",
+              600: "#c20e4d",
+              700: "#920b3a",
+              800: "#920b3a",
+              900: "#310413",
+              DEFAULT: "#ef4747",
+              foreground: "#ffffff",
+            },
+            secondary: {
+              50: "#eceef4",
+              100: "#d0d5e0",
+              200: "#b3bac8",
+              300: "#969eb1",
+              400: "#80899f",
+              500: "#6a758e",
+              600: "#5c677d",
+              700: "#4b5466",
+              800: "#3b4251",
+              900: "#282d39",
+              DEFAULT: "#5c677d",
+              foreground: "#ffffff",
+            },
+            card: {
+              DEFAULT: "#27272A",
+              foreground: "#ffffff",
+            },
+            subtitle: {
+              DEFAULT: "#E7E7E7",
+              foreground: "#ffffff",
+            },
+            bgLogo: {
+              DEFAULT: "#3F3F46",
+              foreground: "#ffffff",
+            },
+            alternatecard: {
+              DEFAULT: "#27272A",
+            },
+
+            focus: "#6A71F1",
+          },
+        },
+        light: {
+          colors: {
+            primary: {
+              50: "#fee7ef",
+              100: "#fdd0df",
+              200: "#faa0bf",
+              300: "#ff6868",
+              400: "#FF6868",
+              500: "#f31260",
+              600: "#c20e4d",
+              700: "#920b3a",
+              800: "#920b3a",
+              900: "#310413",
+              DEFAULT: "#FF6868",
+              foreground: "#ffffff",
+            },
+            secondary: {
+              50: "#eceef4",
+              100: "#d0d5e0",
+              200: "#b3bac8",
+              300: "#969eb1",
+              400: "#80899f",
+              500: "#6a758e",
+              600: "#5c677d",
+              700: "#4b5466",
+              800: "#3b4251",
+              900: "#282d39",
+              DEFAULT: "#5c677d",
+              foreground: "#ffffff",
+            },
+            card: {
+              DEFAULT: "#C6CDD4",
+              foreground: "#ffffff",
+            },
+            subtitle: {
+              DEFAULT: "#52525B",
+              foreground: "#ffffff",
+            },
+            bgLogo: {
+              DEFAULT: "#ffffff",
+              foreground: "#ffffff",
+            },
+            alternatecard: {
+              DEFAULT: "#E4E9EE",
+            },
+            focus: "#6A71F1",
+            background: "#E6EEF6",
+          },
+        },
+      },
+    }),
+  ],
+};
