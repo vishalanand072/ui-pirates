@@ -168,8 +168,8 @@ const VideoCarousel: React.FC = () => {
   }, [videoId, isLastVideo]);
 
   return (
-    <>
-      <div className="mainDiv flex items-center">
+    <div className="mainDiv ">
+      <div className="flex items-center">
         {hightlightsSlides.map((list, i) => (
           <div key={list.id} id="slider" className="sm:pr-20 pr-10">
             <div className="video-carousel_container">
@@ -226,7 +226,7 @@ const VideoCarousel: React.FC = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
