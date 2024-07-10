@@ -16,10 +16,11 @@ const ReviewPage = () => {
                 <p className="mt-4 text-xl font-semibold text-gray-600">Don't just take our word for it. <br></br>Here's what <span className="font-semibold ">real people</span> are saying about <span className="font-semibold ">UI Pirates</span></p>
             </div>
             <br className="h-8"></br>
-            <MagicCardDemo />
             <DotPattern
             className={cn("[mask-image:radial-gradient(1000px_circle_at_center,black,transparent)]")}
             />
+            <MagicCardDemo />
+            
         </div>
     </div>
 

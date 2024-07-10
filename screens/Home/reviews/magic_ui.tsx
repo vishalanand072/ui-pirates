@@ -7,7 +7,7 @@ export function MagicCardDemo() {
   const data= [1,2,3,4,5,6]
 
   return (
-    <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {
         data.map((item,index)=>{
           return (
