@@ -70,7 +70,7 @@ export default function Index() {
         </div>
       </div>
       <div className={styles.backgroundImage} ref={background}>
-        <video className={styles.video} autoPlay muted loop>
+        <video className={styles.video} muted loop>
           <source
             src="https://www.w3schools.com/html/mov_bbb.mp4"
             type="video/mp4"
