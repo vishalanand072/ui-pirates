@@ -9,6 +9,7 @@ import DivScroll from "./animation.tsx/divScroll";
 import HeroImage from "./animation.tsx/HeroImage";
 import Dan from "./animation.tsx/Descriotion";
 import DivAnimation from "./animation.tsx/divAnimation";
+import TimeLinePaga from "./animation.tsx/timeline";
 const HomePage = () => {
   return (
     <>
@@ -19,6 +20,12 @@ const HomePage = () => {
       {/* <Dan /> */}
       <ScrollSection />
 
+      <div>
+        {/* <DivAnimation /> */}
+
+        <TimeLinePaga />
+      </div>
+
       {/* <VideoCarousel /> */}
       {/* <DivScroll /> */}
       {/* <HomeHero />
@@ -26,21 +33,8 @@ const HomePage = () => {
       {/* <Hero />
       <ScrollSection /> */}
       <ReviewPage />
-      {/* <div>
-        <DivAnimation />
-      </div> */}
     </>
   );
 };
-// import Hero from "./hero/index";
-// const HomePage = () => {
-//   return (
-//     <>
-//       {/* <HomeHero /> */}
-//       {/* <HomeCard /> */}
-//       <Hero />
-//     </>
-//   );
-// };
 
 export default HomePage;
