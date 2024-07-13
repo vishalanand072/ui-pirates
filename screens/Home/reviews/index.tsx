@@ -4,7 +4,7 @@ import { MagicCardDemo } from "./magic_ui";
 import { cn } from "@/lib/utils";
 import DotPattern from "@/components/magicui/dot-pattern";
 import React from "react";
-
+import { MarqueeDemo } from "./marquee_magic";
 const ReviewPage = () => {
   return (        
     <>
@@ -19,8 +19,8 @@ const ReviewPage = () => {
             <DotPattern
             className={cn("[mask-image:radial-gradient(1000px_circle_at_center,black,transparent)]")}
             />
-            <MagicCardDemo />
-            
+            <br></br>
+            <MarqueeDemo></MarqueeDemo>
         </div>
     </div>
 
