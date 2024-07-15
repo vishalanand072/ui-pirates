@@ -4,7 +4,7 @@ import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Button} fr
 
 export default function Card3() {
   return (
-    <Card className="max-w-full bg-gray-900">
+    <Card className="max-w-full bg-gray-600">
       <CardHeader className="flex gap-3">
         <div className="flex flex-col p-1" >
         <div className="flex items-center">

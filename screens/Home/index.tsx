@@ -10,6 +10,7 @@ import HeroImage from "./animation.tsx/HeroImage";
 import Dan from "./animation.tsx/Descriotion";
 import DivAnimation from "./animation.tsx/divAnimation";
 import TimeLinePaga from "./animation.tsx/timeline";
+import InternPage from "./InternsPage";
 const HomePage = () => {
   return (
     <>
@@ -33,6 +34,7 @@ const HomePage = () => {
       {/* <Hero />
       <ScrollSection /> */}
       <ReviewPage />
+      <InternPage></InternPage>
     </>
   );
 };
