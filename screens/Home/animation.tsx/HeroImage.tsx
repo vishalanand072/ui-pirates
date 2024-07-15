@@ -1,7 +1,7 @@
 "use client";
 import React, { useLayoutEffect, useRef } from "react";
 import styles from "./style.module.css";
-import Image from "next/image";
+import { Button } from "@nextui-org/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -37,25 +37,37 @@ export default function Index() {
   return (
     <div className={styles.homeHeader}>
       <div className={styles.intro}>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-          Hero Section Heading
-        </h1>
-        <p className="text-lg md:text-xl max-w-xl mx-auto">
-          This is a paragraph that describes the content of the hero section.
-          Scroll down to see the effect on the video.
-        </p>
-        <p className="text-lg md:text-xl max-w-xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-          fuga itaque ut beatae alias excepturi adipisci at explicabo
-          voluptates, consectetur maxime enim vitae id obcaecati ex, eius eos ad
-          corrupti!
-        </p>
-        <p className="text-lg md:text-xl max-w-xl mx-auto test-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-          fuga itaque ut beatae alias excepturi adipisci at explicabo
-          voluptates, consectetur maxime enim vitae id obcaecati ex, eius eos ad
-          corrupti!
-        </p>
+        <div className=" align-middle justify-center p-2">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+            Where Creativity
+          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+            meets functionality
+          </h1>
+          <p className="mb-4 text-center">
+            {" "}
+            We design and develop stunning digital experiences.
+          </p>
+          <div className="p-2 flex align-middle justify-center gap-2">
+            <Button
+              className="text-sm font-bold"
+              radius="sm"
+              size="md"
+              variant="flat"
+              color="primary"
+            >
+              Let's Talk!
+            </Button>
+            <Button
+              className="text-sm font-bold bg-default-400"
+              radius="sm"
+              size="md"
+              variant="flat"
+            >
+              Explore Our Work
+            </Button>
+          </div>
+        </div>
       </div>
       <div className={styles.backgroundImage} ref={background}>
         <video className={styles.video} muted loop>
