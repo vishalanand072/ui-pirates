@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-geist-mono)"],
+        nohemi: ['Nohemi', 'sans-serif'],
         animation: {
           marquee: "marquee var(--duration) linear infinite",
           "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
