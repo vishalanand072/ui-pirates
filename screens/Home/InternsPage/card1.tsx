@@ -9,10 +9,10 @@ export default function Card1() {
         <div className="flex flex-col">
             <p className="text-lg font-bold">Screening</p>
             <div className="flex items-center justify-between">
-            <p className="text-sm">
+            <p className="text-sm ">
                 Initial assessment to identify<br /> passionate and dedicated<br /> individuals
             </p>
-            <Button color="secondary" className="absolute top-8 right-4 rounded-full">Month 1</Button>  
+            <Button color="secondary" className="absolute top-10 right-4 rounded-full p-2">Month 1</Button>  
             </div>
         </div>
         </CardHeader>
@@ -24,7 +24,7 @@ export default function Card1() {
             <p className="text-sm">
                 Initial assessment to identify<br /> passionate and dedicated<br /> individuals
             </p>
-            <Button color="secondary" className="rounded-full absolute top-8 right-1">Month 2</Button>  
+            <Button color="secondary" className="rounded-full absolute top-10 right-1 p-2">Month 2</Button>  
             </div>
         </div>
       </CardBody>

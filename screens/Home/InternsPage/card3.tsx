@@ -9,7 +9,7 @@ export default function Card3() {
         <div className="flex flex-col p-1" >
         <div className="flex items-center">
             <p className="text-xl font-bold">Continuous Guidance and Collaboration</p>
-            <img src="path/to/your/image.jpg" alt="Remote Work Opportunities" className="absolute top-8 right-4 w-10 h-10" />
+            <img src="path/to/your/image.jpg" alt="Remote Work Opportunities" className="absolute top-8 right-4 w-10 h-10 p-2" />
 
             </div>
 

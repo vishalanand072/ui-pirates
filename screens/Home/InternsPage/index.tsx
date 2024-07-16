@@ -27,7 +27,7 @@ const InternPage = () => {
         </video>
       </div>
       <div className="container mx-auto p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2  max-w-4xl mx-auto">
             <div className="p-4">
             <Card1 />
             </div>
