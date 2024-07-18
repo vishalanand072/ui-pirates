@@ -11,6 +11,8 @@ import Dan from "./animation.tsx/Descriotion";
 import DivAnimation from "./animation.tsx/divAnimation";
 import TimeLinePaga from "./animation.tsx/timeline";
 import InternPage from "./InternsPage";
+import OurWork from "./animation.tsx/ourWork";
+
 const HomePage = () => {
   return (
     <>
@@ -35,6 +37,7 @@ const HomePage = () => {
       <ScrollSection /> */}
       <ReviewPage />
       <InternPage></InternPage>
+      <OurWork />
     </>
   );
 };
