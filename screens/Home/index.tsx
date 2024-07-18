@@ -12,7 +12,8 @@ import DivAnimation from "./animation.tsx/divAnimation";
 import TimeLinePaga from "./animation.tsx/timeline";
 import InternPage from "./InternsPage";
 import OurWork from "./animation.tsx/ourWork";
-
+import AboutUIpirates from "./about-ui-pirate";
+import AboutCard from "./about-ui-pirate/aboutCard";
 const HomePage = () => {
   return (
     <>
@@ -38,6 +39,7 @@ const HomePage = () => {
       <ReviewPage />
       <InternPage></InternPage>
       <OurWork />
+      <AboutCard />
     </>
   );
 };
