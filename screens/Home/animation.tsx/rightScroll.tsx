@@ -2,6 +2,14 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import AboutCard from "../about-ui-pirate/aboutCard";
+
+const data = [
+  { title: "title 1" },
+  { title: "title 2" },
+  { title: "title 3" },
+  { title: "title 4" },
+];
 
 function ScrollSection() {
   const sectionRef = useRef(null);
@@ -38,34 +46,22 @@ function ScrollSection() {
 
   return (
     <section className="scroll-section-outer">
-      {/* The section up act just as a wrapper. If the trigger (below) is the
-      first jsx element in the component, you get an error on route change */}
-
-      {/* The div below act just as a trigger. As the doc suggests, the trigger and 
-      the animation should alway be two separated refs */}
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
-          <div className="scroll-section">
-            <h3>Section 1</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-              reprehenderit eaque molestias, unde, voluptas consequatur ipsum
-              asperiores obcaecati deserunt totam beatae dicta tempora maxime
-              molestiae suscipit nihil inventore blanditiis quibusdam! Nihil
-              voluptatibus facere praesentium est, sunt, culpa eum eos ex
-              officia, commodi non eaque! Reiciendis placeat nulla dolorem est
-              totam!
-            </p>
+          <div className="scroll-section w-[10%] -mr-[15%] max-md:-mr-[5%]">
+            <div className="flex flex-row items-center justify-items-start ml-24 max-md:ml-12">
+              <p className="text-5xl">
+                What about <br /> UI Pirates
+              </p>
+            </div>
           </div>
-          <div className="scroll-section">
-            <h3>Section 2</h3>
-          </div>
-          <div className="scroll-section">
-            <h3>Section 3</h3>
-          </div>
-          <div className="scroll-section">
-            <h3>Section 4</h3>
-          </div>
+          {data.map(() => {
+            return (
+              <div className="scroll-section">
+                <AboutCard />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

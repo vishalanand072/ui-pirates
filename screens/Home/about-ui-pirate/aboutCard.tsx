@@ -1,25 +1,11 @@
 import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
-/*
-import Meteor
-
-export function MeteorDemo() {
-  return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-      <Meteors number={30} />
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        Meteors
-      </span>
-    </div>
-  );
-}
-*/
 
 const AboutCard: React.FC = () => {
   return (
     <div className="flex flex-row items-end justify-end">
       <Card
-        className="shadow-lg w-full md:w-3/4 content-end mt-12 p-12 max-md:p-8"
+        className="shadow-lg w-full md:w-[85%] content-end mt-12 p-12 max-md:p-8"
         style={{
           borderRadius: "56px",
           backgroundColor: "#EEEEEE",
