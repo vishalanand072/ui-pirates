@@ -5,10 +5,10 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import AboutCard from "../about-ui-pirate/aboutCard";
 
 const data = [
-  { title: "title 1" },
-  { title: "title 2" },
-  { title: "title 3" },
-  { title: "title 4" },
+  { title: "title 1", cardColor: "#EDEEE6" },
+  { title: "title 2", cardColor: "#E6ECEE" },
+  { title: "title 3", cardColor: "#EEE6ED" },
+  { title: "title 4", cardColor: "#EEEAE6" },
 ];
 
 function ScrollSection() {
@@ -55,10 +55,10 @@ function ScrollSection() {
               </p>
             </div>
           </div>
-          {data.map(() => {
+          {data.map((item, index) => {
             return (
-              <div className="scroll-section">
-                <AboutCard />
+              <div className="scroll-section" key={index}>
+                <AboutCard cardColor={item.cardColor} />
               </div>
             );
           })}
