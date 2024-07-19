@@ -212,42 +212,39 @@ interface CardProps {
   isLeft: boolean;
 }
 
-const Cards: React.FC<CardProps> = ({ content, isLeft }) => {
+const Cards: React.FC<CardProps> = ({ content, isLeft, cardIndex }: any) => {
   return (
     <div
-      className={`relative w-full md:w-1/2 p-4 ${
-        isLeft ? "self-start mt-4" : "self-end"
+      className={`relative w-[95vw] md:w-1/2 pl-4 md:pl-10 pr-8 py-4 ${
+        isLeft ? "self-start" : "self-end"
       }`}
     >
-      <div className="shadow-md rounded-lg p-0">
-        <Card className="p-3 pt-1 pr-2 pb-1 pl-2  shadow-lg ">
-          <CardHeader className="relative flex gap-3">
-            <Image
-              alt="nextui logo"
-              height={40}
-              radius="full"
-              src="https://s3-alpha-sig.figma.com/img/dda1/c9db/7f754087536a4934bed9d9bc62259be9?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hzI6ynM54CSjqL1CCEu3Y8MV7PhJaPOnSkFPbn4X3UQvvimWpq~Wpp3vHID7BYZk7FDbYevyglInb0BzdIacTGplIq~Enbht8QwBzsL0ucvYQHb4NkB~0dM7HtVAPnDjE~66GizjM6zAeb9BI7pC0dfo6svSq7nyZ9t~4ANwbPLk7iWnb6QuW3ZEfgJvft9Y8sP8bI26hpBPGvUPwWDg7rvVsE4QTcReKw77eT-LbxLxOUhLTvRJqaB-LkcTJ3biX1Abj3gAIQyqpCmM18sPc3~8~3OtEgTpUnxt0vjj3NeyEUAW-mbYuirB1~Qds2Lt5BH8KmpO3kbnxxHJnXu-GQ__"
-              width={40}
-            />
-            <div className="flex flex-col">
-              <p className="text-md font-extrabold font-nahomi">Eden Hazani</p>
-              <p className="text-small text-default-500">
-                Xperiti | VP Research and Development
+      <div className={`${isLeft ? "top-4" : ""}`}>
+        <div className="shadow-md rounded-lg p-0">
+          <Card className="p-3 pt-1 pr-2 pb-1 pl-2  shadow-lg bg-[#262626]">
+            <CardHeader className="relative flex gap-3">
+              <div className="flex flex-col">
+                <p className="text-[20px] font-[600] font-nahomi text-[#666666]">
+                  Eden Hazani
+                </p>
+                <p className="text-[28px] font-[500] text-white">
+                  Xperiti | VP Research and Development
+                </p>
+              </div>
+              <div className="absolute top-0 right-0 m-2 text-[32px] text-primary">
+                {cardIndex}
+              </div>
+            </CardHeader>
+            <CardBody>
+              <p className="text-[16px]  text-[#666666]">
+                Wonderful to work with, very experienced with UI/UX design. Was
+                very open to work in the flow we requested that required actual
+                Angular coding from his team as well, and stood up to the
+                challenge of working with a remot...
               </p>
-            </div>
-            {/* <div className="absolute top-0 right-0 m-2">
-              <Logo />
-            </div> */}
-          </CardHeader>
-          <CardBody>
-            <p className="text-sm font-bold">
-              Wonderful to work with, very experienced with UI/UX design. Was
-              very open to work in the flow we requested that required actual
-              Angular coding from his team as well, and stood up to the
-              challenge of working with a remot...
-            </p>
-          </CardBody>
-        </Card>
+            </CardBody>
+          </Card>
+        </div>
       </div>
     </div>
   );
@@ -261,10 +258,12 @@ const cardsContent = [
   "Card 4",
   "Card 5",
   "Card 6",
-  "Card 7",
-  "Card 8",
-  "Card 9",
-  "Card 10",
+  // "Card 7",
+  // "Card 8",
+  // "Card 9",
+  // "Card 10",
+  // "Card 10",
+
   // Add more cards as needed
 ];
 
@@ -285,7 +284,7 @@ const HomePageTest: React.FC = () => {
             const progress = self.progress;
             const color = `hsl(${progress * 360}, 100%, 50%)`;
             progressBarOverlay.style.height = `${progress * 100}%`;
-            progressBarOverlay.style.backgroundColor = "#e7e7e7";
+            progressBarOverlay.style.backgroundColor = "#7828C8";
           },
         },
         ease: "none",
@@ -299,16 +298,25 @@ const HomePageTest: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4">
+      <div className="text-center">
+        <p className="text-primary text-[40px]">Scope of work</p>
+        <p className="text-white text-[50px]">Process</p>
+      </div>
       <div className="relative flex flex-wrap">
         {/* Vertical Line */}
         <div className="progress-bar-container absolute right-0 md:left-1/2 transform -translate-x-1/2 w-0.5 h-full">
-          <div className=" fixed top-0 right-0 md:left-1/2 h-full w-2 bg-[#1A1A1A] rounded">
+          <div className=" fixed top-0 right-0 md:left-1/2 h-full w-2 bg-[#262626] rounded">
             <div className="progress-bar w-full rounded"></div>
           </div>
         </div>
         {cardsContent.map((content, index) => (
-          <Cards key={index} content={content} isLeft={index % 2 === 0} />
+          <Cards
+            key={index}
+            content={content}
+            isLeft={index % 2 === 0}
+            cardIndex={index}
+          />
         ))}
       </div>
     </div>
