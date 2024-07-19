@@ -210,16 +210,17 @@ gsap.registerPlugin(ScrollTrigger);
 interface CardProps {
   content: string;
   isLeft: boolean;
+  cardIndex: any;
 }
 
-const Cards: React.FC<CardProps> = ({ content, isLeft, cardIndex }: any) => {
+const Cards: React.FC<CardProps> = ({ content, isLeft, cardIndex }) => {
   return (
     <div
-      className={`relative w-[95vw] md:w-1/2 pl-4 md:pl-10 pr-8 py-4 ${
+      className={`relative w-[95vw] md:w-1/2 pl-4 md:pl-10 pr-8 py-4 mb-32${
         isLeft ? "self-start" : "self-end"
       }`}
     >
-      <div className={`${isLeft ? "top-4" : ""}`}>
+      <div className={`${cardIndex % 2 == 0 ? "md:-mb-60" : "md:mt-16"}`}>
         <div className="shadow-md rounded-lg p-0">
           <Card className="p-3 pt-1 pr-2 pb-1 pl-2  shadow-lg bg-[#262626]">
             <CardHeader className="relative flex gap-3">
@@ -232,7 +233,7 @@ const Cards: React.FC<CardProps> = ({ content, isLeft, cardIndex }: any) => {
                 </p>
               </div>
               <div className="absolute top-0 right-0 m-2 text-[32px] text-primary">
-                {cardIndex}
+                {cardIndex - 1}
               </div>
             </CardHeader>
             <CardBody>
@@ -278,7 +279,7 @@ const HomePageTest: React.FC = () => {
         scrollTrigger: {
           trigger: ".container",
           start: "top top",
-          end: "bottom bottom",
+          end: "bottom 100px",
           scrub: true,
           onUpdate: (self) => {
             const progress = self.progress;
@@ -300,8 +301,8 @@ const HomePageTest: React.FC = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="text-center">
-        <p className="text-primary text-[40px]">Scope of work</p>
-        <p className="text-white text-[50px]">Process</p>
+        <p className="text-primary text-[40px] leading-10">Scope of work</p>
+        <p className="text-white text-[50px] mb-8">Process</p>
       </div>
       <div className="relative flex flex-wrap">
         {/* Vertical Line */}
@@ -315,7 +316,7 @@ const HomePageTest: React.FC = () => {
             key={index}
             content={content}
             isLeft={index % 2 === 0}
-            cardIndex={index}
+            cardIndex={index + 1}
           />
         ))}
       </div>
