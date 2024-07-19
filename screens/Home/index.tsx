@@ -18,8 +18,6 @@ const HomePage = () => {
       {/* <Hero /> */}
       <HeroImage />
       {/* <HeroComp /> */}
-
-      {/* <Dan /> */}
       <ScrollSection />
 
       <div>
@@ -28,16 +26,17 @@ const HomePage = () => {
         <TimeLinePaga />
       </div>
 
+      <DivScroll />
+
       <OurWork />
 
       {/* <VideoCarousel /> */}
-      {/* <DivScroll /> */}
       {/* <HomeHero />
             <HomeCard /> */}
       {/* <Hero />
       <ScrollSection /> */}
       <ReviewPage />
-      <InternPage></InternPage>
+      <InternPage />
     </>
   );
 };
