@@ -64,5 +64,4 @@ const AboutCard: React.FC = () => {
     </Card>
   );
 }
-
 export default AboutCard;
