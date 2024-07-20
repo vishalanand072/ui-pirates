@@ -4,11 +4,11 @@ import React from 'react'
 interface Props {
   title?: string
   subtitle?: string
-  imageUrl?: string // Added imageUrl prop for image path
+  imageUrl?: string 
 }
 
 const XperitiCard = ({ title, subtitle, imageUrl }: Props) => {
-  const backgroundImage = imageUrl ? `url(${imageUrl})` : 'none'; // Set background based on imageUrl
+  const backgroundImage = imageUrl ? `url(${imageUrl})` : 'none'; 
 
   return (
     <div className="relative h-screen bg-center bg-cover" style={{ backgroundImage }}>
