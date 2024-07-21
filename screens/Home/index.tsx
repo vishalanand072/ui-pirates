@@ -12,6 +12,7 @@ import DivAnimation from "./animation.tsx/divAnimation";
 import TimeLinePaga from "./animation.tsx/timeline";
 import InternPage from "./InternsPage";
 import OurWork from "./animation.tsx/ourWork";
+import FormLayout from "./form/formLayout";
 import FooterPage from "./footer.tsx";
 const HomePage = () => {
   return (
@@ -39,6 +40,7 @@ const HomePage = () => {
       <ReviewPage />
       <InternPage></InternPage>
       <OurWork />
+      <FormLayout />
       <FooterPage></FooterPage>
     </>
   );
