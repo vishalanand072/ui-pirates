@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import AboutCard from "../about-ui-pirate/aboutCard";
+import AboutCard from "./aboutCard";
 
 const data = [
   { title: "title 1", cardColor: "#EDEEE6" },
@@ -11,7 +11,7 @@ const data = [
   { title: "title 4", cardColor: "#EEEAE6" },
 ];
 
-function ScrollSection() {
+function Web() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 
@@ -68,7 +68,7 @@ function ScrollSection() {
   );
 }
 
-export default ScrollSection;
+export default Web;
 
 // "use client";
 // import React, { useEffect } from "react";

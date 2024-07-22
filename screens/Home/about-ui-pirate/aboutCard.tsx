@@ -3,7 +3,7 @@ import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
 const AboutCard = (props: any) => {
   return (
-    <div className="flex flex-row items-end justify-end">
+    <div className="flex flex-row items-end justify-end w-full">
       <Card
         className="shadow-lg w-[95%] md:w-[95%] content-end mt-12 p-12  max-md:p-8"
         style={{
@@ -18,13 +18,13 @@ const AboutCard = (props: any) => {
           <div className="" style={{ alignSelf: "flex-start" }}>
             <video
               // width="600px"
-              // height="320px"
+              // height="120px"
               // controls
-              // autoPlay
+              autoPlay
               muted
               loop
               style={{ borderRadius: "999px" }}
-              className="max-md:h-[100px]"
+              className="max-md:h-[100px] h-[150px]"
             >
               <source
                 src="https://www.w3schools.com/html/mov_bbb.mp4"
@@ -36,7 +36,7 @@ const AboutCard = (props: any) => {
         <CardBody className="flex flex-col gap-4">
           <div className="flex flex-col mt-2 md:mt-8">
             <p
-              className="text-default-500 text-[50px] max-md:text-[32px] line-clamp-[0px]"
+              className="text-default-500 text-[80px] max-md:text-[32px] line-clamp-[0px]"
               style={{
                 // fontFamily: "Nohemi",
                 fontWeight: 500,
@@ -50,11 +50,11 @@ const AboutCard = (props: any) => {
           </div>
           <div className="flex flex-col" style={{ marginTop: "auto" }}>
             <p
-              className="text-sm text-[26px] max-md:text-[22px]"
+              className="text-sm text-[36px] max-md:text-[22px]"
               style={{
                 // fontFamily: "Nohemi",
                 fontWeight: 400,
-                lineHeight: "28px",
+                lineHeight: "40px",
                 color: "#6F6F6F",
                 textAlign: "left",
               }}

@@ -9,26 +9,28 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {animation: {
-      meteor: "meteor 5s linear infinite",
-    },
-    keyframes: {
-      meteor: {
-        "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
-        "70%": { opacity: 1 },
-        "100%": {
-          transform: "rotate(215deg) translateX(-500px)",
-          opacity: 0,
+    extend: {
+      animation: {
+        meteor: "meteor 5s linear infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: 0,
+          },
         },
       },
-    },
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-geist-mono)"],
-        nohemi: ['Nohemi', 'sans-serif'],
+        nohemi: ["Nohemi", "sans-serif"],
         animation: {
           marquee: "marquee var(--duration) linear infinite",
-          "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+          "marquee-vertical":
+            "marquee-vertical var(--duration) linear infinite",
         },
         keyframes: {
           marquee: {
@@ -125,17 +127,17 @@ module.exports = {
         light: {
           colors: {
             primary: {
-              50: "#fee7ef",
-              100: "#fdd0df",
-              200: "#faa0bf",
-              300: "#ff6868",
-              400: "#FF6868",
-              500: "#f31260",
-              600: "#c20e4d",
-              700: "#920b3a",
-              800: "#920b3a",
-              900: "#310413",
-              DEFAULT: "#FF6868",
+              50: "#F0D3FC",
+              100: "#F0D3FC",
+              200: "#DDA9F9",
+              300: "#C07CEE",
+              400: "#A258DE",
+              500: "#7828C8",
+              600: "#5D1DAC",
+              700: "#451490",
+              800: "#300C74",
+              900: "#220760",
+              DEFAULT: "#7828C8",
               foreground: "#ffffff",
             },
             secondary: {
@@ -168,7 +170,7 @@ module.exports = {
               DEFAULT: "#E4E9EE",
             },
             focus: "#6A71F1",
-            background: "#E6EEF6",
+            background: "#ffffff",
           },
         },
       },
