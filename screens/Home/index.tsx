@@ -38,10 +38,10 @@ const HomePage = () => {
       {/* <Hero />
       <ScrollSection /> */}
       <ReviewPage />
-      <InternPage></InternPage>
-      <OurWork />
+      {/* <OurWork /> */}
+
       <FormLayout />
-      <FooterPage></FooterPage>
+      <InternPage></InternPage>
     </>
   );
 };
