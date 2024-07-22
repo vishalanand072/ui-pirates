@@ -12,15 +12,17 @@ import DivAnimation from "./animation.tsx/divAnimation";
 import TimeLinePaga from "./animation.tsx/timeline";
 import InternPage from "./InternsPage";
 import OurWork from "./animation.tsx/ourWork";
+import GreatIdea from "./greatIdea";
 import FormLayout from "./form/formLayout";
 import FooterPage from "./footer.tsx";
+import AboutUIpirates from "./about-ui-pirate";
 const HomePage = () => {
   return (
     <>
       {/* <Hero /> */}
       <HeroImage />
       {/* <HeroComp /> */}
-      <ScrollSection />
+      <AboutUIpirates />
 
       <div>
         {/* <DivAnimation /> */}
@@ -39,7 +41,7 @@ const HomePage = () => {
       <ScrollSection /> */}
       <ReviewPage />
       {/* <OurWork /> */}
-
+      <GreatIdea />
       <FormLayout />
       <InternPage></InternPage>
     </>

@@ -1,10 +1,12 @@
 import React from "react";
-import AboutCard from "./aboutCard";
+import Web from "./web";
+import Mobile from "./mobile";
 
 const AboutUIpirates: React.FC = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <AboutCard />
+    <div className="">
+      <Web />
+      <Mobile />
     </div>
   );
 };
