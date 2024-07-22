@@ -1,5 +1,4 @@
-// import ImageGrid from "./imageSection";
-import ImageGrid from "./test";
+import ImageGrid from "./imageSection";
 
 const OurWork = () => {
   const images = [
@@ -13,7 +12,6 @@ const OurWork = () => {
   ];
   return (
     <>
-      {/* <ImageGrid /> */}
       <div className="container mx-auto py-10">
         <ImageGrid images={images} />
       </div>
