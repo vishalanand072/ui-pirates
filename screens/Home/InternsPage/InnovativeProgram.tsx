@@ -27,7 +27,8 @@ export default function InnovativeProgram() {
                   <br /> individuals
                 </p>
                 <Button
-                  color="secondary"
+                  color="primary"
+                  size="sm"
                   className="absolute top-10 right-4 rounded-full p-2"
                 >
                   Month 1
@@ -46,7 +47,8 @@ export default function InnovativeProgram() {
                   <br /> individuals
                 </p>
                 <Button
-                  color="secondary"
+                  color="primary"
+                  size="sm"
                   className="rounded-full absolute top-10 right-1 p-2"
                 >
                   Month 2
@@ -61,7 +63,12 @@ export default function InnovativeProgram() {
             <div className="w-full">
               <div className="flex flex-row items-center justify-between w-full">
                 <p className="text-lg font-bold ">Perks</p>
-                <Gift size={32} color="primary" weight="fill" className="" />
+                <Gift
+                  size={32}
+                  color="primary"
+                  weight="fill"
+                  className="fill-primary"
+                />
               </div>
 
               <div className="flex items-center text-md py-2  font-bold justify-between">
@@ -91,35 +98,41 @@ export default function InnovativeProgram() {
           </CardHeader>
         </Card>
         <Card className="max-w-full bg-[#2B2B2B] text-white md:col-span-2">
-          <CardHeader className="flex gap-3">
-            <div className="flex flex-col p-1">
-              <div className="flex items-center">
-                <p className="text-xl font-bold">
-                  Continuous Guidance and Collaboration
-                </p>
+          <CardHeader className="">
+            <div className="w-full">
+              <div className="flex flex-row items-center justify-between ">
+                <div className="flex flex-col items-start justify-between">
+                  <p className="text-xl font-bold">
+                    Continuous Guidance and Collaboration
+                  </p>
+                  <p className="text-md pt-3">
+                    Ongoing support, guidance, and real-life project
+                    collaboration.
+                  </p>
+                </div>
                 <SealCheck
                   size={64}
                   weight="fill"
                   color="primary"
-                  className="absolute top-5 right-5 p-2"
+                  className="p-2  fill-primary"
                 />
-              </div>
-
-              <div className="flex items-center justify-between">
-                <p className="text-md pt-3">
-                  Ongoing support, guidance, and real-life project
-                  collaboration.
-                </p>
               </div>
             </div>
           </CardHeader>
         </Card>
       </div>
       <div className="flex justify-center items-center flex-row gap-4 w-full mt-8">
-        <Button color="secondary" className="  font-bold py-2 px-4 w-auto">
+        <Button
+          color="primary"
+          size="md"
+          radius="sm"
+          className="  font-bold py-2 px-4 w-auto"
+        >
           Join Now!
         </Button>
-        <Button className="  font-bold py-2 px-4 w-auto ">Learn More</Button>
+        <Button size="md" radius="sm" className="font-bold py-2 px-4 w-auto ">
+          Learn More
+        </Button>
       </div>
     </>
   );

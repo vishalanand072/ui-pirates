@@ -53,13 +53,13 @@ export default function Index() {
               className="text-sm font-bold"
               radius="sm"
               size="md"
-              variant="flat"
+              // variant="flat"
               color="primary"
             >
               Let's Talk!
             </Button>
             <Button
-              className="text-sm font-bold bg-default-400"
+              className="text-sm font-bold"
               radius="sm"
               size="md"
               variant="flat"

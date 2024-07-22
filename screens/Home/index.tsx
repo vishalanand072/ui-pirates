@@ -19,31 +19,23 @@ import AboutUIpirates from "./about-ui-pirate";
 const HomePage = () => {
   return (
     <>
-      {/* <Hero /> */}
       <HeroImage />
-      {/* <HeroComp /> */}
+
       <AboutUIpirates />
 
-      <div>
-        {/* <DivAnimation /> */}
-
-        <TimeLinePaga />
-      </div>
+      <TimeLinePaga />
 
       <DivScroll />
 
       <OurWork />
 
-      {/* <VideoCarousel /> */}
-      {/* <HomeHero />
-            <HomeCard /> */}
-      {/* <Hero />
-      <ScrollSection /> */}
       <ReviewPage />
-      {/* <OurWork /> */}
+
       <GreatIdea />
+
       <FormLayout />
-      <InternPage></InternPage>
+
+      <InternPage />
     </>
   );
 };

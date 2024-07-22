@@ -31,7 +31,7 @@ const formLayout: React.FC = () => {
   return (
     <>
       <div className="max-w-full p-8 justify-center items-center lg:p-48 bg-white">
-        <div className="items-center max-w-full flex justify-between gap-2 mb-4 lg:flex-row flex-col">
+        <div className="md:items-center max-w-full flex justify-between gap-2 mb-4 lg:flex-row flex-col">
           <div className="flex flex-col flex-1 min-w-[250px]">
             <label className="text-black font-semibold mb-2">Name</label>
             <input
@@ -86,7 +86,7 @@ const formLayout: React.FC = () => {
                 checked={interests.includes(item)}
                 onChange={() => handleInterestChange(item)}
               />
-              <span className="px-8 py-4 border border-gray-300 rounded-full peer-checked:bg-gray-200 ">
+              <span className="px-6 py-2 border border-gray-300 rounded-full peer-checked:bg-gray-200 ">
                 {item}
               </span>
             </label>
@@ -107,7 +107,7 @@ const formLayout: React.FC = () => {
                   checked={budget === item}
                   onChange={() => handleBudgetChange(item)}
                 />
-                <span className="px-8 py-4 border border-gray-300 rounded-full peer-checked:bg-gray-200 ">
+                <span className="px-6 py-2 border border-gray-300 rounded-full peer-checked:bg-gray-200 ">
                   {item}
                 </span>
               </label>
@@ -125,9 +125,9 @@ const formLayout: React.FC = () => {
           onChange={(e) => setProjectDetails(e.target.value)}
         ></textarea>
         <Button
-          className="mt-8 text-white font-semibold"
-          color="secondary"
-          size="lg"
+          className="mt-8 font-semibold"
+          color="primary"
+          size="md"
           radius="sm"
           onClick={handleSubmit}
         >
