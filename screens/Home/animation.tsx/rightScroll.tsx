@@ -50,7 +50,7 @@ function ScrollSection() {
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section w-[10%] -mr-[15%] max-md:-mr-[5%]">
             <div className="flex flex-row items-center justify-items-start ml-24 max-md:ml-12">
-              <p className="text-5xl">
+              <p className="text-5xl max-md:text-3xl">
                 What about <br /> UI Pirates
               </p>
             </div>

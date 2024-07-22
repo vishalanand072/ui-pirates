@@ -3,7 +3,7 @@ import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
 const AboutCard = (props: any) => {
   return (
-    <div className="flex flex-row items-end justify-end">
+    <div className="flex flex-row items-end justify-end w-full">
       <Card
         className="shadow-lg w-[95%] md:w-[95%] content-end mt-12 p-12  max-md:p-8"
         style={{
