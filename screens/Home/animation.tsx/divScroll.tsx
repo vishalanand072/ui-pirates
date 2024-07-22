@@ -45,7 +45,7 @@ const AnimatedSection = () => {
   }, []);
 
   return (
-    <div className="scroll-trigger h-screen flex flex-col justify-center items-center max-w-screen">
+    <div className="scroll-trigger h-screen flex flex-col justify-center items-center max-w-screen bg-[#E4D4F4]">
       <h1 className="text-4xl mb-8">Static Text Here</h1>
       <div className="relative flex items-center justify-center">
         <div ref={leftTextRef} className="text-2xl">

@@ -15,11 +15,11 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
 
   useEffect(() => {
     imageRefs.current.forEach((ref) => {
-      gsap.set(ref, { opacity: 0.5 });
+      gsap.set(ref, { opacity: 0.3 });
 
       ref.addEventListener("mouseenter", () => {
         gsap.to(imageRefs.current, {
-          opacity: 0.5,
+          opacity: 0.3,
           duration: 0.3,
           ease: "power1.inOut",
         });
@@ -33,7 +33,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
 
       ref.addEventListener("mouseleave", () => {
         gsap.to(imageRefs.current, {
-          opacity: 0.5,
+          opacity: 0.3,
           duration: 0.3,
           ease: "power1.inOut",
         });

@@ -18,13 +18,13 @@ const AboutCard = (props: any) => {
           <div className="" style={{ alignSelf: "flex-start" }}>
             <video
               // width="600px"
-              // height="320px"
+              // height="120px"
               // controls
               // autoPlay
               muted
               loop
               style={{ borderRadius: "999px" }}
-              className="max-md:h-[100px]"
+              className="max-md:h-[100px] h-[150px]"
             >
               <source
                 src="https://www.w3schools.com/html/mov_bbb.mp4"

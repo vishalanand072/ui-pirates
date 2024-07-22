@@ -91,9 +91,10 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="text-sm font-bold text-default-600"
+            className="text-sm font-bold"
+            radius="sm"
             href={siteConfig.links.sponsor}
-            variant="flat"
+            color="primary"
           >
             Let&apos;s Talk!
           </Button>
