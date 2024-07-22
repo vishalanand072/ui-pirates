@@ -14,6 +14,8 @@ import InternPage from "./InternsPage";
 import OurWork from "./animation.tsx/ourWork";
 import FormLayout from "./form/formLayout";
 import FooterPage from "./footer.tsx";
+import ClientOverview from "../CaseStudy/ClientOverview";
+import OurRole from "../CaseStudy/OurRole";
 const HomePage = () => {
   return (
     <>
@@ -41,6 +43,8 @@ const HomePage = () => {
       <InternPage></InternPage>
       <OurWork />
       <FormLayout />
+      <ClientOverview />
+      <OurRole />
       <FooterPage></FooterPage>
     </>
   );
