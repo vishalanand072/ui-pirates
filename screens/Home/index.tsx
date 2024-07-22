@@ -28,7 +28,10 @@ const HomePage = () => {
       <GreatIdea />
 
       <FormLayout />
-      <FooterPage></FooterPage>
+      <ClientOverview />
+      <OurRole />
+
+      <InternPage />
     </>
   );
 };
