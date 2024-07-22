@@ -34,7 +34,7 @@ export const Navbar = () => {
     <Input
       aria-label="Search"
       classNames={{
-        inputWrapper: "bg-default-100",
+        inputWrapper: "",
         input: "text-sm",
       }}
       endContent={
@@ -53,12 +53,12 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      className="mt-4"
+      className="mt-4 bg-white sticky top-0"
       isBlurred={false}
       maxWidth="xl"
       position="sticky"
     >
-      <NavbarContent className="sm:basis-full" justify="start">
+      <NavbarContent className="sm:basis-full " justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-center items-center gap-1" href="/">
             <Logo />{" "}
@@ -90,7 +90,7 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="text-sm font-bold text-default-600 bg-onPrimary"
+            className="text-sm font-bold text-default-600"
             href={siteConfig.links.sponsor}
             variant="flat"
           >

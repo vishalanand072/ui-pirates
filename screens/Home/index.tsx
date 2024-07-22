@@ -12,6 +12,7 @@ import DivAnimation from "./animation.tsx/divAnimation";
 import TimeLinePaga from "./animation.tsx/timeline";
 import InternPage from "./InternsPage";
 import OurWork from "./animation.tsx/ourWork";
+import GreatIdea from "./greatIdea";
 import FormLayout from "./form/formLayout";
 import FooterPage from "./footer.tsx";
 const HomePage = () => {
@@ -39,7 +40,7 @@ const HomePage = () => {
       <ScrollSection /> */}
       <ReviewPage />
       {/* <OurWork /> */}
-
+      <GreatIdea />
       <FormLayout />
       <InternPage></InternPage>
     </>

@@ -9,26 +9,28 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {animation: {
-      meteor: "meteor 5s linear infinite",
-    },
-    keyframes: {
-      meteor: {
-        "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
-        "70%": { opacity: 1 },
-        "100%": {
-          transform: "rotate(215deg) translateX(-500px)",
-          opacity: 0,
+    extend: {
+      animation: {
+        meteor: "meteor 5s linear infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: 0,
+          },
         },
       },
-    },
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-geist-mono)"],
-        nohemi: ['Nohemi', 'sans-serif'],
+        nohemi: ["Nohemi", "sans-serif"],
         animation: {
           marquee: "marquee var(--duration) linear infinite",
-          "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+          "marquee-vertical":
+            "marquee-vertical var(--duration) linear infinite",
         },
         keyframes: {
           marquee: {
@@ -168,7 +170,7 @@ module.exports = {
               DEFAULT: "#E4E9EE",
             },
             focus: "#6A71F1",
-            background: "#E6EEF6",
+            background: "#ffffff",
           },
         },
       },
