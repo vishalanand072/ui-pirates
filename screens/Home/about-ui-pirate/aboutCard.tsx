@@ -20,7 +20,7 @@ const AboutCard = (props: any) => {
               // width="600px"
               // height="120px"
               // controls
-              // autoPlay
+              autoPlay
               muted
               loop
               style={{ borderRadius: "999px" }}
