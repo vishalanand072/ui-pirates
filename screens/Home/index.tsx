@@ -15,13 +15,14 @@ import OurWork from "./animation.tsx/ourWork";
 import GreatIdea from "./greatIdea";
 import FormLayout from "./form/formLayout";
 import FooterPage from "./footer.tsx";
+import AboutUIpirates from "./about-ui-pirate";
 const HomePage = () => {
   return (
     <>
       {/* <Hero /> */}
       <HeroImage />
       {/* <HeroComp /> */}
-      <ScrollSection />
+      <AboutUIpirates />
 
       <div>
         {/* <DivAnimation /> */}

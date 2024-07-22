@@ -71,11 +71,12 @@ export const Navbar = () => {
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
-                className={clsx(
-                  linkStyles({ color: "success" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
-                )}
-                color="success"
+                // className={clsx(
+                //   linkStyles({}),
+                //   "data-[active=true]:text-primary data-[active=true]:font-medium"
+                // )}
+                className="text-lg font-medium"
+                // color="black"
                 href={item.href}
               >
                 {item.label}
@@ -100,32 +101,27 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>
         {searchInput}
         <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
-                href="#"
-                size="lg"
+          {siteConfig.navItems.map((item) => (
+            <NavbarItem key={item.href}>
+              <NextLink
+                // className={clsx(
+                //   linkStyles({}),
+                //   "data-[active=true]:text-primary data-[active=true]:font-medium"
+                // )}
+                className="text-lg font-medium"
+                // color="black"
+                href={item.href}
               >
                 {item.label}
-              </Link>
-            </NavbarMenuItem>
+              </NextLink>
+            </NavbarItem>
           ))}
         </div>
       </NavbarMenu>
