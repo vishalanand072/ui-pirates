@@ -33,7 +33,7 @@ const ImageGrid: React.FC = () => {
   }, []);
 
   return (
-    <div ref={gridRef} className="grid grid-cols-2 gap-4">
+    <div ref={gridRef} className="grid grid-cols-2 max-md:grid-cols-1 gap-4">
       {[...Array(10)].map((_, index) => (
         <div
           key={index}
