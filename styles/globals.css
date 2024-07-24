@@ -136,3 +136,94 @@ body {
     background-color: red;
   }
 }
+
+/* button animation */
+
+.button-container-1 {
+  margin-top: 50px;
+  color: #ffffff;
+  background-color: #0d99ff;
+  box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+.button-container-1 Button {
+  width: 200px;
+  height: 50px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: #fff;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #757575;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.button-container-1 Button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 1s steps(22) forwards;
+}
+
+.mas {
+  width: 100%;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  height: 50px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  font-size: 20px;
+  margin-top: 13px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@media (max-width: 629px) {
+  Image#join {
+    display: none;
+  }
+}
