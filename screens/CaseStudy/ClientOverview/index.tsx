@@ -29,7 +29,7 @@ const ClientOverview = () => {
         </MagicCard>
         <MagicCard className=" bg-secondary-200">
           <div className="flex flex-col gap-2 align-middle justify-center">
-            <Image src={CardBG} alt="card" className="mb-2" />
+            <Image src={CardBG} alt="card" className="mb-2 rounded-lg" />
             <h1 className=" font-bold text-3xl">User Experience</h1>
             <div className="text-wrap text-xl font-normal text-secondary-100 mr-8">
               Ensure an intuitive and seamless user interface for both
@@ -39,7 +39,7 @@ const ClientOverview = () => {
         </MagicCard>
         <MagicCard className=" bg-secondary-200">
           <div className="flex flex-col gap-2 align-middle justify-center">
-            <Image src={CardBG} alt="card" className="mb-2" />
+            <Image src={CardBG} alt="card" className="mb-2 rounded-lg" />
             <h1 className=" font-bold text-3xl">Participant Management</h1>
             <div className="text-wrap text-xl font-normal text-secondary-100 mr-8">
               Ensure efficient participant tracking and streamlined incentive
