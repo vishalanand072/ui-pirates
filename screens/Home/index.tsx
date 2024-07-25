@@ -17,6 +17,13 @@ const HomePage = () => {
     <>
       <Hero />
 
+      <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
+        <span className="mas">Get Transformed</span>
+        <button id="work" type="button" name="Hover">
+          Contact Us
+        </button>
+      </div>
+
       <AboutUIpirates />
 
       <TimeLinePaga />
