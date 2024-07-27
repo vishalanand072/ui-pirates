@@ -1,21 +1,21 @@
+import React from "react";
 import ImageGrid from "./imageSection";
+import { OurWorkData } from "../../../types";
 
-const OurWork = () => {
-  const images = [
-    "https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp",
-    "https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp",
-    "https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp",
-    "https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp",
-    "https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp",
-    "https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp",
-    // Add more images as needed
-  ];
+interface OurWorkProps {
+  ourWorks: OurWorkData[];
+}
+
+const OurWork: React.FC<OurWorkProps> = ({ ourWorks }) => {
+  const images = ourWorks.map(
+    (work) =>
+      `https://ui-pirates-backend.onrender.com${work.attributes.formats.medium.url}`
+  );
+
   return (
-    <>
-      <div className="container mx-auto py-0">
-        <ImageGrid images={images} />
-      </div>
-    </>
+    <div className="container mx-auto py-0">
+      <ImageGrid images={images} />
+    </div>
   );
 };
 

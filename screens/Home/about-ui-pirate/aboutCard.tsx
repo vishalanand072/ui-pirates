@@ -1,14 +1,24 @@
 import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
-const AboutCard = (props: any) => {
+interface AboutCardProps {
+  title: string;
+  subTitle: string;
+  cardColor: string;
+}
+
+const AboutCard: React.FC<AboutCardProps> = ({
+  title,
+  subTitle,
+  cardColor,
+}) => {
   return (
     <div className="flex flex-row items-end justify-end w-full">
       <Card
         className="shadow-lg w-[95%] md:w-[95%] content-end mt-12 p-12  max-md:p-8"
         style={{
           borderRadius: "56px",
-          backgroundColor: `${props.cardColor}`,
+          backgroundColor: cardColor,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -17,9 +27,6 @@ const AboutCard = (props: any) => {
         <CardHeader className="flex flex-col">
           <div className="" style={{ alignSelf: "flex-start" }}>
             <video
-              // width="600px"
-              // height="120px"
-              // controls
               autoPlay
               muted
               loop
@@ -38,30 +45,25 @@ const AboutCard = (props: any) => {
             <p
               className="text-default-500 text-[80px] max-md:text-[32px] line-clamp-[0px]"
               style={{
-                // fontFamily: "Nohemi",
                 fontWeight: 500,
-                // lineHeight: "50px",
                 color: "#3C1E1E",
                 textAlign: "left",
               }}
             >
-              We Excel with Minimal Client Involvement
+              {title}
             </p>
           </div>
           <div className="flex flex-col" style={{ marginTop: "auto" }}>
             <p
               className="text-sm text-[36px] max-md:text-[22px]"
               style={{
-                // fontFamily: "Nohemi",
                 fontWeight: 400,
                 lineHeight: "40px",
                 color: "#6F6F6F",
                 textAlign: "left",
               }}
             >
-              Our efficient workflows ensure minimal client interaction,
-              allowing you to focus on your business while we deliver
-              outstanding results.
+              {subTitle}
             </p>
           </div>
         </CardBody>

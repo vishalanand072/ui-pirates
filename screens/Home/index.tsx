@@ -12,10 +12,19 @@ import OurRole from "../CaseStudy/OurRole";
 import CoreProblems from "../CaseStudy/CoreProblems";
 import UserGroups from "../CaseStudy/UserGroups";
 
-const HomePage = () => {
+import { HomePageData } from "../../types";
+
+interface HomePageProps {
+  data: HomePageData;
+}
+
+const HomePage: React.FC<HomePageProps> = ({ data }) => {
   return (
     <>
-      <Hero />
+      <Hero
+        hero_heading={data.hero_heading}
+        hero_subHeading={data.hero_subHeading}
+      />
 
       <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
         <span className="mas">Get Transformed</span>
@@ -24,13 +33,13 @@ const HomePage = () => {
         </button>
       </div>
 
-      <AboutUIpirates />
+      <AboutUIpirates about={data.about_ui_pirates} />
 
-      <TimeLinePaga />
+      <TimeLinePaga workProcess={data.work_process} />
 
       <DesignDev />
 
-      <OurWork />
+      <OurWork ourWorks={data.our_works.data} />
 
       <ReviewPage />
 

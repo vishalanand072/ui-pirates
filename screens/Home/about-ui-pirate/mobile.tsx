@@ -1,11 +1,12 @@
+import React from "react";
 import AboutCard from "./aboutCard";
-const Mobile = () => {
-  const data = [
-    { title: "title 1", cardColor: "#EDEEE6" },
-    { title: "title 2", cardColor: "#E6ECEE" },
-    { title: "title 3", cardColor: "#EEE6ED" },
-    { title: "title 4", cardColor: "#EEEAE6" },
-  ];
+import { AboutUIpiratesData } from "../../../types";
+
+interface MobileProps {
+  about: AboutUIpiratesData[];
+}
+
+const Mobile: React.FC<MobileProps> = ({ about }) => {
   return (
     <>
       <div className="block md:hidden mb-8">
@@ -15,10 +16,14 @@ const Mobile = () => {
               What about <br /> UI Pirates
             </p>
           </div>
-          {data.map((item, index) => {
+          {about.map((item, index) => {
             return (
               <div className="mr-6" key={index}>
-                <AboutCard cardColor={item.cardColor} />
+                <AboutCard
+                  title={item.title}
+                  subTitle={item.subTitle[0]?.subTitle}
+                  cardColor="#EDEEE6"
+                />
               </div>
             );
           })}
