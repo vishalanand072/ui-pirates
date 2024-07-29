@@ -7,6 +7,7 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import FooterPage from "@/screens/Home/footer.tsx";
 import clsx from "clsx";
+import AnimatedCursor from "react-animated-cursor";
 
 export const metadata: Metadata = {
   title: {
@@ -43,6 +44,27 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
+            <AnimatedCursor
+              innerSize={8}
+              outerSize={8}
+              color="0, 0, 0"
+              outerAlpha={0.2}
+              innerScale={0.7}
+              outerScale={5}
+              clickables={[
+                "a",
+                'input[type="text"]',
+                'input[type="email"]',
+                'input[type="number"]',
+                'input[type="submit"]',
+                'input[type="image"]',
+                "label[for]",
+                "select",
+                "textarea",
+                "button",
+                ".link",
+              ]}
+            />
             <main className="pt-16 flex-grow">{children}</main>
             {/* <footer className="w-full flex items-center justify-center py-3"> */}
             <FooterPage />
