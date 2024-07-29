@@ -12,8 +12,22 @@ module.exports = {
     extend: {
       animation: {
         meteor: "meteor 5s linear infinite",
+        grid: "grid 15s linear infinite",
+        meteor: "meteor 5s linear infinite",
       },
       keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: 0,
+          },
+        },
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
           "70%": { opacity: 1 },
@@ -43,30 +57,6 @@ module.exports = {
           },
         },
       },
-      // colors: {
-      //   primary: colors.primary,
-      //   secondary: colors.secondary,
-      //   success: "black",
-      //   warning: colors.warning,
-      //   error: colors.error,
-      //   light: colors.light,
-      //   dark: colors.dark,
-      //   muted: colors.muted,
-      //   text: colors.text,
-      //   background: colors.background,
-      //   surface: colors.surface,
-      //   onPrimary: "#7828C8",
-      //   onSecondary: colors.onSecondary,
-      //   onSuccess: colors.onSuccess,
-      //   onWarning: colors.onWarning,
-      //   onError: colors.onError,
-      //   onLight: colors.onLight,
-      //   onDark: colors.onDark,
-      //   onMuted: colors.onMuted,
-      //   onText: colors.onText,
-      //   onBackground: colors.onBackground,
-      //   onSurface: colors.onSurface,
-      // },
     },
   },
   darkMode: "class",

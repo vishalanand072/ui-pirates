@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
+import Meteors from "@/components/magicui/meteors";
 
 interface AboutCardProps {
   title: string;
@@ -24,6 +25,8 @@ const AboutCard: React.FC<AboutCardProps> = ({
           justifyContent: "space-between",
         }}
       >
+        <Meteors />
+
         <CardHeader className="flex flex-col">
           <div className="" style={{ alignSelf: "flex-start" }}>
             <video

@@ -11,7 +11,7 @@ const AboutUIpirates: React.FC<AboutUIpiratesProps> = ({ about }) => {
   return (
     <div className="">
       <Web about={about} />
-      <Mobile about={about} />
+      {/* <Mobile about={about} /> */}
     </div>
   );
 };

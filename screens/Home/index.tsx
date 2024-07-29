@@ -26,12 +26,12 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
         hero_subHeading={data.hero_subHeading}
       />
 
-      <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
+      {/* <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
         <span className="mas">Get Transformed</span>
         <button id="work" type="button" name="Hover">
           Contact Us
         </button>
-      </div>
+      </div> */}
 
       <AboutUIpirates about={data.about_ui_pirates} />
 
@@ -46,10 +46,10 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
       <GreatIdea />
 
       <FormLayout />
-      <ClientOverview />
+      {/* <ClientOverview />
       <OurRole />
       <CoreProblems />
-      <UserGroups />
+      <UserGroups /> */}
 
       <InternPage />
     </>
