@@ -121,22 +121,6 @@ body {
 
 /* Tailwind CSS Configuration */
 
-@media (max-width: 768px) {
-  .scroll-section-inner {
-    display: inline-block;
-    width: 100vw;
-    max-width: 100vw;
-    background: #000;
-  }
-  .scroll-section {
-    height: 100vh; /* Adjust based on the number of cards */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-  }
-}
-
 /* button animation */
 
 .button-container-1 {

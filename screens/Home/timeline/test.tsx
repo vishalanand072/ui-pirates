@@ -202,18 +202,19 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import { WorkProcessData } from "../../../types";
 
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
 // Card component
 interface CardProps {
-  content: string;
+  work: WorkProcessData;
   isLeft: boolean;
-  cardIndex: any;
+  cardIndex: number;
 }
 
-const Cards: React.FC<CardProps> = ({ content, isLeft, cardIndex }) => {
+const Cards: React.FC<CardProps> = ({ work, isLeft, cardIndex }) => {
   return (
     <div
       className={`relative w-[95vw] md:w-1/2 pl-4 md:pl-10 pr-8 py-4 mb-32${
@@ -226,22 +227,19 @@ const Cards: React.FC<CardProps> = ({ content, isLeft, cardIndex }) => {
             <CardHeader className="relative flex gap-3">
               <div className="flex flex-col">
                 <p className="text-[20px] font-[600] font-nahomi text-[#666666]">
-                  Eden Hazani
+                  {work.title}
                 </p>
                 <p className="text-[28px] font-[500] text-white">
-                  Xperiti | VP Research and Development
+                  {work.subHeading}
                 </p>
               </div>
               <div className="absolute top-0 right-0 m-2 text-[32px] text-primary">
-                {cardIndex - 1}
+                {cardIndex}
               </div>
             </CardHeader>
             <CardBody>
-              <p className="text-[16px]  text-[#666666]">
-                Wonderful to work with, very experienced with UI/UX design. Was
-                very open to work in the flow we requested that required actual
-                Angular coding from his team as well, and stood up to the
-                challenge of working with a remot...
+              <p className="text-[16px] text-[#666666]">
+                {work.subTitle[0]?.subTitle}
               </p>
             </CardBody>
           </Card>
@@ -251,24 +249,11 @@ const Cards: React.FC<CardProps> = ({ content, isLeft, cardIndex }) => {
   );
 };
 
-// HomePage component
-const cardsContent = [
-  "Card 1",
-  "Card 2",
-  "Card 3",
-  "Card 4",
-  "Card 5",
-  "Card 6",
-  // "Card 7",
-  // "Card 8",
-  // "Card 9",
-  // "Card 10",
-  // "Card 10",
+interface HomePageTestProps {
+  workProcess: WorkProcessData[];
+}
 
-  // Add more cards as needed
-];
-
-const HomePageTest: React.FC = () => {
+const HomePageTest: React.FC<HomePageTestProps> = ({ workProcess }) => {
   useEffect(() => {
     const progressBarOverlay = document.querySelector(
       ".progress-bar"
@@ -311,10 +296,10 @@ const HomePageTest: React.FC = () => {
             <div className="progress-bar w-full rounded"></div>
           </div>
         </div>
-        {cardsContent.map((content, index) => (
+        {workProcess.map((work, index) => (
           <Cards
             key={index}
-            content={content}
+            work={work}
             isLeft={index % 2 === 0}
             cardIndex={index + 1}
           />

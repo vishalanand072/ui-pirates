@@ -53,10 +53,10 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      className="mt-4 bg-white sticky top-0"
+      className="mt-4 bg-transparent absolute top-0 mb-16"
       isBlurred={false}
       maxWidth="xl"
-      position="sticky"
+      // position="absolute"
     >
       <NavbarContent className="sm:basis-full " justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">

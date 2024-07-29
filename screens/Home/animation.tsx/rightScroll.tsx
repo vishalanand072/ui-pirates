@@ -58,7 +58,7 @@ function ScrollSection() {
           {data.map((item, index) => {
             return (
               <div className="scroll-section" key={index}>
-                <AboutCard cardColor={item.cardColor} />
+                {/* <AboutCard cardColor={item.cardColor} /> */}
               </div>
             );
           })}
