@@ -150,7 +150,7 @@ module.exports = {
               600: "#5c677d",
               700: "#4b5466",
               800: "#3b4251",
-              900: "#282d39",
+              900: "#1a1a1a",
               DEFAULT: "#5c677d",
               foreground: "#ffffff",
             },
