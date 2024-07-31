@@ -23,12 +23,15 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
         hero_subHeading={data.hero_subHeading}
       />
 
-      {/* <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
-        <span className="mas">Get Transformed</span>
-        <button id="work" type="button" name="Hover">
-          Contact Us
-        </button>
+      {/* <div className="flex flex-row">
+        <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
+          <span className="mas">Transformeddan</span>
+          <button id="work" type="button" name="Hover">
+            Transformeddan
+          </button>
+        </div>
       </div> */}
+
       <WeCreate />
 
       <TimeLinePaga workProcess={data.work_process} />
