@@ -1,7 +1,7 @@
 import UIDesignCard from "./IUDesignCard";
-import UserReasearchCard from "./userresearchcard";
-import UIDevCard from "./uidevcard";
-import AssetCreationCard from "./assetcreationCard";
+import UserReasearchCard from "./UserResearchCard";
+import UIDevCard from "./UIDevCard";
+import AssetCreationCard from "./AssetCreationCard";
 
 const OurRole = () => {
   return (
