@@ -1,4 +1,5 @@
 import Hero from "./hero";
+import WeCreate from "./weCreate";
 import AboutUIpirates from "./about-ui-pirate";
 import TimeLinePaga from "./timeline";
 import DesignDev from "./designDev";
@@ -7,10 +8,6 @@ import ReviewPage from "./reviews";
 import GreatIdea from "./greatIdea";
 import FormLayout from "./form/formLayout";
 import InternPage from "./InternsPage";
-import ClientOverview from "../CaseStudy/ClientOverview";
-import OurRole from "../CaseStudy/OurRole";
-import CoreProblems from "../CaseStudy/CoreProblems";
-import UserGroups from "../CaseStudy/UserGroups";
 
 import { HomePageData } from "../../types";
 
@@ -32,8 +29,7 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
           Contact Us
         </button>
       </div> */}
-
-      <AboutUIpirates about={data.about_ui_pirates} />
+      <WeCreate />
 
       <TimeLinePaga workProcess={data.work_process} />
 
@@ -43,13 +39,11 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
 
       <ReviewPage />
 
+      <AboutUIpirates about={data.about_ui_pirates} />
+
       <GreatIdea />
 
       <FormLayout />
-      {/* <ClientOverview />
-      <OurRole />
-      <CoreProblems />
-      <UserGroups /> */}
 
       <InternPage />
     </>

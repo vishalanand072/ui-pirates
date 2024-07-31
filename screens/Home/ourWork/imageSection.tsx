@@ -71,7 +71,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
               ref={(el) => (imageRefs.current[index] = el as HTMLDivElement)}
             >
               <img
-                src={image}
+                src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp"
                 alt={`Image ${index}`}
                 className="w-full h-full object-cover"
               />
