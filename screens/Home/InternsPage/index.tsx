@@ -21,7 +21,7 @@ const InternPage = () => {
           </p>
           <br></br>
         </div>
-        <div className="container mx-auto px-12">
+        <div className="container mx-auto px-20">
           <div className=" text-center">
             <video controls className="mx-auto w-full rounded-lg ">
               <source src="path_to_your_video.mp4" type="video/mp4" />

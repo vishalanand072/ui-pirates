@@ -88,7 +88,7 @@ export const Navbar = () => {
 
       <NavbarContent className="hidden sm:flex sm:basis-full" justify="end">
         <NavbarItem className="hidden md:flex">
-          <Button
+          {/* <Button
             isExternal
             as={Link}
             className="text-sm font-bold"
@@ -97,7 +97,13 @@ export const Navbar = () => {
             color="primary"
           >
             Let&apos;s Talk!
-          </Button>
+          </Button> */}
+          <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
+            <span className="mas"> Let&apos;s Talk!</span>
+            <button id="work" type="button" name="Hover">
+              Let&apos;s Talk!
+            </button>
+          </div>
         </NavbarItem>
       </NavbarContent>
 

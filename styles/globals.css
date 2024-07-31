@@ -124,37 +124,42 @@ body {
 /* button animation */
 
 .button-container-1 {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   color: #ffffff;
-  background-color: #0d99ff;
+  background-color: #7828c8;
   box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.15);
-  border-radius: 15px;
+  border-radius: 8px;
 
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
-  width: 200px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6vh;
+  /* width: 200px; */
+  height: 38px;
+  /* padding-left: 12px;
+  padding-right: 12px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* margin-top: 6vh; */
   overflow: hidden;
   letter-spacing: 1px;
 }
 .button-container-1 Button {
-  width: 200px;
-  height: 50px;
+  /* width: 200px; */
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 38px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   font-weight: bold;
   background: #fff;
+  /* background: transparent; */
   -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
   mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
   -webkit-mask-size: 2300% 100%;
@@ -172,16 +177,18 @@ body {
 
 .mas {
   width: 100%;
+  /* padding-left: 16px;
+  padding-right: 16px; */
   position: absolute;
   color: #ffffff;
   text-align: center;
-  height: 50px;
+  height: 38px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   position: absolute;
-  font-size: 20px;
-  margin-top: 13px;
+  font-size: 18px;
+  margin-top: 7px;
   overflow: hidden;
   font-weight: bold;
 }
