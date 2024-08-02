@@ -218,3 +218,13 @@ body {
     display: none;
   }
 }
+
+.spacer {
+  @apply w-full h-[50vh] bg-gray-300;
+}
+
+.photos {
+  width: 40vw;
+  height: 40vw;
+  background: maroon;
+}
