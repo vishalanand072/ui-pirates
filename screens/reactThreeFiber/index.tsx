@@ -10,6 +10,8 @@ import Test1 from "./test1";
 import Test2 from "./test2";
 import RingText from "./ringsTest";
 import WordCloudComp from "./wordCloud";
+import WordCloudTest from "./wordCloudTest";
+import Test from "./stickyTop";
 const ReactThreeFiber = () => {
   return (
     <>
@@ -20,14 +22,16 @@ const ReactThreeFiber = () => {
       {/* <Test2 /> */}
       {/* <EnterComp /> */}
       {/* <div className="w-screen h-screen"> */}
-      <div className=" -ml-[20%]">
+      {/* <div className=" -ml-[20%]">
         <RingTextComp />
         <Dan />
         <Test1 />
         <RingText />
 
         <WordCloudComp />
-      </div>
+        <WordCloudTest />
+      </div> */}
+      <Test />
     </>
   );
 };
