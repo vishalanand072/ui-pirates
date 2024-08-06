@@ -249,6 +249,9 @@ body {
 }
 
 /* case study style */
+.heading-comp {
+  @apply flex justify-between items-center my-12;
+}
 .heading {
-  @apply font-semibold text-5xl max-lg:text-4xl max-md:text-3xl mt-12;
+  @apply font-semibold text-5xl max-lg:text-4xl max-md:text-3xl;
 }

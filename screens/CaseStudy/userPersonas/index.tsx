@@ -9,6 +9,10 @@ const UserPersonas = () => {
         </div>
 
         <PersonasCard />
+
+        <div className="mt-8">
+          <PersonasCard />
+        </div>
       </div>
     </>
   );

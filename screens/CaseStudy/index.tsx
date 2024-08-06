@@ -7,6 +7,7 @@ import Overview from "./Overview";
 import Xperiti from "./Xperiti";
 import UserGroups from "./UserGroups";
 import UserPersonas from "./userPersonas";
+import FeaturesProduct from "./featuresProduct";
 import ClientRequirements from "./ClientRequirements";
 import StickyTop from "../Home/designDev/stickyTop";
 import ValuesUiElement from "./valuesUiElement";
@@ -23,6 +24,7 @@ const Casestudy = () => {
       <CoreProblems></CoreProblems>
       <UserGroups></UserGroups>
       <UserPersonas />
+      <FeaturesProduct />
       <ValuesUiElement />
       <UXAnalysis />
       <ProductShowcase />
