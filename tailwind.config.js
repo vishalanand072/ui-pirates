@@ -149,7 +149,7 @@ module.exports = {
               foreground: "#ffffff",
             },
             subtitle: {
-              DEFAULT: "#52525B",
+              DEFAULT: "#929292",
               foreground: "#ffffff",
             },
             bgLogo: {

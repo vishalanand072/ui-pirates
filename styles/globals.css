@@ -228,3 +228,27 @@ body {
   height: 40vw;
   background: maroon;
 }
+
+#div1 {
+  position: sticky;
+  top: 120px;
+}
+
+#div2 {
+  position: sticky;
+  top: 120px;
+}
+
+#div3 {
+  position: sticky;
+  top: 120px;
+}
+
+#div4 {
+  position: relative;
+}
+
+/* case study style */
+.heading {
+  @apply font-semibold text-5xl max-lg:text-4xl max-md:text-3xl mt-12;
+}
