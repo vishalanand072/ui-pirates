@@ -218,3 +218,40 @@ body {
     display: none;
   }
 }
+
+.spacer {
+  @apply w-full h-[50vh] bg-gray-300;
+}
+
+.photos {
+  width: 40vw;
+  height: 40vw;
+  background: maroon;
+}
+
+#div1 {
+  position: sticky;
+  top: 120px;
+}
+
+#div2 {
+  position: sticky;
+  top: 120px;
+}
+
+#div3 {
+  position: sticky;
+  top: 120px;
+}
+
+#div4 {
+  position: relative;
+}
+
+/* case study style */
+.heading-comp {
+  @apply flex justify-between items-center my-12;
+}
+.heading {
+  @apply font-semibold text-5xl max-lg:text-4xl max-md:text-3xl;
+}

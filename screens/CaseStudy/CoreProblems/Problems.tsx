@@ -38,15 +38,6 @@ const Problems = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <Image
-            src={Pic2}
-            alt="Solution 1"
-            width={500}
-            height={500}
-            className="w-full h-auto rounded-3xl"
-          />
-        </div>
       </div>
     </>
   );

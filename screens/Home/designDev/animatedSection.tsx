@@ -47,17 +47,20 @@ const AnimatedSection = () => {
   return (
     <div className="scroll-trigger h-screen flex flex-col justify-center items-center max-w-screen bg-[#E4D4F4]">
       <h1 className="text-4xl mb-8">Static Text Here</h1>
+      <h1 className="text-4xl mb-8">Static Text Here</h1>
+      <h1 className="text-4xl mb-8">Static Text Here</h1>
+
       <div className="relative flex items-center justify-center">
-        <div ref={leftTextRef} className="text-2xl">
+        <span ref={leftTextRef} className="text-2xl">
           Left Word
-        </div>
+        </span>
         <div
           ref={avatarRef}
           className="mx-4 w-16 h-16 rounded-full bg-gray-300"
         ></div>
-        <div ref={rightTextRef} className="text-2xl">
+        <span ref={rightTextRef} className="text-2xl">
           Right Word
-        </div>
+        </span>
       </div>
     </div>
   );

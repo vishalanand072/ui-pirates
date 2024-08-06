@@ -66,9 +66,7 @@ export default function RootLayout({
               ]}
             />
             <main className="pt-16 flex-grow">{children}</main>
-            {/* <footer className="w-full flex items-center justify-center py-3"> */}
             <FooterPage />
-            {/* </footer> */}
           </div>
         </Providers>
       </body>
