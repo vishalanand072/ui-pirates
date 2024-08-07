@@ -65,7 +65,10 @@ const Casestudy = () => {
       <CaseStudyHero />
       <Overview />
       <div>
-        <div className="sticky top-0">
+        <div
+          className="sticky top-0 overflow-scroll bg-white"
+          style={{ zIndex: 99999 }}
+        >
           <StickyTabs />
         </div>
         <div id="client-requirements">

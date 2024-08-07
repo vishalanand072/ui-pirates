@@ -28,7 +28,6 @@
 //     </div>
 //   );
 // }
-
 import React, { useEffect, useState } from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 
@@ -82,7 +81,6 @@ export default function StickyTabs() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-
       console.log(`ID: ${id}`);
     } else {
       console.log(`No element found with ID: ${id}`); // Debugging line
@@ -90,22 +88,23 @@ export default function StickyTabs() {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 bg-white z-999999 h-[60px] pt-3 sticky top-0">
+    <div className="flex flex-wrap gap-4 bg-white h-[60px] pt-3">
       <Tabs variant="underlined" aria-label="Tabs variants">
         {tabData.map((item) => {
           const id = item.toLowerCase().replace(/ /g, "-");
-          //   console.log(id);
 
           return (
             <Tab
               key={item}
-              title={item}
+              // title={item}
               style={{
-                color: activeTab === item ? "blue" : "black",
+                color: activeTab === item ? "blue" : "red",
                 cursor: "pointer",
               }}
               onClick={() => handleTabClick(item)}
-            />
+            >
+              <p onClick={() => handleTabClick(item)}>{item}</p>
+            </Tab>
           );
         })}
       </Tabs>
