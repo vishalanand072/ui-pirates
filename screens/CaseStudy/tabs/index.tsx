@@ -101,7 +101,6 @@ export default function StickyTabs() {
                 color: activeTab === item ? "blue" : "red",
                 cursor: "pointer",
               }}
-              onClick={() => handleTabClick(item)}
             >
               <p onClick={() => handleTabClick(item)}>{item}</p>
             </Tab>
