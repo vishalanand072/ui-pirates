@@ -255,3 +255,11 @@ body {
 .heading {
   @apply font-semibold text-5xl max-lg:text-4xl max-md:text-3xl;
 }
+
+Card {
+  z-index: 1;
+}
+
+Tabs {
+  z-index: 999999;
+}
