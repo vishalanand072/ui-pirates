@@ -3,7 +3,7 @@ import StickyTop from "./stickyTop";
 const DesignDev = () => {
   return (
     <>
-      <AnimatedSection />
+      {/* <AnimatedSection /> */}
       <StickyTop />
     </>
   );

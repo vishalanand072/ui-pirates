@@ -1,41 +1,31 @@
+import { ExclamationMark } from "@phosphor-icons/react";
+import check from "@/public/explan.png";
 import Image from "next/image";
-import Pic2 from "@/public/images/coreProblem_img2.png";
 
 const Problems = () => {
   return (
     <>
       <div className="flex flex-col justify-around gap-8">
         <div>
-          <div className=" text-left font-bold text-4xl mb-8">PROBLEMS</div>
-          <ul className="list-none space-y-4 text-xl">
-            <li className="flex items-start space-x-2">
-              <span className="text-red-500">❗❗</span>
-              <p>
-                Inefficiencies resulted in wasted time and potential loss of
-                participant engagement.
-              </p>
-            </li>
-            <li className="flex items-start space-x-2">
-              <span className="text-red-500">❗❗</span>
-              <p>
-                Difficulty in managing research studies efficiently due to
-                fragmented tools and processes.
-              </p>
-            </li>
-            <li className="flex items-start space-x-2">
-              <span className="text-red-500">❗❗</span>
-              <p>
-                Specialized research tools lacked integration, leading to
-                disjointed workflows.
-              </p>
-            </li>
-            <li className="flex items-start space-x-2">
-              <span className="text-red-500">❗❗</span>
-              <p>
-                Manual tracking and management of participants and incentives
-                were time-consuming and error-prone.
-              </p>
-            </li>
+          <div className="medium-heading mb-8 text-subtitle">PROBLEMS</div>
+          <ul className="list-none space-y-4 text-lg">
+            {[...Array(4)].map((item, index) => {
+              return (
+                <li className="flex items-center">
+                  <Image
+                    src={check}
+                    alt="Solution 1"
+                    width={25}
+                    height={25}
+                    className="mr-3"
+                  />
+                  <p className="normal">
+                    Inefficiencies resulted in wasted time and potential loss of
+                    participant engagement.
+                  </p>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

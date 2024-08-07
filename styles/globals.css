@@ -27,7 +27,27 @@ body {
   background-color: var(--backgroundColor);
 }
 
-.hero__header {
+.small {
+  @apply text-sm;
+}
+
+.normal {
+  @apply text-lg;
+}
+
+.heading {
+  @apply font-semibold text-5xl max-lg:text-4xl max-md:text-3xl;
+}
+
+.medium-heading {
+  @apply font-semibold text-3xl max-lg:text-2xl max-md:text-2xl;
+}
+
+.small-heading {
+  @apply font-semibold text-2xl max-lg:text-2xl max-md:text-2xl;
+}
+
+.head .hero__header {
   height: 100vh;
   display: flex;
   text-align: center;
@@ -251,15 +271,4 @@ body {
 /* case study style */
 .heading-comp {
   @apply flex justify-between items-center my-12;
-}
-.heading {
-  @apply font-semibold text-5xl max-lg:text-4xl max-md:text-3xl;
-}
-
-Card {
-  z-index: 1;
-}
-
-Tabs {
-  z-index: 999999;
 }

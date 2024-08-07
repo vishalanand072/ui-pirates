@@ -13,10 +13,10 @@ const InternPage = () => {
     <>
       <div className="bg-[#0D0D0D] py-12">
         <div className="text-center">
-          <h1 className="text-6xl md:text-4xl font-bold text-primary font-Nohemi">
+          <h1 className="heading font-bold text-primary font-Nohemi">
             INTERN AS A COURSE
           </h1>
-          <p className="mt-4 text-6xl font-semibold font-Nohemi text-white">
+          <p className="mt-4 heading font-Nohemi text-white">
             Join Our Innovative Program
           </p>
           <br></br>

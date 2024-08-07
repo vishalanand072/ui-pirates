@@ -9,8 +9,8 @@ const ClientCard = () => {
           <Image src={clientpic} alt="Client" />
         </div>
         <div className="p-2">
-          <h1 className="text-3xl font-bold mb-4 mt-8">Clients</h1>
-          <ul className="text-2xl font-semibold">
+          <h1 className="medium-heading mb-4 mt-8">Clients</h1>
+          <ul className="small-heading">
             <div className="flex flex-row items-center gap-3">
               <DiamondsFour size={20} weight="fill" />
               <li className="mb-2">Researchers</li>
@@ -21,7 +21,7 @@ const ClientCard = () => {
             </div>
           </ul>
         </div>
-        <div className="mt-4 py-4 border-t text-lg font-semibold mr-16">
+        <div className="mt-4 py-4 border-t normal font-semibold mr-16">
           "As a researcher, I want to create and manage studies efficiently so
           that I can focus on analyzing results."
         </div>
