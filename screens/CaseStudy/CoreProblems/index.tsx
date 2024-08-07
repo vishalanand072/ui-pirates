@@ -10,9 +10,7 @@ const CoreProblems = () => {
     <div className="bg-white py-12">
       <div className="container mx-auto px-20 max-lg:px-16 max-md:px-12">
         <div className="flex justify-between items-center">
-          <h1 className="text-black heading">
-            Core Problem & Business Analysis
-          </h1>
+          <h1 className="heading">Core Problem & Business Analysis</h1>
           <span className="text-gray-300 text-4xl lg:text-6xl font-light">
             03
           </span>
@@ -31,8 +29,10 @@ const CoreProblems = () => {
           <Problems />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-          <SolutionCard />
-          <div className="space-y-8">
+          <div className="order-1 max-lg:order-2">
+            <SolutionCard />
+          </div>
+          <div className="space-y-8 order-2 max-lg:order-1">
             <Image
               src={Pic3}
               alt="Solution 1"

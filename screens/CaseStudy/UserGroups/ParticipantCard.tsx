@@ -10,10 +10,8 @@ const ParticipantCard = () => {
           <Image src={participantimg} alt="Participant" />
         </div>
         <div className="p-2">
-          <h1 className="text-black text-3xl font-bold mb-4 mt-8">
-            Participants
-          </h1>
-          <ul className="text-2xl font-semibold">
+          <h1 className="medium-heading mb-4 mt-8">Participants</h1>
+          <ul className="small-heading">
             <div className="flex flex-row items-center gap-3">
               <DiamondsFour size={20} weight="fill" />
               <li className="mb-2">Individuals participating in surveys</li>
@@ -24,7 +22,7 @@ const ParticipantCard = () => {
             </div>
           </ul>
         </div>
-        <div className="mt-4 py-4 border-t text-lg font-semibold mr-16">
+        <div className="mt-4 py-4 border-t normal font-semibold mr-16">
           "As a participant, I want to easily take part in surveys and
           interviews so that I can earn incentives without hassle."
         </div>

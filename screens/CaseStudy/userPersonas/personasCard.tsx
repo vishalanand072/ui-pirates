@@ -8,10 +8,10 @@ const PersonasCard = () => {
     <>
       <Card className="">
         <CardBody
-          className="grid grid-cols-2 max-md:grid-cols-1"
+          className="grid grid-cols-2 max-md:grid-cols-1 overflow-hidden"
           style={{ padding: 0 }}
         >
-          <div className=" relative">
+          <div className="relative bg-orange-500">
             <Image
               src={user}
               alt="Client"
@@ -20,35 +20,31 @@ const PersonasCard = () => {
               className="w-[100%] h-[100%]"
             />
             <div className=" absolute bottom-8 left-8 w-full">
-              <p className="text-white text-8xl font-semibold">Rachel</p>
-              <p className="text-white">32,  Client</p>
-              <Card className="p-0 bg-transparent border-1 border-[#A3A3A3] w-[90%] max-lg:w-[85%]">
+              <p className="text-white text-8xl font-semibold max-lg:text-6xl max-md:text-3xl">
+                Rachel
+              </p>
+              <p className="text-white text-[28px]">32,  Client</p>
+              <Card className="p-0 bg-transparent border-1 border-[#323232] w-[90%] max-lg:w-[85%]">
                 <CardBody className="w-full">
                   <div className="flex flex-row items-center gap-4">
-                    <p className="text-lg text-white font-semibold">type</p>
-                    <p className="text-lg font-medium text-[#A3A3A3]">
-                      Corporate
-                    </p>
+                    <p className="text-lg text-subtitle font-semibold">type</p>
+                    <p className="text-lg font-medium text-white">Corporate</p>
                   </div>
                   <div className="flex flex-row items-center gap-4">
-                    <p className="text-lg text-white font-semibold">type</p>
-                    <p className="text-lg font-medium text-[#A3A3A3]">
-                      Corporate
-                    </p>
+                    <p className="text-lg text-subtitle font-semibold">type</p>
+                    <p className="text-lg font-medium text-white">Corporate</p>
                   </div>
                   <div className="flex flex-row items-center gap-4">
-                    <p className="text-lg text-white font-semibold">type</p>
-                    <p className="text-lg font-medium text-[#A3A3A3]">
-                      Corporate
-                    </p>
+                    <p className="text-lg text-subtitle font-semibold">type</p>
+                    <p className="text-lg font-medium text-white">Corporate</p>
                   </div>
                 </CardBody>
               </Card>
             </div>
           </div>
 
-          <div className="bg-black p-8">
-            <Card className="p-0 bg-transparent border-1 border-[#A3A3A3]">
+          <div className="bg-secondary-900 p-8">
+            <Card className="p-0 bg-transparent border-1 border-[#323232]">
               <CardBody className="">
                 <div>
                   <p className="text-2xl text-white font-semibold">Bio</p>
@@ -62,13 +58,13 @@ const PersonasCard = () => {
               </CardBody>
             </Card>
 
-            <Card className="p-0 bg-transparent border-1 mt-3 border-[#A3A3A3]">
+            <Card className="p-0 bg-transparent border-1 mt-3 border-[#323232]">
               <CardBody className="">
                 <div>
                   <p className="text-2xl text-white font-semibold">Bio</p>
                   {[...Array(3)].map((_, i) => (
                     <div className="flex flex-row items-center gap-2 my-2">
-                      <DiamondsFour size={21} weight="fill" color="#A3A3A3" />
+                      <DiamondsFour size={21} weight="fill" color="#323232" />
                       <p className="text-md font-medium text-[#A3A3A3]">
                         Efficiently manage multiple studies concurrently
                       </p>
@@ -78,13 +74,13 @@ const PersonasCard = () => {
               </CardBody>
             </Card>
 
-            <Card className="p-0 bg-transparent border-1 mt-3 border-[#A3A3A3]">
+            <Card className="p-0 bg-transparent border-1 mt-3 border-[#323232]">
               <CardBody className="">
                 <div>
                   <p className="text-2xl text-white font-semibold">Bio</p>
                   {[...Array(3)].map((_, i) => (
                     <div className="flex flex-row items-center gap-2 my-2">
-                      <DiamondsFour size={21} weight="fill" color="#A3A3A3" />
+                      <DiamondsFour size={21} weight="fill" color="#323232" />
                       <p className="text-md font-medium text-[#A3A3A3]">
                         Efficiently manage multiple studies concurrently
                       </p>

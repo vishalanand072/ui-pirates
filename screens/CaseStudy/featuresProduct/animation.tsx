@@ -35,7 +35,7 @@ const AnimationProduct = () => {
   }, []);
 
   return (
-    <section className="scroll-section-outer">
+    <section className="scroll-section-outer mt-12">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           {[...Array(4)].map((item, index) => {

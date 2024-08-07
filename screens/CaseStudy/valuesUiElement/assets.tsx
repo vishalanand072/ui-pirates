@@ -1,5 +1,5 @@
 import { Card, CardBody } from "@nextui-org/react";
-import { PhosphorLogo } from "@phosphor-icons/react";
+import { PhosphorLogo, DiamondsFour } from "@phosphor-icons/react";
 import Image from "next/image";
 import img1 from "@/public/img1.svg";
 import img2 from "@/public/img2.svg";
@@ -16,7 +16,7 @@ const Assets = () => {
             <div>
               <Card className="bg-[#C4E456] shadow-none border-1">
                 <CardBody className="items-center">
-                  <PhosphorLogo size={70} weight="fill" />
+                  <PhosphorLogo size={90} weight="fill" />
                   <p className="text-2xl font-semibold mb-3">Phosphor Icons</p>
                 </CardBody>
               </Card>
@@ -25,7 +25,7 @@ const Assets = () => {
               </p>
               {[...Array(3)].map((_, i) => (
                 <div className="flex flex-row items-center gap-2 my-2">
-                  <PhosphorLogo size={27} weight="fill" />
+                  <DiamondsFour size={20} weight="fill" />
                   <div>
                     <p className="text-lg text-subtitle">
                       {" "}
