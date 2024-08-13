@@ -61,7 +61,7 @@ import StickyTabs from "./tabs";
 import WeCreate from "../Home/weCreate";
 
 const Casestudy = (props: any) => {
-  console.log(props.data[0].hero.title);
+  // console.log(props.data[0].hero.title);
 
   return (
     <div>

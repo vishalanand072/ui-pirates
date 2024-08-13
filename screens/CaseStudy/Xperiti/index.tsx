@@ -3,18 +3,20 @@ import Casestudy from "@/screens/CaseStudyComp";
 const data = [
   {
     hero: {
-      title: "hii",
-      subtitle: "Hiii",
+      title: "Xperiti",
+      subtitle: "in ipsos company",
       bgimage: "",
     },
   },
   {
     overview: {
-      overview: "lorem10",
-      Client: "data",
-      Industry: "data",
-      Platform: "data",
-      Objective: "data",
+      overview:
+        "Xperiti is a comprehensive research platform designed to streamline the management and execution of both qualitative and quantitative research studies, providing an intuitive UI/UX for researchers and participants alike.",
+      Client: "Xperiti",
+      Industry: "Market Research",
+      Platform: "SaaS application",
+      Objective:
+        "Redesign the Xperiti SaaS app to create an integrated, user-friendly platform for managing qualitative and quantitative research studies, improving efficiency and user satisfaction.",
     },
   },
   {
@@ -22,39 +24,63 @@ const data = [
       card: [
         {
           img: "url",
-          heading: "heading",
-          subheading: "subheading",
+          heading: "Unified Platform",
+          subheading:
+            "Develop a single platform to manage both interviews and surveys research studies.",
         },
         {
           img: "url",
-          heading: "heading",
-          subheading: "subheading",
+          heading: "User Experience",
+          subheading:
+            "Ensure an intuitive and seamless user interface for both researchers and participants.",
         },
         {
           img: "url",
-          heading: "heading",
-          subheading: "subheading",
+          heading: "Participant Management",
+          subheading:
+            "Ensure efficient participant tracking and streamlined incentive distribution.",
         },
       ],
-      Outcomes: "dis",
+      Outcomes:
+        "Our clients and their users were highly satisfied with our experience design strategy for Xperiti. By continuously improving the platform through agile development releases, we made Xperiti more robust and engaging. This approach not only enhanced user satisfaction but also helped grow the platform's brand in the market.",
     },
   },
   {
     ourrole: [
       {
         heading: "User Research",
-        icon: "Icon Name",
-        list: ["item1", "itme2", "item3"],
+        icon: "UserFocus",
+        list: [
+          "Interviews and Surveys",
+          "User Personas",
+          "Journey Mapping",
+          "Usability Testing",
+        ],
       },
       {
-        heading: "User Research",
-        icon: "Icon Name",
-        list: ["item1", "itme2", "item3"],
+        heading: "Asset Creation",
+        icon: "Cube",
+        list: [
+          "Design System",
+          "Fonts",
+          "Illustrations & Icons",
+          "Motion Graphics",
+        ],
       },
       {
-        heading: "User Research",
-        icon: "Icon Name",
-        list: ["item1", "itme2", "item3"],
+        heading: "UI/UX Design",
+        icon: "PenNib",
+        list: [
+          "Wireframing",
+          "Prototyping",
+          "Visual Design",
+          "Interaction Design",
+        ],
+      },
+      {
+        heading: "Development & Integration",
+        icon: "Code",
+        list: ["Front End Development", "Integration", "Back End Development"],
       },
     ],
   },
@@ -65,10 +91,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "item1",
+              item: "Inefficiencies resulted in wasted time and potential loss of participant engagement.",
             },
             {
-              item: "item1",
+              item: "Difficulty in managing research studies efficiently due to fragmented tools and processes.",
+            },
+            {
+              item: "Specialized research tools lacked integration, leading to disjointed workflows.",
             },
           ],
         },
@@ -78,10 +107,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "item1",
+              item: "Xperiti's integrated platform streamlines study management, saving time and enhancing engagement.",
             },
             {
-              item: "item1",
+              item: "Xperiti consolidates all research activities into a single, cohesive platform.",
+            },
+            {
+              item: "Inefficiencies resulted in wasted time and potential loss of participant engagement.",
             },
           ],
         },
@@ -113,26 +145,62 @@ const data = [
   {
     userPersonas: [
       {
-        name: "name",
-        smallDiscription: "24 clients",
-        type: "",
-        Gender: "",
-        Occupation: "",
-        bio: "bio",
+        name: "Rachel",
+        smallDiscription: "24, Client",
+        type: "Corporate",
+        Gender: "Female",
+        Occupation: "Market Research",
+        bio: "Raechel is a seasoned market researcher at a consumer goods company. She needs tools that enhance productivity and accuracy, allowing her to oversee numerous studies and gather actionable insights.",
         goals: [
           {
-            item: "item",
+            item: "Efficiently manage multiple studies concurrently",
           },
           {
-            item: "item",
+            item: "Obtain reliable and accurate data",
+          },
+          {
+            item: "Streamline research processes to save time and resources",
           },
         ],
         painPoints: [
           {
-            item: "item",
+            item: "Inconsistent survey response rates",
           },
           {
-            item: "item",
+            item: "Difficulty in collaborating with team members",
+          },
+          {
+            item: "Limited customization options in existing tools",
+          },
+        ],
+      },
+      {
+        name: "Andrew",
+        smallDiscription: "24, Participant",
+        type: "Individual",
+        Gender: "Male",
+        Occupation: "Student",
+        bio: "Andrew is a part-time worker and a student supplementing his income through online surveys. He prefers easy-to-navigate platforms that allow him to quickly complete surveys and maximize earnings.",
+        goals: [
+          {
+            item: "Earn incentives through participation in surveys & interviews",
+          },
+          {
+            item: "Provide feedback easily without complications",
+          },
+          {
+            item: "Have a straightforward and seamless participation process",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Complex survey questions leading to frustration",
+          },
+          {
+            item: "Unclear instructions or poorly designed questions reducing his ability to provide accurate feedback",
+          },
+          {
+            item: "Surveys that are too long",
           },
         ],
       },
@@ -142,18 +210,27 @@ const data = [
     featureAndProduct: [
       {
         media: "url",
-        heading: "",
-        subHeading: "",
+        heading: "Study Creation & Management",
+        subHeading:
+          "Utilize simplified tools that enable easy creation and management of research studies, streamlining the entire process for researchers.",
       },
       {
         media: "url",
-        heading: "",
-        subHeading: "",
+        heading: "Survey & Interview Integration",
+        subHeading:
+          "Effortlessly handle both qualitative and quantitative research methods, allowing seamless integration of surveys and interviews.",
       },
       {
         media: "url",
-        heading: "",
-        subHeading: "",
+        heading: "Participant Management",
+        subHeading:
+          "Track and manage participant information and activities efficiently, ensuring smooth coordination and data collection.",
+      },
+      {
+        media: "url",
+        heading: "Incentive Distribution",
+        subHeading:
+          "Automate the management and distribution of participant incentives, making it easy to reward contributions promptly and fairly.",
       },
     ],
   },
