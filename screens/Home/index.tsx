@@ -15,13 +15,10 @@ interface HomePageProps {
   data: HomePageData;
 }
 
-const HomePage: React.FC<HomePageProps> = ({ data }) => {
+const HomePage: React.FC = () => {
   return (
     <>
-      <Hero
-        hero_heading={data.hero_heading}
-        hero_subHeading={data.hero_subHeading}
-      />
+      <Hero hero_heading="" hero_subHeading="" />
 
       {/* <div className="flex flex-row">
         <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
@@ -34,15 +31,15 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
 
       <WeCreate />
 
-      <TimeLinePaga workProcess={data.work_process} />
+      <TimeLinePaga />
 
       <DesignDev />
 
-      <OurWork ourWorks={data.our_works.data} />
+      <OurWork />
 
       <ReviewPage />
 
-      <AboutUIpirates about={data.about_ui_pirates} />
+      <AboutUIpirates />
 
       <GreatIdea />
 

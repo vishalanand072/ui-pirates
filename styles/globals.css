@@ -84,7 +84,7 @@ body {
 
 .scroll-section {
   height: 100vh;
-  width: 100vw;
+  min-width: 100vw;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -284,4 +284,36 @@ body {
 .imageAnim {
   max-width: 100%;
   transition: transform 0.3s ease-in-out;
+}
+
+.bg-map {
+  background-image: url("/assets/herobg.svg");
+  background-size: cover;
+  /* background-size: contain; */
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+}
+
+/* for tab  */
+
+.your-element-class::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.blurred-background {
+  /* width: 100%;
+  height: 200px; */
+  background-color: rgba(66, 62, 62, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(66, 62, 62, 0.2); /* Optional: Add a border */
+  border-radius: 8px;
+  box-shadow: 10px 10px 40px 20px rgba(73, 71, 71, 0.2);
 }

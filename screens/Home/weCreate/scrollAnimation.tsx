@@ -71,6 +71,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { IconCloudDemo } from "./iconCloudComp";
 import ResponsiveAnimation from "./responsiveAnimation";
+import ImageZoomScroll from "./imageZoomScroll";
 
 const ScrollAnimation: React.FC = () => {
   const sectionRef = useRef(null);
@@ -123,8 +124,11 @@ const ScrollAnimation: React.FC = () => {
     <section className="scroll-section-outer">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
-          <div className="scroll-section w-[100%]">
-            <ResponsiveAnimation />
+          <div className="scroll-section  flex flex-row items-center justify-center">
+            <div className="bg-green-700 w-full">
+              <ImageZoomScroll />
+            </div>
+            {/* <ResponsiveAnimation /> */}
           </div>
 
           {[...Array(1)].map((item, index) => {

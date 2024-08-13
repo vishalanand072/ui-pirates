@@ -7,10 +7,10 @@ interface AboutUIpiratesProps {
   about: AboutUIpiratesData[];
 }
 
-const AboutUIpirates: React.FC<AboutUIpiratesProps> = ({ about }) => {
+const AboutUIpirates: React.FC = () => {
   return (
     <div className="">
-      <Web about={about} />
+      {/* <Web /> */}
       {/* <Mobile about={about} /> */}
     </div>
   );

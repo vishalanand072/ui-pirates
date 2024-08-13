@@ -379,7 +379,7 @@ interface HomePageTestProps {
   workProcess: WorkProcessData[];
 }
 
-const HomePageTest: React.FC<HomePageTestProps> = ({ workProcess }) => {
+const HomePageTest: React.FC = () => {
   useEffect(() => {
     const progressBarOverlay = document.querySelector(
       ".progress-bar"

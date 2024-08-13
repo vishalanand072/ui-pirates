@@ -8,7 +8,7 @@ interface ImageGridProps {
   images: string[];
 }
 
-const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
+const ImageGrid: React.FC = () => {
   const imageRefs = useRef<HTMLDivElement[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const [showButton, setShowButton] = useState(false);
@@ -64,7 +64,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
           </button>
         )}
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 bg-black p-4">
-          {images.map((image, index) => (
+          {[...Array(8)].map((image, index) => (
             <div
               key={index}
               className="relative overflow-hidden"

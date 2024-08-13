@@ -1,4 +1,4 @@
-import Casestudy from "@/screens/CaseStudy";
+import Casestudy from "@/screens/CaseStudyComp";
 
 export default function CaseStudyPage() {
   return (
