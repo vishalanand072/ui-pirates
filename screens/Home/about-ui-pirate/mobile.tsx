@@ -19,11 +19,11 @@ const Mobile: React.FC<MobileProps> = ({ about }) => {
           {about.map((item, index) => {
             return (
               <div className="mr-6" key={index}>
-                <AboutCard
+                {/* <AboutCard
                   title={item.title}
                   subTitle={item.subTitle[0]?.subTitle}
                   cardColor="#EDEEE6"
-                />
+                /> */}
               </div>
             );
           })}
