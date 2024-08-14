@@ -6,10 +6,10 @@ interface TimeLinePagaProps {
   workProcess: WorkProcessData[];
 }
 
-const TimeLinePaga: React.FC<TimeLinePagaProps> = ({ workProcess }) => {
+const TimeLinePaga: React.FC = () => {
   return (
     <div className="bg-[#1A1A1A] py-16">
-      <HomePageTest workProcess={workProcess} />
+      <HomePageTest />
     </div>
   );
 };

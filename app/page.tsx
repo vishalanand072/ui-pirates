@@ -34,9 +34,13 @@ export default function Home() {
     initializeScroll();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  // if (loading) {
+  //   return <div>Loading...</div>;
+  // }
 
-  return <main>{data && <HomePage data={data} />}</main>;
+  return (
+    <main>
+      <HomePage />
+    </main>
+  );
 }

@@ -7,15 +7,10 @@ interface OurWorkProps {
   ourWorks: OurWorkData[];
 }
 
-const OurWork: React.FC<OurWorkProps> = ({ ourWorks }) => {
-  const images = ourWorks.map(
-    (work) =>
-      `https://ui-pirates-backend.onrender.com${work.attributes.formats.medium.url}`
-  );
-
+const OurWork: React.FC = () => {
   return (
     <div className="container mx-auto py-0">
-      <ImageGrid images={images} />
+      <ImageGrid />
       {/* <AnimationWork /> */}
     </div>
   );
