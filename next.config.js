@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ["res.cloudinary.com"], // Add the domains you want to allow
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

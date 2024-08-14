@@ -7,7 +7,11 @@ interface TimeLinePagaProps {
 }
 
 const TimeLinePaga: React.FC = () => {
-  return <div className="bg-[#1A1A1A] py-16">{/* <HomePageTest /> */}</div>;
+  return (
+    <div className="bg-[#1A1A1A] py-16">
+      <HomePageTest />
+    </div>
+  );
 };
 
 export default TimeLinePaga;

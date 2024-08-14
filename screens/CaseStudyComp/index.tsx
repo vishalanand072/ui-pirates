@@ -61,14 +61,14 @@ import StickyTabs from "./tabs";
 import WeCreate from "../Home/weCreate";
 
 const Casestudy = (props: any) => {
-  // console.log(props.data[0].hero.title);
+  console.log(props.data[1].overview);
 
   return (
     <div>
       {/* <WeCreate /> */}
       {/* <StickyTop /> */}
-      <CaseStudyHero />
-      <Overview />
+      <CaseStudyHero hero={props.data[0].hero} />
+      <Overview overviewdata={props.data[1].overview} />
       <div className="">
         <div
           className="sticky top-0 overflow-scroll bg-white your-element-class"

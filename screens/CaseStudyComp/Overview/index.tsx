@@ -1,12 +1,11 @@
-import React from 'react';
-import OverviewPage from './Overview';
+import React from "react";
+import OverviewPage from "./Overview";
 
-const Overview: React.FC = () => {
+const Overview = (props: any) => {
   return (
     <div>
-      <OverviewPage />
+      <OverviewPage overviewdata={props.overviewdata} />
     </div>
   );
 };
 export default Overview;
-
