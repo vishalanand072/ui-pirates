@@ -1,12 +1,46 @@
 import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface ImageGridProps {
   images: string[];
 }
+
+const data = [
+  {
+    image: "url",
+    title: "Xperiti",
+    rought: "/caseStudy/xperiti",
+  },
+  {
+    image: "url",
+    title: "Frytx",
+    rought: "/caseStudy/frytx",
+  },
+  {
+    image: "url",
+    title: "Rings & I",
+    rought: "/caseStudy/rings&i",
+  },
+  {
+    image: "url",
+    title: "Brahmastra",
+    rought: "/caseStudy/brahmastra",
+  },
+  {
+    image: "url",
+    title: "StayPe",
+    rought: "/caseStudy/stayPe",
+  },
+  {
+    image: "url",
+    title: "StayRealtor",
+    rought: "/caseStudy/stayRealtor",
+  },
+];
 
 const ImageGrid: React.FC = () => {
   const imageRefs = useRef<HTMLDivElement[]>([]);
@@ -64,18 +98,22 @@ const ImageGrid: React.FC = () => {
           </button>
         )}
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 bg-black p-4">
-          {[...Array(8)].map((image, index) => (
+          {data.map((item, index) => (
+            // <Link href={item.rought}>
             <div
               key={index}
               className="relative overflow-hidden"
               ref={(el) => (imageRefs.current[index] = el as HTMLDivElement)}
             >
-              <img
-                src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp"
-                alt={`Image ${index}`}
-                className="w-full h-full object-cover"
-              />
+              <Link href={item.rought}>
+                <img
+                  src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp"
+                  alt={`Image ${index}`}
+                  className="w-full h-full object-cover"
+                />
+              </Link>
             </div>
+            //
           ))}
         </div>
       </div>

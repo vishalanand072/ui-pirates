@@ -265,7 +265,7 @@ const data = [
     uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
   },
 ];
-const Frytx = () => {
+const StayRealtor = () => {
   return (
     <>
       <Casestudy data={data} />
@@ -273,4 +273,4 @@ const Frytx = () => {
   );
 };
 
-export default Frytx;
+export default StayRealtor;
