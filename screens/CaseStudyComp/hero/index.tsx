@@ -13,7 +13,7 @@ const CaseStudyHero = (props: any) => {
             height={360}
             className="w-full h-[700px] object-fit absolute bottom-0 right-0"
           />
-          <div className="absolute top-40  max-md:top-20 left-20 max-md:left-10">
+          <div className="absolute top-20  max-md:top-10 left-20 max-md:left-10">
             <p className="text-8xl font-medium text-white ">
               {props.hero.title}
             </p>

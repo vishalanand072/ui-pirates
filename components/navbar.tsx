@@ -17,33 +17,13 @@ import { SearchIcon } from "@/components/icons";
 import { Logo } from "@/components/icons"; // Ensure the Logo component uses the provided logo image
 import { usePathname } from "next/navigation";
 export const Navbar = () => {
-  const searchInput = (
-    <Input
-      aria-label="Search"
-      classNames={{
-        inputWrapper: "",
-        input: "text-sm",
-      }}
-      endContent={
-        <Kbd className="hidden lg:inline-block" keys={["command"]}>
-          K
-        </Kbd>
-      }
-      labelPlacement="outside"
-      placeholder="Search..."
-      startContent={
-        <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
-      }
-      type="search"
-    />
-  );
-
   const pathname = usePathname();
-  console.log(pathname);
+  const caseStudy = pathname.slice(1, 10);
+  console.log(caseStudy);
 
   return (
     <>
-      {pathname == "/caseStudy" ? (
+      {caseStudy == "caseStudy" ? (
         <div></div>
       ) : (
         <NextUINavbar
