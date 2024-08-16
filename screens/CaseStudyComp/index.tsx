@@ -61,7 +61,7 @@ import StickyTabs from "./tabs";
 import WeCreate from "../Home/weCreate";
 
 const Casestudy = (props: any) => {
-  console.log(props.data[1].overview);
+  console.log(props.data[7].featureAndProduct);
 
   return (
     <div>
@@ -77,22 +77,26 @@ const Casestudy = (props: any) => {
           <StickyTabs />
         </div>
         <div id="client-requirements">
-          <ClientRequirements />
+          <ClientRequirements
+            ClientRequirements={props.data[2].clientRequirements}
+          />
         </div>
         <div id="our-role">
-          <OurRole />
+          <OurRole ourRole={props.data[3].ourRole} />
         </div>
         <div id="core-problem">
-          <CoreProblems />
+          <CoreProblems CoreProblems={props.data[4].coreProblem} />
         </div>
         <div id="user-groups-stories">
-          <UserGroups />
+          <UserGroups userGroup={props.data[5].userGroup} />
         </div>
         <div id="user-persona">
-          <UserPersonas />
+          <UserPersonas userPersonas={props.data[6].userPersonas} />
         </div>
         <div id="features-product">
-          <FeaturesProduct />
+          <FeaturesProduct
+            featureAndProduct={props.data[7].featureAndProduct}
+          />
         </div>
         <div id="visual-ui-elements">
           <ValuesUiElement />

@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -123,22 +123,21 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "item" }],
-            discreption: "disc",
-          },
-        ],
+        heading: "Clients",
+        image: "url",
+        list: [{ listItem: "Researchers" }, { listItem: "Study Coordinators" }],
+        discreption:
+          "“I want to create and manage studies efficiently so that I can focus on analyzing results.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "item" }],
-            discreption: "disc",
-          },
+        heading: "Participants",
+        image: "url",
+        list: [
+          { listItem: "Individuals participating in surveys" },
+          { listItem: "Individuals participating in interviews. " },
         ],
+        discreption:
+          "“I want to easily take part in surveys and interviews so that I can earn incentives without hassle.”",
       },
     ],
   },

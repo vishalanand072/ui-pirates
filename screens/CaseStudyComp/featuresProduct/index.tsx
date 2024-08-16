@@ -1,5 +1,5 @@
 import AnimationProduct from "./animation";
-const FeaturesProduct = () => {
+const FeaturesProduct = (props: any) => {
   return (
     <>
       <div className=" bg-secondary-900 py-12">
@@ -9,7 +9,9 @@ const FeaturesProduct = () => {
             <span className="text-[#79C5C7] text-6xl font-light">06</span>
           </div>
         </div>
-        <AnimationProduct />
+        {props.featureAndProduct && (
+          <AnimationProduct card={props.featureAndProduct} />
+        )}
       </div>
     </>
   );

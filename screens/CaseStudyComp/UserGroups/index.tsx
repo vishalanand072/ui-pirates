@@ -1,7 +1,7 @@
 import ClientCard from "./ClientCard";
 import ParticipantCard from "./ParticipantCard";
 
-const UserGroups = () => {
+const UserGroups = (props: any) => {
   return (
     <>
       <div className="container mx-auto px-20 max-lg:px-16 max-md:px-12">
@@ -10,8 +10,8 @@ const UserGroups = () => {
           <span className="text-gray-300 text-6xl font-light">04</span>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <ClientCard />
-          <ParticipantCard />
+          <ClientCard card={props.userGroup} />
+          {/* <ParticipantCard /> */}
         </div>
       </div>
     </>

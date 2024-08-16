@@ -1,31 +1,34 @@
 import Image from "next/image";
 import clientpic from "@/public/images/usergroups_client.png";
 import { DiamondsFour } from "@phosphor-icons/react";
-const ClientCard = () => {
+const ClientCard = (props: any) => {
   return (
     <>
-      <div className="flex flex-col ">
-        <div>
-          <Image src={clientpic} alt="Client" />
-        </div>
-        <div className="p-2">
-          <h1 className="medium-heading mb-4 mt-8">Clients</h1>
-          <ul className="small-heading">
-            <div className="flex flex-row items-center gap-3">
-              <DiamondsFour size={20} weight="fill" />
-              <li className="mb-2">Researchers</li>
+      {props.card.map((item: any, index: any) => {
+        return (
+          <div className="flex flex-col ">
+            <div>
+              <Image src={clientpic} alt="Client" />
             </div>
-            <div className="flex flex-row items-center gap-3">
-              <DiamondsFour size={20} weight="fill" />
-              <li>Study Coordinators</li>
+            <div className="p-2">
+              <h1 className="medium-heading mb-4 mt-8">{item.heading}</h1>
+              <ul className="small-heading">
+                {item.list.map((item: any, index: any) => {
+                  return (
+                    <div className="flex flex-row items-center gap-3">
+                      <DiamondsFour size={20} weight="fill" />
+                      <li className="mb-2">{item.listItem}</li>
+                    </div>
+                  );
+                })}
+              </ul>
             </div>
-          </ul>
-        </div>
-        <div className="mt-4 py-4 border-t normal font-semibold mr-16">
-          "As a researcher, I want to create and manage studies efficiently so
-          that I can focus on analyzing results."
-        </div>
-      </div>
+            <div className="mt-4 py-4 border-t normal font-semibold mr-16">
+              {item.discreption}
+            </div>
+          </div>
+        );
+      })}
     </>
   );
 };
