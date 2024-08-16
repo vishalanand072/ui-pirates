@@ -37,8 +37,28 @@ const data = [
   },
   {
     image: "url",
-    title: "StayRealtor",
+    title: "Stay Realtor",
     rought: "/caseStudy/stayRealtor",
+  },
+  {
+    image: "url",
+    title: "cloud Shift",
+    rought: "/caseStudy/cloudShift",
+  },
+  {
+    image: "url",
+    title: "Infinity Aqua Sol",
+    rought: "/caseStudy/infinityAquaSol",
+  },
+  {
+    image: "url",
+    title: "SimpleO",
+    rought: "/caseStudy/simpleO",
+  },
+  {
+    image: "url",
+    title: "Test Dynamiz",
+    rought: "/caseStudy/testDynamiz",
   },
 ];
 
@@ -106,11 +126,26 @@ const ImageGrid: React.FC = () => {
               ref={(el) => (imageRefs.current[index] = el as HTMLDivElement)}
             >
               <Link href={item.rought}>
-                <img
-                  src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp"
-                  alt={`Image ${index}`}
-                  className="w-full h-full object-cover"
-                />
+                <div>
+                  <div className="relative h-[400px]">
+                    <img
+                      src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp"
+                      alt={`Image ${index}`}
+                      className="w-full h-[400px] object-cover bg-transparent absolute top-0 left-0"
+                    />
+
+                    <span className="relative h-[400px]">
+                      <span className="bg-white rounded-xl p-4 flex flex-col w-[250px] left-4 ml-10 pl-10 top-10">
+                        <p
+                          className="text-primary text-4xl font-bold"
+                          style={{ zIndex: 99999999 }}
+                        >
+                          {item.title}
+                        </p>
+                      </span>
+                    </span>
+                  </div>
+                </div>
               </Link>
             </div>
             //
