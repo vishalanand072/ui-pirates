@@ -2,14 +2,14 @@ import { ExclamationMark } from "@phosphor-icons/react";
 import check from "@/public/explan.png";
 import Image from "next/image";
 
-const Problems = () => {
+const Problems = (props: any) => {
   return (
     <>
       <div className="flex flex-col justify-around gap-8">
         <div>
           <div className="medium-heading mb-8 text-subtitle">PROBLEMS</div>
           <ul className="list-none space-y-4 text-lg">
-            {[...Array(4)].map((item, index) => {
+            {props.problems[0].list.map((item: any, index: any) => {
               return (
                 <li className="flex items-center">
                   <Image
@@ -19,10 +19,7 @@ const Problems = () => {
                     height={25}
                     className="mr-3"
                   />
-                  <p className="normal">
-                    Inefficiencies resulted in wasted time and potential loss of
-                    participant engagement.
-                  </p>
+                  <p className="normal">{item.item}</p>
                 </li>
               );
             })}

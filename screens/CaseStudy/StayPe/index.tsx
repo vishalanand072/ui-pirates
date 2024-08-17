@@ -1,5 +1,4 @@
 import Casestudy from "@/screens/CaseStudyComp";
-import FrytxHero from "./hero";
 
 const data = [
   {
@@ -266,13 +265,12 @@ const data = [
     uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
   },
 ];
-const Frytx = () => {
+const StayPe = () => {
   return (
     <>
-      <FrytxHero />
       <Casestudy data={data} />
     </>
   );
 };
 
-export default Frytx;
+export default StayPe;

@@ -3,16 +3,12 @@ import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import Meteors from "@/components/magicui/meteors";
 
 interface AboutCardProps {
-  title: string;
-  subTitle: string;
+  // title: string;
+  // subTitle: string;
   cardColor: string;
 }
 
-const AboutCard: React.FC<AboutCardProps> = ({
-  title,
-  subTitle,
-  cardColor,
-}) => {
+const AboutCard: React.FC<AboutCardProps> = ({ cardColor }) => {
   return (
     <div className="flex flex-row items-end justify-end w-full">
       <Card
@@ -53,7 +49,7 @@ const AboutCard: React.FC<AboutCardProps> = ({
                 textAlign: "left",
               }}
             >
-              {title}
+              Lorem ipsum dolor sit amet consectetur
             </p>
           </div>
           <div className="flex flex-col" style={{ marginTop: "auto" }}>
@@ -66,7 +62,9 @@ const AboutCard: React.FC<AboutCardProps> = ({
                 textAlign: "left",
               }}
             >
-              {subTitle}
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+              voluptatem sequi impedit labore, vero error consectetur
+              exercitationem ratione laudantium deserunt.
             </p>
           </div>
         </CardBody>

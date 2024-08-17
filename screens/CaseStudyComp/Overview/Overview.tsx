@@ -1,31 +1,32 @@
 import React from "react";
 
-const OverviewPage: React.FC = () => {
+const OverviewPage = (props: any) => {
   return (
     <div className="container  mx-auto px-20 max-lg:px-16 max-md:px-12 my-12">
       <div className="">
         <div className="bg-white rounded-lg p-0">
           <section className="mb-6">
             <h2 className="text-sm font-bold text-subtitle">OVERVIEW</h2>
-            <p className="text-lg ">
-              Xperiti is a comprehensive research platform designed to
-              streamline the management and execution of both qualitative and
-              quantitative research studies, providing an intuitive UI/UX for
-              researchers and participants alike.
-            </p>
+            <p className="text-lg ">{props.overviewdata.overview}</p>
           </section>
           <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 p-4 rounded-lg border-1">
             <div>
               <h3 className="text-sm font-semibold text-subtitle">CLIENT</h3>
-              <p className="text-base font-medium ">Xperiti</p>
+              <p className="text-base font-medium ">
+                {props.overviewdata.Client}
+              </p>
             </div>
             <div>
               <h3 className="text-sm font-semibold text-subtitle">INDUSTRY</h3>
-              <p className="text-base font-medium ">Market Research</p>
+              <p className="text-base font-medium ">
+                {props.overviewdata.Industry}
+              </p>
             </div>
             <div>
               <h3 className="text-sm font-semibold text-subtitle">PLATFORM</h3>
-              <p className="text-base font-medium ">SaaS application</p>
+              <p className="text-base font-medium ">
+                {props.overviewdata.Platform}
+              </p>
             </div>
             <div className="col-span-1 md:col-span-3">
               <h3 className="text-sm font-semibold text-subtitle">OBJECTIVE</h3>
@@ -33,9 +34,7 @@ const OverviewPage: React.FC = () => {
                 className="text-base font-medium "
                 style={{ textAlign: "justify" }}
               >
-                Redesign the Xperiti SaaS app to create an integrated,
-                user-friendly platform for managing qualitative and quantitative
-                research studies, improving efficiency and user satisfaction.
+                {props.overviewdata.Objective}
               </p>
             </div>
           </section>

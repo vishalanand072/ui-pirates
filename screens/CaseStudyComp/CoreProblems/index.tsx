@@ -5,7 +5,7 @@ import Pic3 from "@/public/images/coreProblem_img3.png";
 import Problems from "./Problems";
 import SolutionCard from "./Solutions";
 
-const CoreProblems = () => {
+const CoreProblems = (props: any) => {
   return (
     <div className="bg-white py-12">
       <div className="container mx-auto px-20 max-lg:px-16 max-md:px-12">
@@ -26,11 +26,11 @@ const CoreProblems = () => {
               className="w-full h-[400px] rounded-3xl object-cover"
             />
           </div>
-          <Problems />
+          <Problems problems={props.CoreProblems.problems} />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
           <div className="order-1 max-lg:order-2">
-            <SolutionCard />
+            <SolutionCard solutions={props.CoreProblems.solutions} />
           </div>
           <div className="space-y-8 order-2 max-lg:order-1">
             <Image

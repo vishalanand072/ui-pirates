@@ -3,7 +3,7 @@ import UserReasearchCard from "./UserResearchCard";
 import UIDevCard from "./UIDevCard";
 import AssetCreationCard from "./AssetCreationCard";
 
-const OurRole = () => {
+const OurRole = (props: any) => {
   return (
     <>
       <div className=" bg-secondary-900 py-12">
@@ -13,7 +13,7 @@ const OurRole = () => {
             <span className="text-gray-300 text-6xl font-light">02</span>
           </div>
           <div className="">
-            <UIDesignCard />
+            <UIDesignCard card={props.ourRole} />
           </div>
         </div>
       </div>

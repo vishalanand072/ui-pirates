@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import FeaturesProductCard from "./featureaProductCard";
 import { AboutUIpiratesData } from "../../../types";
 import { Card, CardBody } from "@nextui-org/react";
-const AnimationProduct = () => {
+const AnimationProduct = (props: any) => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 
@@ -38,18 +38,19 @@ const AnimationProduct = () => {
     <section className="scroll-section-outer mt-12">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
-          {[...Array(4)].map((item, index) => {
+          {/* {[...Array(4)].map((item, index) => {
             return (
               <div
                 className={
                   index == 0 ? "scroll-section ml-[2%]" : "scroll-section"
                 }
                 key={index}
-              >
-                <FeaturesProductCard />
-              </div>
-            );
-          })}
+              > */}
+          <div className="scroll-section ml-[2%]">
+            {props.card && <FeaturesProductCard card={props.card} />}
+          </div>
+          {/* );
+          })} */}
         </div>
       </div>
     </section>

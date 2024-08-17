@@ -10,7 +10,7 @@ interface AboutUIpiratesProps {
 const AboutUIpirates: React.FC = () => {
   return (
     <div className="">
-      {/* <Web /> */}
+      <Web />
       {/* <Mobile about={about} /> */}
     </div>
   );

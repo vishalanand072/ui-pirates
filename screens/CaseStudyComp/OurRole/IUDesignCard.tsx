@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import PenNib from "@/public/images/PenNib.svg";
+import * as PhosphorIcons from "@phosphor-icons/react";
 import { Card, CardBody } from "@nextui-org/react";
 import {
   DiamondsFour,
@@ -52,32 +52,41 @@ const data = [
   },
 ];
 
-const UIDesignCard = () => {
+const UIDesignCard = (props: any) => {
   return (
     <>
       <div className="flex flex-col gap-6">
-        {data.map((item, index) => {
-          return (
-            <Card className="bg-transparent border-1 border-[#323232] shadow-none text-white p-4">
-              <CardBody>
-                <div className="flex flex-row items-center justify-between mb-3">
-                  <p className="text-lg font-semibold">{item.title}</p>
-                  {item.icon}
-                </div>
-                <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1">
-                  {item.item.map((items, indexs) => {
-                    return (
-                      <div className="flex flex-row items-center gap-3">
-                        <DiamondsFour size={22} weight="fill" color="#323232" />
-                        <p className="text-lg">{items}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </CardBody>
-            </Card>
-          );
-        })}
+        {props.card &&
+          props.card.map((item: any, index: any) => {
+            const IconComponent = PhosphorIcons[
+              item.icon as keyof typeof PhosphorIcons
+            ] as any;
+            return (
+              <Card className="bg-transparent border-1 border-[#323232] shadow-none text-white p-4">
+                <CardBody>
+                  <div className="flex flex-row items-center justify-between mb-3">
+                    <p className="text-lg font-semibold">{item.heading}</p>
+                    {/* {item.icon} */}
+                    {IconComponent && <IconComponent size={34} weight="fill" />}
+                  </div>
+                  <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1">
+                    {item.list.map((items: any, indexs: any) => {
+                      return (
+                        <div className="flex flex-row items-center gap-3">
+                          <DiamondsFour
+                            size={22}
+                            weight="fill"
+                            color="#323232"
+                          />
+                          <p className="text-lg">{items}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </CardBody>
+              </Card>
+            );
+          })}
       </div>
     </>
   );
