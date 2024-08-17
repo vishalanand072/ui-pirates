@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import FrytxHero from "./hero";
 
 const data = [
   {
@@ -268,6 +269,7 @@ const data = [
 const Frytx = () => {
   return (
     <>
+      <FrytxHero />
       <Casestudy data={data} />
     </>
   );
