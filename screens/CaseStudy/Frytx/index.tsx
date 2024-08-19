@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import FrytxHero from "./hero";
 
 const data = [
   {
@@ -129,21 +130,21 @@ const data = [
           { listItem: "Local shop owners, etc." },
           { listItem: "Small Businesses" },
         ],
-        discreption:
+        description:
           "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
       },
       {
         heading: "Consumers",
         image: "url",
         list: [{ listItem: "Individuals looking to verify businesses" }],
-        discreption:
+        description:
           "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
       },
       {
         heading: "Freelancers",
         image: "url",
         list: [{ listItem: "Freelancers using the app for payment" }],
-        discreption:
+        description:
           "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
       },
     ],
@@ -268,6 +269,7 @@ const data = [
 const Frytx = () => {
   return (
     <>
+      <FrytxHero />
       <Casestudy data={data} />
     </>
   );

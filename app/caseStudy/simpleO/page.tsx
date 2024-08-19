@@ -1,4 +1,4 @@
-import SimpleO from "@/screens/CaseStudy/simpleO";
+import SimpleO from "@/screens/CaseStudy/SimpleO";
 
 export default function SimpleOPage() {
   return (

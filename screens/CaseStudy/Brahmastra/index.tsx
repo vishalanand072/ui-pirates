@@ -3,7 +3,7 @@ import Casestudy from "@/screens/CaseStudyComp";
 const data = [
   {
     hero: {
-      title: "Frytx",
+      title: "Brahmastra",
       subtitle: "",
       bgimage: "",
     },
@@ -11,12 +11,12 @@ const data = [
   {
     overview: {
       overview:
-        "FrytX is a versatile application designed to empower businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
-      Client: "Frytx",
-      Industry: "Technology, Business Management",
-      Platform: "Mobile Application",
+        "Brahmastra is a comprehensive trading platform designed to provide traders with advanced tools and analytics for efficient trading. The platform aims to enhance the trading experience by offering features such as real-time market data, advanced charting, and customizable trading strategies.",
+      Client: "Brahmastra",
+      Industry: "FinTech",
+      Platform: "SaaS App",
       Objective:
-        "To create a mobile application for FrytX that empowers businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
+        "Design a user-friendly website and SaaS product for Brahmastra to streamline and enhance the trading experience for users.",
     },
   },
   {
@@ -24,25 +24,19 @@ const data = [
       card: [
         {
           img: "url",
-          heading: "Unified Platform",
+          heading: "SaaS Product Design",
           subheading:
-            "Develop a platform integrating business management, complaint handling, ratings, reviews, and verification.",
+            "Design a user-friendly and visually appealing interface for the trading platform, incorporating advanced trading tools and analytics.",
         },
         {
           img: "url",
-          heading: "Complaint Management",
+          heading: "Website Design",
           subheading:
-            "Enable the efficient tracking and swift resolution of customer complaints.",
-        },
-        {
-          img: "url",
-          heading: "Business Verification",
-          subheading:
-            "Implement a system for verifying business credentials to enhance trust and transparency.",
+            "Create a website that effectively communicates the features and benefits of Brahmastra, attracting traders and investors.",
         },
       ],
       Outcomes:
-        "A comprehensive and user-friendly platform that streamlines business management, ensures effective complaint handling, verifies businesses for trustworthiness, and organizes financial operations, thereby enhancing overall efficiency and customer satisfaction.",
+        "The Brahmastra website and SaaS product featured an intuitive interface that improved user engagement, streamlined trading processes, and received positive feedback for its design and usability.",
     },
   },
   {
@@ -51,7 +45,7 @@ const data = [
         heading: "User Research",
         icon: "UserFocus",
         list: [
-          "Interviews and Surveys",
+          "Interviews & Surveys",
           "User Personas",
           "Journey Mapping",
           "Usability Testing",
@@ -77,11 +71,6 @@ const data = [
           "Interaction Design",
         ],
       },
-      {
-        heading: "Development & Integration",
-        icon: "Code",
-        list: ["Front End Development", "Integration", "Back End Development"],
-      },
     ],
   },
   {
@@ -91,13 +80,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "Fragmented tools and processes for business management.",
+              item: "Lack of access to real-time market data and advanced trading tools.",
             },
             {
-              item: "Inefficient complaint handling and customer dispute resolution.",
+              item: "Complex and unintuitive interfaces on existing trading platforms.",
             },
             {
-              item: "Lack of transparent business verification processes.",
+              item: "Limited resources for learning and strategy development for new traders.",
             },
           ],
         },
@@ -107,13 +96,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "FrytX integrates multiple business management tools into a unified platform, streamlining operations.",
+              item: "Brahmastra provides real-time market data and advanced charting tools, enhancing trading efficiency.",
             },
             {
-              item: "Efficient complaint management system ensures timely resolution of customer issues.",
+              item: "The platform offers a user-friendly interface that caters to both professional and retail traders.",
             },
             {
-              item: "Robust business verification process enhances transparency and builds trust with consumers.",
+              item: "Educational resources and strategy development tools help traders improve their skills and strategies.",
             },
           ],
         },
@@ -123,114 +112,114 @@ const data = [
   {
     userGroup: [
       {
-        heading: "Business Owners",
         image: "url",
-        list: [
-          { listItem: "Local shop owners, etc." },
-          { listItem: "Small Businesses" },
-        ],
-        discreption:
-          "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
+        list: [{ listItem: "Professional Traders" }],
+        description:
+          "“I want to access advanced tools and real-time market data to make informed trading decisions.”",
       },
       {
-        heading: "Consumers",
         image: "url",
-        list: [{ listItem: "Individuals looking to verify businesses" }],
-        discreption:
-          "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
+        list: [{ listItem: "Retail Traders" }],
+        description:
+          "“I want a user-friendly platform that helps me manage my trades and learn more about trading.”",
       },
       {
-        heading: "Freelancers",
         image: "url",
-        list: [{ listItem: "Freelancers using the app for payment" }],
-        discreption:
-          "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
+        list: [{ listItem: "Investors" }],
+        description:
+          "“I want to monitor my investment portfolios and analyze market trends efficiently.”",
       },
     ],
   },
   {
     userPersonas: [
       {
-        name: "Sarah",
-        smallDiscription: "32,  Business Owner",
+        name: "David",
+        smallDescription: "34, Professional Trader",
+        type: "Corporate",
+        Gender: "Male",
+        Industry: "FinTech",
+        bio: "David is a seasoned full-time trader with 20 years of experience in the financial markets, specializing in stocks and forex. He relies heavily on real-time data and advanced tools to execute his strategies.",
+        goals: [
+          {
+            item: "Access real-time market data.",
+          },
+          {
+            item: "Utilize advanced charting tools.",
+          },
+          {
+            item: "Develop and test trading strategies.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Limited access to real-time data.",
+          },
+          {
+            item: "Lack of advanced analytical tools.",
+          },
+          {
+            item: "Slow platform performance during peak trading times.",
+          },
+        ],
+      },
+      {
+        name: "Lisa",
+        smallDescription: "30, Part-time trader",
         type: "Individual",
         Gender: "Female",
-        Occupation: "Cafe Owner",
-        bio: "Sarah, a local cafe owner, needs a comprehensive tool to manage all aspects of her business. This will allow her to streamline operations and save valuable time. With everything in one place, she can improve efficiency and focus on growing her cafe.",
+        Industry: "FinTech",
+        bio: "Lisa is a part-time trader who balances her trading activities with a full-time job. She seeks a straightforward, user-friendly platform to manage her trades and access educational resources to improve her skills.",
         goals: [
           {
-            item: "Efficiently manage time and tasks.",
+            item: "Use a user-friendly platform to manage trades.",
           },
           {
-            item: "Promptly address customer feedback.",
+            item: "Access educational resources.",
           },
           {
-            item: "Uphold and enhance cafe reputation.",
+            item: "Improve trading skills through learning.",
           },
         ],
         painPoints: [
           {
-            item: "Struggling to manage time and tasks.",
+            item: "Complex interfaces.",
           },
           {
-            item: "Difficulty in organizing finances effectively.",
+            item: "Limited educational resources.",
           },
           {
-            item: "Delays in responding to customer reviews.",
+            item: "Difficulty in understanding market data.",
           },
         ],
       },
       {
-        name: "Emma",
-        smallDiscription: "29,  Consumer",
-        type: "Corporate",
-        Gender: "Female",
-        Occupation: "HR Manager",
-        bio: "Emma, an HR manager, needs a tool to easily search for and verify businesses. This will help her make informed decisions about where to allocate company resources. Ensuring reliability and credibility in her choices is crucial for supporting company operations.",
-        goals: [
-          {
-            item: "Find reliable businesses easily.",
-          },
-          {
-            item: "Make informed decisions based on reviews.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Difficulty trusting online reviews fully.",
-          },
-          {
-            item: "Challenge in verifying business credentials.",
-          },
-        ],
-      },
-      {
-        name: "Arjun",
-        smallDiscription: "27, Freelancer",
+        name: "Mark",
+        smallDescription: "60, Investor",
         type: "Individual",
         Gender: "Male",
-        Occupation: "Graphic Designer",
-        bio: "Arjun is a freelance graphic designer who needs an app that ensures secure transactions, manages client communications efficiently, and verifies client credibility to build trust and strong business relationships.",
+        Industry: "FinTech",
+        bio: "Mark is a financial advisor with a focus on managing investment portfolios for his clients. He requires efficient tools to monitor and analyze market trends and portfolio performance.",
         goals: [
           {
-            item: "Ensure secure transactions.",
+            item: "Manage and monitor investment portfolios.",
           },
           {
-            item: "Manage client communications.",
+            item: "Analyze market trends.",
           },
           {
-            item: "Verify client credibility.",
+            item: "Provide comprehensive advice to clients.",
           },
         ],
         painPoints: [
           {
-            item: "Delayed payments.",
+            item: "Inefficient portfolio management tools.",
           },
           {
-            item: "Managing multiple clients.",
+            item: "Lack of comprehensive market analysis.",
           },
           {
-            item: "Verifying the legitimacy of new clients.",
+            item: "Difficulty in consolidating client portfolio data.",
           },
         ],
       },
@@ -240,29 +229,49 @@ const data = [
     featureAndProduct: [
       {
         media: "url",
-        heading: "Business Management",
+        heading: "Real-Time Market Data",
         subHeading:
-          "Centralized tools for managing various aspects of business operations.",
+          "Access to live market data for informed trading decisions.",
       },
       {
         media: "url",
-        heading: "Complaint Management",
-        subHeading: "Track and resolve customer complaints efficiently.",
+        heading: "Advanced Charting Tools",
+        subHeading: "Comprehensive charting tools for technical analysis.",
       },
       {
         media: "url",
-        heading: "Business Verification",
-        subHeading: "Verify business credentials to build trust",
+        heading: "Customizable Strategies",
+        subHeading:
+          "Tools for developing, testing, and implementing trading strategies.",
       },
       {
         media: "url",
-        heading: "Financial Organization",
-        subHeading: "Manage payments and financial transactions securely.",
+        heading: "Backtesting",
+        subHeading:
+          "Features for testing trading strategies against historical data.",
       },
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    uxAnalysis: [
+      {
+        media: "url",
+        type: "Typography",
+        description:
+          "Inter font for a modern and clean aesthetic, enhancing readability and user experience across digital platforms.",
+      },
+      {
+        media: "url",
+        type: "Color Palette",
+        description:
+          "Primary: #006FEE, Secondary: #FF6B00, #17c964, #F5A524, #F31260",
+      },
+      {
+        media: "url",
+        type: "Icons",
+        description: "Phosphor Icons for a modern and versatile aesthetic.",
+      },
+    ],
   },
 ];
 const Brahmastra = () => {

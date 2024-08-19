@@ -3,7 +3,7 @@ import Casestudy from "@/screens/CaseStudyComp";
 const data = [
   {
     hero: {
-      title: "Frytx",
+      title: "Cloudshift",
       subtitle: "",
       bgimage: "",
     },
@@ -11,12 +11,12 @@ const data = [
   {
     overview: {
       overview:
-        "FrytX is a versatile application designed to empower businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
-      Client: "Frytx",
-      Industry: "Technology, Business Management",
-      Platform: "Mobile Application",
+        "Cloudshift is a platform designed to provide businesses with seamless cloud migration services. The website aims to offer comprehensive information about Cloudshift's services, highlight their expertise, and attract potential clients looking to transition to cloud-based infrastructure.",
+      Client: "Cloudshift",
+      Industry: "Cloud Computing",
+      Platform: "Web Application",
       Objective:
-        "To create a mobile application for FrytX that empowers businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
+        "To create a visually appealing, user-friendly website that effectively communicates Cloudshift’s services and capabilities.",
     },
   },
   {
@@ -24,25 +24,19 @@ const data = [
       card: [
         {
           img: "url",
-          heading: "Unified Platform",
+          heading: "Website Design & Development",
           subheading:
-            "Develop a platform integrating business management, complaint handling, ratings, reviews, and verification.",
+            "Create a visually appealing, user-friendly website that effectively communicates Cloudshift’s services and capabilities.",
         },
         {
           img: "url",
-          heading: "Complaint Management",
+          heading: "Service Showcase",
           subheading:
-            "Enable the efficient tracking and swift resolution of customer complaints.",
-        },
-        {
-          img: "url",
-          heading: "Business Verification",
-          subheading:
-            "Implement a system for verifying business credentials to enhance trust and transparency.",
+            "Highlight the range of cloud migration services offered by Cloudshift, including strategy development, implementation, and ongoing support.",
         },
       ],
       Outcomes:
-        "A comprehensive and user-friendly platform that streamlines business management, ensures effective complaint handling, verifies businesses for trustworthiness, and organizes financial operations, thereby enhancing overall efficiency and customer satisfaction.",
+        "A professionally designed website that successfully showcases Cloudshift’s cloud migration services, resulting in increased client inquiries and improved client trust.",
     },
   },
   {
@@ -51,7 +45,7 @@ const data = [
         heading: "User Research",
         icon: "UserFocus",
         list: [
-          "Interviews and Surveys",
+          "Interviews & Surveys",
           "User Personas",
           "Journey Mapping",
           "Usability Testing",
@@ -77,11 +71,6 @@ const data = [
           "Interaction Design",
         ],
       },
-      {
-        heading: "Development & Integration",
-        icon: "Code",
-        list: ["Front End Development", "Integration", "Back End Development"],
-      },
     ],
   },
   {
@@ -91,13 +80,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "Fragmented tools and processes for business management.",
+              item: "Complexity and risks associated with cloud migration.",
             },
             {
-              item: "Inefficient complaint handling and customer dispute resolution.",
+              item: "Lack of clear information on cloud migration services.",
             },
             {
-              item: "Lack of transparent business verification processes.",
+              item: "Difficulty in finding reliable and experienced cloud migration partners.",
             },
           ],
         },
@@ -107,13 +96,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "FrytX integrates multiple business management tools into a unified platform, streamlining operations.",
+              item: "Cloudshift provides detailed, transparent information about their cloud migration process and services.",
             },
             {
-              item: "Efficient complaint management system ensures timely resolution of customer issues.",
+              item: "The platform offers a user-friendly interface to help clients understand the benefits of cloud migration.",
             },
             {
-              item: "Robust business verification process enhances transparency and builds trust with consumers.",
+              item: "Cloudshift’s expertise and experience ensure a smooth and secure transition to the cloud.",
             },
           ],
         },
@@ -123,114 +112,114 @@ const data = [
   {
     userGroup: [
       {
-        heading: "Business Owners",
         image: "url",
-        list: [
-          { listItem: "Local shop owners, etc." },
-          { listItem: "Small Businesses" },
-        ],
-        discreption:
-          "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
+        list: [{ listItem: "IT Managers" }],
+        description:
+          "“I want detailed information about the cloud migration process and services to ensure a seamless transition for my company.“",
       },
       {
-        heading: "Consumers",
         image: "url",
-        list: [{ listItem: "Individuals looking to verify businesses" }],
-        discreption:
-          "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
+        list: [{ listItem: "Business Owners" }],
+        description:
+          "“I want to understand the benefits of cloud migration and find a reliable partner to help scale my business operations.“",
       },
       {
-        heading: "Freelancers",
         image: "url",
-        list: [{ listItem: "Freelancers using the app for payment" }],
-        discreption:
-          "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
+        list: [{ listItem: "Technical Consultants" }],
+        description:
+          "“I want to evaluate Cloudshift's services to recommend them confidently to my clients.“",
       },
     ],
   },
   {
     userPersonas: [
       {
-        name: "Sarah",
-        smallDiscription: "32,  Business Owner",
-        type: "Individual",
-        Gender: "Female",
-        Occupation: "Cafe Owner",
-        bio: "Sarah, a local cafe owner, needs a comprehensive tool to manage all aspects of her business. This will allow her to streamline operations and save valuable time. With everything in one place, she can improve efficiency and focus on growing her cafe.",
+        name: "John",
+        smallDescription: "45, IT Manager",
+        type: "Corporate",
+        Gender: "Male",
+        Industry: "IT",
+        bio: "John oversees the IT infrastructure at his company, ensuring everything runs smoothly and securely. With a looming cloud migration project, he is focused on minimizing downtime and ensuring data security during the transition.",
         goals: [
           {
-            item: "Efficiently manage time and tasks.",
+            item: "Ensure a smooth transition to cloud infrastructure.",
           },
           {
-            item: "Promptly address customer feedback.",
+            item: "Minimize downtime during migration.",
           },
           {
-            item: "Uphold and enhance cafe reputation.",
+            item: "Maintain data security and compliance.",
           },
         ],
         painPoints: [
           {
-            item: "Struggling to manage time and tasks.",
+            item: "Complexity of cloud migration.",
           },
           {
-            item: "Difficulty in organizing finances effectively.",
+            item: "Concerns about data security.",
           },
           {
-            item: "Delays in responding to customer reviews.",
+            item: "Limited internal resources for managing migration.",
           },
         ],
       },
       {
         name: "Emma",
-        smallDiscription: "29,  Consumer",
-        type: "Corporate",
+        smallDescription: "43, Business Owner",
+        type: "Individual",
         Gender: "Female",
-        Occupation: "HR Manager",
-        bio: "Emma, an HR manager, needs a tool to easily search for and verify businesses. This will help her make informed decisions about where to allocate company resources. Ensuring reliability and credibility in her choices is crucial for supporting company operations.",
+        Industry: "E-commerce",
+        bio: "Emma leads a rapidly expanding e-commerce business. She is keen on leveraging cloud technology to scale operations efficiently and improve performance but lacks the technical knowledge to handle the migration independently.",
         goals: [
           {
-            item: "Find reliable businesses easily.",
+            item: "Scale operations efficiently.",
           },
           {
-            item: "Make informed decisions based on reviews.",
+            item: "Leverage cloud technology for better performance.",
+          },
+          {
+            item: "Ensure reliable support during migration.",
           },
         ],
         painPoints: [
           {
-            item: "Difficulty trusting online reviews fully.",
+            item: "Lack of technical knowledge.",
           },
           {
-            item: "Challenge in verifying business credentials.",
+            item: "Need for reliable support during migration.",
+          },
+          {
+            item: "Concerns about potential downtime affecting business.",
           },
         ],
       },
       {
-        name: "Arjun",
-        smallDiscription: "27, Freelancer",
+        name: "David",
+        smallDescription: "50, Technical Consultant",
         type: "Individual",
         Gender: "Male",
-        Occupation: "Graphic Designer",
-        bio: "Arjun is a freelance graphic designer who needs an app that ensures secure transactions, manages client communications efficiently, and verifies client credibility to build trust and strong business relationships.",
+        Industry: "IT",
+        bio: "David provides IT consultancy services to various businesses. He is constantly seeking trustworthy cloud migration partners to recommend to his clients, ensuring they get the best solutions for their needs.",
         goals: [
           {
-            item: "Ensure secure transactions.",
+            item: "Recommend the best cloud solutions to clients.",
           },
           {
-            item: "Manage client communications.",
+            item: "Ensure successful implementation of cloud services.",
           },
           {
-            item: "Verify client credibility.",
+            item: "Stay updated on the latest cloud technologies.",
           },
         ],
         painPoints: [
           {
-            item: "Delayed payments.",
+            item: "Finding trustworthy partners for cloud migration.",
           },
           {
-            item: "Managing multiple clients.",
+            item: "Managing client expectations.",
           },
           {
-            item: "Verifying the legitimacy of new clients.",
+            item: "Keeping up with rapidly evolving cloud technologies.",
           },
         ],
       },
@@ -240,29 +229,50 @@ const data = [
     featureAndProduct: [
       {
         media: "url",
-        heading: "Business Management",
+        heading: "Comprehensive Service Offering",
         subHeading:
-          "Centralized tools for managing various aspects of business operations.",
+          "Strategy development, implementation, and ongoing support for cloud migration.",
       },
       {
         media: "url",
-        heading: "Complaint Management",
-        subHeading: "Track and resolve customer complaints efficiently.",
+        heading: "Security and Compliance",
+        subHeading:
+          "Assurance of data security and compliance with industry standards.",
       },
       {
         media: "url",
-        heading: "Business Verification",
-        subHeading: "Verify business credentials to build trust",
+        heading: "Expertise and Experience",
+        subHeading:
+          "Highlighting successful case studies and client testimonials.",
       },
       {
         media: "url",
-        heading: "Financial Organization",
-        subHeading: "Manage payments and financial transactions securely.",
+        heading: "Real-Time Support",
+        subHeading:
+          "24/7 support to assist clients during and after the migration process.",
       },
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    uxAnalysis: [
+      {
+        media: "url",
+        type: "Typography",
+        description:
+          "Poppins is a sleek, modern font with a geometric, clean design. It combines professionalism with elegance, perfect for digital and print use, enhancing readability and visual appeal.",
+      },
+      {
+        media: "url",
+        type: "Color Palette",
+        description:
+          "Primary: #0D99FF, Secondary: #00245A, #17C964, #F5A524, #F31260",
+      },
+      {
+        media: "url",
+        type: "Icons",
+        description: "Phosphor Icons for a modern and versatile aesthetic.",
+      },
+    ],
   },
 ];
 const CloudShift = () => {

@@ -26,7 +26,7 @@ const formLayout: React.FC = () => {
     e.preventDefault();
 
     //Logs all the submitted data
-    console.log({ name, company, email, interests, budget, projectDetails });
+    // console.log({ name, company, email, interests, budget, projectDetails });
   };
 
   return (

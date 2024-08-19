@@ -1,8 +1,9 @@
 import Xperiti from "@/screens/CaseStudy/Xperiti";
-export default function XperitiPage() {
+import RingsAndI from "@/screens/CaseStudy/Rings&i";
+export default function RingsAndIPage() {
   return (
     <div>
-      <Xperiti></Xperiti>
+      <RingsAndI></RingsAndI>
     </div>
   );
 }

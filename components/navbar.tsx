@@ -19,7 +19,7 @@ import { usePathname } from "next/navigation";
 export const Navbar = () => {
   const pathname = usePathname();
   const caseStudy = pathname.slice(1, 10);
-  console.log(caseStudy);
+  // console.log(caseStudy);
 
   return (
     <>

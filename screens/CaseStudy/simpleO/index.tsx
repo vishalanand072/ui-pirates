@@ -3,7 +3,7 @@ import Casestudy from "@/screens/CaseStudyComp";
 const data = [
   {
     hero: {
-      title: "Frytx",
+      title: "SimpleO",
       subtitle: "",
       bgimage: "",
     },
@@ -11,12 +11,12 @@ const data = [
   {
     overview: {
       overview:
-        "FrytX is a versatile application designed to empower businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
-      Client: "Frytx",
-      Industry: "Technology, Business Management",
-      Platform: "Mobile Application",
+        "SimpleO.ai is a legaltech platform designed to help individuals and businesses manage contracts and compliances efficiently. By offering tools for recording obligations, tracking compliance, and organizing legal documents, SimpleO.ai aims to streamline legal processes and ensure adherence to regulations.",
+      Client: "SimpleO.ai",
+      Industry: "Legal Technology",
+      Platform: "Web Application",
       Objective:
-        "To create a mobile application for FrytX that empowers businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
+        "Design a user-friendly website for SimpleO.ai to showcase their contract and compliance management solutions.",
     },
   },
   {
@@ -24,25 +24,25 @@ const data = [
       card: [
         {
           img: "url",
-          heading: "Unified Platform",
+          heading: "Website Design",
           subheading:
-            "Develop a platform integrating business management, complaint handling, ratings, reviews, and verification.",
+            "Create a user-friendly and visually appealing website to present SimpleO.ai's offerings and features.",
         },
         {
           img: "url",
-          heading: "Complaint Management",
+          heading: "Clear Communication",
           subheading:
-            "Enable the efficient tracking and swift resolution of customer complaints.",
+            "Ensure that the website effectively communicates the benefits and functionalities of the platform.",
         },
         {
           img: "url",
-          heading: "Business Verification",
+          heading: "User Engagement",
           subheading:
-            "Implement a system for verifying business credentials to enhance trust and transparency.",
+            "Design the website so that it encourages user engagement and conversion.",
         },
       ],
       Outcomes:
-        "A comprehensive and user-friendly platform that streamlines business management, ensures effective complaint handling, verifies businesses for trustworthiness, and organizes financial operations, thereby enhancing overall efficiency and customer satisfaction.",
+        "The website effectively highlighted SimpleO.ai’s services with a clear, engaging design, enhancing user engagement and brand perception.",
     },
   },
   {
@@ -51,7 +51,7 @@ const data = [
         heading: "User Research",
         icon: "UserFocus",
         list: [
-          "Interviews and Surveys",
+          "Interviews & Surveys",
           "User Personas",
           "Journey Mapping",
           "Usability Testing",
@@ -78,9 +78,13 @@ const data = [
         ],
       },
       {
-        heading: "Development & Integration",
+        heading: "UI Development",
         icon: "Code",
-        list: ["Front End Development", "Integration", "Back End Development"],
+        list: [
+          "Front End Development",
+          "Responsive Design",
+          "Angular Integration",
+        ],
       },
     ],
   },
@@ -91,13 +95,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "Fragmented tools and processes for business management.",
+              item: "Complex and fragmented contract management processes.",
             },
             {
-              item: "Inefficient complaint handling and customer dispute resolution.",
+              item: "Difficulty in tracking and ensuring compliance.",
             },
             {
-              item: "Lack of transparent business verification processes.",
+              item: "Lack of a centralized system for organizing legal documents and obligations.",
             },
           ],
         },
@@ -107,13 +111,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "FrytX integrates multiple business management tools into a unified platform, streamlining operations.",
+              item: "SimpleO.ai provides a centralized platform for managing contracts and compliance, simplifying legal workflows.",
             },
             {
-              item: "Efficient complaint management system ensures timely resolution of customer issues.",
+              item: "The platform offers tools to track obligations and ensure timely compliance.",
             },
             {
-              item: "Robust business verification process enhances transparency and builds trust with consumers.",
+              item: "SimpleO.ai organizes legal documents in one place, making it easy to access and manage them.",
             },
           ],
         },
@@ -123,114 +127,114 @@ const data = [
   {
     userGroup: [
       {
-        heading: "Business Owners",
         image: "url",
-        list: [
-          { listItem: "Local shop owners, etc." },
-          { listItem: "Small Businesses" },
-        ],
-        discreption:
-          "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
+        list: [{ listItem: "Legal Professionals" }],
+        description:
+          "“I want to manage & track all contracts and compliances in one place to ensure my company meets all legal requirements.”",
       },
       {
-        heading: "Consumers",
         image: "url",
-        list: [{ listItem: "Individuals looking to verify businesses" }],
-        discreption:
-          "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
+        list: [{ listItem: "Business Owners" }],
+        description:
+          "“I want an easy-to-use platform to help me track and fulfill my contractual obligations to avoid legal issues.”",
       },
       {
-        heading: "Freelancers",
         image: "url",
-        list: [{ listItem: "Freelancers using the app for payment" }],
-        discreption:
-          "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
+        list: [{ listItem: "Individuals" }],
+        description:
+          "“I want to organize my contracts and compliance documents efficiently to ensure I meet all my obligations and deadlines.”",
       },
     ],
   },
   {
     userPersonas: [
       {
-        name: "Sarah",
-        smallDiscription: "32,  Business Owner",
-        type: "Individual",
-        Gender: "Female",
-        Occupation: "Cafe Owner",
-        bio: "Sarah, a local cafe owner, needs a comprehensive tool to manage all aspects of her business. This will allow her to streamline operations and save valuable time. With everything in one place, she can improve efficiency and focus on growing her cafe.",
-        goals: [
-          {
-            item: "Efficiently manage time and tasks.",
-          },
-          {
-            item: "Promptly address customer feedback.",
-          },
-          {
-            item: "Uphold and enhance cafe reputation.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Struggling to manage time and tasks.",
-          },
-          {
-            item: "Difficulty in organizing finances effectively.",
-          },
-          {
-            item: "Delays in responding to customer reviews.",
-          },
-        ],
-      },
-      {
-        name: "Emma",
-        smallDiscription: "29,  Consumer",
+        name: "Michael",
+        smallDescription: "35, Corporate Lawyer",
         type: "Corporate",
-        Gender: "Female",
-        Occupation: "HR Manager",
-        bio: "Emma, an HR manager, needs a tool to easily search for and verify businesses. This will help her make informed decisions about where to allocate company resources. Ensuring reliability and credibility in her choices is crucial for supporting company operations.",
+        Gender: "Male",
+        Industry: "Legal",
+        bio: "Michael is a seasoned Legal Compliance Officer at a large corporation, responsible for ensuring that the company adheres to all regulatory requirements and internal policies.",
         goals: [
           {
-            item: "Find reliable businesses easily.",
+            item: "Streamline compliance tracking.",
           },
           {
-            item: "Make informed decisions based on reviews.",
+            item: "Improve reporting accuracy.",
+          },
+          {
+            item: "Ensure timely updates.",
           },
         ],
         painPoints: [
           {
-            item: "Difficulty trusting online reviews fully.",
+            item: "Managing numerous contracts manually.",
           },
           {
-            item: "Challenge in verifying business credentials.",
+            item: "Ensuring team awareness of obligations.",
+          },
+          {
+            item: "Lack of centralized tracking.",
           },
         ],
       },
       {
-        name: "Arjun",
-        smallDiscription: "27, Freelancer",
+        name: "David",
+        smallDescription: "48, Small Business Owner",
         type: "Individual",
         Gender: "Male",
-        Occupation: "Graphic Designer",
-        bio: "Arjun is a freelance graphic designer who needs an app that ensures secure transactions, manages client communications efficiently, and verifies client credibility to build trust and strong business relationships.",
+        Industry: "Retail",
+        bio: "David is the owner of a small business, juggling multiple roles including managing contracts and ensuring compliance with industry regulations.",
         goals: [
           {
-            item: "Ensure secure transactions.",
+            item: "Find an affordable management solution.",
           },
           {
-            item: "Manage client communications.",
+            item: "Stay compliant easily.",
           },
           {
-            item: "Verify client credibility.",
+            item: "Automate reminders and notifications.",
           },
         ],
         painPoints: [
           {
-            item: "Delayed payments.",
+            item: "Limited resources for contract management.",
           },
           {
-            item: "Managing multiple clients.",
+            item: "Staying updated with regulations.",
           },
           {
-            item: "Verifying the legitimacy of new clients.",
+            item: "Meeting obligations without dedicated staff.",
+          },
+        ],
+      },
+      {
+        name: "Alex",
+        smallDescription: "29, Freelance Consultant",
+        type: "Individual",
+        Gender: "Male",
+        Industry: "Consulting",
+        bio: "Alex is an independent business consultant with over a decade of experience, providing strategic advice to various clients. He manages his own contracts and ensures all legal documents are in order without dedicated legal assistance.",
+        goals: [
+          {
+            item: "Manage client contracts efficiently.",
+          },
+          {
+            item: "Ensure timely compliance.",
+          },
+          {
+            item: "Organize legal documents effectively.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Managing contracts without legal assistance.",
+          },
+          {
+            item: "Ensuring timely compliance.",
+          },
+          {
+            item: "Keeping track of obligations.",
           },
         ],
       },
@@ -240,29 +244,50 @@ const data = [
     featureAndProduct: [
       {
         media: "url",
-        heading: "Business Management",
+        heading: "Contract Management",
         subHeading:
-          "Centralized tools for managing various aspects of business operations.",
+          "Centralized tools to manage all aspects of contracts efficiently, from creation to renewal.",
       },
       {
         media: "url",
-        heading: "Complaint Management",
-        subHeading: "Track and resolve customer complaints efficiently.",
+        heading: "Compliance Tracking",
+        subHeading:
+          "Comprehensive tracking to ensure compliance with legal standards and regulations, reducing risk.",
       },
       {
         media: "url",
-        heading: "Business Verification",
-        subHeading: "Verify business credentials to build trust",
+        heading: "Obligation Recording",
+        subHeading:
+          "Simple and effective ways to record and manage all contractual obligations in one place.",
       },
       {
         media: "url",
-        heading: "Financial Organization",
-        subHeading: "Manage payments and financial transactions securely.",
+        heading: "Document Organization",
+        subHeading:
+          "A single platform to organize & access all legal documents, improving workflow & accessibility.",
       },
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    uxAnalysis: [
+      {
+        media: "url",
+        type: "Typography",
+        description:
+          "Lato font for a contemporary and approachable design, enhancing clarity and user engagement across digital interfaces.",
+      },
+      {
+        media: "url",
+        type: "Color Palette",
+        description:
+          "Primary: #FF6868, Secondary: #009D9C, #17c964, #F5A524, #F31260",
+      },
+      {
+        media: "url",
+        type: "Icons",
+        description: "Phosphor Icons for a modern and versatile aesthetic.",
+      },
+    ],
   },
 ];
 const SimpleO = () => {

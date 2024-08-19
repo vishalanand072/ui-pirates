@@ -3,7 +3,7 @@ import Casestudy from "@/screens/CaseStudyComp";
 const data = [
   {
     hero: {
-      title: "Frytx",
+      title: "TestDynamiz",
       subtitle: "",
       bgimage: "",
     },
@@ -11,12 +11,12 @@ const data = [
   {
     overview: {
       overview:
-        "FrytX is a versatile application designed to empower businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
-      Client: "Frytx",
-      Industry: "Technology, Business Management",
-      Platform: "Mobile Application",
+        "TestDynamiz is a cutting-edge software testing SaaS platform designed to provide automated testing solutions for development teams. The platform aims to streamline the testing process, improve efficiency, and ensure high-quality software releases by integrating advanced testing tools and automation features.",
+      Client: "TestDynamiz",
+      Industry: "Software Testing",
+      Platform: "SaaS App",
       Objective:
-        "To create a mobile application for FrytX that empowers businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
+        "Design an intuitive and efficient SaaS MVP for TestDynamiz to streamline the software testing process for development teams.",
     },
   },
   {
@@ -24,25 +24,19 @@ const data = [
       card: [
         {
           img: "url",
-          heading: "Unified Platform",
+          heading: "SaaS MVP Design",
           subheading:
-            "Develop a platform integrating business management, complaint handling, ratings, reviews, and verification.",
+            "Design a user-friendly and visually appealing interface for the MVP of the software testing platform, incorporating essential testing tools and automation features.",
         },
         {
           img: "url",
-          heading: "Complaint Management",
+          heading: "User Experience Optimization",
           subheading:
-            "Enable the efficient tracking and swift resolution of customer complaints.",
-        },
-        {
-          img: "url",
-          heading: "Business Verification",
-          subheading:
-            "Implement a system for verifying business credentials to enhance trust and transparency.",
+            "Ensure that the platform offers an intuitive and efficient user experience for development teams, from developers to QA engineers and project managers.",
         },
       ],
       Outcomes:
-        "A comprehensive and user-friendly platform that streamlines business management, ensures effective complaint handling, verifies businesses for trustworthiness, and organizes financial operations, thereby enhancing overall efficiency and customer satisfaction.",
+        "The TestDynamiz SaaS MVP featured a user-friendly interface that improved the efficiency of software testing processes, enhanced collaboration among team members, and received positive feedback for its design and usability.",
     },
   },
   {
@@ -51,7 +45,7 @@ const data = [
         heading: "User Research",
         icon: "UserFocus",
         list: [
-          "Interviews and Surveys",
+          "Interviews & Surveys",
           "User Personas",
           "Journey Mapping",
           "Usability Testing",
@@ -77,11 +71,6 @@ const data = [
           "Interaction Design",
         ],
       },
-      {
-        heading: "Development & Integration",
-        icon: "Code",
-        list: ["Front End Development", "Integration", "Back End Development"],
-      },
     ],
   },
   {
@@ -91,13 +80,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "Fragmented tools and processes for business management.",
+              item: "Time-consuming manual testing processes.",
             },
             {
-              item: "Inefficient complaint handling and customer dispute resolution.",
+              item: "Difficulty in maintaining and managing test cases.",
             },
             {
-              item: "Lack of transparent business verification processes.",
+              item: "Limited access to efficient automation tools.",
             },
           ],
         },
@@ -107,13 +96,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "FrytX integrates multiple business management tools into a unified platform, streamlining operations.",
+              item: "TestDynamiz provides automated testing solutions that integrate seamlessly into development workflows.",
             },
             {
-              item: "Efficient complaint management system ensures timely resolution of customer issues.",
+              item: "The platform offers tools to manage and maintain test cases efficiently.",
             },
             {
-              item: "Robust business verification process enhances transparency and builds trust with consumers.",
+              item: "TestDynamiz simplifies the testing process with user-friendly automation features.",
             },
           ],
         },
@@ -123,114 +112,114 @@ const data = [
   {
     userGroup: [
       {
-        heading: "Business Owners",
         image: "url",
-        list: [
-          { listItem: "Local shop owners, etc." },
-          { listItem: "Small Businesses" },
-        ],
-        discreption:
-          "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
+        list: [{ listItem: "Development Teams" }],
+        description:
+          "“I want to integrate automated tests easily into my development workflow to ensure code quality and save time.“",
       },
       {
-        heading: "Consumers",
         image: "url",
-        list: [{ listItem: "Individuals looking to verify businesses" }],
-        discreption:
-          "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
+        list: [{ listItem: "Project Managers" }],
+        description:
+          "“I want to automate repetitive testing tasks & manage test cases efficiently to identify bugs early and improve testing efficiency.“",
       },
       {
-        heading: "Freelancers",
         image: "url",
-        list: [{ listItem: "Freelancers using the app for payment" }],
-        discreption:
-          "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
+        list: [{ listItem: "Startup Teams" }],
+        description:
+          "“I want to ensure thorough test coverage and coordinate testing efforts to maintain high-quality software releases.“",
       },
     ],
   },
   {
     userPersonas: [
       {
-        name: "Sarah",
-        smallDiscription: "32,  Business Owner",
-        type: "Individual",
-        Gender: "Female",
-        Occupation: "Cafe Owner",
-        bio: "Sarah, a local cafe owner, needs a comprehensive tool to manage all aspects of her business. This will allow her to streamline operations and save valuable time. With everything in one place, she can improve efficiency and focus on growing her cafe.",
-        goals: [
-          {
-            item: "Efficiently manage time and tasks.",
-          },
-          {
-            item: "Promptly address customer feedback.",
-          },
-          {
-            item: "Uphold and enhance cafe reputation.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Struggling to manage time and tasks.",
-          },
-          {
-            item: "Difficulty in organizing finances effectively.",
-          },
-          {
-            item: "Delays in responding to customer reviews.",
-          },
-        ],
-      },
-      {
         name: "Emma",
-        smallDiscription: "29,  Consumer",
+        smallDescription: "28, Software Developer",
         type: "Corporate",
         Gender: "Female",
-        Occupation: "HR Manager",
-        bio: "Emma, an HR manager, needs a tool to easily search for and verify businesses. This will help her make informed decisions about where to allocate company resources. Ensuring reliability and credibility in her choices is crucial for supporting company operations.",
+        Industry: "Software Development",
+        bio: "Emma is a front-end developer specializing in creating responsive and dynamic user interfaces. She aims to integrate automated testing into her workflow to enhance code quality and streamline the development process.",
         goals: [
           {
-            item: "Find reliable businesses easily.",
+            item: "Integrate automated testing into the development workflow.",
           },
           {
-            item: "Make informed decisions based on reviews.",
+            item: "Ensure code quality.",
+          },
+          {
+            item: "Reduce manual testing efforts.",
           },
         ],
         painPoints: [
           {
-            item: "Difficulty trusting online reviews fully.",
+            item: "Manual testing is time-consuming.",
           },
           {
-            item: "Challenge in verifying business credentials.",
+            item: "Difficulty in maintaining test cases.",
+          },
+          {
+            item: "Frequent changes in codebase requiring updates to test scripts.",
           },
         ],
       },
       {
-        name: "Arjun",
-        smallDiscription: "27, Freelancer",
-        type: "Individual",
+        name: "James",
+        smallDescription: "35, QA Engineer",
+        type: "Corporate",
         Gender: "Male",
-        Occupation: "Graphic Designer",
-        bio: "Arjun is a freelance graphic designer who needs an app that ensures secure transactions, manages client communications efficiently, and verifies client credibility to build trust and strong business relationships.",
+        Industry: "Software Development",
+        bio: "James is an experienced Quality Assurance Engineer focused on ensuring that software products meet high standards of quality and reliability. He strives to automate repetitive testing tasks and catch bugs early in the development cycle.",
         goals: [
           {
-            item: "Ensure secure transactions.",
+            item: "Automate repetitive testing tasks.",
           },
           {
-            item: "Manage client communications.",
+            item: "Identify bugs early in the development cycle.",
           },
           {
-            item: "Verify client credibility.",
+            item: "Improve testing efficiency.",
           },
         ],
         painPoints: [
           {
-            item: "Delayed payments.",
+            item: "Limited automation tools.",
           },
           {
-            item: "Managing multiple clients.",
+            item: "Difficulty in managing large test suites.",
           },
           {
-            item: "Verifying the legitimacy of new clients.",
+            item: "Ensuring test coverage across various scenarios.",
+          },
+        ],
+      },
+      {
+        name: "Sarah",
+        smallDescription: "47, Project Manager",
+        type: "Corporate",
+        Gender: "Female",
+        Industry: "IT",
+        bio: "Sarah is a seasoned Project Manager overseeing software development projects. She ensures that projects are delivered on time and meet quality standards, coordinating efforts between development and QA teams.",
+        goals: [
+          {
+            item: "Ensure timely software releases.",
+          },
+          {
+            item: "Maintain high-quality standards.",
+          },
+          {
+            item: "Facilitate effective communication between teams.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Coordinating testing efforts.",
+          },
+          {
+            item: "Ensuring thorough test coverage.",
+          },
+          {
+            item: "Balancing deadlines with quality requirements.",
           },
         ],
       },
@@ -240,29 +229,41 @@ const data = [
     featureAndProduct: [
       {
         media: "url",
-        heading: "Business Management",
-        subHeading:
-          "Centralized tools for managing various aspects of business operations.",
+        heading: "Automated Testing",
+        subHeading: "Tools for automating repetitive testing tasks.",
       },
       {
         media: "url",
-        heading: "Complaint Management",
-        subHeading: "Track and resolve customer complaints efficiently.",
+        heading: "Test Case Management",
+        subHeading: "Efficient management and maintenance of test cases.",
       },
       {
         media: "url",
-        heading: "Business Verification",
-        subHeading: "Verify business credentials to build trust",
-      },
-      {
-        media: "url",
-        heading: "Financial Organization",
-        subHeading: "Manage payments and financial transactions securely.",
+        heading: "Bug Tracking and Reporting",
+        subHeading: "Tools for identifying, tracking, and reporting bugs.",
       },
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    uxAnalysis: [
+      {
+        media: "url",
+        type: "Typography",
+        description:
+          "Red Hat Display font offers a modern, professional look, enhancing readability and user experience on digital platforms.",
+      },
+      {
+        media: "url",
+        type: "Color Palette",
+        description:
+          "Primary: #7828C8, Secondary: #048A81, #17c964, #F5A524, #F31260",
+      },
+      {
+        media: "url",
+        type: "Icons",
+        description: "Phosphor Icons for a modern and versatile aesthetic.",
+      },
+    ],
   },
 ];
 const TestDynamiz = () => {

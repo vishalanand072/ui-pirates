@@ -3,7 +3,7 @@ import Casestudy from "@/screens/CaseStudyComp";
 const data = [
   {
     hero: {
-      title: "Frytx",
+      title: "StayRealtor",
       subtitle: "",
       bgimage: "",
     },
@@ -11,12 +11,12 @@ const data = [
   {
     overview: {
       overview:
-        "FrytX is a versatile application designed to empower businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
-      Client: "Frytx",
-      Industry: "Technology, Business Management",
-      Platform: "Mobile Application",
+        "StayRealtor is a comprehensive app designed to assist landlords and brokers in managing their properties efficiently. It streamlines property management tasks and ensures smooth interactions between property managers and tenants.",
+      Client: "Staype",
+      Industry: "Real Estate",
+      Platform: "Mobile App",
       Objective:
-        "To create a mobile application for FrytX that empowers businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
+        "Create a streamlined, user-friendly platform for landlords and brokers to manage properties and tenant interactions efficiently.",
     },
   },
   {
@@ -24,25 +24,25 @@ const data = [
       card: [
         {
           img: "url",
-          heading: "Unified Platform",
+          heading: "Centralized Management",
           subheading:
-            "Develop a platform integrating business management, complaint handling, ratings, reviews, and verification.",
+            "Develop a platform for landlords and brokers to manage multiple properties in one place.",
         },
         {
           img: "url",
-          heading: "Complaint Management",
+          heading: "Property Listing",
           subheading:
-            "Enable the efficient tracking and swift resolution of customer complaints.",
+            "Enable easy listing and updating of property details for efficient management and client updates.",
         },
         {
           img: "url",
-          heading: "Business Verification",
+          heading: "Booking and Visits",
           subheading:
-            "Implement a system for verifying business credentials to enhance trust and transparency.",
+            "Provide a feature for scheduling property viewings and managing booking requests.",
         },
       ],
       Outcomes:
-        "A comprehensive and user-friendly platform that streamlines business management, ensures effective complaint handling, verifies businesses for trustworthiness, and organizes financial operations, thereby enhancing overall efficiency and customer satisfaction.",
+        "The StayRealtor app simplifies property management, improves communication, and provides real-time insights, leading to increased efficiency and tenant satisfaction.",
     },
   },
   {
@@ -51,20 +51,10 @@ const data = [
         heading: "User Research",
         icon: "UserFocus",
         list: [
-          "Interviews and Surveys",
+          "Interviews & Surveys",
           "User Personas",
           "Journey Mapping",
           "Usability Testing",
-        ],
-      },
-      {
-        heading: "Asset Creation",
-        icon: "Cube",
-        list: [
-          "Design System",
-          "Fonts",
-          "Illustrations & Icons",
-          "Motion Graphics",
         ],
       },
       {
@@ -78,9 +68,14 @@ const data = [
         ],
       },
       {
-        heading: "Development & Integration",
-        icon: "Code",
-        list: ["Front End Development", "Integration", "Back End Development"],
+        heading: "Asset Creation",
+        icon: "Cube",
+        list: [
+          "Design System",
+          "Fonts",
+          "Illustrations & Icons",
+          "Motion Graphics",
+        ],
       },
     ],
   },
@@ -91,13 +86,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "Fragmented tools and processes for business management.",
+              item: "Difficulty in managing multiple properties and tasks from different platforms.",
             },
             {
-              item: "Inefficient complaint handling and customer dispute resolution.",
+              item: "Challenges in coordinating between landlords, brokers, and tenants.",
             },
             {
-              item: "Lack of transparent business verification processes.",
+              item: "Insufficient data on property performance and tenant interactions.",
             },
           ],
         },
@@ -107,13 +102,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "FrytX integrates multiple business management tools into a unified platform, streamlining operations.",
+              item: "All property management tasks are consolidated into a single platform for easier oversight.",
             },
             {
-              item: "Efficient complaint management system ensures timely resolution of customer issues.",
+              item: "Integrated channels for seamless interaction between landlords, brokers, and tenants.",
             },
             {
-              item: "Robust business verification process enhances transparency and builds trust with consumers.",
+              item: "Provides up-to-date information and analytics to improve decision-making and property management.",
             },
           ],
         },
@@ -123,114 +118,76 @@ const data = [
   {
     userGroup: [
       {
-        heading: "Business Owners",
         image: "url",
-        list: [
-          { listItem: "Local shop owners, etc." },
-          { listItem: "Small Businesses" },
-        ],
-        discreption:
-          "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
+        list: [{ listItem: "Landlords" }],
+        description:
+          "“I want to manage all my properties in one place so that I can save time and increase efficiency.“",
       },
       {
-        heading: "Consumers",
         image: "url",
-        list: [{ listItem: "Individuals looking to verify businesses" }],
-        discreption:
-          "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
-      },
-      {
-        heading: "Freelancers",
-        image: "url",
-        list: [{ listItem: "Freelancers using the app for payment" }],
-        discreption:
-          "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
+        list: [{ listItem: "Real Estate Brokers" }],
+        description:
+          "“I want to list and update properties easily so that I can attract potential tenants quickly.“",
       },
     ],
   },
   {
     userPersonas: [
       {
-        name: "Sarah",
-        smallDiscription: "32,  Business Owner",
-        type: "Individual",
-        Gender: "Female",
-        Occupation: "Cafe Owner",
-        bio: "Sarah, a local cafe owner, needs a comprehensive tool to manage all aspects of her business. This will allow her to streamline operations and save valuable time. With everything in one place, she can improve efficiency and focus on growing her cafe.",
-        goals: [
-          {
-            item: "Efficiently manage time and tasks.",
-          },
-          {
-            item: "Promptly address customer feedback.",
-          },
-          {
-            item: "Uphold and enhance cafe reputation.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Struggling to manage time and tasks.",
-          },
-          {
-            item: "Difficulty in organizing finances effectively.",
-          },
-          {
-            item: "Delays in responding to customer reviews.",
-          },
-        ],
-      },
-      {
-        name: "Emma",
-        smallDiscription: "29,  Consumer",
-        type: "Corporate",
-        Gender: "Female",
-        Occupation: "HR Manager",
-        bio: "Emma, an HR manager, needs a tool to easily search for and verify businesses. This will help her make informed decisions about where to allocate company resources. Ensuring reliability and credibility in her choices is crucial for supporting company operations.",
-        goals: [
-          {
-            item: "Find reliable businesses easily.",
-          },
-          {
-            item: "Make informed decisions based on reviews.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Difficulty trusting online reviews fully.",
-          },
-          {
-            item: "Challenge in verifying business credentials.",
-          },
-        ],
-      },
-      {
-        name: "Arjun",
-        smallDiscription: "27, Freelancer",
+        name: "John",
+        smallDescription: "43, Landlord",
         type: "Individual",
         Gender: "Male",
-        Occupation: "Graphic Designer",
-        bio: "Arjun is a freelance graphic designer who needs an app that ensures secure transactions, manages client communications efficiently, and verifies client credibility to build trust and strong business relationships.",
+        bio: "John owns multiple rental properties and seeks to efficiently manage them from one platform, streamline communication with brokers, and maximize rental income.",
         goals: [
           {
-            item: "Ensure secure transactions.",
+            item: "Efficiently manage all his properties from one platform.",
           },
           {
-            item: "Manage client communications.",
+            item: "Quickly address tenant requests and maintenance issues.",
           },
           {
-            item: "Verify client credibility.",
+            item: "Maximize rental income through effective property management.",
           },
         ],
         painPoints: [
           {
-            item: "Delayed payments.",
+            item: "Difficulty in managing multiple properties simultaneously.",
           },
           {
-            item: "Managing multiple clients.",
+            item: "Lack of a streamlined communication channel with brokers.",
           },
           {
-            item: "Verifying the legitimacy of new clients.",
+            item: "Inefficient handling of maintenance and repair requests.",
+          },
+        ],
+      },
+      {
+        name: "Emily",
+        smallDescription: "32, Broker",
+        type: "Individual",
+        Gender: "Female",
+        bio: "Emily manages property listings for clients and aims to easily list and update properties, track tenant inquiries, and gain real-time insights into property performance.",
+        goals: [
+          {
+            item: "Easily list and update property details.",
+          },
+          {
+            item: "Track and manage tenant applications and inquiries.",
+          },
+          {
+            item: "Provide clients with timely updates and property insights.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Time-consuming process for listing and updating properties.",
+          },
+          {
+            item: "Inefficient tracking of tenant inquiries and applications.",
+          },
+          {
+            item: "Lack of real-time data and insights on property performance.",
           },
         ],
       },
@@ -240,29 +197,61 @@ const data = [
     featureAndProduct: [
       {
         media: "url",
-        heading: "Business Management",
-        subHeading:
-          "Centralized tools for managing various aspects of business operations.",
+        heading: "Centralized Property Management",
+        subHeading: "Manage multiple properties from a single platform.",
       },
       {
         media: "url",
-        heading: "Complaint Management",
-        subHeading: "Track and resolve customer complaints efficiently.",
+        heading: "Property Listing Management",
+        subHeading: "Easy listing and updating of property details.",
       },
       {
         media: "url",
-        heading: "Business Verification",
-        subHeading: "Verify business credentials to build trust",
+        heading: "Booking and Visits",
+        subHeading: "Schedule property viewings and manage booking requests.",
       },
       {
         media: "url",
-        heading: "Financial Organization",
-        subHeading: "Manage payments and financial transactions securely.",
+        heading: "AI Recommendation",
+        subHeading: "Get AI-based property recommendations.",
+      },
+      {
+        media: "url",
+        heading: "Lead Management",
+        subHeading: "Efficiently manage tenant leads and inquiries.",
+      },
+      {
+        media: "url",
+        heading: "Detailed Property Information",
+        subHeading: "Get comprehensive property details.",
+      },
+      {
+        media: "url",
+        heading: "Bill & Agreement Generator",
+        subHeading: "Generate bills, receipts, and agreements seamlessly.",
       },
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    uxAnalysis: [
+      {
+        media: "url",
+        type: "Typography",
+        description:
+          "Satoshi font for modern, clean lines and geometric design.",
+      },
+      {
+        media: "url",
+        type: "Color Palette",
+        description:
+          "Primary: #6A71F1, Secondary: #EBF1FF, #17c964, #F5A524, #F31260",
+      },
+      {
+        media: "url",
+        type: "Icons",
+        description: "Phosphor Icons for a modern and versatile aesthetic.",
+      },
+    ],
   },
 ];
 const StayRealtor = () => {
