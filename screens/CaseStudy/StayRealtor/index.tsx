@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -118,24 +118,16 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Landlords" }],
-            description:
-              "“I want to manage all my properties in one place so that I can save time and increase efficiency.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Landlords" }],
+        description:
+          "“I want to manage all my properties in one place so that I can save time and increase efficiency.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Real Estate Brokers" }],
-            description:
-              "“I want to list and update properties easily so that I can attract potential tenants quickly.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Real Estate Brokers" }],
+        description:
+          "“I want to list and update properties easily so that I can attract potential tenants quickly.“",
       },
     ],
   },

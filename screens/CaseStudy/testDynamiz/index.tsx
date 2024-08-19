@@ -40,7 +40,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -112,34 +112,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Development Teams" }],
-            description:
-              "“I want to integrate automated tests easily into my development workflow to ensure code quality and save time.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Development Teams" }],
+        description:
+          "“I want to integrate automated tests easily into my development workflow to ensure code quality and save time.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Project Managers" }],
-            description:
-              "“I want to automate repetitive testing tasks & manage test cases efficiently to identify bugs early and improve testing efficiency.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Project Managers" }],
+        description:
+          "“I want to automate repetitive testing tasks & manage test cases efficiently to identify bugs early and improve testing efficiency.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Startup Teams" }],
-            description:
-              "“I want to ensure thorough test coverage and coordinate testing efforts to maintain high-quality software releases.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Startup Teams" }],
+        description:
+          "“I want to ensure thorough test coverage and coordinate testing efforts to maintain high-quality software releases.“",
       },
     ],
   },

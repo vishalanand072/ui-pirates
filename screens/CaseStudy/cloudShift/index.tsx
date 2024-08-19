@@ -40,7 +40,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -112,34 +112,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "IT Managers" }],
-            description:
-              "“I want detailed information about the cloud migration process and services to ensure a seamless transition for my company.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "IT Managers" }],
+        description:
+          "“I want detailed information about the cloud migration process and services to ensure a seamless transition for my company.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Business Owners" }],
-            description:
-              "“I want to understand the benefits of cloud migration and find a reliable partner to help scale my business operations.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Business Owners" }],
+        description:
+          "“I want to understand the benefits of cloud migration and find a reliable partner to help scale my business operations.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Technical Consultants" }],
-            description:
-              "“I want to evaluate Cloudshift's services to recommend them confidently to my clients.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Technical Consultants" }],
+        description:
+          "“I want to evaluate Cloudshift's services to recommend them confidently to my clients.“",
       },
     ],
   },

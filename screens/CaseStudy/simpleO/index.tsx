@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -127,34 +127,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Legal Professionals" }],
-            description:
-              "“I want to manage & track all contracts and compliances in one place to ensure my company meets all legal requirements.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Legal Professionals" }],
+        description:
+          "“I want to manage & track all contracts and compliances in one place to ensure my company meets all legal requirements.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Business Owners" }],
-            description:
-              "“I want an easy-to-use platform to help me track and fulfill my contractual obligations to avoid legal issues.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Business Owners" }],
+        description:
+          "“I want an easy-to-use platform to help me track and fulfill my contractual obligations to avoid legal issues.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Individuals" }],
-            description:
-              "“I want to organize my contracts and compliance documents efficiently to ensure I meet all my obligations and deadlines.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Individuals" }],
+        description:
+          "“I want to organize my contracts and compliance documents efficiently to ensure I meet all my obligations and deadlines.”",
       },
     ],
   },

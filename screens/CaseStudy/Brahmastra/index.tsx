@@ -40,7 +40,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -112,34 +112,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Professional Traders" }],
-            description:
-              "“I want to access advanced tools and real-time market data to make informed trading decisions.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Professional Traders" }],
+        description:
+          "“I want to access advanced tools and real-time market data to make informed trading decisions.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Retail Traders" }],
-            description:
-              "“I want a user-friendly platform that helps me manage my trades and learn more about trading.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Retail Traders" }],
+        description:
+          "“I want a user-friendly platform that helps me manage my trades and learn more about trading.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Investors" }],
-            description:
-              "“I want to monitor my investment portfolios and analyze market trends efficiently.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Investors" }],
+        description:
+          "“I want to monitor my investment portfolios and analyze market trends efficiently.”",
       },
     ],
   },

@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -127,34 +127,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Jewelry Enthusiasts" }],
-            description:
-              "“I want a website with unique and customizable rings to expand my exclusive collection.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Jewelry Enthusiasts" }],
+        description:
+          "“I want a website with unique and customizable rings to expand my exclusive collection.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Gift Shoppers" }],
-            description:
-              "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Gift Shoppers" }],
+        description:
+          "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Fashion Aficionados" }],
-            description:
-              "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Fashion Aficionados" }],
+        description:
+          "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
       },
     ],
   },

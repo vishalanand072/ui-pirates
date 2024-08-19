@@ -126,7 +126,7 @@ const data = [
         heading: "Clients",
         image: "url",
         list: [{ listItem: "Researchers" }, { listItem: "Study Coordinators" }],
-        discreption:
+        description:
           "“I want to create and manage studies efficiently so that I can focus on analyzing results.”",
       },
       {
@@ -136,7 +136,7 @@ const data = [
           { listItem: "Individuals participating in surveys" },
           { listItem: "Individuals participating in interviews. " },
         ],
-        discreption:
+        description:
           "“I want to easily take part in surveys and interviews so that I can earn incentives without hassle.”",
       },
     ],

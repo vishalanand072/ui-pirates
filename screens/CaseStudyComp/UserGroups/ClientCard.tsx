@@ -29,7 +29,7 @@ const ClientCard = (props: any) => {
               </ul>
             </div>
             <div className="mt-4 py-4 border-t normal font-semibold mr-16">
-              {item.discreption}
+              {item.description}
             </div>
           </div>
         );
