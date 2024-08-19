@@ -9,9 +9,11 @@ interface OurWorkProps {
 
 const OurWork: React.FC = () => {
   return (
-    <div className="container mx-auto py-0">
-      <ImageGrid />
-      {/* <AnimationWork /> */}
+    <div className="bg-black">
+      <div className="container mx-auto py-0 ">
+        <ImageGrid />
+        {/* <AnimationWork /> */}
+      </div>
     </div>
   );
 };

@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
         </div>
       </div> */}
 
-      <WeCreate />
+      {/* <WeCreate /> */}
 
       <TimeLinePaga />
 
