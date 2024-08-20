@@ -53,7 +53,7 @@ import UserPersonas from "./userPersonas";
 import FeaturesProduct from "./featuresProduct";
 import ClientRequirements from "./ClientRequirements";
 import StickyTop from "../Home/designDev/stickyTop";
-import ValuesUiElement from "./valuesUiElement";
+import ValuesUiElement from "./visualUiElement";
 import UXAnalysis from "./uxAnalysis";
 import ProductShowcase from "./productShowcase";
 

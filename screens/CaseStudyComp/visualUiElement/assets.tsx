@@ -71,23 +71,6 @@ const Assets = () => {
           </div>
         </CardBody>
       </Card>
-
-      <div className="mt-8">
-        <p className=" text-xl font-semibold mb-3 uppercase">Illustrations</p>
-        <div className="flex flex-row  gap-4">
-          <Image
-            src={img1}
-            alt="Client"
-            width={100}
-            height={100}
-            className="w-[20%] h-[50%]"
-          />
-          <Image src={img2} alt="Client" className="w-[80%] h-[50%]" />
-        </div>
-        <div className="w-full items-center flex flex-row justify-center border-2 mt-6 rounded-2xl py-8">
-          <Image src={img3} alt="Client" className="w-[25%] h-[40%]" />
-        </div>
-      </div>
     </>
   );
 };

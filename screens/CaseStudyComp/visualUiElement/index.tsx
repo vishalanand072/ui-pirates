@@ -1,5 +1,9 @@
 import { Card, CardBody } from "@nextui-org/react";
 import Assets from "./assets";
+import UIElementsFrytx from "@/screens/CaseStudy/Frytx/uiElementsFrytx";
+import UIElementsXperiti from "@/screens/CaseStudy/Xperiti/uiElementsXperiti";
+import UIElementsRingsAndI from "@/screens/CaseStudy/Rings&i/uiElementsRings&i";
+import UIElementsSimpleO from "@/screens/CaseStudy/SimpleO/uiElementsSimpleO";
 const ValuesUiElement = () => {
   return (
     <>
@@ -60,6 +64,12 @@ const ValuesUiElement = () => {
         </div>
 
         <Assets />
+        <div className="mt-8">
+          {/* <UIElementsXperiti /> */}
+          {/* <UIElementsFrytx /> */}
+          {/* <UIElementsRingsAndI /> */}
+          <UIElementsSimpleO />
+        </div>
       </div>
     </>
   );

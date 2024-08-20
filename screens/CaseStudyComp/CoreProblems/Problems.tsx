@@ -5,7 +5,7 @@ import Image from "next/image";
 const Problems = (props: any) => {
   return (
     <>
-      <div className="flex flex-col justify-around gap-8">
+      <div className="flex flex-col gap-8">
         <div>
           <div className="medium-heading mb-8 text-subtitle">PROBLEMS</div>
           <ul className="list-none space-y-4 text-lg">
