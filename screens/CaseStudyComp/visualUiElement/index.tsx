@@ -4,6 +4,10 @@ import UIElementsFrytx from "@/screens/CaseStudy/Frytx/uiElementsFrytx";
 import UIElementsXperiti from "@/screens/CaseStudy/Xperiti/uiElementsXperiti";
 import UIElementsRingsAndI from "@/screens/CaseStudy/Rings&i/uiElementsRings&i";
 import UIElementsSimpleO from "@/screens/CaseStudy/SimpleO/uiElementsSimpleO";
+import UIElementsBrahmastra from "@/screens/CaseStudy/Brahmastra/uiElementsBrahmastra";
+import UIElementsTestDynamiz from "@/screens/CaseStudy/TestDynamiz/uiElementsTestDynamiz";
+import UIElementsIAS from "@/screens/CaseStudy/InfinityAquaSol/uiElementsInfinityAquaSol";
+import UIElementsCloudShift from "@/screens/CaseStudy/CloudShift/uiElementsCloudShift";
 const ValuesUiElement = () => {
   return (
     <>
@@ -68,7 +72,11 @@ const ValuesUiElement = () => {
           {/* <UIElementsXperiti /> */}
           {/* <UIElementsFrytx /> */}
           {/* <UIElementsRingsAndI /> */}
-          <UIElementsSimpleO />
+          {/* <UIElementsSimpleO /> */}
+          {/* <UIElementsBrahmastra /> */}
+          {/* <UIElementsTestDynamiz /> */}
+          {/* <UIElementsIAS /> */}
+          <UIElementsCloudShift />
         </div>
       </div>
     </>
