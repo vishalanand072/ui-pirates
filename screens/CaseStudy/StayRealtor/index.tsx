@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import StayRealorHero from "./hero";
 
 const data = [
   {
@@ -257,6 +258,7 @@ const data = [
 const StayRealtor = () => {
   return (
     <>
+      <StayRealorHero />
       <Casestudy data={data} />
     </>
   );

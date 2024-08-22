@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-
+import InfinityAquaSolHero from "./hero";
 const data = [
   {
     hero: {
@@ -282,6 +282,7 @@ const data = [
 const InfinityAquaSol = () => {
   return (
     <>
+      <InfinityAquaSolHero />
       <Casestudy data={data} />
     </>
   );

@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-
+import TestDynamizHero from "./hero";
 const data = [
   {
     hero: {
@@ -269,6 +269,7 @@ const data = [
 const TestDynamiz = () => {
   return (
     <>
+      <TestDynamizHero />
       <Casestudy data={data} />
     </>
   );

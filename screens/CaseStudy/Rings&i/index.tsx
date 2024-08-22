@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import RingsAndIHero from "./hero";
 
 const data = [
   {
@@ -286,6 +287,7 @@ const data = [
 const RingsAndI = () => {
   return (
     <>
+      <RingsAndIHero />
       <Casestudy data={data} />
     </>
   );
