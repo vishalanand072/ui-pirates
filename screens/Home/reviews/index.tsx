@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import DotPattern from "@/components/magicui/dot-pattern";
 import React from "react";
 import { MarqueeDemo } from "./marquee_magic";
+import { NewMa } from "./newMa";
 const ReviewPage = () => {
   return (
     <>

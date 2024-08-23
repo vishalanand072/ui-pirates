@@ -12,8 +12,10 @@ module.exports = {
     extend: {
       animation: {
         meteor: "meteor 5s linear infinite",
-        grid: "grid 15s linear infinite",
+        grid: "grid 30s linear infinite",
         meteor: "meteor 5s linear infinite",
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
       keyframes: {
         meteor: {
@@ -35,6 +37,14 @@ module.exports = {
             transform: "rotate(215deg) translateX(-500px)",
             opacity: 0,
           },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
       },
       fontFamily: {

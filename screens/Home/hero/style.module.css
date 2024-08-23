@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url("/assets/home/hero/herobgpng.png");
+  background-image: url("https://res.cloudinary.com/damm9iwho/image/upload/v1724409722/background_zbzrx5.svg");
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; /* Adjust as needed */
-  width: 100%;
-  /* height: 100vh; */
+  /* width: 100%; */
+
+  /* height: 70vh; */
   /* background-color: rgb(224, 124, 124); */
 }
 
