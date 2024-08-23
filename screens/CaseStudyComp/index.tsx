@@ -53,7 +53,7 @@ import UserPersonas from "./userPersonas";
 import FeaturesProduct from "./featuresProduct";
 import ClientRequirements from "./ClientRequirements";
 import StickyTop from "../Home/designDev/stickyTop";
-import ValuesUiElement from "./valuesUiElement";
+import ValuesUiElement from "./visualUiElement";
 import UXAnalysis from "./uxAnalysis";
 import ProductShowcase from "./productShowcase";
 
@@ -67,7 +67,7 @@ const Casestudy = (props: any) => {
     <div>
       {/* <WeCreate /> */}
       {/* <StickyTop /> */}
-      <CaseStudyHero hero={props.data[0].hero} />
+      {/* <CaseStudyHero hero={props.data[0].hero} /> */}
       <Overview overviewdata={props.data[1].overview} />
       <div className="">
         <div

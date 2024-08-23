@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-
+import SimpleOHero from "./hero";
 const data = [
   {
     hero: {
@@ -293,6 +293,7 @@ const data = [
 const SimpleO = () => {
   return (
     <>
+      <SimpleOHero />
       <Casestudy data={data} />
     </>
   );

@@ -22,8 +22,8 @@ const CoreProblems = (props: any) => {
               src={Pic1}
               alt="Solution 1"
               width={250}
-              height={400}
-              className="w-full h-[400px] rounded-3xl object-cover"
+              height={300}
+              className="w-full h-[300px] rounded-3xl object-cover"
             />
           </div>
           <Problems problems={props.CoreProblems.problems} />
@@ -36,9 +36,9 @@ const CoreProblems = (props: any) => {
             <Image
               src={Pic3}
               alt="Solution 1"
-              width={500}
-              height={500}
-              className="w-full h-auto rounded-3xl"
+              width={250}
+              height={300}
+              className="w-full h-[300px] rounded-3xl object-cover"
             />
           </div>
         </div>

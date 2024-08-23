@@ -1,5 +1,13 @@
 import { Card, CardBody } from "@nextui-org/react";
 import Assets from "./assets";
+import UIElementsFrytx from "@/screens/CaseStudy/Frytx/uiElementsFrytx";
+import UIElementsXperiti from "@/screens/CaseStudy/Xperiti/uiElementsXperiti";
+import UIElementsRingsAndI from "@/screens/CaseStudy/Rings&i/uiElementsRings&i";
+import UIElementsSimpleO from "@/screens/CaseStudy/simpleO/uiElementsSimpleO";
+import UIElementsBrahmastra from "@/screens/CaseStudy/Brahmastra/uiElementsBrahmastra";
+import UIElementsTestDynamiz from "@/screens/CaseStudy/testDynamiz/uiElementsTestDynamiz";
+import UIElementsIAS from "@/screens/CaseStudy/infinityAquaSol/uiElementsInfinityAquaSol";
+import UIElementsCloudShift from "@/screens/CaseStudy/cloudShift/uiElementsCloudShift";
 const ValuesUiElement = () => {
   return (
     <>
@@ -60,6 +68,16 @@ const ValuesUiElement = () => {
         </div>
 
         <Assets />
+        <div className="mt-8">
+          {/* <UIElementsXperiti /> */}
+          {/* <UIElementsFrytx /> */}
+          {/* <UIElementsRingsAndI /> */}
+          {/* <UIElementsSimpleO /> */}
+          {/* <UIElementsBrahmastra /> */}
+          {/* <UIElementsTestDynamiz /> */}
+          {/* <UIElementsIAS /> */}
+          <UIElementsCloudShift />
+        </div>
       </div>
     </>
   );

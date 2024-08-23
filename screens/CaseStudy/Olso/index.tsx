@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import OlsoHero from "./hero";
 
 const data = [
   {
@@ -283,6 +284,7 @@ const data = [
 const OLSO = () => {
   return (
     <>
+      <OlsoHero />
       <Casestudy data={data} />
     </>
   );

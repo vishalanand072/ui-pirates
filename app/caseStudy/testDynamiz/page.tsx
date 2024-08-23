@@ -1,4 +1,4 @@
-import TestDynamiz from "@/screens/CaseStudy/TestDynamiz";
+import TestDynamiz from "@/screens/CaseStudy/testDynamiz";
 
 export default function TestDynamizPage() {
   return (

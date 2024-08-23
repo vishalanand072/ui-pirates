@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import CLoudShiftHero from "./hero";
 
 const data = [
   {
@@ -278,6 +279,7 @@ const data = [
 const CloudShift = () => {
   return (
     <>
+      <CLoudShiftHero />
       <Casestudy data={data} />
     </>
   );

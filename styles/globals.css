@@ -317,3 +317,7 @@ body::-webkit-scrollbar {
   border-radius: 8px;
   box-shadow: 10px 10px 40px 20px rgba(73, 71, 71, 0.2);
 }
+
+.image-border {
+  @apply border-2 border-dashed border-[#9747FF] p-4;
+}

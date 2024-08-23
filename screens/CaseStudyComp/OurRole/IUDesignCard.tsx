@@ -1,6 +1,6 @@
 import Image from "next/image";
 import * as PhosphorIcons from "@phosphor-icons/react";
-import { Card, CardBody } from "@nextui-org/react";
+import { Card, CardBody, Divider } from "@nextui-org/react";
 import {
   DiamondsFour,
   UserFocus,
@@ -64,10 +64,24 @@ const UIDesignCard = (props: any) => {
             return (
               <Card className="bg-transparent border-1 border-[#323232] shadow-none text-white p-4">
                 <CardBody>
-                  <div className="flex flex-row items-center justify-between mb-3">
-                    <p className="text-lg font-semibold">{item.heading}</p>
-                    {/* {item.icon} */}
-                    {IconComponent && <IconComponent size={34} weight="fill" />}
+                  <div className="flex flex-row items-center justify-start mb-3">
+                    <div className="flex flex-row items-center justify-start">
+                      <Divider className="bg-[#323232] w-[20px] max-md:hidden" />
+                      <p className="text-lg font-semibold text-nowrap md:px-4 max-md:pr-4">
+                        {item.heading}
+                      </p>
+                    </div>
+                    <div className="w-screen bg-[#323232]">
+                      <Divider className="bg-[#323232] w-fit min-w-fit" />
+                    </div>
+                    <div className="flex flex-row items-center justify-end">
+                      <span className="md:px-4 max-md:pl-4">
+                        {IconComponent && (
+                          <IconComponent size={34} weight="fill" s />
+                        )}
+                      </span>
+                      <Divider className="bg-[#323232] w-[20px]  max-md:hidden" />
+                    </div>
                   </div>
                   <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1">
                     {item.list.map((items: any, indexs: any) => {
