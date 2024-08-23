@@ -1,22 +1,21 @@
 import Image from "next/image";
-const UXMedia = () => {
+const UXMedia = (props: any) => {
+  console.log(props.uxAnalysis);
+
   return (
     <>
       <div>
-        <Image
-          src="https://res.cloudinary.com/damm9iwho/image/upload/v1724064855/image_42_jlamg7.svg"
-          alt="Solution 1"
-          width={300}
-          height={250}
-          className="my-8 w-full"
-        />
-        <Image
-          src="https://res.cloudinary.com/damm9iwho/image/upload/v1724064855/image_43_bzatpn.svg"
-          alt="Solution 1"
-          width={300}
-          height={250}
-          className="my-8 w-full"
-        />
+        {props.uxAnalysis.map((item: any, index: any) => {
+          return (
+            <Image
+              src={item.media}
+              alt="Solution 1"
+              width={300}
+              height={250}
+              className="my-8 w-full"
+            />
+          );
+        })}
       </div>
     </>
   );

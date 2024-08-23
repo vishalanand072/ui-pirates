@@ -8,7 +8,9 @@ import UIElementsBrahmastra from "@/screens/CaseStudy/Brahmastra/uiElementsBrahm
 import UIElementsTestDynamiz from "@/screens/CaseStudy/testDynamiz/uiElementsTestDynamiz";
 import UIElementsIAS from "@/screens/CaseStudy/infinityAquaSol/uiElementsInfinityAquaSol";
 import UIElementsCloudShift from "@/screens/CaseStudy/cloudShift/uiElementsCloudShift";
-const ValuesUiElement = () => {
+const ValuesUiElement = (props: any) => {
+  console.log(props.visualUIElements.uiElementId);
+
   return (
     <>
       <div className="container mx-auto px-20 max-lg:px-16 max-md:px-12">
@@ -24,11 +26,11 @@ const ValuesUiElement = () => {
             <p className="text-subtitle text-2xl font-semibold uppercase">
               Typography
             </p>
-            <p className="text-8xl font-extrabold">Inter</p>
+            <p className="text-8xl font-extrabold">
+              {props.visualUIElements.font}
+            </p>
             <p className=" text-lg mt-2 md:w-[70%]">
-              The Inter font is used to reflect a modern and clean aesthetic,
-              enhancing readability and user experience across digital
-              platforms.
+              {props.visualUIElements.fontDescription}
             </p>
           </div>
           <div className="max-md:mt-4">
@@ -69,14 +71,31 @@ const ValuesUiElement = () => {
 
         <Assets />
         <div className="mt-8">
-          {/* <UIElementsXperiti /> */}
-          {/* <UIElementsFrytx /> */}
-          {/* <UIElementsRingsAndI /> */}
-          {/* <UIElementsSimpleO /> */}
-          {/* <UIElementsBrahmastra /> */}
-          {/* <UIElementsTestDynamiz /> */}
-          {/* <UIElementsIAS /> */}
-          <UIElementsCloudShift />
+          {props.visualUIElements.uiElementId == "UIXperiti" && (
+            <UIElementsXperiti />
+          )}
+          {props.visualUIElements.uiElementId == "UIFrytx" && (
+            <UIElementsFrytx />
+          )}
+          {props.visualUIElements.uiElementId == "UIRings&I" && (
+            <UIElementsRingsAndI />
+          )}
+          {props.visualUIElements.uiElementId == "UISimpleO" && (
+            <UIElementsSimpleO />
+          )}
+          {props.visualUIElements.uiElementId == "UIBrahmastra" && (
+            <UIElementsBrahmastra />
+          )}
+          {props.visualUIElements.uiElementId == "UITestDynamiz" && (
+            <UIElementsTestDynamiz />
+          )}
+
+          {props.visualUIElements.uiElementId == "UIInfinityAquaSol" && (
+            <UIElementsIAS />
+          )}
+          {props.visualUIElements.uiElementId == "UICloudShift" && (
+            <UIElementsCloudShift />
+          )}
         </div>
       </div>
     </>

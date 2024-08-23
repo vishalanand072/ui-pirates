@@ -259,24 +259,21 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [
-      {
-        media: "url",
-        type: "Typography",
-        description:
-          "Work Sans is a modern font that emphasizes clarity and readability. Its clean lines make it ideal for both body text and headings. Optimized for web use, it is a popular choice for digital interfaces.",
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
       },
-      {
-        media: "url",
-        type: "Color Palette",
-        description: "Primary: #2947A8, Secondary: #17c964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
-      },
-    ],
+      uiElementId: "UIInfinityAquaSol", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [],
   },
 ];
 const InfinityAquaSol = () => {

@@ -4,7 +4,7 @@ import Image from "next/image";
 const FrytxHero = () => {
   return (
     <>
-      <div className="relative container mx-auto px-20 max-md:px-10 mb-4">
+      <div className="relative container mx-auto px-20 max-md:px-10 mb-4 -mt-16">
         <div className="grid grid-cols-2 max-md:grid-cols-1 md:h-screen  items-center  md:-pt-12 max-md:py-12 ">
           <div>
             <Button
@@ -45,7 +45,7 @@ const FrytxHero = () => {
           alt="Solution 1"
           width={100}
           height={100}
-          className="my-8 absolute bottom-4 right-0 "
+          className="my-8 absolute -bottom-8 right-0 max-md:hidden"
         />
 
         <Image
@@ -53,7 +53,7 @@ const FrytxHero = () => {
           alt="Solution 1"
           width={150}
           height={150}
-          className="my-8 absolute -top-8 -left-0"
+          className="my-8 absolute -top-8 -left-0 max-md:hidden"
         />
       </div>
     </>
