@@ -1,4 +1,4 @@
-import InfinityAquaSol from "@/screens/CaseStudy/InfinityAquaSol";
+import InfinityAquaSol from "@/screens/CaseStudy/infinityAquaSol";
 
 export default function InfinityAquaSolPage() {
   return (
