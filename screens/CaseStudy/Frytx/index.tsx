@@ -263,7 +263,30 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
+      },
+      uiElementId: "UIFrytx", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [
+      {
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391269/image_42_uwucul.svg",
+      },
+      {
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391269/image_43_k06eul.svg",
+      },
+    ],
   },
 ];
 const Frytx = () => {

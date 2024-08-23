@@ -255,25 +255,21 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [
-      {
-        media: "url",
-        type: "Typography",
-        description:
-          "Poppins is a sleek, modern font with a geometric, clean design. It combines professionalism with elegance, perfect for digital and print use, enhancing readability and visual appeal.",
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
       },
-      {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #0D99FF, Secondary: #00245A, #17C964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
-      },
-    ],
+      uiElementId: "UICloudShift", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [],
   },
 ];
 const CloudShift = () => {

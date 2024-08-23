@@ -1,9 +1,57 @@
 import { Card, CardBody } from "@nextui-org/react";
 import { PhosphorLogo, DiamondsFour } from "@phosphor-icons/react";
-import Image from "next/image";
-import img1 from "@/public/img1.svg";
-import img2 from "@/public/img2.svg";
-import img3 from "@/public/img3.svg";
+import * as PhosphorIcons from "@phosphor-icons/react";
+
+const data = [
+  {
+    icon: "BellSimple",
+  },
+  {
+    icon: "House",
+  },
+  {
+    icon: "UsersFour",
+  },
+  {
+    icon: "VideoCamera",
+  },
+  {
+    icon: "Printer",
+  },
+  {
+    icon: "GearSix",
+  },
+  {
+    icon: "CreditCard",
+  },
+  {
+    icon: "Coins",
+  },
+  {
+    icon: "Note",
+  },
+  {
+    icon: "Trash",
+  },
+  {
+    icon: "FloppyDisk",
+  },
+  {
+    icon: "CurrencyCircleDollar",
+  },
+  {
+    icon: "User",
+  },
+  {
+    icon: "CalendarCheck",
+  },
+  {
+    icon: "SealCheck",
+  },
+  {
+    icon: "Briefcase",
+  },
+];
 
 const Assets = () => {
   return (
@@ -45,25 +93,44 @@ const Assets = () => {
                     Assets
                   </p>
                   <div className="grid grid-cols-8 max-md:grid-cols-4 max-lg:grid-cols-6 gap-y-4">
-                    {[...Array(16)].map((_, i) => (
-                      <PhosphorLogo
-                        size={54}
-                        className="bg-white p-1 rounded-lg"
-                      />
-                    ))}
+                    {data.map((item, index) => {
+                      const IconComponent = PhosphorIcons[
+                        item.icon as keyof typeof PhosphorIcons
+                      ] as any;
+                      return (
+                        <span>
+                          {IconComponent && (
+                            <IconComponent
+                              size={54}
+                              weight="regular"
+                              className="bg-white p-2 rounded-lg"
+                            />
+                          )}
+                        </span>
+                      );
+                    })}
                   </div>
 
                   <p className="text-subtitle text-xl font-semibold my-3">
                     Assets
                   </p>
                   <div className="grid grid-cols-8 max-md:grid-cols-4 max-lg:grid-cols-6 gap-y-4">
-                    {[...Array(16)].map((_, i) => (
-                      <PhosphorLogo
-                        size={54}
-                        weight="fill"
-                        className="bg-white p-1 rounded-lg"
-                      />
-                    ))}
+                    {data.map((item, index) => {
+                      const IconComponent = PhosphorIcons[
+                        item.icon as keyof typeof PhosphorIcons
+                      ] as any;
+                      return (
+                        <span>
+                          {IconComponent && (
+                            <IconComponent
+                              size={54}
+                              weight="fill"
+                              className="bg-white p-2 rounded-lg"
+                            />
+                          )}
+                        </span>
+                      );
+                    })}
                   </div>
                 </CardBody>
               </Card>

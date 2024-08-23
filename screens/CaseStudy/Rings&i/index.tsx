@@ -241,6 +241,7 @@ const data = [
       },
     ],
   },
+
   {
     featureAndProduct: [
       {
@@ -264,24 +265,21 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [
-      {
-        media: "url",
-        type: "Typography",
-        description: "Oregon LDO font for modern and adventurous designs.",
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
       },
-      {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #BE877B, Secondary: #1B1B1B, #17c964, #F5A524, #F31260, #924C26, #CE875E, #924C26",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
-      },
-    ],
+      uiElementId: "UIRings&I", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [],
   },
 ];
 const RingsAndI = () => {
