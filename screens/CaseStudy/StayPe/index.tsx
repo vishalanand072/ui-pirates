@@ -3,7 +3,7 @@ import Casestudy from "@/screens/CaseStudyComp";
 const data = [
   {
     hero: {
-      title: "Frytx",
+      title: "Staype",
       subtitle: "",
       bgimage: "",
     },
@@ -11,12 +11,12 @@ const data = [
   {
     overview: {
       overview:
-        "FrytX is a versatile application designed to empower businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
-      Client: "Frytx",
-      Industry: "Technology, Business Management",
-      Platform: "Mobile Application",
+        "Staype is an innovative app designed to simplify the process of finding and managing rental properties. With a focus on tenant needs, Staype streamlines the rental experience from initial search to moving in and managing household services.",
+      Client: "Staype",
+      Industry: "Real Estate",
+      Platform: "Mobile App",
       Objective:
-        "To create a mobile application for FrytX that empowers businesses and consumers by offering robust solutions for business management, complaint handling, business verification, and financial organization.",
+        "Design and develop a versatile app for tenants that adapts to different stages of the rental process, from searching for properties to managing post-move-in services.",
     },
   },
   {
@@ -24,34 +24,34 @@ const data = [
       card: [
         {
           img: "url",
-          heading: "Unified Platform",
+          heading: "Comprehensive App Levels",
           subheading:
-            "Develop a platform integrating business management, complaint handling, ratings, reviews, and verification.",
+            "Design three app levels: browsing, booking, and home management.",
         },
         {
           img: "url",
-          heading: "Complaint Management",
+          heading: "User-Friendly Interface",
           subheading:
-            "Enable the efficient tracking and swift resolution of customer complaints.",
+            "Create an intuitive design for seamless navigation and interaction.",
         },
         {
           img: "url",
-          heading: "Business Verification",
+          heading: "Service Integration",
           subheading:
-            "Implement a system for verifying business credentials to enhance trust and transparency.",
+            "Provide features for managing bookings, property visits, and services.",
         },
       ],
       Outcomes:
-        "A comprehensive and user-friendly platform that streamlines business management, ensures effective complaint handling, verifies businesses for trustworthiness, and organizes financial operations, thereby enhancing overall efficiency and customer satisfaction.",
+        "Successfully created a user-friendly app that supports tenants at various stages, offering features like property search, booking management, and household services, enhancing the overall rental experience.",
     },
   },
   {
-    ourRole: [
+    ourrole: [
       {
         heading: "User Research",
         icon: "UserFocus",
         list: [
-          "Interviews and Surveys",
+          "Interviews & Surveys",
           "User Personas",
           "Journey Mapping",
           "Usability Testing",
@@ -77,11 +77,6 @@ const data = [
           "Interaction Design",
         ],
       },
-      {
-        heading: "Development & Integration",
-        icon: "Code",
-        list: ["Front End Development", "Integration", "Back End Development"],
-      },
     ],
   },
   {
@@ -91,13 +86,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "Fragmented tools and processes for business management.",
+              item: "Difficulty in finding and comparing rental options.",
             },
             {
-              item: "Inefficient complaint handling and customer dispute resolution.",
+              item: "Unclear pricing and hidden fees.",
             },
             {
-              item: "Lack of transparent business verification processes.",
+              item: "Difficulty in managing post-move-in services and household needs.",
             },
           ],
         },
@@ -107,13 +102,13 @@ const data = [
           image: "url",
           list: [
             {
-              item: "FrytX integrates multiple business management tools into a unified platform, streamlining operations.",
+              item: "Comprehensive property listings and user-friendly booking process.",
             },
             {
-              item: "Efficient complaint management system ensures timely resolution of customer issues.",
+              item: "Clear information on rental costs and fees.",
             },
             {
-              item: "Robust business verification process enhances transparency and builds trust with consumers.",
+              item: "Access to cleaning, maintenance, and other household management tools.",
             },
           ],
         },
@@ -123,114 +118,126 @@ const data = [
   {
     userGroup: [
       {
-        heading: "Business Owners",
-        image: "url",
-        list: [
-          { listItem: "Local shop owners, etc." },
-          { listItem: "Small Businesses" },
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Explorers" }],
+            description:
+              "“I want to search for available flats so that I can find options that fit my budget and preferences.“",
+          },
         ],
-        discreption:
-          "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
       },
       {
-        heading: "Consumers",
-        image: "url",
-        list: [{ listItem: "Individuals looking to verify businesses" }],
-        discreption:
-          "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Bookers" }],
+            description:
+              "“I want to receive confirmation of my booking and payment so that I know my reservation is secured.“",
+          },
+        ],
       },
       {
-        heading: "Freelancers",
-        image: "url",
-        list: [{ listItem: "Freelancers using the app for payment" }],
-        discreption:
-          "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Residents" }],
+            description:
+              "“I want to access and manage household services like cleaning & maintenance so that I can keep my new home in good condition.“",
+          },
+        ],
       },
     ],
   },
   {
     userPersonas: [
       {
-        name: "Sarah",
-        smallDiscription: "32,  Business Owner",
-        type: "Individual",
-        Gender: "Female",
-        Occupation: "Cafe Owner",
-        bio: "Sarah, a local cafe owner, needs a comprehensive tool to manage all aspects of her business. This will allow her to streamline operations and save valuable time. With everything in one place, she can improve efficiency and focus on growing her cafe.",
-        goals: [
-          {
-            item: "Efficiently manage time and tasks.",
-          },
-          {
-            item: "Promptly address customer feedback.",
-          },
-          {
-            item: "Uphold and enhance cafe reputation.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Struggling to manage time and tasks.",
-          },
-          {
-            item: "Difficulty in organizing finances effectively.",
-          },
-          {
-            item: "Delays in responding to customer reviews.",
-          },
-        ],
-      },
-      {
-        name: "Emma",
-        smallDiscription: "29,  Consumer",
-        type: "Corporate",
-        Gender: "Female",
-        Occupation: "HR Manager",
-        bio: "Emma, an HR manager, needs a tool to easily search for and verify businesses. This will help her make informed decisions about where to allocate company resources. Ensuring reliability and credibility in her choices is crucial for supporting company operations.",
-        goals: [
-          {
-            item: "Find reliable businesses easily.",
-          },
-          {
-            item: "Make informed decisions based on reviews.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Difficulty trusting online reviews fully.",
-          },
-          {
-            item: "Challenge in verifying business credentials.",
-          },
-        ],
-      },
-      {
-        name: "Arjun",
-        smallDiscription: "27, Freelancer",
+        name: "John",
+        smallDescription: "29, Explorer",
         type: "Individual",
         Gender: "Male",
-        Occupation: "Graphic Designer",
-        bio: "Arjun is a freelance graphic designer who needs an app that ensures secure transactions, manages client communications efficiently, and verifies client credibility to build trust and strong business relationships.",
+        occupation: "Software Developer",
+        bio: "John is a software developer who is currently looking for an affordable apartment. He is focused on finding properties close to his workplace and relies on detailed property information to make informed decisions.",
         goals: [
           {
-            item: "Ensure secure transactions.",
+            item: "Find an affordable apartment.",
           },
           {
-            item: "Manage client communications.",
+            item: "Locate properties near his workplace.",
           },
           {
-            item: "Verify client credibility.",
+            item: "View detailed property information.",
           },
         ],
         painPoints: [
           {
-            item: "Delayed payments.",
+            item: "Limited property listings.",
           },
           {
-            item: "Managing multiple clients.",
+            item: "Incomplete property details.",
           },
           {
-            item: "Verifying the legitimacy of new clients.",
+            item: "Difficulty in arranging visits.",
+          },
+        ],
+      },
+      {
+        name: "Sarah",
+        smallDescription: "32, Booker",
+        type: "Individual",
+        Gender: "Female",
+        occupation: "Marketing Manager",
+        bio: "Sarah is a marketing manager who has just completed the booking process for her new apartment. She is now focused on confirming her booking and payment, planning her move-in logistics, and ensuring that the lease terms are clear and straightforward.",
+        goals: [
+          {
+            item: "Confirm booking and payment.",
+          },
+          {
+            item: "Plan move-in logistics.",
+          },
+          {
+            item: "Ensure lease terms are clear.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Difficulty in finding available rental properties that meet her criteria.",
+          },
+          {
+            item: "Lack of reliable and detailed information about properties.",
+          },
+          {
+            item: "Uncertainty about the trustworthiness of landlords and brokers.",
+          },
+        ],
+      },
+      {
+        name: "Michael",
+        smallDescription: "31, Resident",
+        type: "Individual",
+        Gender: "Male",
+        occupation: "Finance Analyst",
+        bio: "Michael is a finance analyst who has recently moved into his new home. He is now focused on managing his household efficiently, utilizing various services provided by the app, and keeping track of his maintenance requests and bills.",
+        goals: [
+          {
+            item: "Efficiently manage household tasks.",
+          },
+          {
+            item: "Utilize services like cleaning and maintenance.",
+          },
+          {
+            item: "Track and manage bills and receipts.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Difficulty in coordinating household services.",
+          },
+          {
+            item: "Managing multiple bills and receipts.",
+          },
+          {
+            item: "Ensuring timely maintenance and repairs.",
           },
         ],
       },
@@ -240,32 +247,58 @@ const data = [
     featureAndProduct: [
       {
         media: "url",
-        heading: "Business Management",
+        heading: "Find Flats for Rent",
         subHeading:
-          "Centralized tools for managing various aspects of business operations.",
+          "Browse and search for rental properties based on location, price, and amenities.",
       },
       {
         media: "url",
-        heading: "Complaint Management",
-        subHeading: "Track and resolve customer complaints efficiently.",
+        heading: "Detailed Property Information",
+        subHeading:
+          "Access comprehensive details about properties, including photos and descriptions.",
       },
       {
         media: "url",
-        heading: "Business Verification",
-        subHeading: "Verify business credentials to build trust",
+        heading: "Booking and Visits",
+        subHeading:
+          "Manage property viewings, and handle bookings and payments.",
       },
       {
         media: "url",
-        heading: "Financial Organization",
-        subHeading: "Manage payments and financial transactions securely.",
+        heading: "Services",
+        subHeading:
+          "Request additional services such as cleaning and maintenance.",
+      },
+      {
+        media: "url",
+        heading: "Household Management",
+        subHeading: "Tools for managing household tasks and utilities.",
       },
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    uxAnalysis: [
+      {
+        media: "url",
+        type: "Typography",
+        description:
+          "Satoshi is a modern font known for its clean lines and geometric design. Its balanced proportions and clarity make it ideal for both digital and print projects.",
+      },
+      {
+        media: "url",
+        type: "Color Palette",
+        description:
+          "Primary: #6A71F1, Secondary: #EBF1FF, #17c964, #F5A524, #F31260",
+      },
+      {
+        media: "url",
+        type: "Icons",
+        description: "Phosphor Icons for a modern and versatile aesthetic.",
+      },
+    ],
   },
 ];
-const StayPe = () => {
+const Staype = () => {
   return (
     <>
       <Casestudy data={data} />
@@ -273,4 +306,4 @@ const StayPe = () => {
   );
 };
 
-export default StayPe;
+export default Staype;
