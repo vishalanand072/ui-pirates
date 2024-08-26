@@ -52,7 +52,7 @@ const sixthRow = reviews.slice(reviews.length / 2);
 
 function ReviewCard() {
   return (
-    <Card className="max-w-[400px] p-3 pt-1 pr-2 pb-1 pl-2  shadow-lg">
+    <Card className="max-w-[400px] p-3 pt-1 pr-2 pb-1 pl-2  border-1">
       <CardHeader className="relative flex gap-3">
         <Image
           alt="nextui logo"

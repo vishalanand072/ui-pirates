@@ -4,9 +4,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import AboutCard from "./aboutCard";
 
 const data = [
-  { title: "title 1", cardColor: "#EDEEE6" },
-  { title: "title 2", cardColor: "#E6ECEE" },
-  { title: "title 3", cardColor: "#EEE6ED" },
+  { title: "title 1", cardColor: "#F6F4F4" },
+  { title: "title 2", cardColor: "#EFFBF9" },
+  { title: "title 3", cardColor: "#F2EDF4" },
   { title: "title 4", cardColor: "#EEEAE6" },
 ];
 
