@@ -1,10 +1,9 @@
 import Casestudy from "@/screens/CaseStudyComp";
-import OlsoHero from "./hero";
-
+import IonHero from "./hero";
 const data = [
   {
     hero: {
-      title: "OLSO",
+      title: "ION",
       subtitle: "",
       bgimage: "",
     },
@@ -12,8 +11,8 @@ const data = [
   {
     overview: {
       overview:
-        "OLSO is a platform for borrowing products from nearby people, aiming to revolutionize peer-to-peer sharing commerce.",
-      Client: "OLSO",
+        "ION is a platform for borrowing products from nearby people, aiming to revolutionize peer-to-peer sharing commerce.",
+      Client: "ION",
       Industry: "Sharing Economy, Rental",
       Platform: "Mobile App",
       Objective:
@@ -43,7 +42,7 @@ const data = [
         },
       ],
       Outcomes:
-        "The OLSO platform featured an intuitive design, robust security measures, and effective integration with Shopify, leading to increased user engagement, satisfaction, and a seamless borrowing and lending experience.",
+        "The ION platform featured an intuitive design, robust security measures, and effective integration with Shopify, leading to increased user engagement, satisfaction, and a seamless borrowing and lending experience.",
     },
   },
   {
@@ -262,7 +261,7 @@ const data = [
         start: "#6A4DFF",
         end: "#64B5F6",
       },
-      uiElementId: "UIOLSO", //don't edit this id
+      uiElementId: "UIION", //don't edit this id
     },
   },
   {
@@ -274,13 +273,13 @@ const data = [
     ],
   },
 ];
-const OLSO = () => {
+const ION = () => {
   return (
     <>
-      <OlsoHero />
+      <IonHero />
       <Casestudy data={data} />
     </>
   );
 };
 
-export default OLSO;
+export default ION;
