@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
       </div> */}
 
       {/* <WeCreate /> */}
-      <ScrollSnap />
+      {/* <ScrollSnap /> */}
 
       <TimeLinePaga />
       <div className="max-md:hidden">
