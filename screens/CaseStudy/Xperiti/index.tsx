@@ -23,19 +23,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724653471/AppWindow2_v7tj9k.svg",
           heading: "Unified Platform",
           subheading:
             "Develop a single platform to manage both interviews and surveys research studies.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724653472/AppWindow_kc0q6i.svg",
           heading: "User Experience",
           subheading:
             "Ensure an intuitive and seamless user interface for both researchers and participants.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724653472/AppWindow1_vyx2pc.svg",
           heading: "Participant Management",
           subheading:
             "Ensure efficient participant tracking and streamlined incentive distribution.",
@@ -88,7 +88,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654462/image_18_kva9ki.svg",
           list: [
             {
               item: "Inefficiencies resulted in wasted time and potential loss of participant engagement.",
@@ -104,7 +105,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654460/image_19_ovkaxp.svg",
           list: [
             {
               item: "Xperiti's integrated platform streamlines study management, saving time and enhancing engagement.",

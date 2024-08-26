@@ -1,17 +1,5 @@
 "use client";
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Divider,
-  Link,
-  Image,
-  Button,
-} from "@nextui-org/react";
-import { Gift, SealCheck, Sparkle } from "@phosphor-icons/react";
-
 export default function InnovativeProgram() {
   return (
     <>
@@ -20,17 +8,18 @@ export default function InnovativeProgram() {
         design and development.
       </p>
       <div className="flex justify-center items-center flex-row gap-4 w-full mt-8">
-        <Button
-          color="primary"
-          size="md"
-          radius="sm"
-          className="  font-bold py-2 px-4 w-auto"
-        >
-          Join Now!
-        </Button>
-        <Button size="md" radius="sm" className="font-bold py-2 px-4 w-auto ">
-          Learn More
-        </Button>
+        <div className="button-container-1-rev animate__animated animate__fadeInUp-rev animate__slow animate__delay-4s">
+          <span className="mas-rev">Join Now!</span>
+          <button id="work" type="button" name="Hover">
+            Join Now!
+          </button>
+        </div>
+        <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
+          <span className="mas">Learn More</span>
+          <button id="work" type="button" name="Hover">
+            Learn More
+          </button>
+        </div>
       </div>
     </>
   );

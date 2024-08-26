@@ -32,8 +32,9 @@ const HomePage: React.FC = () => {
       {/* <WeCreate /> */}
 
       <TimeLinePaga />
-
-      <DesignDev />
+      <div className="max-md:hidden">
+        <DesignDev />
+      </div>
 
       <OurWork />
 
