@@ -2,7 +2,7 @@ import ClientCard from "./ClientCard";
 import ParticipantCard from "./ParticipantCard";
 
 const UserGroups = (props: any) => {
-  console.log(props.userGroup.length);
+  // console.log(props.userGroup.length);
 
   return (
     <>

@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-
+import XperitiHero from "./hero";
 const data = [
   {
     hero: {
@@ -23,19 +23,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724653471/AppWindow2_v7tj9k.svg",
           heading: "Unified Platform",
           subheading:
             "Develop a single platform to manage both interviews and surveys research studies.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724653472/AppWindow_kc0q6i.svg",
           heading: "User Experience",
           subheading:
             "Ensure an intuitive and seamless user interface for both researchers and participants.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724653472/AppWindow1_vyx2pc.svg",
           heading: "Participant Management",
           subheading:
             "Ensure efficient participant tracking and streamlined incentive distribution.",
@@ -88,7 +88,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654462/image_18_kva9ki.svg",
           list: [
             {
               item: "Inefficiencies resulted in wasted time and potential loss of participant engagement.",
@@ -104,7 +105,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654460/image_19_ovkaxp.svg",
           list: [
             {
               item: "Xperiti's integrated platform streamlines study management, saving time and enhancing engagement.",
@@ -126,7 +128,7 @@ const data = [
         heading: "Clients",
         image: "url",
         list: [{ listItem: "Researchers" }, { listItem: "Study Coordinators" }],
-        discreption:
+        description:
           "“I want to create and manage studies efficiently so that I can focus on analyzing results.”",
       },
       {
@@ -136,7 +138,7 @@ const data = [
           { listItem: "Individuals participating in surveys" },
           { listItem: "Individuals participating in interviews. " },
         ],
-        discreption:
+        description:
           "“I want to easily take part in surveys and interviews so that I can earn incentives without hassle.”",
       },
     ],
@@ -234,12 +236,36 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
+      },
+      uiElementId: "UIXperiti", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [
+      {
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391127/image_42_u7hdgl.svg",
+      },
+      {
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391127/image_43_jvrufl.svg",
+      },
+    ],
   },
 ];
 const Xperiti = () => {
   return (
     <>
+      <XperitiHero />
       <Casestudy data={data} />
     </>
   );

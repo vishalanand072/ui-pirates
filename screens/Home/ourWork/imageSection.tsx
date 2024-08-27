@@ -22,8 +22,13 @@ const data = [
   },
   {
     image: "url",
-    title: "Rings & I",
-    rought: "/caseStudy/rings&i",
+    title: "SimpleO",
+    rought: "/caseStudy/simpleO",
+  },
+  {
+    image: "url",
+    title: "ION",
+    rought: "/caseStudy/Ion",
   },
   {
     image: "url",
@@ -32,8 +37,8 @@ const data = [
   },
   {
     image: "url",
-    title: "StayPe",
-    rought: "/caseStudy/stayPe",
+    title: "Rings & I",
+    rought: "/caseStudy/rings&i",
   },
   {
     image: "url",
@@ -42,23 +47,29 @@ const data = [
   },
   {
     image: "url",
+    title: "Olso",
+    rought: "/caseStudy/olso",
+  },
+  {
+    image: "url",
+    title: "StayPe",
+    rought: "/caseStudy/stayPe",
+  },
+
+  {
+    image: "url",
     title: "cloud Shift",
     rought: "/caseStudy/cloudShift",
   },
   {
     image: "url",
-    title: "Infinity Aqua Sol",
-    rought: "/caseStudy/infinityAquaSol",
-  },
-  {
-    image: "url",
-    title: "SimpleO",
-    rought: "/caseStudy/simpleO",
-  },
-  {
-    image: "url",
     title: "Test Dynamiz",
     rought: "/caseStudy/testDynamiz",
+  },
+  {
+    image: "url",
+    title: "Infinity Aqua Sol",
+    rought: "/caseStudy/infinityAquaSol",
   },
 ];
 

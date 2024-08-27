@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import BrahmastraHero from "./hero";
 
 const data = [
   {
@@ -40,7 +41,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -112,34 +113,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Professional Traders" }],
-            description:
-              "“I want to access advanced tools and real-time market data to make informed trading decisions.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Professional Traders" }],
+        description:
+          "“I want to access advanced tools and real-time market data to make informed trading decisions.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Retail Traders" }],
-            description:
-              "“I want a user-friendly platform that helps me manage my trades and learn more about trading.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Retail Traders" }],
+        description:
+          "“I want a user-friendly platform that helps me manage my trades and learn more about trading.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Investors" }],
-            description:
-              "“I want to monitor my investment portfolios and analyze market trends efficiently.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Investors" }],
+        description:
+          "“I want to monitor my investment portfolios and analyze market trends efficiently.”",
       },
     ],
   },
@@ -265,23 +254,28 @@ const data = [
     ],
   },
   {
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
+      },
+      uiElementId: "UIBrahmastra", //don't edit this id
+    },
+  },
+  {
     uxAnalysis: [
       {
-        media: "url",
-        type: "Typography",
-        description:
-          "Inter font for a modern and clean aesthetic, enhancing readability and user experience across digital platforms.",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391497/image_42_ebnk3a.svg",
       },
       {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #006FEE, Secondary: #FF6B00, #17c964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391497/image_43_t8wszv.svg",
       },
     ],
   },
@@ -289,6 +283,7 @@ const data = [
 const Brahmastra = () => {
   return (
     <>
+      <BrahmastraHero />
       <Casestudy data={data} />
     </>
   );

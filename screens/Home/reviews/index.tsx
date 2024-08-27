@@ -8,7 +8,7 @@ import { MarqueeDemo } from "./marquee_magic";
 const ReviewPage = () => {
   return (
     <>
-      <div className="relative flex h-screen overflow-hidden bg-background p-0 m-0 md:shadow-xl">
+      <div className="relative flex h-screen overflow-hidden bg-background p-0 m-0 ">
         <div className="flex flex-col">
           {/* <p className="z-9 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white"></p> */}
           <div className="layer relative">
@@ -23,17 +23,12 @@ const ReviewPage = () => {
                 width: "100vw",
               }}
             >
-              <h1 className="text-4xl md:text-6xl sm:text-4xl font-bold text-white-900  mt-12">
+              <p className="text-3xl md:text-5xl text-primary mt-12">
+                Testimonials
+              </p>
+              <h1 className="text-4xl md:text-6xl sm:text-4xl font-bold text-white-900 mt-3 ">
                 What People Are Saying
               </h1>
-              <p className="mt-4 max-md:mt-2 max-md:text-lg text-xl font-semibold text-gray-600">
-                Don't just take our word for it. <br />
-                Here's what <span className="font-semibold">
-                  real people
-                </span>{" "}
-                are saying about{" "}
-                <span className="font-semibold">UI Pirates</span>
-              </p>
             </div>
             <div className="flex flex-row justify-center">
               <br className="h-8" />

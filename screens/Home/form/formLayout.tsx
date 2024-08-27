@@ -26,7 +26,7 @@ const formLayout: React.FC = () => {
     e.preventDefault();
 
     //Logs all the submitted data
-    console.log({ name, company, email, interests, budget, projectDetails });
+    // console.log({ name, company, email, interests, budget, projectDetails });
   };
 
   return (
@@ -126,15 +126,14 @@ const formLayout: React.FC = () => {
             value={projectDetails}
             onChange={(e) => setProjectDetails(e.target.value)}
           ></textarea>
-          <Button
-            className="mt-8 font-semibold"
-            color="primary"
-            size="md"
-            radius="sm"
-            onClick={handleSubmit}
-          >
-            Submit
-          </Button>
+          <div className="flex flex-row items-start justify-start mt-3">
+            <div className="button-container-1-rev animate__animated animate__fadeInUp-rev animate__slow animate__delay-4s flex">
+              <span className="mas-rev">Submit</span>
+              <button id="work" type="button" name="Hover">
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
         <div className="my-6">
           <Card className=" shadow-none border-2 bg-transparent">

@@ -8,6 +8,7 @@ import ReviewPage from "./reviews";
 import GreatIdea from "./greatIdea";
 import FormLayout from "./form/formLayout";
 import InternPage from "./InternsPage";
+import ScrollSnap from "./scrollSnapExample";
 
 import { HomePageData } from "../../types";
 
@@ -29,11 +30,13 @@ const HomePage: React.FC = () => {
         </div>
       </div> */}
 
-      <WeCreate />
+      {/* <WeCreate /> */}
+      {/* <ScrollSnap /> */}
 
       <TimeLinePaga />
-
-      <DesignDev />
+      <div className="max-md:hidden">
+        <DesignDev />
+      </div>
 
       <OurWork />
 

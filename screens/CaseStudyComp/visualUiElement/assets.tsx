@@ -1,17 +1,65 @@
 import { Card, CardBody } from "@nextui-org/react";
 import { PhosphorLogo, DiamondsFour } from "@phosphor-icons/react";
-import Image from "next/image";
-import img1 from "@/public/img1.svg";
-import img2 from "@/public/img2.svg";
-import img3 from "@/public/img3.svg";
+import * as PhosphorIcons from "@phosphor-icons/react";
+
+const data = [
+  {
+    icon: "BellSimple",
+  },
+  {
+    icon: "House",
+  },
+  {
+    icon: "UsersFour",
+  },
+  {
+    icon: "VideoCamera",
+  },
+  {
+    icon: "Printer",
+  },
+  {
+    icon: "GearSix",
+  },
+  {
+    icon: "CreditCard",
+  },
+  {
+    icon: "Coins",
+  },
+  {
+    icon: "Note",
+  },
+  {
+    icon: "Trash",
+  },
+  {
+    icon: "FloppyDisk",
+  },
+  {
+    icon: "CurrencyCircleDollar",
+  },
+  {
+    icon: "User",
+  },
+  {
+    icon: "CalendarCheck",
+  },
+  {
+    icon: "SealCheck",
+  },
+  {
+    icon: "Briefcase",
+  },
+];
 
 const Assets = () => {
   return (
     <>
       <p className="text-subtitle text-3xl font-semibold mb-3">Assets</p>
-      <Card className="bg-none shadow-none border-1">
-        <CardBody>
-          <p className="text-subtitle text-2xl font-semibold mb-3">Assets</p>
+      <Card className="bg-none shadow-none border-none p-0">
+        <CardBody className="p-0 m-0">
+          <p className="text-2xl font-semibold mb-3">Icons</p>
           <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4">
             <div>
               <Card className="bg-[#C4E456] shadow-none border-1">
@@ -45,54 +93,49 @@ const Assets = () => {
                     Assets
                   </p>
                   <div className="grid grid-cols-8 max-md:grid-cols-4 max-lg:grid-cols-6 gap-y-4">
-                    {[...Array(16)].map((_, i) => (
-                      <PhosphorLogo
-                        size={54}
-                        className="bg-white p-1 rounded-lg"
-                      />
-                    ))}
+                    {data.map((item, index) => {
+                      const IconComponent = PhosphorIcons[
+                        item.icon as keyof typeof PhosphorIcons
+                      ] as any;
+                      return (
+                        <span>
+                          {IconComponent && (
+                            <IconComponent
+                              size={54}
+                              weight="regular"
+                              className="bg-white p-2 rounded-lg"
+                            />
+                          )}
+                        </span>
+                      );
+                    })}
                   </div>
 
                   <p className="text-subtitle text-xl font-semibold my-3">
                     Assets
                   </p>
                   <div className="grid grid-cols-8 max-md:grid-cols-4 max-lg:grid-cols-6 gap-y-4">
-                    {[...Array(16)].map((_, i) => (
-                      <PhosphorLogo
-                        size={54}
-                        weight="fill"
-                        className="bg-white p-1 rounded-lg"
-                      />
-                    ))}
+                    {data.map((item, index) => {
+                      const IconComponent = PhosphorIcons[
+                        item.icon as keyof typeof PhosphorIcons
+                      ] as any;
+                      return (
+                        <span>
+                          {IconComponent && (
+                            <IconComponent
+                              size={54}
+                              weight="fill"
+                              className="bg-white p-2 rounded-lg"
+                            />
+                          )}
+                        </span>
+                      );
+                    })}
                   </div>
                 </CardBody>
               </Card>
             </div>
           </div>
-        </CardBody>
-      </Card>
-
-      <Card className="bg-none shadow-none border-1">
-        <CardBody>
-          <p className="text-subtitle text-xl font-semibold mb-3 uppercase">
-            Illustrations
-          </p>
-          <div className="flex flex-row items-center justify-between gap-4">
-            <Image
-              src={img1}
-              alt="Client"
-              width={100}
-              height={100}
-              className="w-[20%]"
-            />
-            <Image src={img2} alt="Client" className="w-[75%] h-[50%]" />
-          </div>
-
-          <Card className="bg-none shadow-none border-1 mt-3">
-            <CardBody className=" items-center">
-              <Image src={img3} alt="Client" className="w-[15%] h-[50%]" />
-            </CardBody>
-          </Card>
         </CardBody>
       </Card>
     </>

@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-
+import TestDynamizHero from "./hero";
 const data = [
   {
     hero: {
@@ -40,7 +40,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -112,34 +112,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Development Teams" }],
-            description:
-              "“I want to integrate automated tests easily into my development workflow to ensure code quality and save time.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Development Teams" }],
+        description:
+          "“I want to integrate automated tests easily into my development workflow to ensure code quality and save time.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Project Managers" }],
-            description:
-              "“I want to automate repetitive testing tasks & manage test cases efficiently to identify bugs early and improve testing efficiency.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Project Managers" }],
+        description:
+          "“I want to automate repetitive testing tasks & manage test cases efficiently to identify bugs early and improve testing efficiency.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Startup Teams" }],
-            description:
-              "“I want to ensure thorough test coverage and coordinate testing efforts to maintain high-quality software releases.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Startup Teams" }],
+        description:
+          "“I want to ensure thorough test coverage and coordinate testing efforts to maintain high-quality software releases.“",
       },
     ],
   },
@@ -257,23 +245,24 @@ const data = [
     ],
   },
   {
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
+      },
+      uiElementId: "UITestDynamiz", //don't edit this id
+    },
+  },
+  {
     uxAnalysis: [
       {
-        media: "url",
-        type: "Typography",
-        description:
-          "Red Hat Display font offers a modern, professional look, enhancing readability and user experience on digital platforms.",
-      },
-      {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #7828C8, Secondary: #048A81, #17c964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391981/image_42_gy97jz.svg",
       },
     ],
   },
@@ -281,6 +270,7 @@ const data = [
 const TestDynamiz = () => {
   return (
     <>
+      <TestDynamizHero />
       <Casestudy data={data} />
     </>
   );

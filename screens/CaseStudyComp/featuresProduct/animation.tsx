@@ -46,7 +46,7 @@ const AnimationProduct = (props: any) => {
                 }
                 key={index}
               > */}
-          <div className="scroll-section ml-[2%]">
+          <div className="scroll-section ml-20 max-md:ml-10">
             {props.card && <FeaturesProductCard card={props.card} />}
           </div>
           {/* );

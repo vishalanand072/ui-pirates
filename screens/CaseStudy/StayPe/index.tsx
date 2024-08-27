@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-
+import StayPeHero from "./hero";
 const data = [
   {
     hero: {
@@ -118,34 +118,28 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Explorers" }],
-            description:
-              "“I want to search for available flats so that I can find options that fit my budget and preferences.“",
-          },
+        heading: "Business Owners",
+        image: "url",
+        list: [
+          { listItem: "Local shop owners, etc." },
+          { listItem: "Small Businesses" },
         ],
+        description:
+          "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Bookers" }],
-            description:
-              "“I want to receive confirmation of my booking and payment so that I know my reservation is secured.“",
-          },
-        ],
+        heading: "Consumers",
+        image: "url",
+        list: [{ listItem: "Individuals looking to verify businesses" }],
+        discreption:
+          "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Residents" }],
-            description:
-              "“I want to access and manage household services like cleaning & maintenance so that I can keep my new home in good condition.“",
-          },
-        ],
+        heading: "Freelancers",
+        image: "url",
+        list: [{ listItem: "Freelancers using the app for payment" }],
+        discreption:
+          "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
       },
     ],
   },
@@ -277,30 +271,13 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [
-      {
-        media: "url",
-        type: "Typography",
-        description:
-          "Satoshi is a modern font known for its clean lines and geometric design. Its balanced proportions and clarity make it ideal for both digital and print projects.",
-      },
-      {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #6A71F1, Secondary: #EBF1FF, #17c964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
-      },
-    ],
+    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
   },
 ];
 const Staype = () => {
   return (
     <>
+      <StayPeHero />
       <Casestudy data={data} />
     </>
   );

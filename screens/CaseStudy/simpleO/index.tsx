@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-
+import SimpleOHero from "./hero";
 const data = [
   {
     hero: {
@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -127,34 +127,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Legal Professionals" }],
-            description:
-              "“I want to manage & track all contracts and compliances in one place to ensure my company meets all legal requirements.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Legal Professionals" }],
+        description:
+          "“I want to manage & track all contracts and compliances in one place to ensure my company meets all legal requirements.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Business Owners" }],
-            description:
-              "“I want an easy-to-use platform to help me track and fulfill my contractual obligations to avoid legal issues.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Business Owners" }],
+        description:
+          "“I want an easy-to-use platform to help me track and fulfill my contractual obligations to avoid legal issues.”",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Individuals" }],
-            description:
-              "“I want to organize my contracts and compliance documents efficiently to ensure I meet all my obligations and deadlines.”",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Individuals" }],
+        description:
+          "“I want to organize my contracts and compliance documents efficiently to ensure I meet all my obligations and deadlines.”",
       },
     ],
   },
@@ -281,23 +269,28 @@ const data = [
     ],
   },
   {
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
+      },
+      uiElementId: "UISimpleO", //don't edit this id
+    },
+  },
+  {
     uxAnalysis: [
       {
-        media: "url",
-        type: "Typography",
-        description:
-          "Lato font for a contemporary and approachable design, enhancing clarity and user engagement across digital interfaces.",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391269/image_42_uwucul.svg",
       },
       {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #FF6868, Secondary: #009D9C, #17c964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391269/image_43_k06eul.svg",
       },
     ],
   },
@@ -305,6 +298,7 @@ const data = [
 const SimpleO = () => {
   return (
     <>
+      <SimpleOHero />
       <Casestudy data={data} />
     </>
   );

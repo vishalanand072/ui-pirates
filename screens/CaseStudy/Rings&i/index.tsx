@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import RingsAndIHero from "./hero";
 
 const data = [
   {
@@ -46,7 +47,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -127,34 +128,22 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Jewelry Enthusiasts" }],
-            description:
-              "“I want a website with unique and customizable rings to expand my exclusive collection.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Jewelry Enthusiasts" }],
+        description:
+          "“I want a website with unique and customizable rings to expand my exclusive collection.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Gift Shoppers" }],
-            description:
-              "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Gift Shoppers" }],
+        description:
+          "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Fashion Aficionados" }],
-            description:
-              "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Fashion Aficionados" }],
+        description:
+          "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
       },
     ],
   },
@@ -252,6 +241,7 @@ const data = [
       },
     ],
   },
+
   {
     featureAndProduct: [
       {
@@ -275,29 +265,27 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [
-      {
-        media: "url",
-        type: "Typography",
-        description: "Oregon LDO font for modern and adventurous designs.",
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
       },
-      {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #BE877B, Secondary: #1B1B1B, #17c964, #F5A524, #F31260, #924C26, #CE875E, #924C26",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
-      },
-    ],
+      uiElementId: "UIRings&I", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [],
   },
 ];
 const RingsAndI = () => {
   return (
     <>
+      <RingsAndIHero />
       <Casestudy data={data} />
     </>
   );

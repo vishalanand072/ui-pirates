@@ -381,11 +381,27 @@ const HomePageTest: React.FC = () => {
       });
     }
 
-    // Set up ScrollTrigger for each card to animate border
+    // Set up ScrollTrigger for each card to animate border and fade out
     cardsContent.forEach((_, index) => {
+      const card = document.querySelector(`#card-${index + 1}`) as HTMLElement;
       const cardBorder = document.querySelector(
         `#card-border-${index + 1}`
       ) as HTMLElement;
+
+      if (card) {
+        gsap.to(card, {
+          scrollTrigger: {
+            trigger: `#card-${index + 1}`,
+            start: "top center",
+            end: "top top",
+            scrub: true,
+            onUpdate: (self) => {
+              card.style.opacity = `${1 - self.progress}`;
+            },
+            toggleActions: "play reverse play reverse",
+          },
+        });
+      }
 
       if (cardBorder) {
         gsap.to(cardBorder, {
@@ -410,12 +426,13 @@ const HomePageTest: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-0">
       <div className="text-center">
         <p className="text-primary text-[40px] leading-10">Scope of work</p>
         <p className="text-white text-[50px] mb-8">Process</p>
       </div>
-      <div className="relative flex flex-wrap">
+      {/* <div className="h-[60%] overflow-scroll"> */}
+      <div className="relative flex flex-wrap" id="div2">
         {/* Vertical Line */}
         <div className="progress-bar-container absolute right-0 md:left-1/2 transform -translate-x-1/2 w-0.5 h-full">
           <div className="fixed top-0 right-0 md:left-1/2 h-full w-2 bg-[#262626] rounded">
@@ -432,6 +449,7 @@ const HomePageTest: React.FC = () => {
         ))}
       </div>
     </div>
+    // </div>
   );
 };
 

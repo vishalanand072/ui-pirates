@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-
+import InfinityAquaSolHero from "./hero";
 const data = [
   {
     hero: {
@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -121,6 +121,122 @@ const data = [
     },
   },
   {
+    userGroup: [
+      {
+        image: "url",
+        list: [{ listItem: "Jewelry Enthusiasts" }],
+        description:
+          "“I want a website with unique and customizable rings to expand my exclusive collection.“",
+      },
+      {
+        image: "url",
+        list: [{ listItem: "Gift Shoppers" }],
+        description:
+          "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
+      },
+      {
+        image: "url",
+        list: [{ listItem: "Fashion Aficionados" }],
+        description:
+          "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
+      },
+    ],
+  },
+  {
+    userPersonas: [
+      {
+        name: "Jessica",
+        smallDescription: "29, Jewelry Collector",
+        type: "Individual",
+        Gender: "Female",
+        Occupation: "Marketing Manager",
+        bio: "Jessica is a 29-year-old Marketing Manager with a passion for collecting unique and customizable rings. She enjoys discovering exclusive pieces to enhance her jewelry collection.",
+        goals: [
+          {
+            item: "Discover unique and customizable rings.",
+          },
+          {
+            item: "Enhance her jewelry collection with exclusive pieces.",
+          },
+          {
+            item: "Find high-quality, standout designs.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Limited customization options.",
+          },
+          {
+            item: "Difficulty finding unique designs.",
+          },
+          {
+            item: "High prices for truly unique pieces.",
+          },
+        ],
+      },
+      {
+        name: "Michael",
+        smallDescription: "35, Gift Shopper",
+        type: "Individual",
+        Gender: "Male",
+        Occupation: "Software Engineer",
+        bio: "Michael is a 35-year-old Software Engineer looking to find the perfect ring for his partner. He values a seamless and stress-free shopping experience.",
+        goals: [
+          {
+            item: "Find the perfect ring for his partner.",
+          },
+          {
+            item: "Ensure a seamless shopping experience.",
+          },
+          {
+            item: "Get a high-quality product.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Uncertainty about ring quality.",
+          },
+          {
+            item: "Complicated purchasing process.",
+          },
+          {
+            item: "Concerns about fitting and return policies.",
+          },
+        ],
+      },
+      {
+        name: "Sophia",
+        smallDescription: "24, Fashion Enthusiast",
+        type: "Individual",
+        Gender: "Female",
+        Occupation: "Fashion Blogger",
+        bio: "Sophia is a 24-year-old Fashion Blogger who loves to stay updated with the latest jewelry trends. She looks for fashionable rings that complement her style without breaking the bank.",
+        goals: [
+          {
+            item: "Stay updated with the latest jewelry trends.",
+          },
+          {
+            item: "Find fashionable rings that complement her style.",
+          },
+          {
+            item: "Access affordable, stylish pieces.",
+          },
+        ],
+        painPoints: [
+          {
+            item: "Finding trendy yet affordable rings.",
+          },
+          {
+            item: "Ensuring quick delivery.",
+          },
+          {
+            item: "Balancing quality with price.",
+          },
+        ],
+      },
+    ],
+  },
+  {
     featureAndProduct: [
       {
         media: "url",
@@ -143,29 +259,27 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [
-      {
-        media: "url",
-        type: "Typography",
-        description:
-          "Work Sans is a modern font that emphasizes clarity and readability. Its clean lines make it ideal for both body text and headings. Optimized for web use, it is a popular choice for digital interfaces.",
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
       },
-      {
-        media: "url",
-        type: "Color Palette",
-        description: "Primary: #2947A8, Secondary: #17c964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
-      },
-    ],
+      uiElementId: "UIInfinityAquaSol", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [],
   },
 ];
 const InfinityAquaSol = () => {
   return (
     <>
+      <InfinityAquaSolHero />
       <Casestudy data={data} />
     </>
   );

@@ -21,14 +21,14 @@ const InternPage = () => {
           </p>
           <br></br>
         </div>
-        <div className="container mx-auto px-20">
+        <div className="container mx-auto px-20 max-md:px-10">
           <div className=" text-center">
             <video controls className="mx-auto w-full rounded-lg ">
               <source src="path_to_your_video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="mt-8 ">
+          <div className="mt-8">
             <InnovativeProgram></InnovativeProgram>
           </div>
         </div>

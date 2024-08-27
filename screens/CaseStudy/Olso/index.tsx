@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import OlsoHero from "./hero";
 
 const data = [
   {
@@ -46,7 +47,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -136,24 +137,16 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Borrowers" }],
-            description:
-              "“I want quick access to a variety of products so that I can find what I need without hassle.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Borrowers" }],
+        description:
+          "“I want quick access to a variety of products so that I can find what I need without hassle.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Lenders" }],
-            description:
-              "“I want a secure platform to rent out my products to verified borrowers and increase my income.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Lenders" }],
+        description:
+          "“I want a secure platform to rent out my products to verified borrowers and increase my income.“",
       },
     ],
   },
@@ -259,23 +252,24 @@ const data = [
     ],
   },
   {
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
+      },
+      uiElementId: "UIOLSO", //don't edit this id
+    },
+  },
+  {
     uxAnalysis: [
       {
-        media: "url",
-        type: "Typography",
-        description:
-          "Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
-      },
-      {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #6A4DFF, Secondary: #2979FF, #17c964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724392061/image_42_atzwpw.svg",
       },
     ],
   },
@@ -283,6 +277,7 @@ const data = [
 const OLSO = () => {
   return (
     <>
+      <OlsoHero />
       <Casestudy data={data} />
     </>
   );

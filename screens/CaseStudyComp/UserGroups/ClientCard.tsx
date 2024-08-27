@@ -6,9 +6,9 @@ const ClientCard = (props: any) => {
     <>
       {props.card.map((item: any, index: any) => {
         return (
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <div>
-              <Image src={clientpic} alt="Client" />
+              <Image src={clientpic} alt="Client" className=" rounded-3xl" />
             </div>
             <div className="p-2">
               <h1 className="medium-heading mb-4 mt-8">{item.heading}</h1>
@@ -29,7 +29,7 @@ const ClientCard = (props: any) => {
               </ul>
             </div>
             <div className="mt-4 py-4 border-t normal font-semibold mr-16">
-              {item.discreption}
+              {item.description}
             </div>
           </div>
         );

@@ -5,7 +5,7 @@ const CaseStudyHero = (props: any) => {
   return (
     <>
       <div className="bg-[#111111] -mt-16">
-        <div className="h-[780px] relative">
+        <div className="h-[780px] relative  container mx-auto">
           <Image
             src={hero}
             alt="hero"
@@ -13,7 +13,7 @@ const CaseStudyHero = (props: any) => {
             height={360}
             className="w-full h-[700px] object-fit absolute bottom-0 right-0"
           />
-          <div className="absolute top-20  max-md:top-10 left-20 max-md:left-10">
+          <div className="absolute top-40  max-md:top-20 left-20 max-md:left-10">
             <p className="text-8xl font-medium text-white ">
               {props.hero.title}
             </p>
@@ -22,9 +22,6 @@ const CaseStudyHero = (props: any) => {
             </p>
           </div>
         </div>
-        {/* <div className=" relative flex-row top-0">
-          <p className="text-4xl text-red-800  sticky top-10">Frytx</p>
-        </div> */}
       </div>
     </>
   );

@@ -39,7 +39,7 @@ const Content = () => {
           <div className="grid grid-cols-5 max-lg:grid-cols-3 max-md:grid-cols-2 gap-12 max-md:gap-4 max-lg:gap-8">
             {data.map((item, index) => {
               return (
-                <Card>
+                <Card className="">
                   <CardBody className="items-center">{item.icon}</CardBody>
                 </Card>
               );

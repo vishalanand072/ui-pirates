@@ -53,7 +53,7 @@ import UserPersonas from "./userPersonas";
 import FeaturesProduct from "./featuresProduct";
 import ClientRequirements from "./ClientRequirements";
 import StickyTop from "../Home/designDev/stickyTop";
-import ValuesUiElement from "./valuesUiElement";
+import ValuesUiElement from "./visualUiElement";
 import UXAnalysis from "./uxAnalysis";
 import ProductShowcase from "./productShowcase";
 
@@ -61,13 +61,15 @@ import StickyTabs from "./tabs";
 import WeCreate from "../Home/weCreate";
 
 const Casestudy = (props: any) => {
-  console.log(props.data[7].featureAndProduct);
+  console.log(props.data[9].uxAnalysis);
+  const len = props.data[9].uxAnalysis.length;
+  console.log(len);
 
   return (
     <div>
       {/* <WeCreate /> */}
       {/* <StickyTop /> */}
-      <CaseStudyHero hero={props.data[0].hero} />
+      {/* <CaseStudyHero hero={props.data[0].hero} /> */}
       <Overview overviewdata={props.data[1].overview} />
       <div className="">
         <div
@@ -99,11 +101,13 @@ const Casestudy = (props: any) => {
           />
         </div>
         <div id="visual-ui-elements">
-          <ValuesUiElement />
+          <ValuesUiElement visualUIElements={props.data[8].visualUIElements} />
         </div>
-        <div id="ux-analysis">
-          <UXAnalysis />
-        </div>
+        {props.data[9].uxAnalysis.length != 0 && (
+          <div id="ux-analysis">
+            <UXAnalysis uxAnalysis={props.data[9].uxAnalysis} />
+          </div>
+        )}
         <div id="learning-improvements">
           <ProductShowcase />
         </div>

@@ -57,37 +57,20 @@ const HeroComp: React.FC<HeroProps> = ({ hero_heading, hero_subHeading }) => {
               {hero_subHeading ||
                 "We design and develop stunning digital experiences."}
             </p>
-            <div className="p-2 flex flex-row align-middle justify-center gap-2">
-              {/* <Button
-                className="text-sm font-bold"
-                radius="sm"
-                size="md"
-                color="primary"
-              >
-                Let's Talk!
-              </Button> */}
 
-              <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
-                <span className="mas">Let's Talk!</span>
+            <div className="flex justify-center items-center flex-row gap-4 w-full mt-8">
+              <div className="button-container-1-rev animate__animated animate__fadeInUp-rev animate__slow animate__delay-4s">
+                <span className="mas-rev">Lets Talk!</span>
                 <button id="work" type="button" name="Hover">
-                  Let's Talk!
+                  Lets Talk!
                 </button>
               </div>
-
               <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
                 <span className="mas">Explore Our Work</span>
                 <button id="work" type="button" name="Hover">
                   Explore Our Work
                 </button>
               </div>
-              {/* <Button
-                className="text-sm font-bold"
-                radius="sm"
-                size="md"
-                variant="flat"
-              >
-                Explore Our Work
-              </Button> */}
             </div>
           </div>
         </div>

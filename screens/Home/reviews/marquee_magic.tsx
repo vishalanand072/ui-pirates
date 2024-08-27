@@ -52,7 +52,7 @@ const sixthRow = reviews.slice(reviews.length / 2);
 
 function ReviewCard() {
   return (
-    <Card className="max-w-[400px] p-3 pt-1 pr-2 pb-1 pl-2  shadow-lg">
+    <Card className="max-w-[400px] p-3 pt-1 pr-2 pb-1 pl-2  border-1">
       <CardHeader className="relative flex gap-3">
         <Image
           alt="nextui logo"
@@ -63,14 +63,21 @@ function ReviewCard() {
         />
         <div className="flex flex-col">
           <p className="text-md font-extrabold font-nahomi">Eden Hazani</p>
-          <p className="text-small text-default-500">Xperiti | VP Research and Development</p>
+          <p className="text-small text-default-500">
+            Xperiti | VP Research and Development
+          </p>
         </div>
-        <div className="absolute top-0 right-0 m-2">
+        <div className="absolute top-0 right-0 m-2 w-[50px]">
           <Logo />
         </div>
       </CardHeader>
       <CardBody>
-        <p className="text-sm font-bold">Wonderful to work with, very experienced with UI/UX design. Was very open to work in the flow we requested that required actual Angular coding from his team as well, and stood up to the challenge of working with a remot...</p>
+        <p className="text-sm font-bold">
+          Wonderful to work with, very experienced with UI/UX design. Was very
+          open to work in the flow we requested that required actual Angular
+          coding from his team as well, and stood up to the challenge of working
+          with a remot...
+        </p>
       </CardBody>
     </Card>
   );
@@ -78,7 +85,10 @@ function ReviewCard() {
 
 export function MarqueeDemo() {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl mt-100" style={{ transform: 'rotate(+35deg)' }}>
+    <div
+      className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background mt-100 shadow-none"
+      style={{ transform: "rotate(+35deg)" }}
+    >
       <div className="absolute top-0 left-0 w-full h-48 bg-gradient-to-b from-white to-transparent z-10"></div>
       <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-white to-transparent z-10"></div>
       <Marquee pauseOnHover className="[--duration:20s]">
@@ -111,10 +121,13 @@ export function MarqueeDemo() {
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
+      <Marquee reverse pauseOnHover className="[--duration:20s]">
+        {sixthRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
       <div className="absolute inset-y-0 left-0 w-1/3 border-gradient"></div>
       <div className="absolute inset-y-0 right-0 w-1/3 border-gradient"></div>
     </div>
   );
 }
-
-

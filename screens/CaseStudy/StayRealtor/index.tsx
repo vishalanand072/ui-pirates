@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import StayRealorHero from "./hero";
 
 const data = [
   {
@@ -46,7 +47,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -118,24 +119,16 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Landlords" }],
-            description:
-              "“I want to manage all my properties in one place so that I can save time and increase efficiency.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Landlords" }],
+        description:
+          "“I want to manage all my properties in one place so that I can save time and increase efficiency.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Real Estate Brokers" }],
-            description:
-              "“I want to list and update properties easily so that I can attract potential tenants quickly.“",
-          },
-        ],
+        image: "url",
+        list: [{ listItem: "Real Estate Brokers" }],
+        description:
+          "“I want to list and update properties easily so that I can attract potential tenants quickly.“",
       },
     ],
   },
@@ -241,23 +234,28 @@ const data = [
     ],
   },
   {
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
+      },
+      uiElementId: "UIStayRealtor", //don't edit this id
+    },
+  },
+  {
     uxAnalysis: [
       {
-        media: "url",
-        type: "Typography",
-        description:
-          "Satoshi font for modern, clean lines and geometric design.",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391680/image_43_hwvqzg.svg",
       },
       {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #6A71F1, Secondary: #EBF1FF, #17c964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391680/image_42_yasr0l.svg",
       },
     ],
   },
@@ -265,6 +263,7 @@ const data = [
 const StayRealtor = () => {
   return (
     <>
+      <StayRealorHero />
       <Casestudy data={data} />
     </>
   );
