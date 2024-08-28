@@ -23,19 +23,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781321/cr1_fpfftz.png",
           heading: "Product Showcase",
           subheading:
             "Create detailed presentations of water treatment products and solutions.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781321/cr2_adizta.png",
           heading: "Informative Content",
           subheading:
             "Provide clear and concise information about the company's services and expertise.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781323/cr3_hmxt3e.png",
           heading: "Contact and Inquiry Form",
           subheading:
             "Develop an easy-to-use form for potential customers to get in touch and make inquiries.",
@@ -146,6 +146,7 @@ const data = [
     userPersonas: [
       {
         name: "Jessica",
+        image: "url",
         smallDescription: "29, Jewelry Collector",
         type: "Individual",
         Gender: "Female",
@@ -176,6 +177,7 @@ const data = [
       },
       {
         name: "Michael",
+        image: "url",
         smallDescription: "35, Gift Shopper",
         type: "Individual",
         Gender: "Male",
@@ -206,6 +208,7 @@ const data = [
       },
       {
         name: "Sophia",
+        image: "url",
         smallDescription: "24, Fashion Enthusiast",
         type: "Individual",
         Gender: "Female",

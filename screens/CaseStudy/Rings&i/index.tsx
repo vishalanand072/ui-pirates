@@ -24,19 +24,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739923/webdev_h3x5ga.png",
           heading: "Website Design and Development",
           subheading:
             "Create a visually appealing, user-friendly website that effectively showcases the jewelry collection.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739925/customizationoption_q6qexl.png",
           heading: "Customization Options",
           subheading:
             "Implement features that allow customers to customize rings according to their preferences.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739925/shopifyintegration_xhcrk1.png",
           heading: "Shopify Integration",
           subheading:
             "Ensure seamless Shopify integration for inventory management, payment processing, and order fulfillment.",
@@ -93,7 +93,7 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739981/problem_t1mjly.svg",
           list: [
             {
               item: "Limited customization options on existing jewelry websites.",
@@ -109,7 +109,7 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739983/solution_cdh2oz.svg",
           list: [
             {
               item: "Rings & I offers extensive customization options, allowing customers to personalize their rings.",
@@ -128,19 +128,19 @@ const data = [
   {
     userGroup: [
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739932/usergroups1_zhio1e.jpg",
         list: [{ listItem: "Jewelry Enthusiasts" }],
         description:
           "“I want a website with unique and customizable rings to expand my exclusive collection.“",
       },
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739928/usergroups2_kqb60y.jpg",
         list: [{ listItem: "Gift Shoppers" }],
         description:
           "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
       },
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739935/usergroups3_cwsug6.jpg",
         list: [{ listItem: "Fashion Aficionados" }],
         description:
           "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
@@ -152,6 +152,7 @@ const data = [
       {
         name: "Jessica",
         smallDescription: "29, Jewelry Collector",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739929/userpersonas1_miujyx.png",
         type: "Individual",
         Gender: "Female",
         Occupation: "Marketing Manager",
@@ -182,6 +183,7 @@ const data = [
       {
         name: "Michael",
         smallDescription: "35, Gift Shopper",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739931/userpersonas2_n4pb9a.jpg",
         type: "Individual",
         Gender: "Male",
         Occupation: "Software Engineer",
@@ -212,6 +214,7 @@ const data = [
       {
         name: "Sophia",
         smallDescription: "24, Fashion Enthusiast",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739934/userpersonas3_q831ki.jpg",
         type: "Individual",
         Gender: "Female",
         Occupation: "Fashion Blogger",

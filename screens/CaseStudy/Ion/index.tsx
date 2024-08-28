@@ -5,7 +5,7 @@ const data = [
     hero: {
       title: "ION",
       subtitle: "",
-      bgimage: "",
+      bgimage: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780684/hero_ooyhtx.png",
     },
   },
   {
@@ -23,22 +23,16 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780681/cr1_d6jcdh.png",
           heading: "Unified Platform",
           subheading:
             "Create a centralized platform for borrowing and lending various products.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780683/cr2_ziip5o.png",
           heading: "Time and Cost Efficiency",
           subheading:
             "Enable users to save time and money through competitive pricing and easy access to products.",
-        },
-        {
-          img: "url",
-          heading: "Trust and Security",
-          subheading:
-            "Build a trustworthy environment with strong quality control and secure verification processes.",
         },
       ],
       Outcomes:
@@ -136,13 +130,19 @@ const data = [
   {
     userGroup: [
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780683/ug1_okdign.png",
         list: [{ listItem: "Borrowers" }],
         description:
           "“I want quick access to a variety of products so that I can find what I need without hassle.“",
       },
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780686/ug2_nhe2mg.png",
+        list: [{ listItem: "Lenders" }],
+        description:
+          "“I want a secure platform to rent out my products to verified borrowers and increase my income.“",
+      },
+      {
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780688/ug3_h6itsw.png",
         list: [{ listItem: "Lenders" }],
         description:
           "“I want a secure platform to rent out my products to verified borrowers and increase my income.“",
@@ -154,6 +154,7 @@ const data = [
       {
         name: "John",
         smallDescription: "30, Borrower",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780688/up1_j3iixb.png",
         type: "Individual",
         Gender: "Male",
         Occupation: "Marketing Manager",
@@ -184,6 +185,7 @@ const data = [
       {
         name: "Jane",
         smallDescription: "40, Lender",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780692/up2_c9iurf.png",
         type: "Individual",
         Gender: "Female",
         Occupation: "Business Owner",

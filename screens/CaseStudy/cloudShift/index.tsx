@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-import CLoudShiftHero from "./hero";
+import CLoudShiftHero from "@/screens/CaseStudy/cloudShift/hero"
 
 const data = [
   {
@@ -24,13 +24,13 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781428/cr1_hdrpsq.png",
           heading: "Website Design & Development",
           subheading:
             "Create a visually appealing, user-friendly website that effectively communicates Cloudshift’s services and capabilities.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781429/cr2_qutjss.png",
           heading: "Service Showcase",
           subheading:
             "Highlight the range of cloud migration services offered by Cloudshift, including strategy development, implementation, and ongoing support.",
@@ -113,19 +113,19 @@ const data = [
   {
     userGroup: [
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781441/ug1_j4wlbq.jpg",
         list: [{ listItem: "IT Managers" }],
         description:
           "“I want detailed information about the cloud migration process and services to ensure a seamless transition for my company.“",
       },
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781442/ug2_ymymfr.jpg",
         list: [{ listItem: "Business Owners" }],
         description:
           "“I want to understand the benefits of cloud migration and find a reliable partner to help scale my business operations.“",
       },
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781443/ug3_wteqgu.jpg",
         list: [{ listItem: "Technical Consultants" }],
         description:
           "“I want to evaluate Cloudshift's services to recommend them confidently to my clients.“",
@@ -136,6 +136,7 @@ const data = [
     userPersonas: [
       {
         name: "John",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781431/up1_bpmjot.png",
         smallDescription: "45, IT Manager",
         type: "Corporate",
         Gender: "Male",
@@ -166,6 +167,7 @@ const data = [
       },
       {
         name: "Emma",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781468/up2_sozugq.png",
         smallDescription: "43, Business Owner",
         type: "Individual",
         Gender: "Female",
@@ -196,6 +198,7 @@ const data = [
       },
       {
         name: "David",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781435/up3_r7alvf.png",
         smallDescription: "50, Technical Consultant",
         type: "Individual",
         Gender: "Male",

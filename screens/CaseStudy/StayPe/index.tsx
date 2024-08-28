@@ -23,19 +23,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781253/cr1_vbg4ky.png",
           heading: "Comprehensive App Levels",
           subheading:
             "Design three app levels: browsing, booking, and home management.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781251/cr2_prrdil.png",
           heading: "User-Friendly Interface",
           subheading:
             "Create an intuitive design for seamless navigation and interaction.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781251/cr3_ydqvgr.png",
           heading: "Service Integration",
           subheading:
             "Provide features for managing bookings, property visits, and services.",
@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -119,7 +119,7 @@ const data = [
     userGroup: [
       {
         heading: "Business Owners",
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781255/ug1_jahgxq.png",
         list: [
           { listItem: "Local shop owners, etc." },
           { listItem: "Small Businesses" },
@@ -129,14 +129,14 @@ const data = [
       },
       {
         heading: "Consumers",
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781255/ug2_baeyuu.png",
         list: [{ listItem: "Individuals looking to verify businesses" }],
         discreption:
           "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
       },
       {
         heading: "Freelancers",
-        image: "url",
+        image: "urhttps://res.cloudinary.com/damm9iwho/image/upload/v1724781256/ug3_hpyjyv.pngl",
         list: [{ listItem: "Freelancers using the app for payment" }],
         discreption:
           "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
@@ -147,6 +147,7 @@ const data = [
     userPersonas: [
       {
         name: "John",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781264/up1_swmslo.png",
         smallDescription: "29, Explorer",
         type: "Individual",
         Gender: "Male",
@@ -177,6 +178,7 @@ const data = [
       },
       {
         name: "Sarah",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781256/up2_os4x5e.png",
         smallDescription: "32, Booker",
         type: "Individual",
         Gender: "Female",
@@ -207,6 +209,7 @@ const data = [
       },
       {
         name: "Michael",
+        image: "url",
         smallDescription: "31, Resident",
         type: "Individual",
         Gender: "Male",
@@ -271,7 +274,30 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [{ media: "url" }, { media: "url" }, { media: "url" }],
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
+      },
+      uiElementId: "UIStayPe", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [
+      {
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391269/image_42_uwucul.svg",
+      },
+      {
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391269/image_43_k06eul.svg",
+      },
+    ],
   },
 ];
 const Staype = () => {

@@ -23,19 +23,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780314/cr1_szuvki.png",
           heading: "Website Design",
           subheading:
             "Create a user-friendly and visually appealing website to present SimpleO.ai's offerings and features.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780311/cr2_goowsd.png",
           heading: "Clear Communication",
           subheading:
             "Ensure that the website effectively communicates the benefits and functionalities of the platform.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780314/cr3_illqtm.png",
           heading: "User Engagement",
           subheading:
             "Design the website so that it encourages user engagement and conversion.",
@@ -127,19 +127,19 @@ const data = [
   {
     userGroup: [
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780318/ugs1_no6zld.png",
         list: [{ listItem: "Legal Professionals" }],
         description:
           "“I want to manage & track all contracts and compliances in one place to ensure my company meets all legal requirements.”",
       },
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780336/ugs2_hl4tpu.png",
         list: [{ listItem: "Business Owners" }],
         description:
           "“I want an easy-to-use platform to help me track and fulfill my contractual obligations to avoid legal issues.”",
       },
       {
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780320/ugs3_rd7ful.png",
         list: [{ listItem: "Individuals" }],
         description:
           "“I want to organize my contracts and compliance documents efficiently to ensure I meet all my obligations and deadlines.”",
@@ -151,6 +151,7 @@ const data = [
       {
         name: "Michael",
         smallDescription: "35, Corporate Lawyer",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780320/up1_vtrqdf.png",
         type: "Corporate",
         Gender: "Male",
         Industry: "Legal",
@@ -182,6 +183,7 @@ const data = [
         name: "David",
         smallDescription: "48, Small Business Owner",
         type: "Individual",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780321/up2_tgy0lj.png",
         Gender: "Male",
         Industry: "Retail",
         bio: "David is the owner of a small business, juggling multiple roles including managing contracts and ensuring compliance with industry regulations.",
@@ -212,6 +214,7 @@ const data = [
         name: "Alex",
         smallDescription: "29, Freelance Consultant",
         type: "Individual",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780332/up3_tv1oin.png",
         Gender: "Male",
         Industry: "Consulting",
         bio: "Alex is an independent business consultant with over a decade of experience, providing strategic advice to various clients. He manages his own contracts and ensures all legal documents are in order without dedicated legal assistance.",
