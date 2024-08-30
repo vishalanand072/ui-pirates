@@ -1,5 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
-import SimpleOHero from "./hero";
+
 const data = [
   {
     hero: {
@@ -23,19 +23,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780314/cr1_szuvki.png",
+          img: "url",
           heading: "Website Design",
           subheading:
             "Create a user-friendly and visually appealing website to present SimpleO.ai's offerings and features.",
         },
         {
-          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780311/cr2_goowsd.png",
+          img: "url",
           heading: "Clear Communication",
           subheading:
             "Ensure that the website effectively communicates the benefits and functionalities of the platform.",
         },
         {
-          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780314/cr3_illqtm.png",
+          img: "url",
           heading: "User Engagement",
           subheading:
             "Design the website so that it encourages user engagement and conversion.",
@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    ourRole: [
+    ourrole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -127,22 +127,34 @@ const data = [
   {
     userGroup: [
       {
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780318/ugs1_no6zld.png",
-        list: [{ listItem: "Legal Professionals" }],
-        description:
-          "“I want to manage & track all contracts and compliances in one place to ensure my company meets all legal requirements.”",
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Legal Professionals" }],
+            description:
+              "“I want to manage & track all contracts and compliances in one place to ensure my company meets all legal requirements.”",
+          },
+        ],
       },
       {
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780336/ugs2_hl4tpu.png",
-        list: [{ listItem: "Business Owners" }],
-        description:
-          "“I want an easy-to-use platform to help me track and fulfill my contractual obligations to avoid legal issues.”",
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Business Owners" }],
+            description:
+              "“I want an easy-to-use platform to help me track and fulfill my contractual obligations to avoid legal issues.”",
+          },
+        ],
       },
       {
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780320/ugs3_rd7ful.png",
-        list: [{ listItem: "Individuals" }],
-        description:
-          "“I want to organize my contracts and compliance documents efficiently to ensure I meet all my obligations and deadlines.”",
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Individuals" }],
+            description:
+              "“I want to organize my contracts and compliance documents efficiently to ensure I meet all my obligations and deadlines.”",
+          },
+        ],
       },
     ],
   },
@@ -151,7 +163,6 @@ const data = [
       {
         name: "Michael",
         smallDescription: "35, Corporate Lawyer",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780320/up1_vtrqdf.png",
         type: "Corporate",
         Gender: "Male",
         Industry: "Legal",
@@ -183,7 +194,6 @@ const data = [
         name: "David",
         smallDescription: "48, Small Business Owner",
         type: "Individual",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780321/up2_tgy0lj.png",
         Gender: "Male",
         Industry: "Retail",
         bio: "David is the owner of a small business, juggling multiple roles including managing contracts and ensuring compliance with industry regulations.",
@@ -214,7 +224,6 @@ const data = [
         name: "Alex",
         smallDescription: "29, Freelance Consultant",
         type: "Individual",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780332/up3_tv1oin.png",
         Gender: "Male",
         Industry: "Consulting",
         bio: "Alex is an independent business consultant with over a decade of experience, providing strategic advice to various clients. He manages his own contracts and ensures all legal documents are in order without dedicated legal assistance.",
@@ -272,28 +281,23 @@ const data = [
     ],
   },
   {
-    visualUIElements: {
-      font: "Nunito",
-      fontDescription:
-        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
-      primaryColor: "#6A4DFF",
-      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
-      gradient: {
-        start: "#6A4DFF",
-        end: "#64B5F6",
-      },
-      uiElementId: "UISimpleO", //don't edit this id
-    },
-  },
-  {
     uxAnalysis: [
       {
-        media:
-          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391269/image_42_uwucul.svg",
+        media: "url",
+        type: "Typography",
+        description:
+          "Lato font for a contemporary and approachable design, enhancing clarity and user engagement across digital interfaces.",
       },
       {
-        media:
-          "https://res.cloudinary.com/damm9iwho/image/upload/v1724391269/image_43_k06eul.svg",
+        media: "url",
+        type: "Color Palette",
+        description:
+          "Primary: #FF6868, Secondary: #009D9C, #17c964, #F5A524, #F31260",
+      },
+      {
+        media: "url",
+        type: "Icons",
+        description: "Phosphor Icons for a modern and versatile aesthetic.",
       },
     ],
   },
@@ -301,7 +305,6 @@ const data = [
 const SimpleO = () => {
   return (
     <>
-      <SimpleOHero />
       <Casestudy data={data} />
     </>
   );

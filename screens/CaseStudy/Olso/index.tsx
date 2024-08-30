@@ -84,7 +84,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654462/image_18_kva9ki.svg",
           list: [
             {
               item: "For Borrowers: Time-consuming search for rental products.",
@@ -109,7 +110,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654460/image_19_ovkaxp.svg",
           list: [
             {
               item: "For Consumers: Save time with centralized access to products.",
@@ -137,13 +139,15 @@ const data = [
   {
     userGroup: [
       {
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781130/ug1_uc5p9e.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781130/ug1_uc5p9e.png",
         list: [{ listItem: "Borrowers" }],
         description:
           "“I want quick access to a variety of products so that I can find what I need without hassle.“",
       },
       {
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781150/ug2_cetqah.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781150/ug2_cetqah.png",
         list: [{ listItem: "Lenders" }],
         description:
           "“I want a secure platform to rent out my products to verified borrowers and increase my income.“",
@@ -154,7 +158,8 @@ const data = [
     userPersonas: [
       {
         name: "John",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781120/up1_vygze0.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781120/up1_vygze0.png",
         smallDescription: "30, Borrower",
         type: "Individual",
         Gender: "Male",
@@ -185,7 +190,8 @@ const data = [
       },
       {
         name: "Jane",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781120/up2_rtik5w.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781120/up2_rtik5w.png",
         smallDescription: "40, Lender",
         type: "Individual",
         Gender: "Female",

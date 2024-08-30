@@ -19,7 +19,7 @@ const CoreProblems = (props: any) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12 mb-16">
           <div className="space-y-8">
             <Image
-              src={Pic1}
+              src={props.CoreProblems.problems[0].image}
               alt="Solution 1"
               width={250}
               height={300}
@@ -34,7 +34,7 @@ const CoreProblems = (props: any) => {
           </div>
           <div className="space-y-8 order-2 max-lg:order-1">
             <Image
-              src={Pic3}
+              src={props.CoreProblems.solutions[0].image}
               alt="Solution 1"
               width={250}
               height={300}

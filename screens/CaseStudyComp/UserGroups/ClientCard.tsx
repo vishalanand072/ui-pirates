@@ -8,7 +8,13 @@ const ClientCard = (props: any) => {
         return (
           <div className="flex flex-col">
             <div>
-              <Image src={clientpic} alt="Client" className=" rounded-3xl" />
+              <Image
+                src={item.image}
+                alt="Client"
+                width={300}
+                height={300}
+                className="w-full h-[300px] rounded-3xl object-cover"
+              />
             </div>
             <div className="p-2">
               <h1 className="medium-heading mb-4 mt-8">{item.heading}</h1>

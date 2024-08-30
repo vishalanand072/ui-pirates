@@ -11,19 +11,116 @@ const CombinedSections: React.FC = () => {
   const centerRef = useRef<HTMLParagraphElement | null>(null);
   const imageRefs = useRef<(HTMLImageElement | null)[]>([]);
 
+  // useEffect(() => {
+  //   // Ensure initial visibility
+  //   gsap.set("#firstSection", { autoAlpha: 1 });
+  //   gsap.set("#secondSection", { autoAlpha: 0 });
+
+  //   // First animation
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: avatarGroupRef1.current,
+  //         start: "top center",
+  //         end: "bottom 200px",
+  //         scrub: 1,
+  //         onEnter: () => {
+  //           gsap.to("#firstSection", { autoAlpha: 1 });
+  //           gsap.to("#secondSection", { autoAlpha: 0 });
+  //         },
+  //         onLeave: () => {
+  //           gsap.to("#firstSection", { autoAlpha: 0 });
+  //         },
+  //         onEnterBack: () => {
+  //           gsap.to("#firstSection", { autoAlpha: 1 });
+  //           gsap.to("#secondSection", { autoAlpha: 0 });
+  //         },
+  //         onLeaveBack: () => {
+  //           gsap.to("#firstSection", { autoAlpha: 0 });
+  //         },
+  //       },
+  //     })
+  //     .fromTo(
+  //       avatarGroupRef1.current,
+  //       { width: "0px", opacity: 0 },
+  //       {
+  //         width: "auto",
+  //         opacity: 1,
+  //         duration: 5,
+  //         ease: "power2.out",
+  //       }
+  //     );
+
+  //   // Second animation
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: avatarGroupRef2.current,
+  //         start: "top center",
+  //         end: "bottom 200px",
+  //         scrub: 1,
+  //         onEnter: () => {
+  //           gsap.to("#secondSection", { autoAlpha: 1 });
+  //           gsap.to("#firstSection", { autoAlpha: 0 });
+  //         },
+  //         onLeaveBack: () => {
+  //           gsap.to("#secondSection", { autoAlpha: 0 });
+  //         },
+  //       },
+  //     })
+  //     .set(centerRef.current, { autoAlpha: 0, y: 50 })
+  //     .to(centerRef.current, {
+  //       autoAlpha: 1,
+  //       y: 0,
+  //       duration: 5,
+  //       ease: "power3.out",
+  //     })
+  //     .to(
+  //       avatarGroupRef2.current,
+  //       {
+  //         y: -50,
+  //         duration: 5,
+  //         ease: "power3.out",
+  //       },
+  //       "<"
+  //     )
+  //     .add(() => {
+  //       imageRefs.current.forEach((img, index) => {
+  //         if (img) {
+  //           gsap.fromTo(
+  //             img,
+  //             { y: 100, autoAlpha: 0 },
+  //             {
+  //               y: -400,
+  //               autoAlpha: 1,
+  //               duration: 10,
+  //               ease: "power3.out",
+  //               scrollTrigger: {
+  //                 trigger: avatarGroupRef2.current,
+  //                 start: "top center",
+  //                 end: "bottom 200px",
+  //                 scrub: 1,
+  //               },
+  //             }
+  //           );
+  //         }
+  //       });
+  //     });
+  // }, []);
+
   useEffect(() => {
     // Ensure initial visibility
     gsap.set("#firstSection", { autoAlpha: 1 });
     gsap.set("#secondSection", { autoAlpha: 0 });
 
-    // First animation
+    // First animation with increased scroll timing and smoother animation
     gsap
       .timeline({
         scrollTrigger: {
           trigger: avatarGroupRef1.current,
           start: "top center",
           end: "bottom 200px",
-          scrub: 1,
+          scrub: 2, // Increased scrub to slow down the animation
           onEnter: () => {
             gsap.to("#firstSection", { autoAlpha: 1 });
             gsap.to("#secondSection", { autoAlpha: 0 });
@@ -46,8 +143,8 @@ const CombinedSections: React.FC = () => {
         {
           width: "auto",
           opacity: 1,
-          duration: 5,
-          ease: "power2.out",
+          duration: 70, // Increased duration for a slower animation
+          ease: "power3.out", // Smoother easing function
         }
       );
 

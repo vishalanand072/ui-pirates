@@ -16,7 +16,13 @@ const ClientRequirements = (props: any) => {
             {props.ClientRequirements.card.map((item: any, index: any) => {
               return (
                 <div className="flex flex-col gap-8">
-                  <Image src={pic3} alt="Client Requirements" />
+                  <Image
+                    src={item.img}
+                    alt="Client Requirements"
+                    width={300}
+                    height={300}
+                    className="w-full h-full"
+                  />
                   <div>
                     <h1 className=" small-heading mb-4">{item.heading}</h1>
                     <p className="normal">{item.subheading}</p>

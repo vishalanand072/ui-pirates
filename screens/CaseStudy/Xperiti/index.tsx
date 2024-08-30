@@ -126,14 +126,16 @@ const data = [
     userGroup: [
       {
         heading: "Clients",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724738042/download_hvl7ry.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724738042/download_hvl7ry.png",
         list: [{ listItem: "Researchers" }, { listItem: "Study Coordinators" }],
         description:
           "“I want to create and manage studies efficiently so that I can focus on analyzing results.”",
       },
       {
         heading: "Participants",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724738677/participants_hbxyax.jpg",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724738677/participants_hbxyax.jpg",
         list: [
           { listItem: "Individuals participating in surveys" },
           { listItem: "Individuals participating in interviews. " },
@@ -147,7 +149,8 @@ const data = [
     userPersonas: [
       {
         name: "Rachel",
-        url: "https://res.cloudinary.com/damm9iwho/image/upload/v1724738268/rachel_urhvgh.jpg",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724738268/rachel_urhvgh.jpg",
         smallDiscription: "24, Client",
         type: "Corporate",
         Gender: "Female",
@@ -179,7 +182,8 @@ const data = [
       {
         name: "Andrew",
         smallDiscription: "24, Participant",
-        url: "https://res.cloudinary.com/damm9iwho/image/upload/v1724738270/andrew_ircjre.jpg",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724738270/andrew_ircjre.jpg",
         type: "Individual",
         Gender: "Male",
         Occupation: "Student",

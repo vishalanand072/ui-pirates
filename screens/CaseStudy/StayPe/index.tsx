@@ -83,7 +83,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654462/image_18_kva9ki.svg",
           list: [
             {
               item: "Difficulty in finding and comparing rental options.",
@@ -99,7 +100,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654460/image_19_ovkaxp.svg",
           list: [
             {
               item: "Comprehensive property listings and user-friendly booking process.",
@@ -119,7 +121,8 @@ const data = [
     userGroup: [
       {
         heading: "Business Owners",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781255/ug1_jahgxq.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781255/ug1_jahgxq.png",
         list: [
           { listItem: "Local shop owners, etc." },
           { listItem: "Small Businesses" },
@@ -129,14 +132,16 @@ const data = [
       },
       {
         heading: "Consumers",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781255/ug2_baeyuu.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781255/ug2_baeyuu.png",
         list: [{ listItem: "Individuals looking to verify businesses" }],
         discreption:
           "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
       },
       {
         heading: "Freelancers",
-        image: "urhttps://res.cloudinary.com/damm9iwho/image/upload/v1724781256/ug3_hpyjyv.pngl",
+        image:
+          "urhttps://res.cloudinary.com/damm9iwho/image/upload/v1724781256/ug3_hpyjyv.pngl",
         list: [{ listItem: "Freelancers using the app for payment" }],
         discreption:
           "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
@@ -147,7 +152,8 @@ const data = [
     userPersonas: [
       {
         name: "John",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781264/up1_swmslo.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781264/up1_swmslo.png",
         smallDescription: "29, Explorer",
         type: "Individual",
         Gender: "Male",
@@ -178,7 +184,8 @@ const data = [
       },
       {
         name: "Sarah",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781256/up2_os4x5e.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781256/up2_os4x5e.png",
         smallDescription: "32, Booker",
         type: "Individual",
         Gender: "Female",
