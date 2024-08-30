@@ -1,4 +1,5 @@
 import Casestudy from "@/screens/CaseStudyComp";
+import CLoudShiftHero from "@/screens/CaseStudy/cloudShift/hero";
 
 const data = [
   {
@@ -23,13 +24,13 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781428/cr1_hdrpsq.png",
           heading: "Website Design & Development",
           subheading:
             "Create a visually appealing, user-friendly website that effectively communicates Cloudshift’s services and capabilities.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781429/cr2_qutjss.png",
           heading: "Service Showcase",
           subheading:
             "Highlight the range of cloud migration services offered by Cloudshift, including strategy development, implementation, and ongoing support.",
@@ -40,7 +41,7 @@ const data = [
     },
   },
   {
-    ourrole: [
+    ourRole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -77,7 +78,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724739981/problem_t1mjly.svg",
           list: [
             {
               item: "Complexity and risks associated with cloud migration.",
@@ -93,7 +95,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724739983/solution_cdh2oz.svg",
           list: [
             {
               item: "Cloudshift provides detailed, transparent information about their cloud migration process and services.",
@@ -112,34 +115,25 @@ const data = [
   {
     userGroup: [
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "IT Managers" }],
-            description:
-              "“I want detailed information about the cloud migration process and services to ensure a seamless transition for my company.“",
-          },
-        ],
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781441/ug1_j4wlbq.jpg",
+        list: [{ listItem: "IT Managers" }],
+        description:
+          "“I want detailed information about the cloud migration process and services to ensure a seamless transition for my company.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Business Owners" }],
-            description:
-              "“I want to understand the benefits of cloud migration and find a reliable partner to help scale my business operations.“",
-          },
-        ],
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781442/ug2_ymymfr.jpg",
+        list: [{ listItem: "Business Owners" }],
+        description:
+          "“I want to understand the benefits of cloud migration and find a reliable partner to help scale my business operations.“",
       },
       {
-        card: [
-          {
-            image: "url",
-            list: [{ listItem: "Technical Consultants" }],
-            description:
-              "“I want to evaluate Cloudshift's services to recommend them confidently to my clients.“",
-          },
-        ],
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781443/ug3_wteqgu.jpg",
+        list: [{ listItem: "Technical Consultants" }],
+        description:
+          "“I want to evaluate Cloudshift's services to recommend them confidently to my clients.“",
       },
     ],
   },
@@ -147,6 +141,8 @@ const data = [
     userPersonas: [
       {
         name: "John",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781431/up1_bpmjot.png",
         smallDescription: "45, IT Manager",
         type: "Corporate",
         Gender: "Male",
@@ -177,6 +173,8 @@ const data = [
       },
       {
         name: "Emma",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781468/up2_sozugq.png",
         smallDescription: "43, Business Owner",
         type: "Individual",
         Gender: "Female",
@@ -207,6 +205,8 @@ const data = [
       },
       {
         name: "David",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781435/up3_r7alvf.png",
         smallDescription: "50, Technical Consultant",
         type: "Individual",
         Gender: "Male",
@@ -266,33 +266,30 @@ const data = [
     ],
   },
   {
-    uxAnalysis: [
-      {
-        media: "url",
-        type: "Typography",
-        description:
-          "Poppins is a sleek, modern font with a geometric, clean design. It combines professionalism with elegance, perfect for digital and print use, enhancing readability and visual appeal.",
+    visualUIElements: {
+      font: "Nunito",
+      fontDescription:
+        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
+      primaryColor: "#6A4DFF",
+      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      gradient: {
+        start: "#6A4DFF",
+        end: "#64B5F6",
       },
-      {
-        media: "url",
-        type: "Color Palette",
-        description:
-          "Primary: #0D99FF, Secondary: #00245A, #17C964, #F5A524, #F31260",
-      },
-      {
-        media: "url",
-        type: "Icons",
-        description: "Phosphor Icons for a modern and versatile aesthetic.",
-      },
-    ],
+      uiElementId: "UICloudShift", //don't edit this id
+    },
+  },
+  {
+    uxAnalysis: [],
   },
 ];
-const Cloudshift = () => {
+const CloudShift = () => {
   return (
     <>
+      <CLoudShiftHero />
       <Casestudy data={data} />
     </>
   );
 };
 
-export default Cloudshift;
+export default CloudShift;
