@@ -14,15 +14,15 @@ const PersonasCard = (props: any) => {
                 className="grid grid-cols-2 max-md:grid-cols-1 overflow-hidden"
                 style={{ padding: 0 }}
               >
-                <div className="relative bg-orange-500">
+                <div className="relative bg-orange-500 h-full">
                   <Image
-                    src={user}
+                    src={item.image}
                     alt="Client"
                     width={360}
-                    height={360}
-                    className="w-[100%] h-[100%] max-md:h-[120%]"
+                    height={460}
+                    className="w-full h-full"
                   />
-                  <div className=" absolute bottom-8 left-8 w-full max-md:top-1 max-lg:bottom-2">
+                  <div className=" absolute bottom-8 left-8 w-full ">
                     <p className="text-white text-8xl font-semibold max-lg:text-6xl max-md:text-3xl max-md:mt-6">
                       {item.name}
                     </p>
@@ -60,7 +60,7 @@ const PersonasCard = (props: any) => {
                   </div>
                 </div>
 
-                <div className="bg-secondary-900 p-8 max-md:mt-8">
+                <div className="bg-secondary-900 p-8">
                   <Card className="p-0 bg-transparent border-1 border-[#323232]">
                     <CardBody className="">
                       <div>

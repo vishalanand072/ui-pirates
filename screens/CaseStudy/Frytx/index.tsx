@@ -24,19 +24,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739204/unifiedPlatform_jj9qnk.png",
           heading: "Unified Platform",
           subheading:
             "Develop a platform integrating business management, complaint handling, ratings, reviews, and verification.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739205/complaintManagement_mzirib.png",
           heading: "Complaint Management",
           subheading:
             "Enable the efficient tracking and swift resolution of customer complaints.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739204/BusinessVerification_jsytem.png",
           heading: "Business Verification",
           subheading:
             "Implement a system for verifying business credentials to enhance trust and transparency.",
@@ -89,7 +89,7 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739382/problem_xjcidn.svg",
           list: [
             {
               item: "Fragmented tools and processes for business management.",
@@ -105,7 +105,7 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739381/solution_zgsros.svg",
           list: [
             {
               item: "FrytX integrates multiple business management tools into a unified platform, streamlining operations.",
@@ -125,7 +125,7 @@ const data = [
     userGroup: [
       {
         heading: "Business Owners",
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739468/businessOwners_qfnxr1.jpg",
         list: [
           { listItem: "Local shop owners, etc." },
           { listItem: "Small Businesses" },
@@ -135,14 +135,14 @@ const data = [
       },
       {
         heading: "Consumers",
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739465/Consumers_cgykjc.png",
         list: [{ listItem: "Individuals looking to verify businesses" }],
         description:
           "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
       },
       {
         heading: "Freelancers",
-        image: "url",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739466/Freelancers_w1anae.jpg",
         list: [{ listItem: "Freelancers using the app for payment" }],
         description:
           "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
@@ -154,6 +154,7 @@ const data = [
       {
         name: "Sarah",
         smallDiscription: "32,  Business Owner",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739569/sarah_zdinjy.jpg",
         type: "Individual",
         Gender: "Female",
         Occupation: "Cafe Owner",
@@ -183,7 +184,8 @@ const data = [
       },
       {
         name: "Emma",
-        smallDiscription: "29,  Consumer",
+        smallDiscription: "29, Consumer",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739566/emma_eelgnm.png",
         type: "Corporate",
         Gender: "Female",
         Occupation: "HR Manager",
@@ -208,6 +210,7 @@ const data = [
       {
         name: "Arjun",
         smallDiscription: "27, Freelancer",
+        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739567/arjun_eewl3b.jpg",
         type: "Individual",
         Gender: "Male",
         Occupation: "Graphic Designer",

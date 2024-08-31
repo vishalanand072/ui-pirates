@@ -2,14 +2,27 @@ import Image from "next/image";
 const StayRealorHero = () => {
   return (
     <>
-      <div className="mb-16 -mt-20 flex flex-row items-center justify-center">
-        <Image
-          src="https://res.cloudinary.com/damm9iwho/image/upload/v1724313482/Frame_932_cdfvsy.svg"
-          alt="Solution 1"
-          width={350}
-          height={350}
-          className="my-8 w-[98%] max-md:w-[95%] h-[90%] object-cover"
-        />
+      <div className="mb-16 -mt-24">
+        <div className="max-md:hidden w-screen">
+          <Image
+            src="https://res.cloudinary.com/damm9iwho/image/upload/v1725009806/MacBook_Pro_16__-_5_zqr0ym.svg"
+            alt="Solution 1"
+            width={350}
+            height={350}
+            className="my-8 w-screen h-full object-cover"
+            style={{ width: "100%" }}
+          />
+        </div>
+        <div className="md:hidden">
+          <Image
+            src="https://res.cloudinary.com/damm9iwho/image/upload/v1725009803/MacBook_Pro_16__-_19_gk2wo8.svg"
+            alt="Solution 1"
+            width={350}
+            height={350}
+            className="my-8 w-screen md:h-screen object-cover"
+            style={{ width: "100%" }}
+          />
+        </div>
       </div>
     </>
   );

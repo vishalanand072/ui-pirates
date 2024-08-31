@@ -24,19 +24,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780893/cr1_f3xzls.png",
           heading: "Centralized Management",
           subheading:
             "Develop a platform for landlords and brokers to manage multiple properties in one place.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780893/cr2_mdyh3h.png",
           heading: "Property Listing",
           subheading:
             "Enable easy listing and updating of property details for efficient management and client updates.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780894/cr3_kwsufj.png",
           heading: "Booking and Visits",
           subheading:
             "Provide a feature for scheduling property viewings and managing booking requests.",
@@ -84,7 +84,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654462/image_18_kva9ki.svg",
           list: [
             {
               item: "Difficulty in managing multiple properties and tasks from different platforms.",
@@ -100,7 +101,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654460/image_19_ovkaxp.svg",
           list: [
             {
               item: "All property management tasks are consolidated into a single platform for easier oversight.",
@@ -119,13 +121,15 @@ const data = [
   {
     userGroup: [
       {
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780899/ug1_jormc8.jpg",
         list: [{ listItem: "Landlords" }],
         description:
           "“I want to manage all my properties in one place so that I can save time and increase efficiency.“",
       },
       {
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780900/ug2_vbcazx.jpg",
         list: [{ listItem: "Real Estate Brokers" }],
         description:
           "“I want to list and update properties easily so that I can attract potential tenants quickly.“",
@@ -136,6 +140,8 @@ const data = [
     userPersonas: [
       {
         name: "John",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780898/up1_vmtcnr.jpg",
         smallDescription: "43, Landlord",
         type: "Individual",
         Gender: "Male",
@@ -165,6 +171,8 @@ const data = [
       },
       {
         name: "Emily",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780896/up2_jdxruk.png",
         smallDescription: "32, Broker",
         type: "Individual",
         Gender: "Female",

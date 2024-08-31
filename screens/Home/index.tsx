@@ -9,6 +9,7 @@ import GreatIdea from "./greatIdea";
 import FormLayout from "./form/formLayout";
 import InternPage from "./InternsPage";
 import ScrollSnap from "./scrollSnapExample";
+import ScrollSnapFol from "./ScrollSnap";
 
 import { HomePageData } from "../../types";
 
@@ -32,6 +33,7 @@ const HomePage: React.FC = () => {
 
       {/* <WeCreate /> */}
       {/* <ScrollSnap /> */}
+      <ScrollSnapFol />
 
       <TimeLinePaga />
       <div className="max-md:hidden">

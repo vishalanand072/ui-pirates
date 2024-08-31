@@ -61,7 +61,7 @@ import StickyTabs from "./tabs";
 import WeCreate from "../Home/weCreate";
 
 const Casestudy = (props: any) => {
-  console.log(props.data[9].uxAnalysis);
+  console.log(props.data[4].coreProblem);
   const len = props.data[9].uxAnalysis.length;
   console.log(len);
 
@@ -89,12 +89,17 @@ const Casestudy = (props: any) => {
         <div id="core-problem">
           <CoreProblems CoreProblems={props.data[4].coreProblem} />
         </div>
-        <div id="user-groups-stories">
-          <UserGroups userGroup={props.data[5].userGroup} />
-        </div>
-        <div id="user-persona">
-          <UserPersonas userPersonas={props.data[6].userPersonas} />
-        </div>
+        {props.data[5].userGroup.length != 0 && (
+          <div id="user-groups-stories">
+            <UserGroups userGroup={props.data[5].userGroup} />
+          </div>
+        )}
+        {props.data[6].userPersonas.length != 0 && (
+          <div id="user-persona">
+            <UserPersonas userPersonas={props.data[6].userPersonas} />
+          </div>
+        )}
+
         <div id="features-product">
           <FeaturesProduct
             featureAndProduct={props.data[7].featureAndProduct}

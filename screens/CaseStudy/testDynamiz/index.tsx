@@ -23,13 +23,13 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781589/cr1_tptgqb.png",
           heading: "SaaS MVP Design",
           subheading:
             "Design a user-friendly and visually appealing interface for the MVP of the software testing platform, incorporating essential testing tools and automation features.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781590/cr2_o9luka.png",
           heading: "User Experience Optimization",
           subheading:
             "Ensure that the platform offers an intuitive and efficient user experience for development teams, from developers to QA engineers and project managers.",
@@ -77,7 +77,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724739981/problem_t1mjly.svg",
           list: [
             {
               item: "Time-consuming manual testing processes.",
@@ -93,7 +94,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724739983/solution_cdh2oz.svg",
           list: [
             {
               item: "TestDynamiz provides automated testing solutions that integrate seamlessly into development workflows.",
@@ -112,19 +114,22 @@ const data = [
   {
     userGroup: [
       {
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781591/ug1_acxozg.png",
         list: [{ listItem: "Development Teams" }],
         description:
           "“I want to integrate automated tests easily into my development workflow to ensure code quality and save time.“",
       },
       {
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781599/ug2_kt5edq.jpg",
         list: [{ listItem: "Project Managers" }],
         description:
           "“I want to automate repetitive testing tasks & manage test cases efficiently to identify bugs early and improve testing efficiency.“",
       },
       {
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781599/ug2_kt5edq.jpg",
         list: [{ listItem: "Startup Teams" }],
         description:
           "“I want to ensure thorough test coverage and coordinate testing efforts to maintain high-quality software releases.“",
@@ -135,6 +140,8 @@ const data = [
     userPersonas: [
       {
         name: "Emma",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781593/up1_i3obmh.png",
         smallDescription: "28, Software Developer",
         type: "Corporate",
         Gender: "Female",
@@ -165,6 +172,8 @@ const data = [
       },
       {
         name: "James",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781593/up2_uebv1o.png",
         smallDescription: "35, QA Engineer",
         type: "Corporate",
         Gender: "Male",
@@ -196,6 +205,8 @@ const data = [
       {
         name: "Sarah",
         smallDescription: "47, Project Manager",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781599/up3_p7tvtz.jpg",
         type: "Corporate",
         Gender: "Female",
         Industry: "IT",

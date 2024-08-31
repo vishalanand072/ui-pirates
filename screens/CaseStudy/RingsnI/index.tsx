@@ -1,5 +1,4 @@
 import Casestudy from "@/screens/CaseStudyComp";
-import RingsAndIHero from "./hero";
 
 const data = [
   {
@@ -24,19 +23,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739923/webdev_h3x5ga.png",
+          img: "url",
           heading: "Website Design and Development",
           subheading:
             "Create a visually appealing, user-friendly website that effectively showcases the jewelry collection.",
         },
         {
-          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739925/customizationoption_q6qexl.png",
+          img: "url",
           heading: "Customization Options",
           subheading:
             "Implement features that allow customers to customize rings according to their preferences.",
         },
         {
-          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739925/shopifyintegration_xhcrk1.png",
+          img: "url",
           heading: "Shopify Integration",
           subheading:
             "Ensure seamless Shopify integration for inventory management, payment processing, and order fulfillment.",
@@ -47,7 +46,7 @@ const data = [
     },
   },
   {
-    ourRole: [
+    ourrole: [
       {
         heading: "User Research",
         icon: "UserFocus",
@@ -93,7 +92,7 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739981/problem_t1mjly.svg",
+          image: "url",
           list: [
             {
               item: "Limited customization options on existing jewelry websites.",
@@ -109,7 +108,7 @@ const data = [
       ],
       solutions: [
         {
-          image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739983/solution_cdh2oz.svg",
+          image: "url",
           list: [
             {
               item: "Rings & I offers extensive customization options, allowing customers to personalize their rings.",
@@ -128,22 +127,34 @@ const data = [
   {
     userGroup: [
       {
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739932/usergroups1_zhio1e.jpg",
-        list: [{ listItem: "Jewelry Enthusiasts" }],
-        description:
-          "“I want a website with unique and customizable rings to expand my exclusive collection.“",
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Jewelry Enthusiasts" }],
+            description:
+              "“I want a website with unique and customizable rings to expand my exclusive collection.“",
+          },
+        ],
       },
       {
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739928/usergroups2_kqb60y.jpg",
-        list: [{ listItem: "Gift Shoppers" }],
-        description:
-          "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Gift Shoppers" }],
+            description:
+              "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
+          },
+        ],
       },
       {
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739935/usergroups3_cwsug6.jpg",
-        list: [{ listItem: "Fashion Aficionados" }],
-        description:
-          "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
+        card: [
+          {
+            image: "url",
+            list: [{ listItem: "Fashion Aficionados" }],
+            description:
+              "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
+          },
+        ],
       },
     ],
   },
@@ -152,7 +163,6 @@ const data = [
       {
         name: "Jessica",
         smallDescription: "29, Jewelry Collector",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739929/userpersonas1_miujyx.png",
         type: "Individual",
         Gender: "Female",
         Occupation: "Marketing Manager",
@@ -183,7 +193,6 @@ const data = [
       {
         name: "Michael",
         smallDescription: "35, Gift Shopper",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739931/userpersonas2_n4pb9a.jpg",
         type: "Individual",
         Gender: "Male",
         Occupation: "Software Engineer",
@@ -214,7 +223,6 @@ const data = [
       {
         name: "Sophia",
         smallDescription: "24, Fashion Enthusiast",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739934/userpersonas3_q831ki.jpg",
         type: "Individual",
         Gender: "Female",
         Occupation: "Fashion Blogger",
@@ -244,7 +252,6 @@ const data = [
       },
     ],
   },
-
   {
     featureAndProduct: [
       {
@@ -268,27 +275,29 @@ const data = [
     ],
   },
   {
-    visualUIElements: {
-      font: "Nunito",
-      fontDescription:
-        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
-      primaryColor: "#6A4DFF",
-      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
-      gradient: {
-        start: "#6A4DFF",
-        end: "#64B5F6",
+    uxAnalysis: [
+      {
+        media: "url",
+        type: "Typography",
+        description: "Oregon LDO font for modern and adventurous designs.",
       },
-      uiElementId: "UIRings&I", //don't edit this id
-    },
-  },
-  {
-    uxAnalysis: [],
+      {
+        media: "url",
+        type: "Color Palette",
+        description:
+          "Primary: #BE877B, Secondary: #1B1B1B, #17c964, #F5A524, #F31260, #924C26, #CE875E, #924C26",
+      },
+      {
+        media: "url",
+        type: "Icons",
+        description: "Phosphor Icons for a modern and versatile aesthetic.",
+      },
+    ],
   },
 ];
 const RingsAndI = () => {
   return (
     <>
-      <RingsAndIHero />
       <Casestudy data={data} />
     </>
   );

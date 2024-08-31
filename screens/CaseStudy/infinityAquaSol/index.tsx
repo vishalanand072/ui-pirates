@@ -23,19 +23,19 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781321/cr1_fpfftz.png",
           heading: "Product Showcase",
           subheading:
             "Create detailed presentations of water treatment products and solutions.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781321/cr2_adizta.png",
           heading: "Informative Content",
           subheading:
             "Provide clear and concise information about the company's services and expertise.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724781323/cr3_hmxt3e.png",
           heading: "Contact and Inquiry Form",
           subheading:
             "Develop an easy-to-use form for potential customers to get in touch and make inquiries.",
@@ -88,7 +88,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654462/image_18_kva9ki.svg",
           list: [
             {
               item: "Infinity AquaSol needed a professional online presence to reach a broader audience.",
@@ -104,7 +105,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654460/image_19_ovkaxp.svg",
           list: [
             {
               item: "Developed a responsive website that highlights their expertise and product offerings.",
@@ -121,120 +123,10 @@ const data = [
     },
   },
   {
-    userGroup: [
-      {
-        image: "url",
-        list: [{ listItem: "Jewelry Enthusiasts" }],
-        description:
-          "“I want a website with unique and customizable rings to expand my exclusive collection.“",
-      },
-      {
-        image: "url",
-        list: [{ listItem: "Gift Shoppers" }],
-        description:
-          "“I want a seamless shopping experience to easily find and purchase the perfect ring for my partner.“",
-      },
-      {
-        image: "url",
-        list: [{ listItem: "Fashion Aficionados" }],
-        description:
-          "“I want to explore trendy and stylish rings that match my fashion sense and can be delivered quickly.“",
-      },
-    ],
+    userGroup: [],
   },
   {
-    userPersonas: [
-      {
-        name: "Jessica",
-        smallDescription: "29, Jewelry Collector",
-        type: "Individual",
-        Gender: "Female",
-        Occupation: "Marketing Manager",
-        bio: "Jessica is a 29-year-old Marketing Manager with a passion for collecting unique and customizable rings. She enjoys discovering exclusive pieces to enhance her jewelry collection.",
-        goals: [
-          {
-            item: "Discover unique and customizable rings.",
-          },
-          {
-            item: "Enhance her jewelry collection with exclusive pieces.",
-          },
-          {
-            item: "Find high-quality, standout designs.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Limited customization options.",
-          },
-          {
-            item: "Difficulty finding unique designs.",
-          },
-          {
-            item: "High prices for truly unique pieces.",
-          },
-        ],
-      },
-      {
-        name: "Michael",
-        smallDescription: "35, Gift Shopper",
-        type: "Individual",
-        Gender: "Male",
-        Occupation: "Software Engineer",
-        bio: "Michael is a 35-year-old Software Engineer looking to find the perfect ring for his partner. He values a seamless and stress-free shopping experience.",
-        goals: [
-          {
-            item: "Find the perfect ring for his partner.",
-          },
-          {
-            item: "Ensure a seamless shopping experience.",
-          },
-          {
-            item: "Get a high-quality product.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Uncertainty about ring quality.",
-          },
-          {
-            item: "Complicated purchasing process.",
-          },
-          {
-            item: "Concerns about fitting and return policies.",
-          },
-        ],
-      },
-      {
-        name: "Sophia",
-        smallDescription: "24, Fashion Enthusiast",
-        type: "Individual",
-        Gender: "Female",
-        Occupation: "Fashion Blogger",
-        bio: "Sophia is a 24-year-old Fashion Blogger who loves to stay updated with the latest jewelry trends. She looks for fashionable rings that complement her style without breaking the bank.",
-        goals: [
-          {
-            item: "Stay updated with the latest jewelry trends.",
-          },
-          {
-            item: "Find fashionable rings that complement her style.",
-          },
-          {
-            item: "Access affordable, stylish pieces.",
-          },
-        ],
-        painPoints: [
-          {
-            item: "Finding trendy yet affordable rings.",
-          },
-          {
-            item: "Ensuring quick delivery.",
-          },
-          {
-            item: "Balancing quality with price.",
-          },
-        ],
-      },
-    ],
+    userPersonas: [],
   },
   {
     featureAndProduct: [

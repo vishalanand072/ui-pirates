@@ -24,13 +24,13 @@ const data = [
     clientRequirements: {
       card: [
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780783/cr1_cpd3go.png",
           heading: "SaaS Product Design",
           subheading:
             "Design a user-friendly and visually appealing interface for the trading platform, incorporating advanced trading tools and analytics.",
         },
         {
-          img: "url",
+          img: "https://res.cloudinary.com/damm9iwho/image/upload/v1724780783/cr2_n9e9ee.png",
           heading: "Website Design",
           subheading:
             "Create a website that effectively communicates the features and benefits of Brahmastra, attracting traders and investors.",
@@ -78,7 +78,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654462/image_18_kva9ki.svg",
           list: [
             {
               item: "Lack of access to real-time market data and advanced trading tools.",
@@ -94,7 +95,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "url",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724654460/image_19_ovkaxp.svg",
           list: [
             {
               item: "Brahmastra provides real-time market data and advanced charting tools, enhancing trading efficiency.",
@@ -113,19 +115,22 @@ const data = [
   {
     userGroup: [
       {
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780783/ug1_ahdkon.png",
         list: [{ listItem: "Professional Traders" }],
         description:
           "“I want to access advanced tools and real-time market data to make informed trading decisions.”",
       },
       {
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780790/ug2_b8q90i.jpg",
         list: [{ listItem: "Retail Traders" }],
         description:
           "“I want a user-friendly platform that helps me manage my trades and learn more about trading.”",
       },
       {
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780790/ug3_lmyqin.jpg",
         list: [{ listItem: "Investors" }],
         description:
           "“I want to monitor my investment portfolios and analyze market trends efficiently.”",
@@ -136,6 +141,8 @@ const data = [
     userPersonas: [
       {
         name: "David",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780791/up1_peujbo.jpg",
         smallDescription: "34, Professional Trader",
         type: "Corporate",
         Gender: "Male",
@@ -166,6 +173,8 @@ const data = [
       },
       {
         name: "Lisa",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780795/up2_edf7aw.jpg",
         smallDescription: "30, Part-time trader",
         type: "Individual",
         Gender: "Female",
@@ -196,6 +205,8 @@ const data = [
       },
       {
         name: "Mark",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724780794/up3_u7g5pw.jpg",
         smallDescription: "60, Investor",
         type: "Individual",
         Gender: "Male",
