@@ -216,7 +216,8 @@ const data = [
       },
       {
         name: "Michael",
-        image: "url",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781256/up2_os4x5e.png",
         smallDescription: "31, Resident",
         type: "Individual",
         Gender: "Male",
