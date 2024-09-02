@@ -151,7 +151,7 @@ const ScrollAnimation: React.FC = () => {
             ref={responsiveAnimationRef}
             className="scroll-section w-[100%] opacity-0"
           >
-            <ResponsiveAnimation />
+            {/* <ResponsiveAnimation /> */}
           </div>
         </div>
       </div>
