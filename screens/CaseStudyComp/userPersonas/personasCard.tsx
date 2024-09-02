@@ -1,15 +1,60 @@
 import { Card, CardBody } from "@nextui-org/react";
+import { useEffect } from "react";
 import { DiamondsFour } from "@phosphor-icons/react";
 import Image from "next/image";
-import user from "@/public/userPersonal.jpeg";
+import { gsap } from "gsap";
 
 const PersonasCard = (props: any) => {
+  useEffect(() => {
+    // Animation for the left image
+    gsap.fromTo(
+      "#left1",
+      {
+        opacity: 0,
+        x: -300,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#left1",
+          start: "top center",
+          end: "center bottom",
+          scrub: 1,
+        },
+      }
+    );
+
+    // Animation for the right image
+    gsap.fromTo(
+      "#right1",
+      {
+        opacity: 0,
+        x: 300,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#right1",
+          start: "top center",
+          end: "center bottom",
+          scrub: 1,
+        },
+      }
+    );
+  }, []);
   return (
     <>
       {props.card &&
         props.card.map((item: any, index: any) => {
           return (
-            <Card className="mb-12">
+            <Card
+              className="mb-12 overflow-hidden"
+              id={index % 2 == 0 ? "left1" : "right1"}
+            >
               <CardBody
                 className="grid grid-cols-2 max-md:grid-cols-1 overflow-hidden"
                 style={{ padding: 0 }}
