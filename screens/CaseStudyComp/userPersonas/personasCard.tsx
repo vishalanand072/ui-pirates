@@ -3,63 +3,58 @@ import { useEffect } from "react";
 import { DiamondsFour } from "@phosphor-icons/react";
 import Image from "next/image";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const PersonasCard = (props: any) => {
   useEffect(() => {
-    // Animation for the left image
-    gsap.fromTo(
-      "#left1",
-      {
-        opacity: 0,
-        x: -300,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#left1",
-          start: "top center",
-          end: "center bottom",
-          scrub: 1,
-        },
-      }
-    );
+    // Get all cards and apply the animation
+    props.card.forEach((item: any, index: any) => {
+      const cardId = `card-${index}`;
 
-    // Animation for the right image
-    gsap.fromTo(
-      "#right1",
-      {
-        opacity: 0,
-        x: 300,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#right1",
-          start: "top center",
-          end: "center bottom",
-          scrub: 1,
+      // Animation for the card based on whether it's even or odd
+      gsap.fromTo(
+        `#${cardId}`,
+        {
+          opacity: 0,
+          x: index % 2 === 0 ? -300 : 300,
         },
-      }
-    );
-  }, []);
+        {
+          opacity: 1,
+          x: 0,
+          duration: 2,
+          scrollTrigger: {
+            trigger: `#${cardId}`,
+            start: "top center",
+            end: "center bottom",
+            scrub: 1,
+          },
+        }
+      );
+    });
+  }, [props.card]);
+
   return (
     <>
       {props.card &&
         props.card.map((item: any, index: any) => {
+          const cardId = `card-${index}`;
           return (
             <Card
-              className="mb-12 overflow-hidden"
-              id={index % 2 == 0 ? "left1" : "right1"}
+              className={
+                index % 2 === 0
+                  ? "mb-12 overflow-hidden"
+                  : "my-12 overflow-hidden mt-40 max-md:mt-80"
+              }
+              id={cardId}
+              key={cardId}
             >
               <CardBody
-                className="grid grid-cols-2 max-md:grid-cols-1 overflow-hidden"
+                className="flex flex-row max-md:flex-col overflow-hidden bg-[#323232]"
                 style={{ padding: 0 }}
               >
-                <div className="relative bg-orange-500 h-full">
+                <div className="relative bg-orange-500 md:w-1/2 max-h-[600px] ">
                   <Image
                     src={item.image}
                     alt="Client"
@@ -105,7 +100,7 @@ const PersonasCard = (props: any) => {
                   </div>
                 </div>
 
-                <div className="bg-secondary-900 p-8">
+                <div className="bg-secondary-900 p-8 flex flex-col md:w-1/2">
                   <Card className="p-0 bg-transparent border-1 border-[#323232]">
                     <CardBody className="">
                       <div>

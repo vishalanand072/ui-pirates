@@ -126,13 +126,13 @@ const ScrollingAnimation: React.FC = () => {
           <div className="b2 p-[0_5vw] h-screen w-screen text-8xl font-semibold flex flex-row justify-center items-center">
             We Create
           </div>
-          <div
+          {/* <div
             className="b3 p-[0_5vw] h-screen w-screen bg-red-500 relative"
             id="imageAnim"
           >
             <ImageZoomAnimation />
-          </div>
-          <div className="b4 p-[0_5vw] h-screen w-screen bg-green-500"></div>
+          </div> */}
+          {/* <div className="b4 p-[0_5vw] h-screen w-screen bg-green-500"></div> */}
         </div>
       </div>
       <div className="c h-screen w-full bg-black"></div>
