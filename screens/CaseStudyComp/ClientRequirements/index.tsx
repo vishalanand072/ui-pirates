@@ -1,56 +1,67 @@
+import { useEffect } from "react";
 import Image from "next/image";
-import pic1 from "@/public/images/clientReq_1.png";
-import pic2 from "@/public/images/clientReq_2.png";
-import pic3 from "@/public/images/clientReq_3.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ClientRequirements = (props: any) => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".card-item",
+      {
+        opacity: 0,
+        scale: 0.8,
+        rotationY: 15,
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        rotationY: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#card",
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: 1,
+          markers: false,
+        },
+      }
+    );
+  }, []);
+
   return (
-    <>
-      <div className="container mx-auto px-20 max-lg:px-16 max-md:px-12">
-        <div className="flex justify-between items-center py-24 lg:py-24 bg-white">
-          <h1 className=" heading">Client Requirements</h1>
-          <span className="text-gray-300 text-6xl font-light">01</span>
-        </div>
-        <div className="">
-          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12">
-            {props.ClientRequirements.card.map((item: any, index: any) => {
-              return (
-                <div className="flex flex-col gap-8">
-                  <Image
-                    src={item.img}
-                    alt="Client Requirements"
-                    width={300}
-                    height={300}
-                    className="w-full h-full"
-                  />
-                  <div>
-                    <h1 className=" small-heading mb-4">{item.heading}</h1>
-                    <p className="normal">{item.subheading}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        <div className="mt-12">
-          <div className="p-8  rounded-3xl border-opacity-15 border-black border mb-16">
-            <h1 className=" small-heading mb-4 text-subtitle">Outcomes</h1>
-            <p className="normal">{props.ClientRequirements.Outcomes}</p>
-          </div>
-          {/* <div className="flex flex-col gap-2 align-middle justify-center p-8 rounded-lg border-black b-10 ">
-          <h1 className=" font-bold text-2xl">Outcomes</h1>
-          <div className="text-wrap normal font-normal text-secondary-100">
-            Our clients and their users were highly satisfied with our
-            experience design strategy for Xperiti. By continuously improving
-            the platform through agile development releases, we made Xperiti
-            more robust and engaging. This approach not only enhanced user
-            satisfaction but also helped grow the platform's brand in the
-            market.
-          </div>
-        </div> */}
+    <div className="container mx-auto px-20 max-lg:px-16 max-md:px-12">
+      <div className="flex justify-between items-center py-24 lg:py-24 bg-white">
+        <h1 className="heading">Client Requirements</h1>
+        <span className="text-gray-300 text-6xl font-light">01</span>
+      </div>
+      <div id="card">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12">
+          {props.ClientRequirements.card.map((item: any, index: any) => (
+            <div key={index} className="flex flex-col gap-8 card-item">
+              <Image
+                src={item.img}
+                alt="Client Requirements"
+                width={300}
+                height={300}
+                className="w-full h-full"
+              />
+              <div>
+                <h1 className="small-heading mb-4">{item.heading}</h1>
+                <p className="normal">{item.subheading}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+      <div className="mt-12">
+        <div className="p-8 rounded-3xl border-opacity-15 border-black border mb-16">
+          <h1 className="small-heading mb-4 text-subtitle">Outcomes</h1>
+          <p className="normal">{props.ClientRequirements.Outcomes}</p>
+        </div>
+      </div>
+    </div>
   );
 };
 
