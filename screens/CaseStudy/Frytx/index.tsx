@@ -89,7 +89,8 @@ const data = [
     coreProblem: {
       problems: [
         {
-          image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739382/problem_xjcidn.svg",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724739382/problem_xjcidn.svg",
           list: [
             {
               item: "Fragmented tools and processes for business management.",
@@ -105,7 +106,8 @@ const data = [
       ],
       solutions: [
         {
-          image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739381/solution_zgsros.svg",
+          image:
+            "https://res.cloudinary.com/damm9iwho/image/upload/v1724739381/solution_zgsros.svg",
           list: [
             {
               item: "FrytX integrates multiple business management tools into a unified platform, streamlining operations.",
@@ -125,7 +127,8 @@ const data = [
     userGroup: [
       {
         heading: "Business Owners",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739468/businessOwners_qfnxr1.jpg",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724739468/businessOwners_qfnxr1.jpg",
         list: [
           { listItem: "Local shop owners, etc." },
           { listItem: "Small Businesses" },
@@ -135,14 +138,16 @@ const data = [
       },
       {
         heading: "Consumers",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739465/Consumers_cgykjc.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724739465/Consumers_cgykjc.png",
         list: [{ listItem: "Individuals looking to verify businesses" }],
         description:
           "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
       },
       {
         heading: "Freelancers",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739466/Freelancers_w1anae.jpg",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724739466/Freelancers_w1anae.jpg",
         list: [{ listItem: "Freelancers using the app for payment" }],
         description:
           "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
@@ -154,7 +159,8 @@ const data = [
       {
         name: "Sarah",
         smallDiscription: "32,  Business Owner",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739569/sarah_zdinjy.jpg",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724739569/sarah_zdinjy.jpg",
         type: "Individual",
         Gender: "Female",
         Occupation: "Cafe Owner",
@@ -185,7 +191,8 @@ const data = [
       {
         name: "Emma",
         smallDiscription: "29, Consumer",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739566/emma_eelgnm.png",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724739566/emma_eelgnm.png",
         type: "Corporate",
         Gender: "Female",
         Occupation: "HR Manager",
@@ -210,7 +217,8 @@ const data = [
       {
         name: "Arjun",
         smallDiscription: "27, Freelancer",
-        image: "https://res.cloudinary.com/damm9iwho/image/upload/v1724739567/arjun_eewl3b.jpg",
+        image:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724739567/arjun_eewl3b.jpg",
         type: "Individual",
         Gender: "Male",
         Occupation: "Graphic Designer",
@@ -267,11 +275,11 @@ const data = [
   },
   {
     visualUIElements: {
-      font: "Nunito",
+      font: "Figtree",
       fontDescription:
-        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
-      primaryColor: "#6A4DFF",
-      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+        "Figtree is a clean yet friendly geometric sans serif font for usage in web and mobile apps. It's light-hearted and crisp when used for text, yet still retains some punch when used in uppercase – perfect for buttons and short labels.",
+      primaryColor: "#0075FF",
+      colorPilatr: ["#0075FF", "#F7951D", "#17C964", "#F5A524", "#F31260"],
       gradient: {
         start: "#6A4DFF",
         end: "#64B5F6",

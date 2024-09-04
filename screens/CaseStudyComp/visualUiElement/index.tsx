@@ -1,5 +1,7 @@
 import { Card, CardBody } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 import Assets from "./assets";
+import ColorPalette from "./colorPalette";
 import UIElementsFrytx from "@/screens/CaseStudy/Frytx/uiElementsFrytx";
 import UIElementsXperiti from "@/screens/CaseStudy/Xperiti/uiElementsXperiti";
 import UIElementsRingsAndI from "@/screens/CaseStudy/Rings&i/uiElementsRings&i";
@@ -9,7 +11,7 @@ import UIElementsTestDynamiz from "@/screens/CaseStudy/testDynamiz/uiElementsTes
 import UIElementsIAS from "@/screens/CaseStudy/infinityAquaSol/uiElementsInfinityAquaSol";
 import UIElementsCloudShift from "@/screens/CaseStudy/cloudShift/uiElementsCloudShift";
 const ValuesUiElement = (props: any) => {
-  console.log(props.visualUIElements.uiElementId);
+  console.log(props.visualUIElements.colorPilatr);
 
   return (
     <>
@@ -58,7 +60,7 @@ const ValuesUiElement = (props: any) => {
           </Card>
 
           <Card
-            className="border-0 shadow-none bg-[#009D9C] text-white py-0"
+            className={`bg-[${props.visualUIElements.primaryColor}] border-0 shadow-none text-white py-0`}
             style={{ padding: 0 }}
           >
             <CardBody style={{ padding: 0 }}>
@@ -68,9 +70,12 @@ const ValuesUiElement = (props: any) => {
             </CardBody>
           </Card>
         </div>
-
+        <Divider className="my-8 h-[2px]" />
+        <ColorPalette colorPilatr={props.visualUIElements.colorPilatr} />
+        <Divider className="my-8 h-[2px]" />
         <Assets />
-        <div className="mt-8">
+        <Divider className="my-8 h-[2px]" />
+        <div className="">
           {props.visualUIElements.uiElementId == "UIXperiti" && (
             <UIElementsXperiti />
           )}

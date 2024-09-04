@@ -56,7 +56,9 @@ const data = [
 const Assets = () => {
   return (
     <>
-      <p className="text-subtitle text-3xl font-semibold mb-3">Assets</p>
+      <p className="text-subtitle text-2xl font-semibold mb-3 uppercase">
+        Assets
+      </p>
       <Card className="bg-none shadow-none border-none p-0">
         <CardBody className="p-0 m-0">
           <p className="text-2xl font-semibold mb-3">Icons</p>

@@ -216,25 +216,29 @@ const data = [
   {
     featureAndProduct: [
       {
-        media: "url",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1725440424/Frame_10000060642_btpokl.svg",
         heading: "Study Creation & Management",
         subHeading:
           "Utilize simplified tools that enable easy creation and management of research studies, streamlining the entire process for researchers.",
       },
       {
-        media: "url",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1725440425/Frame_1000006064_vnzgmn.svg",
         heading: "Survey & Interview Integration",
         subHeading:
           "Effortlessly handle both qualitative and quantitative research methods, allowing seamless integration of surveys and interviews.",
       },
       {
-        media: "url",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1725440424/Frame_1000006064e_zfyftc.svg",
         heading: "Participant Management",
         subHeading:
           "Track and manage participant information and activities efficiently, ensuring smooth coordination and data collection.",
       },
       {
-        media: "url",
+        media:
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1725440425/Frame_10000060643_ktbjim.svg",
         heading: "Incentive Distribution",
         subHeading:
           "Automate the management and distribution of participant incentives, making it easy to reward contributions promptly and fairly.",
@@ -243,11 +247,11 @@ const data = [
   },
   {
     visualUIElements: {
-      font: "Nunito",
+      font: "Inter",
       fontDescription:
         "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
-      primaryColor: "#6A4DFF",
-      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      primaryColor: "#009D9C",
+      colorPilatr: ["#009D9C", "#009D9C", "#C4E456", "#F5A524", "#F31260"],
       gradient: {
         start: "#6A4DFF",
         end: "#64B5F6",
