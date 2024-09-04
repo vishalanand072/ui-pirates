@@ -37,7 +37,13 @@ const ClientRequirements = (props: any) => {
         <span className="text-gray-300 text-6xl font-light">01</span>
       </div>
       <div id="card">
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12">
+        <div
+          className={
+            props.ClientRequirements.card.length == 3
+              ? "grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12"
+              : "grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-12"
+          }
+        >
           {props.ClientRequirements.card.map((item: any, index: any) => (
             <div key={index} className="flex flex-col gap-8 card-item">
               <Image

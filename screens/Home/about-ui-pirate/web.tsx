@@ -44,7 +44,7 @@ function Web() {
 
   return (
     <>
-      <section className="scroll-section-outer hidden md:block">
+      <section className="scroll-section-outer max-md:mr-72">
         <div ref={triggerRef}>
           <div ref={sectionRef} className="scroll-section-inner">
             <div className="scroll-section w-[10%] -mr-[15%] max-md:-mr-[5%]">

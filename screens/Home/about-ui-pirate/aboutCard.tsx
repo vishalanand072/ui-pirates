@@ -42,9 +42,10 @@ const AboutCard: React.FC<AboutCardProps> = ({ cardColor }) => {
         <CardBody className="flex flex-col gap-4">
           <div className="flex flex-col mt-2 md:mt-8">
             <p
-              className="text-default-500 text-[80px] max-md:text-[32px] line-clamp-[0px]"
+              className="text-default-500 text-[80px] max-md:text-[32px] leading-none"
               style={{
                 fontWeight: 500,
+                // lineHeight: "40px",
                 color: "#3C1E1E",
                 textAlign: "left",
               }}
@@ -54,7 +55,7 @@ const AboutCard: React.FC<AboutCardProps> = ({ cardColor }) => {
           </div>
           <div className="flex flex-col" style={{ marginTop: "auto" }}>
             <p
-              className="text-sm text-[36px] max-md:text-[22px]"
+              className="text-lg text-[36px] max-md:text-[22px]"
               style={{
                 fontWeight: 400,
                 lineHeight: "40px",

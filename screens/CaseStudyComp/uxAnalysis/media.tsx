@@ -1,6 +1,6 @@
 import Image from "next/image";
 const UXMedia = (props: any) => {
-  console.log(props.uxAnalysis);
+  // console.log(props.uxAnalysis);
 
   return (
     <>

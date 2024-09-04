@@ -43,6 +43,7 @@
 
 // Casestudy.js
 "use client";
+import React, { useState, useEffect } from "react";
 import CaseStudyHero from "./hero";
 import CoreProblems from "./CoreProblems";
 import OurRole from "./OurRole";
@@ -56,20 +57,36 @@ import StickyTop from "../Home/designDev/stickyTop";
 import ValuesUiElement from "./visualUiElement";
 import UXAnalysis from "./uxAnalysis";
 import ProductShowcase from "./productShowcase";
-
 import StickyTabs from "./tabs";
 import WeCreate from "../Home/weCreate";
+import { Spinner } from "@nextui-org/react";
 
 const Casestudy = (props: any) => {
-  console.log(props.data[4].coreProblem);
-  const len = props.data[9].uxAnalysis.length;
-  console.log(len);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Set a timeout to simulate loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // 2 seconds
+
+    // Cleanup the timer if the component is unmounted
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="h-[200vh] bg-white absolute top-0 w-screen">
+        {/* Replace with your loader component or animation */}
+        <div className="loader w-screen h-[100vh] flex items-center justify-center">
+          <Spinner size="lg" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>
-      {/* <WeCreate /> */}
-      {/* <StickyTop /> */}
-      {/* <CaseStudyHero hero={props.data[0].hero} /> */}
       <Overview overviewdata={props.data[1].overview} />
       <div className="">
         <div
@@ -99,7 +116,6 @@ const Casestudy = (props: any) => {
             <UserPersonas userPersonas={props.data[6].userPersonas} />
           </div>
         )}
-
         <div id="features-product">
           <FeaturesProduct
             featureAndProduct={props.data[7].featureAndProduct}
