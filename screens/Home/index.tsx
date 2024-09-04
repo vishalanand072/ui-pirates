@@ -10,7 +10,7 @@ import FormLayout from "./form/formLayout";
 import InternPage from "./InternsPage";
 import ScrollSnap from "./scrollSnapExample";
 import ScrollSnapFol from "./ScrollSnap";
-
+import ShoeNike from "../shoePage.tsx";
 import { HomePageData } from "../../types";
 
 interface HomePageProps {
@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
       {/* <WeCreate /> */}
       {/* <ScrollSnap /> */}
       <ScrollSnapFol />
-
+      <ShoeNike></ShoeNike>
       <TimeLinePaga />
       <div className="max-md:hidden">
         <DesignDev />
