@@ -24,6 +24,8 @@
 		"@phosphor-icons/react": "^2.1.7",
 		"@react-aria/ssr": "^3.9.2",
 		"@react-aria/visually-hidden": "^3.8.10",
+		"@react-three/drei": "^9.112.0",
+		"@react-three/fiber": "^8.17.6",
 		"@types/node": "20.5.7",
 		"@types/react": "18.2.21",
 		"@types/react-dom": "18.2.7",
@@ -49,7 +51,9 @@
 		"tailwind-variants": "^0.1.20",
 		"tailwindcss": "^3.4.3",
 		"tailwindcss-animate": "^1.0.7",
-		"typescript": "5.0.4"
+		"three": "^0.168.0",
+		"typescript": "5.0.4",
+		"valtio": "^2.0.0"
 	},
 	"devDependencies": {
 		"@types/locomotive-scroll": "^4.1.3",
