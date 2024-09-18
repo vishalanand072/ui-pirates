@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
       {/* <WeCreate /> */}
       {/* <ScrollSnap /> */}
       <ScrollSnapFol />
-      <ShoeNike></ShoeNike>
+      {/* <ShoeNike></ShoeNike> */}
       <TimeLinePaga />
       <div className="max-md:hidden">
         <DesignDev />
@@ -50,7 +50,7 @@ const HomePage: React.FC = () => {
 
       <FormLayout />
 
-      <InternPage />
+      {/* <InternPage /> */}
     </>
   );
 };

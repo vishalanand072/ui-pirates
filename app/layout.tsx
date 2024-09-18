@@ -6,6 +6,9 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import FooterPage from "@/screens/Home/footer.tsx";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 import clsx from "clsx";
 import AnimatedCursor from "react-animated-cursor";
 

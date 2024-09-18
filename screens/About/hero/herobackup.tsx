@@ -10,7 +10,10 @@ interface HeroProps {
   hero_subHeading: string;
 }
 
-const HeroComp: React.FC<HeroProps> = ({ hero_heading, hero_subHeading }) => {
+const berocompbackup: React.FC<HeroProps> = ({
+  hero_heading,
+  hero_subHeading,
+}) => {
   const background = useRef(null);
 
   useLayoutEffect(() => {
@@ -46,30 +49,34 @@ const HeroComp: React.FC<HeroProps> = ({ hero_heading, hero_subHeading }) => {
     <>
       <div className={styles.homeHeader}>
         <div className={styles.intro}>
-          <div className="align-middle justify-center p-2 pt-40">
-            <h1 className="text-4xl md:text-5xl font-bold mb-2 max-md:mb-1 text-center tracking-tight">
-              Where Creativity
+          <div className="align-middle justify-center p-2 pt-32">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+              {headingPart1 || "Where Creativity"}
             </h1>
-            <h1 className="text-4xl md:text-5xl font-bold mb-0 text-center tracking-tight">
-              meets functionality
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+              {headingPart2 || "meets functionality"}
             </h1>
-            <p className="mt-4 mb-8 text-center text-lg">
-              We design and develop stunning digital experiences.
+            <p className="mb-4 text-center">
+              {hero_subHeading ||
+                "We design and develop stunning digital experiences."}
             </p>
-
-            <div className="flex justify-center items-center flex-row gap-4 w-full mt-8">
-              <div className="button-container-1-rev animate__animated animate__fadeInUp-rev animate__slow animate__delay-4s">
-                <span className="mas-rev">Lets Talk!</span>
-                <button id="work" type="button" name="Hover">
-                  Lets Talk!
-                </button>
-              </div>
-              <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
-                <span className="mas">Explore Our Work</span>
-                <button id="work" type="button" name="Hover">
-                  Explore Our Work
-                </button>
-              </div>
+            <div className="p-2 flex align-middle justify-center gap-2">
+              <Button
+                className="text-sm font-bold"
+                radius="sm"
+                size="md"
+                color="primary"
+              >
+                Let's Talk!
+              </Button>
+              <Button
+                className="text-sm font-bold"
+                radius="sm"
+                size="md"
+                variant="flat"
+              >
+                Explore Our Work
+              </Button>
             </div>
           </div>
         </div>
@@ -87,4 +94,4 @@ const HeroComp: React.FC<HeroProps> = ({ hero_heading, hero_subHeading }) => {
   );
 };
 
-export default HeroComp;
+export default berocompbackup;
