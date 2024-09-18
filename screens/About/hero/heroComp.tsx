@@ -5,12 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { RetroGridDemo } from "./retroTest";
 
-interface HeroProps {
-  hero_heading: string;
-  hero_subHeading: string;
-}
-
-const HeroComp: React.FC<HeroProps> = ({ hero_heading, hero_subHeading }) => {
+const HeroComp = () => {
   const background = useRef(null);
 
   useLayoutEffect(() => {
@@ -38,9 +33,6 @@ const HeroComp: React.FC<HeroProps> = ({ hero_heading, hero_subHeading }) => {
   }, []);
 
   //Spliting de heading (hero_heading) into two parts ==> this was too much work for a simple task please just have API return the heading in two parts
-  const headingWords = hero_heading.split(" ");
-  const headingPart1 = headingWords.slice(0, 2).join(" ");
-  const headingPart2 = headingWords.slice(2).join(" ");
 
   return (
     <>
@@ -48,13 +40,10 @@ const HeroComp: React.FC<HeroProps> = ({ hero_heading, hero_subHeading }) => {
         <div className={styles.intro}>
           <div className="align-middle justify-center p-2 pt-40">
             <h1 className="text-4xl md:text-5xl font-bold mb-2 max-md:mb-1 text-center tracking-tight">
-              Where Creativity
-            </h1>
-            <h1 className="text-4xl md:text-5xl font-bold mb-0 text-center tracking-tight">
-              meets functionality
+              About Us
             </h1>
             <p className="mt-4 mb-8 text-center text-lg">
-              We design and develop stunning digital experiences.
+              Behind the Magic of UI Pirates
             </p>
 
             <div className="flex justify-center items-center flex-row gap-4 w-full mt-8">
@@ -62,12 +51,6 @@ const HeroComp: React.FC<HeroProps> = ({ hero_heading, hero_subHeading }) => {
                 <span className="mas-rev">Lets Talk!</span>
                 <button id="work" type="button" name="Hover">
                   Lets Talk!
-                </button>
-              </div>
-              <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
-                <span className="mas">Explore Our Work</span>
-                <button id="work" type="button" name="Hover">
-                  Explore Our Work
                 </button>
               </div>
             </div>
