@@ -3,16 +3,20 @@ import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import Meteors from "@/components/magicui/meteors";
 
 interface AboutCardProps {
-  // title: string;
-  // subTitle: string;
+  title: string;
+  subTitle: string;
   cardColor: string;
 }
 
-const AboutCard: React.FC<AboutCardProps> = ({ cardColor }) => {
+const AboutCard: React.FC<AboutCardProps> = ({
+  title,
+  subTitle,
+  cardColor,
+}) => {
   return (
     <div className="flex flex-row items-end justify-end w-full">
       <Card
-        className="shadow-none w-[95%] md:w-[95%] content-end mt-12 p-12  max-md:p-8"
+        className="shadow-none w-[90%] md:w-[90%] content-end mt-12 p-12  max-md:p-8 pr-40"
         style={{
           borderRadius: "56px",
           backgroundColor: cardColor,
@@ -42,7 +46,7 @@ const AboutCard: React.FC<AboutCardProps> = ({ cardColor }) => {
         <CardBody className="flex flex-col gap-4">
           <div className="flex flex-col mt-2 md:mt-8">
             <p
-              className="text-default-500 text-[80px] max-md:text-[32px] leading-none"
+              className="text-default-500 text-[80px] max-md:text-[32px] leading-none max-md:leading-[40px]"
               style={{
                 fontWeight: 500,
                 // lineHeight: "40px",
@@ -50,22 +54,19 @@ const AboutCard: React.FC<AboutCardProps> = ({ cardColor }) => {
                 textAlign: "left",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur
+              {title}
             </p>
           </div>
-          <div className="flex flex-col" style={{ marginTop: "auto" }}>
+          <div className="flex flex-col mt-3">
             <p
-              className="text-lg text-[36px] max-md:text-[22px]"
+              className="text-[26px] max-md:text-[20px] leading-[32PX] max-md:leading-[25px]"
               style={{
                 fontWeight: 400,
-                lineHeight: "40px",
                 color: "#6F6F6F",
                 textAlign: "left",
               }}
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
-              voluptatem sequi impedit labore, vero error consectetur
-              exercitationem ratione laudantium deserunt.
+              {subTitle}
             </p>
           </div>
         </CardBody>

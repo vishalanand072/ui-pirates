@@ -13,23 +13,10 @@ import ScrollSnapFol from "./ScrollSnap";
 import ShoeNike from "../shoePage.tsx";
 import { HomePageData } from "../../types";
 
-interface HomePageProps {
-  data: HomePageData;
-}
-
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
     <>
       <Hero hero_heading="" hero_subHeading="" />
-
-      {/* <div className="flex flex-row">
-        <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
-          <span className="mas">Transformeddan</span>
-          <button id="work" type="button" name="Hover">
-            Transformeddan
-          </button>
-        </div>
-      </div> */}
 
       {/* <WeCreate /> */}
       {/* <ScrollSnap /> */}

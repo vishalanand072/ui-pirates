@@ -427,7 +427,10 @@ const HomePageTest: React.FC = () => {
 
   return (
     <div className="container mx-auto px-0">
-      <div className="text-center">
+      <div
+        className="text-center bg-[#1A1A1A] sticky top-0"
+        style={{ zIndex: 99 }}
+      >
         <p className="text-primary text-[40px] leading-10">Scope of work</p>
         <p className="text-white text-[50px] mb-8">Process</p>
       </div>

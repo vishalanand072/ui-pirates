@@ -10,7 +10,7 @@ export const siteConfig = {
     },
     {
       label: "Works",
-      href: "/works",
+      href: "/joinOurTeam",
     },
     {
       label: "Contact Us",

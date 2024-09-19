@@ -8,7 +8,7 @@ import { MarqueeDemo } from "./marquee_magic";
 const ReviewPage = () => {
   return (
     <>
-      <div className="relative flex h-screen overflow-hidden bg-background p-0 m-0 ">
+      <div className="relative flex h-screen overflow-hidden bg-background p-0 m-0">
         <div className="flex flex-col">
           {/* <p className="z-9 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white"></p> */}
           <div className="layer relative">

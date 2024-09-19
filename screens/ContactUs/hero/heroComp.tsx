@@ -5,15 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { RetroGridDemo } from "./retroTest";
 
-interface HeroProps {
-  hero_heading: string;
-  hero_subHeading: string;
-}
-
-const berocompbackup: React.FC<HeroProps> = ({
-  hero_heading,
-  hero_subHeading,
-}) => {
+const HeroComp = () => {
   const background = useRef(null);
 
   useLayoutEffect(() => {
@@ -41,42 +33,27 @@ const berocompbackup: React.FC<HeroProps> = ({
   }, []);
 
   //Spliting de heading (hero_heading) into two parts ==> this was too much work for a simple task please just have API return the heading in two parts
-  const headingWords = hero_heading.split(" ");
-  const headingPart1 = headingWords.slice(0, 2).join(" ");
-  const headingPart2 = headingWords.slice(2).join(" ");
 
   return (
     <>
       <div className={styles.homeHeader}>
         <div className={styles.intro}>
-          <div className="align-middle justify-center p-2 pt-32">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-              {headingPart1 || "Where Creativity"}
+          <div className="align-middle justify-center p-2 pt-40">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 max-md:mb-1 text-center tracking-tight">
+              Contact Us
             </h1>
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-              {headingPart2 || "meets functionality"}
-            </h1>
-            <p className="mb-4 text-center">
-              {hero_subHeading ||
-                "We design and develop stunning digital experiences."}
+            <p className="mt-4 mb-8 text-center text-lg">
+              Join our internship program and gain hands-on experience in
+              product design and development.
             </p>
-            <div className="p-2 flex align-middle justify-center gap-2">
-              <Button
-                className="text-sm font-bold"
-                radius="sm"
-                size="md"
-                color="primary"
-              >
-                Let's Talk!
-              </Button>
-              <Button
-                className="text-sm font-bold"
-                radius="sm"
-                size="md"
-                variant="flat"
-              >
-                Explore Our Work
-              </Button>
+
+            <div className="flex justify-center items-center flex-row gap-4 w-full mt-8">
+              <div className="button-container-1-rev animate__animated animate__fadeInUp-rev animate__slow animate__delay-4s">
+                <span className="mas-rev">Join Now!</span>
+                <button id="work" type="button" name="Hover">
+                  Join Now!
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -94,4 +71,4 @@ const berocompbackup: React.FC<HeroProps> = ({
   );
 };
 
-export default berocompbackup;
+export default HeroComp;

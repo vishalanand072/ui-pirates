@@ -122,10 +122,11 @@ const ImageGrid: React.FC = () => {
       <div className="relative" ref={containerRef}>
         {showButton && (
           <button
-            className="fixed top-12 left-1/2 transform -translate-x-1/2 bg-white text-black py-2 px-4 rounded text-2xl font-bold"
+            className="fixed top-12 left-1/2 transform -translate-x-1/2 bg-white text-black  px-12 py-3 rounded-3xl"
             style={{ zIndex: 9 }}
           >
-            Our Works
+            <p className="text-xl font-semibold">Our work in</p>
+            <p className="text-4xl  font-bold text-primary">SAAS</p>
           </button>
         )}
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 bg-black p-4">
@@ -146,7 +147,8 @@ const ImageGrid: React.FC = () => {
                     />
 
                     <span className="relative h-[400px]">
-                      <span className="bg-white rounded-xl p-4 flex flex-col w-[250px] left-4 ml-10 pl-10 top-10">
+                      <span className="bg-white rounded-xl px-6 py-3 flex flex-col w-[250px] left-4 ml-10  top-10">
+                        <p className="text-lg">SaaS Redesign for</p>
                         <p
                           className="text-primary text-4xl font-bold"
                           style={{ zIndex: 99999999 }}

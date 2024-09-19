@@ -1,0 +1,49 @@
+.homeHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://res.cloudinary.com/damm9iwho/image/upload/v1724409722/background_zbzrx5.svg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  /* width: 100%; */
+
+  /* height: 70vh; */
+  /* background-color: rgb(224, 124, 124); */
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 120vh;
+  filter: brightness(60%);
+}
+
+.backgroundImage .video {
+  object-fit: cover;
+}
+
+.video {
+  /* margin-top: 25%; */
+  margin-bottom: 0%;
+  width: inherit;
+  object-fit: fill;
+  border-radius: 30px 30px 0px 0;
+}
+
+.intro {
+  margin-top: 0vh;
+  margin-bottom: 10%;
+  /* color: white; */
+}
+
+.introImage {
+  filter: brightness(70%);
+  width: 350px;
+  height: 475px;
+  /* position: absolute; */
+}
+
+.introImage img {
+  object-fit: cover;
+  object-position: top;
+}
