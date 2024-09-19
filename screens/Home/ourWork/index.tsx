@@ -9,7 +9,7 @@ interface OurWorkProps {
 
 const OurWork: React.FC = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black mb-4">
       <div className="container mx-auto py-0 ">
         <ImageGrid />
         {/* <AnimationWork /> */}

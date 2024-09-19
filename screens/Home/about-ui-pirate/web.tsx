@@ -4,10 +4,30 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import AboutCard from "./aboutCard";
 
 const data = [
-  { title: "title 1", cardColor: "#F6F4F4" },
-  { title: "title 2", cardColor: "#EFFBF9" },
-  { title: "title 3", cardColor: "#F2EDF4" },
-  { title: "title 4", cardColor: "#EEEAE6" },
+  {
+    title: "We Excel with Minimal Client Involvement",
+    subTitle:
+      "Our efficient workflows ensure minimal client interaction, allowing you to focus on your business while we deliver outstanding results.",
+    cardColor: "#F6F4F4",
+  },
+  {
+    title: "We Craft Unique Digital Experiences",
+    subTitle:
+      "We bring innovative ideas to life through meticulous design processes, crafting unique and engaging digital experiences.",
+    cardColor: "#EFFBF9",
+  },
+  {
+    title: "Our Designs Are Backed by Research",
+    subTitle:
+      "Our team conducts comprehensive research to ensure our designs are strategically sound and user-centric.",
+    cardColor: "#F2EDF4",
+  },
+  {
+    title: "We Bring Together a Diverse Team",
+    subTitle:
+      "Our diverse team enhances creativity, tackling a wide range of projects with unique perspectives and innovative solutions.",
+    cardColor: "#EEEAE6",
+  },
 ];
 
 function Web() {
@@ -22,7 +42,7 @@ function Web() {
         translateX: 0,
       },
       {
-        translateX: "-300vw",
+        translateX: "-360vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -44,20 +64,24 @@ function Web() {
 
   return (
     <>
-      <section className="scroll-section-outer max-md:mr-72">
+      <section className="scroll-section-outer">
         <div ref={triggerRef}>
           <div ref={sectionRef} className="scroll-section-inner">
-            <div className="scroll-section w-[10%] -mr-[15%] max-md:-mr-[5%]">
+            <div className="scroll-section w-[10%] -mr-[15%] max-md:-mr-[10%]">
               <div className="flex flex-row items-center justify-items-start ml-24 max-md:ml-12">
-                <p className="text-5xl max-md:text-3xl">
-                  What about <br /> UI Pirates
+                <p className="text-5xl max-md:text-3xl font-semibold">
+                  Why Hire <br /> UI Pirates
                 </p>
               </div>
             </div>
             {data.map((item, index) => {
               return (
                 <div className="scroll-section" key={index}>
-                  <AboutCard cardColor={item.cardColor} />
+                  <AboutCard
+                    title={item.title}
+                    subTitle={item.subTitle}
+                    cardColor={item.cardColor}
+                  />
                 </div>
               );
             })}

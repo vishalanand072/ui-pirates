@@ -121,10 +121,10 @@ const ScrollingAnimation: React.FC = () => {
       <div id="sectionPin" className="b h-screen overflow-hidden flex">
         <div className="bcontainer flex h-screen items-center">
           <div className="b1 p-[0_5vw] h-screen w-screen bg-white text-center text-8xl font-semibold flex flex-row justify-center items-center">
-            <IconCloudDemo />
+            We Create
           </div>
           <div className="b2 p-[0_5vw] h-screen w-screen text-8xl font-semibold flex flex-row justify-center items-center">
-            We Create
+            <IconCloudDemo />
           </div>
           {/* <div
             className="b3 p-[0_5vw] h-screen w-screen bg-red-500 relative"
