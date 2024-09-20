@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div>
         <Hero />
         <OurServices />
-        <div className=" container mx-auto px-20 max-md:px-10">
+        <div className=" container mx-auto px-20 max-lg:px-10 max-md:px-4">
           <CoreValues />
           <MeetTeam />
         </div>

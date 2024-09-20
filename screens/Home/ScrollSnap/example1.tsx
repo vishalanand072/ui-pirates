@@ -115,12 +115,12 @@ const ScrollingAnimation: React.FC = () => {
 
   return (
     <div className="scrollContainer" data-scroll-container>
-      <div className="a h-screen w-full bg-black">
+      <div className="a h-screen w-full bg-black container mx-auto overflow-hidden">
         <ScrollBasedVelocityDemo />
       </div>
       <div id="sectionPin" className="b h-screen overflow-hidden flex">
         <div className="bcontainer flex h-screen items-center">
-          <div className="b1 p-[0_5vw] h-screen w-screen bg-white text-center text-8xl font-semibold flex flex-row justify-center items-center">
+          <div className="b1 p-[0_5vw] h-screen w-screen bg-white text-center text-8xl max-md:text-4xl font-semibold flex flex-row justify-center items-center">
             We Create
           </div>
           <div className="b2 p-[0_5vw] h-screen w-screen text-8xl font-semibold flex flex-row justify-center items-center">
