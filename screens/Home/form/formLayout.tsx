@@ -31,7 +31,7 @@ const formLayout: React.FC = () => {
 
   return (
     <>
-      <div className=" container mx-auto px-20 max-lg:px-16 max-md:px-12 py-12">
+      <div className=" container mx-auto px-20 max-lg:px-10 max-md:px-4 py-12">
         <div>
           <div className="md:items-center max-w-full flex justify-between gap-2 mb-4 lg:flex-row flex-col">
             <div className="flex flex-col flex-1 min-w-[250px]">

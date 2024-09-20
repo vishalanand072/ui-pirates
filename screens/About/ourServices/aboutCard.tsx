@@ -59,10 +59,9 @@ const AboutCard: React.FC<AboutCardProps> = ({
           </div>
           <div className="flex flex-col" style={{ marginTop: "auto" }}>
             <p
-              className="text-lg text-[36px] max-md:text-[22px]"
+              className="text-[26px] max-md:text-[20px] leading-[32PX] max-md:leading-[27px]"
               style={{
                 fontWeight: 400,
-                lineHeight: "40px",
                 color: "#6F6F6F",
                 textAlign: "left",
               }}
