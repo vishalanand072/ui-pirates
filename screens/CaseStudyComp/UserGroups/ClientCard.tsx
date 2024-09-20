@@ -7,28 +7,28 @@ import { DiamondsFour } from "@phosphor-icons/react";
 gsap.registerPlugin(ScrollTrigger);
 
 const ClientCard = (props: any) => {
-  useEffect(() => {
-    gsap.fromTo(
-      ".card-item1", // Target each card
-      {
-        opacity: 0,
-        scale: 0.8,
-        rotationY: 15,
-      },
-      {
-        opacity: 1,
-        scale: 1,
-        rotationY: 0,
-        duration: 2,
-        scrollTrigger: {
-          trigger: ".card-item1", // Trigger animation on each card
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: 1,
-        },
-      }
-    );
-  }, []);
+  // useEffect(() => {
+  //   gsap.fromTo(
+  //     ".card-item1", // Target each card
+  //     {
+  //       opacity: 0,
+  //       scale: 0.8,
+  //       rotationY: 15,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       scale: 1,
+  //       rotationY: 0,
+  //       duration: 2,
+  //       scrollTrigger: {
+  //         trigger: ".card-item1", // Trigger animation on each card
+  //         start: "top 80%",
+  //         end: "bottom 20%",
+  //         scrub: 1,
+  //       },
+  //     }
+  //   );
+  // }, []);
 
   return (
     <>

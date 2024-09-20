@@ -11,14 +11,14 @@ import UIElementsTestDynamiz from "@/screens/CaseStudy/testDynamiz/uiElementsTes
 import UIElementsIAS from "@/screens/CaseStudy/infinityAquaSol/uiElementsInfinityAquaSol";
 import UIElementsCloudShift from "@/screens/CaseStudy/cloudShift/uiElementsCloudShift";
 const ValuesUiElement = (props: any) => {
-  console.log(props.visualUIElements.colorPilatr);
+  // console.log(props.visualUIElements.colorPilatr);
 
   return (
     <>
-      <div className="container mx-auto px-20 max-lg:px-16 max-md:px-12">
+      <div className="container mx-auto px-20 max-lg:px-10 max-md:px-4 overflow-hidden">
         <div className="flex justify-between items-center my-12">
           <h1 className="text-black heading">Visual & UI Elements</h1>
-          <span className="text-gray-300 text-6xl font-light max-lg:text-5xl max-md:text-4xl">
+          <span className="text-gray-300 text-6xl font-light max-lg:text-5xl max-md:text-3xl">
             07
           </span>
         </div>

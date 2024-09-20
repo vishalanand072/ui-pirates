@@ -23,7 +23,7 @@ export default function StickyTabs() {
             const newActiveTab = entry.target.id
               .replace(/-/g, " ")
               .replace(/\b\w/g, (char) => char.toUpperCase());
-            console.log("Section in view:", newActiveTab); // Debugging line
+            // console.log("Section in view:", newActiveTab); // Debugging line
             setActiveTab(newActiveTab);
           }
         });
@@ -57,7 +57,7 @@ export default function StickyTabs() {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 h-[60px] pt-3 container mx-auto px-20">
+    <div className="flex flex-wrap gap-4 h-[60px] pt-3 container mx-auto px-20 max-lg:px-10 max-md:px-4">
       <Tabs
         variant="underlined"
         aria-label="Tabs variants"
@@ -80,7 +80,7 @@ export default function StickyTabs() {
               }}
               title={formattedItem}
             >
-              <p className="font-semibold">{formattedItem}</p>
+              {/* <p className="font-semibold">{formattedItem}</p> */}
             </Tab>
           );
         })}

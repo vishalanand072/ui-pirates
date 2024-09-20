@@ -8,32 +8,32 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const PersonasCard = (props: any) => {
-  useEffect(() => {
-    // Get all cards and apply the animation
-    props.card.forEach((item: any, index: any) => {
-      const cardId = `card-${index}`;
+  // useEffect(() => {
+  //   // Get all cards and apply the animation
+  //   props.card.forEach((item: any, index: any) => {
+  //     const cardId = `card-${index}`;
 
-      // Animation for the card based on whether it's even or odd
-      gsap.fromTo(
-        `#${cardId}`,
-        {
-          opacity: 0,
-          x: index % 2 === 0 ? -300 : 300,
-        },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 2,
-          scrollTrigger: {
-            trigger: `#${cardId}`,
-            start: "top center",
-            end: "center bottom",
-            scrub: 1,
-          },
-        }
-      );
-    });
-  }, [props.card]);
+  //     // Animation for the card based on whether it's even or odd
+  //     gsap.fromTo(
+  //       `#${cardId}`,
+  //       {
+  //         opacity: 0,
+  //         x: index % 2 === 0 ? -300 : 300,
+  //       },
+  //       {
+  //         opacity: 1,
+  //         x: 0,
+  //         duration: 2,
+  //         scrollTrigger: {
+  //           trigger: `#${cardId}`,
+  //           start: "top center",
+  //           end: "center bottom",
+  //           scrub: 1,
+  //         },
+  //       }
+  //     );
+  //   });
+  // }, [props.card]);
 
   return (
     <>
@@ -45,7 +45,7 @@ const PersonasCard = (props: any) => {
               className={
                 index % 2 === 0
                   ? "mb-12 overflow-hidden"
-                  : "my-12 overflow-hidden mt-40 max-md:mt-80"
+                  : "my-12 overflow-hidden" // this is the => my-12 overflow-hidden mt-40 max-md:mt-80
               }
               id={cardId}
               key={cardId}
@@ -60,7 +60,7 @@ const PersonasCard = (props: any) => {
                     alt="Client"
                     width={360}
                     height={460}
-                    className="w-full h-full"
+                    className="w-full h-full max-md:min-h-[400px]"
                   />
                   <div className=" absolute bottom-8 left-8 w-full ">
                     <p className="text-white text-8xl font-semibold max-lg:text-6xl max-md:text-3xl max-md:mt-6">
@@ -100,7 +100,7 @@ const PersonasCard = (props: any) => {
                   </div>
                 </div>
 
-                <div className="bg-secondary-900 p-8 flex flex-col md:w-1/2">
+                <div className="bg-secondary-900 p-8 flex flex-col md:w-1/2 max-md:p-4">
                   <Card className="p-0 bg-transparent border-1 border-[#323232]">
                     <CardBody className="">
                       <div>
@@ -112,7 +112,7 @@ const PersonasCard = (props: any) => {
                     </CardBody>
                   </Card>
 
-                  <Card className="p-0 bg-transparent border-1 mt-3 border-[#323232]">
+                  <Card className="p-0 bg-transparent border-1 mt-4 border-[#323232]">
                     <CardBody className="">
                       <div>
                         <p className="text-2xl text-white font-semibold">
@@ -135,7 +135,7 @@ const PersonasCard = (props: any) => {
                     </CardBody>
                   </Card>
 
-                  <Card className="p-0 bg-transparent border-1 mt-3 border-[#323232]">
+                  <Card className="p-0 bg-transparent border-1 mt-4 border-[#323232]">
                     <CardBody className="">
                       <div>
                         <p className="text-2xl text-white font-semibold">
