@@ -3,7 +3,7 @@ import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 export function ScrollBasedVelocityDemo() {
   return (
     <>
-      <div style={{ transform: "rotate(+35deg)" }}>
+      <div style={{ transform: "rotate(+35deg)", overflow: "hidden" }}>
         <VelocityScroll
           text=" we create"
           default_velocity={2}

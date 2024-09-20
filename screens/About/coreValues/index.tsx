@@ -67,7 +67,7 @@ const CoreValues = () => {
   return (
     <>
       <div>
-        <p className="text-4xl max-md:text-3xl font-semibold mb-8">
+        <p className="text-4xl max-md:text-3xl font-semibold mb-8 max-md:text-center">
           Our Core Values
         </p>
         <div>

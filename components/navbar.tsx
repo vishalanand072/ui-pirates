@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -20,6 +21,7 @@ export const Navbar = () => {
   const pathname = usePathname();
   const caseStudy = pathname.slice(1, 10);
   // console.log(caseStudy);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
     <>
@@ -30,6 +32,8 @@ export const Navbar = () => {
           className="mt-4 bg-transparent absolute top-0 mb-16"
           isBlurred={false}
           maxWidth="xl"
+          isMenuOpen={isMenuOpen}
+          onMenuOpenChange={setIsMenuOpen}
           // position="absolute"
         >
           <NavbarContent className="sm:basis-full " justify="start">
@@ -37,6 +41,7 @@ export const Navbar = () => {
               <NextLink
                 className="flex justify-center items-center gap-1"
                 href="/"
+                onClick={() => setIsMenuOpen(false)}
               >
                 <Logo />{" "}
                 {/* This should render the logo as provided in the image */}
@@ -58,6 +63,7 @@ export const Navbar = () => {
                     className="text-lg font-medium"
                     // color="black"
                     href={item.href}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
                   </NextLink>
@@ -105,6 +111,7 @@ export const Navbar = () => {
                     className="text-lg font-medium"
                     // color="black"
                     href={item.href}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
                   </NextLink>
