@@ -8,76 +8,76 @@ import SolutionCard from "./Solutions";
 gsap.registerPlugin(ScrollTrigger);
 
 const CoreProblems = (props: any) => {
-  useEffect(() => {
-    // Animation for the left image
-    gsap.fromTo(
-      "#left",
-      {
-        opacity: 0,
-        x: -100,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#left",
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: 1,
-        },
-      }
-    );
+  // useEffect(() => {
+  //   // Animation for the left image
+  //   gsap.fromTo(
+  //     "#left",
+  //     {
+  //       opacity: 0,
+  //       x: -100,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       x: 0,
+  //       duration: 2,
+  //       scrollTrigger: {
+  //         trigger: "#left",
+  //         start: "top 80%",
+  //         end: "bottom 20%",
+  //         scrub: 1,
+  //       },
+  //     }
+  //   );
 
-    // Animation for the right image
-    gsap.fromTo(
-      "#right",
-      {
-        opacity: 0,
-        x: 100,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#right",
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: 1,
-        },
-      }
-    );
+  //   // Animation for the right image
+  //   gsap.fromTo(
+  //     "#right",
+  //     {
+  //       opacity: 0,
+  //       x: 100,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       x: 0,
+  //       duration: 2,
+  //       scrollTrigger: {
+  //         trigger: "#right",
+  //         start: "top 80%",
+  //         end: "bottom 20%",
+  //         scrub: 1,
+  //       },
+  //     }
+  //   );
 
-    // Animation for the blur sections
-    gsap.fromTo(
-      "#blur",
-      {
-        opacity: 0,
-        scale: 0.8,
-        rotationY: 15,
-      },
-      {
-        opacity: 1,
-        scale: 1,
-        rotationY: 0,
-        duration: 2,
-        scrollTrigger: {
-          trigger: "#blur",
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: 1,
-        },
-      }
-    );
-  }, []);
+  //   // Animation for the blur sections
+  //   gsap.fromTo(
+  //     "#blur",
+  //     {
+  //       opacity: 0,
+  //       scale: 0.8,
+  //       rotationY: 15,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       scale: 1,
+  //       rotationY: 0,
+  //       duration: 2,
+  //       scrollTrigger: {
+  //         trigger: "#blur",
+  //         start: "top 80%",
+  //         end: "bottom 20%",
+  //         scrub: 1,
+  //       },
+  //     }
+  //   );
+  // }, []);
 
   return (
     <div className="bg-white py-12">
-      <div className="container mx-auto px-20 max-lg:px-16 max-md:px-12">
+      <div className="container mx-auto px-20 max-lg:px-10 max-md:px-4">
         <div className="flex justify-between items-center">
           <h1 className="heading">Core Problem & Business Analysis</h1>
-          <span className="text-gray-300 text-4xl lg:text-6xl font-light">
+          <span className="text-gray-300 text-6xl max-md:text-3xl font-light">
             03
           </span>
         </div>

@@ -62,7 +62,7 @@ const UIDesignCard = (props: any) => {
               item.icon as keyof typeof PhosphorIcons
             ] as any;
             return (
-              <Card className="bg-transparent border-1 border-[#323232] shadow-none text-white p-4">
+              <Card className="bg-transparent border-1 border-[#323232] shadow-none text-white p-4 max-md:p-0">
                 <CardBody>
                   <div className="flex flex-row items-center justify-start mb-3">
                     <div className="flex flex-row items-center justify-start">

@@ -2,7 +2,7 @@ import React from "react";
 
 const OverviewPage = (props: any) => {
   return (
-    <div className="container  mx-auto px-20 max-lg:px-16 max-md:px-12 my-12">
+    <div className="container mx-auto px-20 max-lg:px-10 max-md:px-4 my-12">
       <div className="">
         <div className="bg-white rounded-lg p-0">
           <section className="mb-6">

@@ -1,76 +1,26 @@
-// "use client";
-// import { User } from "@nextui-org/react";
-// import CaseStudyHero from "./hero";
-// import CoreProblems from "./CoreProblems";
-// import OurRole from "./OurRole";
-// import Overview from "./Overview";
-// import Xperiti from "./Xperiti";
-// import UserGroups from "./UserGroups";
-// import UserPersonas from "./userPersonas";
-// import FeaturesProduct from "./featuresProduct";
-// import ClientRequirements from "./ClientRequirements";
-// import StickyTop from "../Home/designDev/stickyTop";
-// import ValuesUiElement from "./valuesUiElement";
-// import UXAnalysis from "./uxAnalysis";
-// import ProductShowcase from "./productShowcase";
-
-// import StickyTabs from "./tabs";
-// const Casestudy = () => {
-//   return (
-//     <div>
-//       {/* <StickyTop /> */}
-//       <CaseStudyHero />
-//       <Overview></Overview>
-//       <div>
-//         <div className="sticky top-0">
-//           <StickyTabs />
-//         </div>
-//         <ClientRequirements id="hii" />
-//         <OurRole></OurRole>
-//         <CoreProblems></CoreProblems>
-//         <UserGroups></UserGroups>
-//         <UserPersonas />
-//         <FeaturesProduct />
-//         <ValuesUiElement />
-//         <UXAnalysis />
-//         <ProductShowcase />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Casestudy;
-
-// Casestudy.js
 "use client";
 import React, { useState, useEffect } from "react";
-import CaseStudyHero from "./hero";
 import CoreProblems from "./CoreProblems";
 import OurRole from "./OurRole";
 import Overview from "./Overview";
-import Xperiti from "./Xperiti";
 import UserGroups from "./UserGroups";
 import UserPersonas from "./userPersonas";
 import FeaturesProduct from "./featuresProduct";
 import ClientRequirements from "./ClientRequirements";
-import StickyTop from "../Home/designDev/stickyTop";
 import ValuesUiElement from "./visualUiElement";
 import UXAnalysis from "./uxAnalysis";
 import ProductShowcase from "./productShowcase";
 import StickyTabs from "./tabs";
-import WeCreate from "../Home/weCreate";
 import { Spinner } from "@nextui-org/react";
 
 const Casestudy = (props: any) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Set a timeout to simulate loading
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 2000); // 2 seconds
 
-    // Cleanup the timer if the component is unmounted
     return () => clearTimeout(timer);
   }, []);
 

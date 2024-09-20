@@ -17,7 +17,7 @@ const AnimationProduct = (props: any) => {
         translateX: 0,
       },
       {
-        translateX: "-300vw",
+        translateX: "-400vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {

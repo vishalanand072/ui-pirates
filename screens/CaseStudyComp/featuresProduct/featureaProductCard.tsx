@@ -9,14 +9,14 @@ const FeaturesProductCard = (props: any) => {
             <Card className="bg-transparent shadow-none mt-36 mr-8">
               <CardBody style={{ padding: 0 }}>
                 <Card>
-                  <CardBody className="h-[70vh] w-[80vw] max-md:w-[100vw] max-md:mr-8">
+                  <CardBody className="h-[70vh] w-[80vw] max-md:w-[100vw] max-md:mr-8 max-md:h-[300px]">
                     {item.media != "url" && (
                       <Image
                         src={item.media}
                         alt="Solution 1"
                         width={300}
                         height={250}
-                        className="w-full h-full"
+                        className="w-full h-full max-md:max-h-[400px]"
                       />
                     )}
                   </CardBody>
