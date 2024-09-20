@@ -6,7 +6,7 @@ import CardWhatYouGet from "./card";
 
 export function DotPatternBackground() {
   return (
-    <div className="relative flex h-full w-full overflow-hidden rounded-lg bg-background mt-20 pb-12">
+    <div className="relative flex h-full w-full overflow-hidden rounded-lg bg-background mt-20 pb-12 max-md:mt-8">
       <CardWhatYouGet />
       <DotPattern
         className={cn(

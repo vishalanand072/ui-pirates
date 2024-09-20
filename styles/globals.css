@@ -40,7 +40,7 @@ body {
 }
 
 .medium-heading {
-  @apply font-semibold text-3xl max-lg:text-2xl max-md:text-2xl;
+  @apply font-semibold text-3xl max-lg:text-2xl max-md:text-xl;
 }
 
 .small-heading {

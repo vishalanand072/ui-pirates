@@ -25,7 +25,9 @@ const data = [
 export default function HowItWorks() {
   return (
     <>
-      <p className="heading text-center my-12">How It Works</p>
+      <p className="heading text-center mt-20 mb-12 max-md:mt-12 max-md:mb-6">
+        How It Works
+      </p>
       <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 mt-4">
         {data.map((item, index) => {
           return (

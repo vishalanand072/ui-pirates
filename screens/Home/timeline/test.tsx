@@ -324,16 +324,16 @@ const Cards: React.FC<CardProps> = ({ content, isLeft, cardIndex }) => {
                 <p className="text-[20px] font-[600] font-nahomi text-[#666666]">
                   Eden Hazani
                 </p>
-                <p className="text-[28px] font-[500] text-white">
+                <p className="text-[28px] font-[500] text-white max-md:text-lg max-md:leading-[25px]">
                   Xperiti | VP Research and Development
                 </p>
               </div>
-              <div className="absolute top-0 right-0 m-2 text-[32px] text-primary">
+              <div className="absolute top-0 right-0 m-2 text-[32px] text-primary max-md:text-[24px]">
                 {cardIndex}
               </div>
             </CardHeader>
-            <CardBody>
-              <p className="text-[16px] text-[#666666]">
+            <CardBody className="-mt-2 max-md:-mt-3">
+              <p className="text-[16px] text-[#666666] max-md:text-[14px]">
                 Wonderful to work with, very experienced with UI/UX design. Was
                 very open to work in the flow we requested that required actual
                 Angular coding from his team as well, and stood up to the

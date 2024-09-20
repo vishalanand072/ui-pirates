@@ -122,11 +122,13 @@ const ImageGrid: React.FC = () => {
       <div className="relative" ref={containerRef}>
         {showButton && (
           <button
-            className="fixed top-12 left-1/2 transform -translate-x-1/2 bg-white text-black  px-12 py-3 rounded-3xl"
+            className="fixed top-12 left-1/2 transform -translate-x-1/2 bg-white text-black  px-12 py-3 rounded-3xl max-md:px-8 max-md:py-1 max-md:rounded-2xl"
             style={{ zIndex: 9 }}
           >
-            <p className="text-xl font-semibold">Our work in</p>
-            <p className="text-4xl  font-bold text-primary">SAAS</p>
+            <p className="text-xl font-semibold max-md:text-lg">Our work in</p>
+            <p className="text-4xl  font-bold text-primary max-md:text-2xl">
+              SAAS
+            </p>
           </button>
         )}
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 bg-black p-4">
@@ -147,10 +149,12 @@ const ImageGrid: React.FC = () => {
                     />
 
                     <span className="relative h-[400px]">
-                      <span className="bg-white rounded-xl px-6 py-3 flex flex-col w-[250px] left-4 ml-10  top-10">
-                        <p className="text-lg">SaaS Redesign for</p>
+                      <span className="bg-white rounded-xl px-6 py-3 flex flex-col w-[250px] left-4 ml-10 top-10 max-md:ml-0 max-md:left-0">
+                        <p className="text-lg max-sm:text-base">
+                          SaaS Redesign for
+                        </p>
                         <p
-                          className="text-primary text-4xl font-bold"
+                          className="text-primary text-4xl font-bold max-md:text-2xl"
                           style={{ zIndex: 99999999 }}
                         >
                           {item.title}

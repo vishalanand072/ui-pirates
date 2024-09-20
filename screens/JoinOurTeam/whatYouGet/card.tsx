@@ -11,42 +11,84 @@ import {
 
 const data = [
   {
-    icon: <Certificate size={60} weight="fill" />,
+    icon: (
+      <Certificate
+        size={60}
+        weight="fill"
+        className="max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     bodyHeading: "Internship Certificate",
     bodySubheading:
       "Official certification to showcase your experience and skills.",
   },
   {
-    icon: <UserRectangle size={60} weight="fill" />,
+    icon: (
+      <UserRectangle
+        size={60}
+        weight="fill"
+        className="max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     bodyHeading: "Letter of Recommendation",
     bodySubheading:
       "A personalized letter from industry experts to help boost your career.",
   },
   {
-    icon: <CalendarDots size={60} weight="fill" />,
+    icon: (
+      <CalendarDots
+        size={60}
+        weight="fill"
+        className="max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     bodyHeading: "Flexible Timings",
     bodySubheading: "Work on your schedule without compromising on quality.",
   },
   {
-    icon: <UsersThree size={60} weight="fill" />,
+    icon: (
+      <UsersThree
+        size={60}
+        weight="fill"
+        className="max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     bodyHeading: "Real-life project collaboration",
     bodySubheading: "Engage in actual projects to apply and hone your skills.",
   },
 
   {
-    icon: <MoneyWavy size={60} weight="fill" />,
+    icon: (
+      <MoneyWavy
+        size={60}
+        weight="fill"
+        className="max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     bodyHeading: "Stipend",
     bodySubheading:
       "Receive a performance-based stipend after the first three months.",
   },
   {
-    icon: <GlobeHemisphereWest size={60} weight="fill" />,
+    icon: (
+      <GlobeHemisphereWest
+        size={60}
+        weight="fill"
+        className="max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     bodyHeading: "Remote Work Opportunities",
     bodySubheading:
       "Work from anywhere, with all the tools you need at your disposal.",
   },
   {
-    icon: <UserCheck size={60} weight="fill" />,
+    icon: (
+      <UserCheck
+        size={60}
+        weight="fill"
+        className="max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     bodyHeading: "Continuous Guidance",
     bodySubheading:
       "Learn directly from our seasoned professionals and mentors.",
@@ -57,8 +99,8 @@ const CardWhatYouGet = () => {
   return (
     <>
       <div className="w-full">
-        <p className="heading text-center my-12">What You Get</p>
-        <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 mt-4">
+        <p className="heading text-center my-12 max-md:my-6">What You Get</p>
+        <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 md:mt-4">
           {data.map((item, index) => {
             return (
               <Card

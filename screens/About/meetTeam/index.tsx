@@ -38,7 +38,7 @@ const MeetTeam = () => {
   return (
     <>
       <div>
-        <p className="text-4xl max-md:text-3xl font-semibold mt-16">
+        <p className="text-4xl max-md:text-3xl font-semibold mt-16 max-md:text-center">
           Meet The Team
         </p>
         <div className="mt-4">
@@ -57,10 +57,10 @@ const MeetTeam = () => {
                   </div>
                   <div className="md:col-span-4">
                     <p className="medium-heading ">{item.name}</p>
-                    <p className="text-xl my-2 text-[#B6B6B6]">
+                    <p className="text-xl my-2 text-[#B6B6B6] max-md:text-lg">
                       {item.dezignation}
                     </p>
-                    <p className="text-md text-[#6B7280] ">
+                    <p className="text-md text-[#6B7280] max-md:text-sm ">
                       {item.discription}
                     </p>
                     <LinkedinLogo

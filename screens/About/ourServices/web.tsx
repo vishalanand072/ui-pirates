@@ -30,7 +30,7 @@ function Web() {
         translateX: 0,
       },
       {
-        translateX: "-150vw",
+        translateX: "-300vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {

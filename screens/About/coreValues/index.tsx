@@ -12,57 +12,67 @@ import { LinkedinLogo } from "@phosphor-icons/react";
 
 const data = [
   {
-    icon: <ShieldCheck size={70} weight="fill" className="fill-primary" />,
+    icon: (
+      <ShieldCheck
+        size={70}
+        weight="fill"
+        className="fill-primary max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     title: "True",
   },
   {
-    icon: <SealCheck size={70} weight="fill" className="fill-primary" />,
+    icon: (
+      <SealCheck
+        size={70}
+        weight="fill"
+        className="fill-primary max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     title: "Reliability",
   },
   {
-    icon: <CalendarCheck size={70} weight="fill" className="fill-primary" />,
+    icon: (
+      <CalendarCheck
+        size={70}
+        weight="fill"
+        className="fill-primary max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     title: "On-time delivery",
   },
   {
-    icon: <ClipboardText size={70} weight="fill" className="fill-primary" />,
+    icon: (
+      <ClipboardText
+        size={70}
+        weight="fill"
+        className="fill-primary max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     title: "Result Oriented",
   },
   {
-    icon: <CubeTransparent size={70} weight="fill" className="fill-primary" />,
+    icon: (
+      <CubeTransparent
+        size={70}
+        weight="fill"
+        className="fill-primary max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     title: "Transparency",
   },
   {
-    icon: <ListChecks size={70} weight="fill" className="fill-primary" />,
+    icon: (
+      <ListChecks
+        size={70}
+        weight="fill"
+        className="fill-primary max-md:w-[40px] max-md:h-[40px]"
+      />
+    ),
     title: "Quality",
   },
 ];
 
-const data1 = [
-  {
-    name: "Rohit Jha",
-    dezignation: "Ex-PM Tower Research Capital, 8+ years experience",
-    discription:
-      "Andy loves a good adventure — like traveling to Italy and Spain or starting new companies like Mindtrip. A serial entrepreneur, Andy has more than 20 years of expertise in launching and running successful online commerce companies. Prior to starting Mindtrip, Andy founded Roadster, an automotive retailing platform; FabKids, an online children’s apparel company; ShopStyle, the leading fashion search engine; and Cairo, an online service for retail discounts. He also held executive positions in business development at DemandTec and Ariba. Andy holds a Bachelor of Science degree from the University of Manchester, England.",
-    media: "/assets/rohitjha.svg",
-    exp: "/assets/rohitjhaexp.svg",
-  },
-  {
-    name: "Rohit Beri",
-    dezignation: "Ex-CEO of Beacon, 20+ years experience",
-    discription:
-      "Andy loves a good adventure — like traveling to Italy and Spain or starting new companies like Mindtrip. A serial entrepreneur, Andy has more than 20 years of expertise in launching and running successful online commerce companies. Prior to starting Mindtrip, Andy founded Roadster, an automotive retailing platform; FabKids, an online children’s apparel company; ShopStyle, the leading fashion search engine; and Cairo, an online service for retail discounts. He also held executive positions in business development at DemandTec and Ariba. Andy holds a Bachelor of Science degree from the University of Manchester, England.",
-    media: "/assets/rohitberi.svg",
-    exp: "/assets/rohitberiexp.svg",
-  },
-  {
-    name: "Bonnie Green",
-    dezignation: "Co-founder",
-    discription:
-      "Andy loves a good adventure — like traveling to Italy and Spain or starting new companies like Mindtrip. A serial entrepreneur, Andy has more than 20 years of expertise in launching and running successful online commerce companies. Prior to starting Mindtrip, Andy founded Roadster, an automotive retailing platform; FabKids, an online children’s apparel company; ShopStyle, the leading fashion search engine; and Cairo, an online service for retail discounts. He also held executive positions in business development at DemandTec and Ariba. Andy holds a Bachelor of Science degree from the University of Manchester, England.",
-    media: "/assets/rohitberi.svg",
-    exp: "/assets/rohitberiexp.svg",
-  },
-];
 const CoreValues = () => {
   return (
     <>
@@ -78,7 +88,9 @@ const CoreValues = () => {
                   return (
                     <div className="flex flex-col items-center justify-center py-12">
                       {item.icon}
-                      <p className="text-2xl font-semibold">{item.title}</p>
+                      <p className="text-2xl font-semibold max-md:text-lg max-lg:text-xl">
+                        {item.title}
+                      </p>
                     </div>
                   );
                 })}
@@ -90,7 +102,7 @@ const CoreValues = () => {
           <Card className="shadow-none border-1 rounded-[30px]">
             <CardBody className="p-6">
               <p className="medium-heading  text-[#3C1E1E] mb-2">Our Story</p>
-              <p>
+              <p className="max-md:text-sm">
                 Founded with a passion for design, UI Pirates has been
                 delivering top-notch digital experiences. We believe in the
                 power of creativity and the impact of thoughtful design.
@@ -100,7 +112,7 @@ const CoreValues = () => {
           <Card className="shadow-none border-1 rounded-[30px]">
             <CardBody className="p-6">
               <p className="medium-heading  text-[#3C1E1E] mb-2">Our Story</p>
-              <p>
+              <p className="max-md:text-sm">
                 Founded with a passion for design, UI Pirates has been
                 delivering top-notch digital experiences. We believe in the
                 power of creativity and the impact of thoughtful design.
