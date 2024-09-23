@@ -81,7 +81,7 @@ const CoreValues = () => {
           Our Core Values
         </p>
         <div>
-          <Card className="shadow-none border-1 rounded-[30px]">
+          <Card className="shadow-none border-1 rounded-3xl">
             <CardBody>
               <div className=" grid grid-cols-3 max-md:grid-cols-2">
                 {data.map((item, index) => {

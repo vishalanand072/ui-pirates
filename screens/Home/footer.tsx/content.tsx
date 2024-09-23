@@ -8,21 +8,25 @@ import {
   BehanceLogo,
 } from "@phosphor-icons/react";
 
+import Image from "next/image";
+
 const data = [
   {
-    icon: <LinkedinLogo size={32} />,
+    icon: (
+      <Image src="/assets/in-bg-none.svg" alt={""} width={30} height={30} />
+    ),
   },
   {
-    icon: <InstagramLogo size={32} />,
+    icon: <InstagramLogo size={30} weight="bold" />,
   },
   {
-    icon: <BehanceLogo size={32} />,
+    icon: <Image src="/assets/upwork.svg" alt={""} width={30} height={30} />,
   },
   {
-    icon: <BehanceLogo size={32} />,
+    icon: <BehanceLogo size={30} weight="bold" />,
   },
   {
-    icon: <BehanceLogo size={32} />,
+    icon: <Image src="/assets/c.svg" alt={""} width={30} height={30} />,
   },
 ];
 const Content = () => {
@@ -49,7 +53,10 @@ const Content = () => {
           <hr></hr>
           <p className="text-sm text-gray-500 text-center ">
             Copyright © 2024 UI Pirates | All Rights Reserved | Terms and
-            Conditions | Privacy Policy
+            Conditions |{" "}
+            <span className="text-purple-800 cursor-pointer">
+              Privacy Policy
+            </span>
           </p>
         </div>
       </footer>
