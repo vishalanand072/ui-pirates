@@ -16,22 +16,24 @@ const data1 = [
     dezignation: "Ex-PM Tower Research Capital, 8+ years experience",
     discription:
       "Andy loves a good adventure — like traveling to Italy and Spain or starting new companies like Mindtrip. A serial entrepreneur, Andy has more than 20 years of expertise in launching and running successful online commerce companies. Prior to starting Mindtrip, Andy founded Roadster, an automotive retailing platform; FabKids, an online children’s apparel company; ShopStyle, the leading fashion search engine; and Cairo, an online service for retail discounts. He also held executive positions in business development at DemandTec and Ariba. Andy holds a Bachelor of Science degree from the University of Manchester, England.",
-    media: "/assets/rohitjha.svg",
-    exp: "/assets/rohitjhaexp.svg",
+    media:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1724780791/up1_peujbo.jpg",
   },
   {
     name: "Syed Musuddiq",
     dezignation: "Ex-CEO of Beacon, 20+ years experience",
     discription:
       "Andy loves a good adventure — like traveling to Italy and Spain or starting new companies like Mindtrip. A serial entrepreneur, Andy has more than 20 years of expertise in launching and running successful online commerce companies. Prior to starting Mindtrip, Andy founded Roadster, an automotive retailing platform; FabKids, an online children’s apparel company; ShopStyle, the leading fashion search engine; and Cairo, an online service for retail discounts. He also held executive positions in business development at DemandTec and Ariba. Andy holds a Bachelor of Science degree from the University of Manchester, England.",
-    media: "/assets/rohitberi.svg",
+    media:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1724780791/up1_peujbo.jpg",
   },
   {
     name: "Danish Ansari",
     dezignation: "Co-founder",
     discription:
       "Andy loves a good adventure — like traveling to Italy and Spain or starting new companies like Mindtrip. A serial entrepreneur, Andy has more than 20 years of expertise in launching and running successful online commerce companies. Prior to starting Mindtrip, Andy founded Roadster, an automotive retailing platform; FabKids, an online children’s apparel company; ShopStyle, the leading fashion search engine; and Cairo, an online service for retail discounts. He also held executive positions in business development at DemandTec and Ariba. Andy holds a Bachelor of Science degree from the University of Manchester, England.",
-    media: "/assets/rohitberi.svg",
+    media:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1724780791/up1_peujbo.jpg",
   },
 ];
 const MeetTeam = () => {
@@ -44,18 +46,18 @@ const MeetTeam = () => {
         <div className="mt-4">
           {data1.map((item, index) => {
             return (
-              <Card className=" shadow-none my-12">
+              <Card className=" shadow-none mt-0">
                 <CardBody className="grid grid-cols-5 max-md:grid-cols-1  border-none">
                   <div className="flex items-start justify-start max-md:mt-12">
                     <Image
                       src={item.media}
                       alt={""}
                       width={360}
-                      height={360}
-                      className="w-[80%]"
+                      height={300}
+                      className="w-[90%] h-[80%]"
                     />
                   </div>
-                  <div className="md:col-span-4">
+                  <div className="md:col-span-4 max-md:-mt-16">
                     <p className="medium-heading ">{item.name}</p>
                     <p className="text-xl my-2 text-[#B6B6B6] max-md:text-lg">
                       {item.dezignation}

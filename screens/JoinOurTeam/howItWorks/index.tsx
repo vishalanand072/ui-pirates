@@ -31,13 +31,13 @@ export default function HowItWorks() {
       <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 mt-4">
         {data.map((item, index) => {
           return (
-            <Card className="border-1 shadow-none">
+            <Card className="border-1 shadow-none rounded-3xl">
               <CardHeader className="flex flex-row gap-3 bg-[#EEE3F9] text-center items-center justify-center">
-                <p className="text-lg font-semibold">{item.hreading}</p>
+                <p className="text-xl font-bold">{item.hreading}</p>
               </CardHeader>
               <Divider />
-              <CardBody>
-                <p className="text-lg font-semibold">{item.bodyHeading}</p>
+              <CardBody className="p-4">
+                <p className="text-xl font-bold">{item.bodyHeading}</p>
                 <p>{item.bodySubheading}</p>
               </CardBody>
             </Card>

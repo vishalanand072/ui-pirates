@@ -100,11 +100,49 @@ const CardWhatYouGet = () => {
     <>
       <div className="w-full">
         <p className="heading text-center my-12 max-md:my-6">What You Get</p>
-        <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 md:mt-4">
-          {data.map((item, index) => {
+        <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 md:mt-6">
+          {data.slice(0, 2).map((item, index) => {
             return (
               <Card
-                className="border-1  shadow-sm z-99999"
+                className="border-1  shadow-lg z-99999 rounded-3xl"
+                style={{ zIndex: 999 }}
+              >
+                <CardBody className="flex flex-col items-center justify-center">
+                  {item.icon}
+                  <p className="text-xl font-bold text-[#3D445C]">
+                    {item.bodyHeading}
+                  </p>
+                  <p>{item.bodySubheading}</p>
+                </CardBody>
+              </Card>
+            );
+          })}
+        </div>
+
+        <div className="grid grid-cols-3 gap-6 max-md:grid-cols-1 md:mt-6">
+          {data.slice(2, 5).map((item, index) => {
+            return (
+              <Card
+                className="border-1  shadow-lg z-99999 rounded-3xl"
+                style={{ zIndex: 999 }}
+              >
+                <CardBody className="flex flex-col items-center justify-center">
+                  {item.icon}
+                  <p className="text-xl font-bold text-[#3D445C]">
+                    {item.bodyHeading}
+                  </p>
+                  <p>{item.bodySubheading}</p>
+                </CardBody>
+              </Card>
+            );
+          })}
+        </div>
+
+        <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 md:mt-6">
+          {data.slice(5, 8).map((item, index) => {
+            return (
+              <Card
+                className="border-1  shadow-lg z-99999 rounded-3xl"
                 style={{ zIndex: 999 }}
               >
                 <CardBody className="flex flex-col items-center justify-center">
