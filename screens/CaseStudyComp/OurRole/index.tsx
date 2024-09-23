@@ -1,7 +1,4 @@
 import UIDesignCard from "./IUDesignCard";
-import UserReasearchCard from "./UserResearchCard";
-import UIDevCard from "./UIDevCard";
-import AssetCreationCard from "./AssetCreationCard";
 
 const OurRole = (props: any) => {
   return (

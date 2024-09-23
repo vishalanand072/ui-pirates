@@ -18,7 +18,6 @@ const UserGroups = (props: any) => {
           }
         >
           <ClientCard card={props.userGroup} />
-          {/* <ParticipantCard /> */}
         </div>
       </div>
     </>

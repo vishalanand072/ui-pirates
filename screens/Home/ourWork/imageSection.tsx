@@ -5,10 +5,6 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-interface ImageGridProps {
-  images: string[];
-}
-
 const data = [
   {
     image: "url",
@@ -73,7 +69,7 @@ const data = [
   },
 ];
 
-const ImageGrid: React.FC = () => {
+const ImageGrid = () => {
   const imageRefs = useRef<HTMLDivElement[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const [showButton, setShowButton] = useState(false);
