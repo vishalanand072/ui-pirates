@@ -1,18 +1,11 @@
 import React from "react";
 import ImageGrid from "./imageSection";
-import { OurWorkData } from "../../../types";
-// import { AnimationWork } from "./animation";
 
-interface OurWorkProps {
-  ourWorks: OurWorkData[];
-}
-
-const OurWork: React.FC = () => {
+const OurWork = () => {
   return (
     <div className="bg-black mb-4">
       <div className="container mx-auto py-0 ">
         <ImageGrid />
-        {/* <AnimationWork /> */}
       </div>
     </div>
   );

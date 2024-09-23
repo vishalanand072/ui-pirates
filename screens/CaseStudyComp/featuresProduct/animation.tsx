@@ -2,8 +2,6 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import FeaturesProductCard from "./featureaProductCard";
-import { AboutUIpiratesData } from "../../../types";
-import { Card, CardBody } from "@nextui-org/react";
 const AnimationProduct = (props: any) => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);

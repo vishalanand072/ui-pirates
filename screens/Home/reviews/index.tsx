@@ -1,8 +1,4 @@
 "use client";
-
-import { MagicCardDemo } from "./magic_ui";
-import { cn } from "@/lib/utils";
-import DotPattern from "@/components/magicui/dot-pattern";
 import React from "react";
 import { MarqueeDemo } from "./marquee_magic";
 const ReviewPage = () => {
@@ -10,7 +6,6 @@ const ReviewPage = () => {
     <>
       <div className="relative flex h-screen overflow-hidden bg-background p-0 m-0">
         <div className="flex flex-col">
-          {/* <p className="z-9 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white"></p> */}
           <div className="layer relative">
             <div
               className="absolute text-center z-20 w-screen h-2/6"
@@ -32,12 +27,7 @@ const ReviewPage = () => {
             </div>
             <div className="flex flex-row justify-center">
               <br className="h-8" />
-              {/* <DotPattern
-                className={cn(
-                  "[mask-image:radial-gradient(1000px_circle_at_center,black,transparent)]"
-                )}
-              />
-              <br /> */}
+
               <MarqueeDemo />
             </div>
           </div>

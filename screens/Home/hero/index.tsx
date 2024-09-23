@@ -1,6 +1,4 @@
 import React, { useLayoutEffect, useRef } from "react";
-import styles from "./style.module.css";
-import { Button } from "@nextui-org/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { RetroGridDemo } from "./retroTest";

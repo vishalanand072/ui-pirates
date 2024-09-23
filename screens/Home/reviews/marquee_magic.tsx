@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
 import React from "react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
@@ -67,8 +66,14 @@ function ReviewCard() {
             Xperiti | VP Research and Development
           </p>
         </div>
-        <div className="absolute top-0 right-0 m-2 w-[50px]">
-          <Logo />
+        <div className="absolute top-0 right-0 m-2 w-[30px] h-[30px]">
+          <Image
+            alt="nextui logo"
+            height={40}
+            radius="full"
+            src="/assets/inlogo.svg"
+            width={40}
+          />
         </div>
       </CardHeader>
       <CardBody>

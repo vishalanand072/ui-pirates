@@ -1,5 +1,3 @@
-import Section2 from "./stickySection/stickySection2";
-import Section1 from "./stickySection/stickySection1";
 import CombinedSections from "./stickySection/combineSection";
 const StickyTop = () => {
   return (
