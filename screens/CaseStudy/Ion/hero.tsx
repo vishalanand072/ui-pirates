@@ -15,7 +15,7 @@ const IonHero = () => {
         </div>
         <div className="md:hidden">
           <Image
-            src="https://res.cloudinary.com/damm9iwho/image/upload/v1725008115/MacBook_Pro_16__-_14_twmtzv.svg"
+            src="https://res.cloudinary.com/damm9iwho/image/upload/v1725008637/MacBook_Pro_16__-_13_hzbgw4.svg"
             alt="Solution 1"
             width={350}
             height={350}

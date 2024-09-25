@@ -15,7 +15,7 @@ const OlsoHero = () => {
         </div>
         <div className="md:hidden">
           <Image
-            src="https://res.cloudinary.com/damm9iwho/image/upload/v1725009803/MacBook_Pro_16__-_19_gk2wo8.svg"
+            src="https://res.cloudinary.com/damm9iwho/image/upload/v1724781122/hero_ftklmf.png"
             alt="Solution 1"
             width={350}
             height={350}
