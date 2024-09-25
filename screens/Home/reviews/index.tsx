@@ -21,7 +21,7 @@ const ReviewPage = () => {
               <p className="text-3xl md:text-5xl text-primary mt-12">
                 Testimonials
               </p>
-              <h1 className="text-4xl md:text-6xl sm:text-4xl font-bold text-white-900 mt-3 ">
+              <h1 className="text-6xl max-md:text-4xl font-semibold mt-3 ">
                 What People Are Saying
               </h1>
             </div>

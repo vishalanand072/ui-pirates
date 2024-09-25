@@ -66,7 +66,10 @@ function ReviewCard() {
             Xperiti | VP Research and Development
           </p>
         </div>
-        <div className="absolute top-0 right-0 m-2 w-[30px] h-[30px]">
+        <div
+          className="absolute top-0 right-0 m-2 w-[30px] h-[30px]"
+          style={{ transform: "rotate(-33deg)" }}
+        >
           <Image
             alt="nextui logo"
             height={40}

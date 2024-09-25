@@ -53,6 +53,20 @@ const data = [
   },
 ];
 
+const data1 = [
+  {
+    item: "Versatility:",
+    discription: "Wide range of icons fitting various design needs.",
+  },
+  {
+    item: "Versatility:",
+    discription: "Wide range of icons fitting various design needs.",
+  },
+  {
+    item: "Versatility:",
+    discription: "Wide range of icons fitting various design needs.",
+  },
+];
 const Assets = () => {
   return (
     <>
@@ -73,16 +87,16 @@ const Assets = () => {
               <p className="text-xl font-semibold my-4">
                 We chose Phosphor Icons for Xperiti because:
               </p>
-              {[...Array(3)].map((_, i) => (
+              {data1.map((item, index) => (
                 <div className="flex flex-row items-center gap-2 my-2">
                   <DiamondsFour size={20} weight="fill" />
                   <div>
                     <p className="text-lg text-subtitle">
                       {" "}
                       <span className="text-black font-semibold">
-                        Versatility:
+                        {item.item}
                       </span>{" "}
-                      Wide range of icons fitting various design needs.
+                      {item.discription}
                     </p>
                   </div>
                 </div>
