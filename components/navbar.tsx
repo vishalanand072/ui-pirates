@@ -84,10 +84,10 @@ export const Navbar = () => {
           >
             Let&apos;s Talk!
           </Button> */}
-              <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
-                <span className="mas"> Let&apos;s Talk!</span>
+              <div className="button-container-1-rev animate__animated animate__fadeInUp-rev animate__slow animate__delay-4s flex">
+                <span className="mas-rev"> Lets Talk!</span>
                 <button id="work" type="button" name="Hover">
-                  Let&apos;s Talk!
+                  Lets Talk!
                 </button>
               </div>
             </NavbarItem>
