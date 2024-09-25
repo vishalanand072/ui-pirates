@@ -7,9 +7,14 @@ const ColorPalette = (props: any) => {
       <div className="grid grid-cols-5 max-lg:grid-cols-3 max-md:grid-cols-2 gap-6">
         {props.colorPilatr.map((item: any, index: any) => {
           return (
-            <div className={`bg-[${item}] h-48 rounded-2xl relative`}>
+            <div
+              className=" h-48 rounded-2xl relative"
+              style={{ backgroundColor: item }}
+            >
               <div className="bg-white rounded-lg absolute bottom-3 w-[90%] right-3 text-center">
-                <p className={`text-[${item}] font-semibold`}>{item}</p>
+                <p className="font-semibold" style={{ color: item }}>
+                  {item}
+                </p>
               </div>
             </div>
           );

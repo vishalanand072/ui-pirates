@@ -32,7 +32,7 @@ const ClientRequirements = (props: any) => {
 
   return (
     <div className="container mx-auto px-20 max-lg:px-10 max-md:px-4">
-      <div className="flex justify-between items-center py-24 lg:py-24 bg-white">
+      <div className="flex justify-between items-center pt-4 pb-12 bg-white">
         <h1 className="heading">Client Requirements</h1>
         <span className="text-gray-300 text-6xl font-light max-md:text-3xl">
           01
@@ -64,7 +64,7 @@ const ClientRequirements = (props: any) => {
         </div>
       </div>
       <div className="mt-12">
-        <div className="p-8 max-md:p-4 rounded-3xl border-opacity-15 border-black border mb-16">
+        <div className="p-6 max-md:p-4 rounded-3xl max-md:rounded-2xl border-opacity-15 border-black border mb-16">
           <h1 className="small-heading mb-4 text-subtitle">Outcomes</h1>
           <p className="normal">{props.ClientRequirements.Outcomes}</p>
         </div>

@@ -73,7 +73,7 @@ const CoreProblems = (props: any) => {
   // }, []);
 
   return (
-    <div className="bg-white py-12">
+    <div className="bg-white py-8">
       <div className="container mx-auto px-20 max-lg:px-10 max-md:px-4">
         <div className="flex justify-between items-center">
           <h1 className="heading">Core Problem & Business Analysis</h1>

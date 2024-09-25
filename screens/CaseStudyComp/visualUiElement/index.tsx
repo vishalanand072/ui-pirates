@@ -11,12 +11,12 @@ import UIElementsTestDynamiz from "@/screens/CaseStudy/testDynamiz/uiElementsTes
 import UIElementsIAS from "@/screens/CaseStudy/infinityAquaSol/uiElementsInfinityAquaSol";
 import UIElementsCloudShift from "@/screens/CaseStudy/cloudShift/uiElementsCloudShift";
 const ValuesUiElement = (props: any) => {
-  // console.log(props.visualUIElements.colorPilatr);
+  console.log(props.visualUIElements.primaryColor);
 
   return (
     <>
       <div className="container mx-auto px-20 max-lg:px-10 max-md:px-4 overflow-hidden">
-        <div className="flex justify-between items-center my-12">
+        <div className="flex justify-between items-center my-12 max-md:mb-6">
           <h1 className="text-black heading">Visual & UI Elements</h1>
           <span className="text-gray-300 text-6xl font-light max-lg:text-5xl max-md:text-3xl">
             07
@@ -25,23 +25,29 @@ const ValuesUiElement = (props: any) => {
 
         <div className="flex flex-row items-center justify-between max-md:flex-col max-md:justify-start max-md:items-start">
           <div>
-            <p className="text-subtitle text-2xl font-semibold uppercase">
+            <p className="text-subtitle text-2xl font-semibold uppercase max-md:text-xl">
               Typography
             </p>
-            <p className="text-8xl font-extrabold">
+            <p className="text-8xl font-extrabold max-md:text-6xl">
               {props.visualUIElements.font}
             </p>
-            <p className=" text-lg mt-2 md:w-[70%]">
+            <p className=" text-lg mt-2 md:w-[70%] max-md:text-base">
               {props.visualUIElements.fontDescription}
             </p>
           </div>
-          <div className="max-md:mt-4">
-            <ol>
-              <li className="text-[22px]">Regular</li>
-              <li className="text-[22px] font-medium">Medium</li>
-              <li className="text-[22px] font-semibold">Semi Bold</li>
-              <li className="text-[22px] font-bold">Bold</li>
-              <li className="text-[22px] font-extrabold">Extra Bold</li>
+          <div className="max-md:mt-4 ">
+            <ol className="max-md:flex max-md:flex-row max-md:items-center gap-3">
+              <li className="text-[22px] max-md:text-[14px]">Regular</li>
+              <li className="text-[22px] max-md:text-[14px] font-medium">
+                Medium
+              </li>
+              <li className="text-[22px] max-md:text-[14px] font-semibold">
+                Semi Bold
+              </li>
+              <li className="text-[22px] max-md:text-[14px] font-bold">Bold</li>
+              <li className="text-[22px] max-md:text-[14px] font-extrabold">
+                Extra Bold
+              </li>
             </ol>
           </div>
         </div>
@@ -60,8 +66,8 @@ const ValuesUiElement = (props: any) => {
           </Card>
 
           <Card
-            className={`bg-[${props.visualUIElements.primaryColor}] border-0 shadow-none text-white py-0`}
-            style={{ padding: 0 }}
+            className="border-0 shadow-none text-white py-0"
+            style={{ backgroundColor: props.visualUIElements.primaryColor }}
           >
             <CardBody style={{ padding: 0 }}>
               <p className="text-[200px] text-center font-bold p-0 leading-none overflow-hidden pb-5 ">
