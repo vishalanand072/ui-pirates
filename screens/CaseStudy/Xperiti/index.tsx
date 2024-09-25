@@ -251,7 +251,7 @@ const data = [
       fontDescription:
         "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
       primaryColor: "#009D9C",
-      colorPilatr: ["#009D9C", "#009D9C", "#C4E456", "#F5A524", "#F31260"],
+      colorPilatr: ["#009D9C", "#2f469c", "#C4E456", "#F5A524", "#F31260"],
       gradient: {
         start: "#6A4DFF",
         end: "#64B5F6",
