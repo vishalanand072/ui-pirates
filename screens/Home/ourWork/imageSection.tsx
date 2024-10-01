@@ -7,63 +7,75 @@ gsap.registerPlugin(ScrollTrigger);
 
 const data = [
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1725008166/MacBook_Pro_16__-_12_cimflk.svg",
     title: "Xperiti",
     rought: "/caseStudy/xperiti",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1723806756/Group_1_k5rsnn.svg",
     title: "Frytx",
     rought: "/caseStudy/frytx",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1724146835/Screenshot_2024-04-05_155252_13_xfowkq.svg",
     title: "SimpleO",
     rought: "/caseStudy/simpleO",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1725008637/MacBook_Pro_16__-_13_hzbgw4.svg",
     title: "ION",
     rought: "/caseStudy/Ion",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1725008994/Frame_2_qioizl.svg",
     title: "Brahmastra",
     rought: "/caseStudy/brahmastra",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1725007626/MacBook_Pro_16__-_23_2x_zxfdux.svg",
     title: "Rings & I",
     rought: "/caseStudy/rings&i",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1725009806/MacBook_Pro_16__-_5_zqr0ym.svg",
     title: "Stay Realtor",
     rought: "/caseStudy/stayRealtor",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1724781122/hero_ftklmf.png",
     title: "Olso",
     rought: "/caseStudy/olso",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1724313953/MacBook_Pro_16__-_4_g840oq.svg",
     title: "StayPe",
     rought: "/caseStudy/stayPe",
   },
 
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1725012292/MacBook_Pro_16__-_9_hnfs75.svg",
     title: "cloud Shift",
     rought: "/caseStudy/cloudShift",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1725015057/MacBook_Pro_16__-_8_ylcvjf.svg",
     title: "Test Dynamiz",
     rought: "/caseStudy/testDynamiz",
   },
   {
-    image: "url",
+    image:
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1724318358/MacBook_Pro_16__-_9_xmcq8l.svg",
     title: "Infinity Aqua Sol",
     rought: "/caseStudy/infinityAquaSol",
   },
@@ -129,7 +141,6 @@ const ImageGrid = () => {
         )}
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 bg-black p-4">
           {data.map((item, index) => (
-            // <Link href={item.rought}>
             <div
               key={index}
               className="relative overflow-hidden"
@@ -139,7 +150,7 @@ const ImageGrid = () => {
                 <div>
                   <div className="relative h-[400px]">
                     <img
-                      src="https://cdn.prod.website-files.com/6515a6d5f30daec433d0abe2/65d9182014321d2d0301e521_footer-section-update.webp"
+                      src={item.image}
                       alt={`Image ${index}`}
                       className="w-full h-[400px] object-cover bg-transparent absolute top-0 left-0"
                     />
@@ -161,7 +172,6 @@ const ImageGrid = () => {
                 </div>
               </Link>
             </div>
-            //
           ))}
         </div>
       </div>

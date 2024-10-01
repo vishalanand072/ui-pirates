@@ -48,7 +48,7 @@ export default function RootLayout({
         <Providers>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <AnimatedCursor
+            {/* <AnimatedCursor
               innerSize={8}
               outerSize={8}
               color="0, 0, 0"
@@ -68,7 +68,7 @@ export default function RootLayout({
                 "button",
                 ".link",
               ]}
-            />
+            /> */}
             <main className="pt-16 flex-grow">{children}</main>
             <FooterPage />
           </div>

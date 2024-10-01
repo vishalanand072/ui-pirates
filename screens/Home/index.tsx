@@ -13,12 +13,9 @@ const HomePage = () => {
     <>
       <Hero hero_heading="" hero_subHeading="" />
 
-      <ScrollSnapFol />
-      {/* <ShoeNike></ShoeNike> */}
+      {/* <ScrollSnapFol /> */}
       <TimeLinePaga />
-      <div className="max-md:hidden">
-        <DesignDev />
-      </div>
+      <div className="max-md:hidden">{/* <DesignDev /> */}</div>
 
       <OurWork />
 
