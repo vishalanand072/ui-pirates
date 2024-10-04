@@ -10,6 +10,10 @@ export const siteConfig = {
     },
     {
       label: "Works",
+      href: "#",
+    },
+    {
+      label: "Careers",
       href: "/joinOurTeam",
     },
     {

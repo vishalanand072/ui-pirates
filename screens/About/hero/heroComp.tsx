@@ -23,7 +23,7 @@ const HeroComp = () => {
     timeline.fromTo(
       background.current,
       {
-        width: "70%",
+        width: "80%",
         display: "flex",
         justifyContent: "center",
         objectFit: "fill",

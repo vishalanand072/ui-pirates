@@ -104,7 +104,7 @@ const CardWhatYouGet = () => {
           {data.slice(0, 2).map((item, index) => {
             return (
               <Card
-                className="border-1  shadow-lg z-99999 rounded-3xl"
+                className="border-1  shadow-lg z-99999 rounded-3xl py-6"
                 style={{ zIndex: 999 }}
               >
                 <CardBody className="flex flex-col items-center justify-center">
@@ -123,7 +123,7 @@ const CardWhatYouGet = () => {
           {data.slice(2, 5).map((item, index) => {
             return (
               <Card
-                className="border-1  shadow-lg z-99999 rounded-3xl"
+                className="border-1  shadow-lg z-99999 rounded-3xl py-6"
                 style={{ zIndex: 999 }}
               >
                 <CardBody className="flex flex-col items-center justify-center">
@@ -131,7 +131,7 @@ const CardWhatYouGet = () => {
                   <p className="text-xl font-bold text-[#3D445C]">
                     {item.bodyHeading}
                   </p>
-                  <p>{item.bodySubheading}</p>
+                  <p className=" text-center">{item.bodySubheading}</p>
                 </CardBody>
               </Card>
             );
@@ -142,7 +142,7 @@ const CardWhatYouGet = () => {
           {data.slice(5, 8).map((item, index) => {
             return (
               <Card
-                className="border-1  shadow-lg z-99999 rounded-3xl"
+                className="border-1  shadow-lg z-99999 rounded-3xl py-6"
                 style={{ zIndex: 999 }}
               >
                 <CardBody className="flex flex-col items-center justify-center">

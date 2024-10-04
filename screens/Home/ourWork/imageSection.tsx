@@ -14,7 +14,7 @@ const data = [
   },
   {
     image:
-      "https://res.cloudinary.com/damm9iwho/image/upload/v1723806756/Group_1_k5rsnn.svg",
+      "https://res.cloudinary.com/damm9iwho/image/upload/v1728035006/MacBook_Pro_16__-_24_lcrpht.svg",
     title: "Frytx",
     rought: "/caseStudy/frytx",
   },
@@ -155,7 +155,7 @@ const ImageGrid = () => {
                       className="w-full h-[400px] object-cover bg-transparent absolute top-0 left-0"
                     />
 
-                    <span className="relative h-[400px]">
+                    {/* <span className="relative h-[400px]">
                       <span className="bg-white rounded-xl px-6 py-3 flex flex-col w-[250px] left-4 ml-10 top-10 max-md:ml-0 max-md:left-0">
                         <p className="text-lg max-sm:text-base">
                           SaaS Redesign for
@@ -167,7 +167,7 @@ const ImageGrid = () => {
                           {item.title}
                         </p>
                       </span>
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </Link>

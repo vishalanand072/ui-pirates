@@ -23,7 +23,7 @@ const HeroComp = () => {
     timeline.fromTo(
       background.current,
       {
-        width: "70%",
+        width: "80%",
         display: "flex",
         justifyContent: "center",
         objectFit: "fill",
@@ -39,6 +39,9 @@ const HeroComp = () => {
       <div className={styles.homeHeader}>
         <div className={styles.intro}>
           <div className="align-middle justify-center p-2 pt-40">
+            <p className="text-white text-2xl uppercase mb-2">
+              Intern as a Course{" "}
+            </p>
             <h1 className="text-4xl md:text-5xl font-bold mb-2 max-md:mb-1 text-center tracking-tight">
               Join Our Team
             </h1>

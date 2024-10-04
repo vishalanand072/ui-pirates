@@ -127,7 +127,7 @@ const data = [
       {
         heading: "Clients",
         image:
-          "https://res.cloudinary.com/damm9iwho/image/upload/v1724738042/download_hvl7ry.png",
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1728036889/Frame_1000006162_vkxqta.png",
         list: [{ listItem: "Researchers" }, { listItem: "Study Coordinators" }],
         description:
           "“I want to create and manage studies efficiently so that I can focus on analyzing results.”",

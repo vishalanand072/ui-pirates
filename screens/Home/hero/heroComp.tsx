@@ -26,7 +26,7 @@ const HeroComp = () => {
     timeline.fromTo(
       background.current,
       {
-        width: "70%",
+        width: "80%",
         display: "flex",
         justifyContent: "center",
         objectFit: "fill",
@@ -40,10 +40,10 @@ const HeroComp = () => {
       <div className={styles.homeHeader}>
         <div className={styles.intro}>
           <div className="align-middle justify-center p-2 pt-40">
-            <h1 className="text-4xl md:text-5xl font-bold mb-2 max-md:mb-1 text-center tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 max-md:mb-1 text-center tracking-tight font-nohemi">
               Where Creativity
             </h1>
-            <h1 className="text-4xl md:text-5xl font-bold mb-0 text-center tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-bold mb-0 text-center tracking-tight font-nohemi">
               meets functionality
             </h1>
             <p className="mt-4 mb-8 text-center text-lg">
@@ -52,14 +52,24 @@ const HeroComp = () => {
 
             <div className="flex justify-center items-center flex-row gap-4 w-full mt-8">
               <div className="button-container-1-rev animate__animated animate__fadeInUp-rev animate__slow animate__delay-4s">
-                <span className="mas-rev">Lets Talk!</span>
-                <button id="work" type="button" name="Hover">
+                <span className="mas-rev font-normal">Lets Talk!</span>
+                <button
+                  id="work"
+                  type="button"
+                  name="Hover"
+                  className=" font-normal"
+                >
                   Lets Talk!
                 </button>
               </div>
               <div className="button-container-1 animate__animated animate__fadeInUp animate__slow animate__delay-4s">
-                <span className="mas">Explore Our Work</span>
-                <button id="work" type="button" name="Hover">
+                <span className="mas font-normal">Explore Our Work</span>
+                <button
+                  id="work"
+                  type="button"
+                  name="Hover"
+                  className=" font-normal"
+                >
                   Explore Our Work
                 </button>
               </div>
