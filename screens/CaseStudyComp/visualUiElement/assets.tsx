@@ -106,7 +106,7 @@ const Assets = () => {
               <Card className="bg-[#F2F2F2] shadow-none border-0">
                 <CardBody>
                   <p className="text-subtitle text-xl font-semibold mb-3">
-                    Assets
+                    Regular
                   </p>
                   <div className="grid grid-cols-8 max-md:grid-cols-4 max-lg:grid-cols-6 gap-y-4">
                     {data.map((item, index) => {
@@ -128,7 +128,7 @@ const Assets = () => {
                   </div>
 
                   <p className="text-subtitle text-xl font-semibold my-3">
-                    Assets
+                    Filled
                   </p>
                   <div className="grid grid-cols-8 max-md:grid-cols-4 max-lg:grid-cols-6 gap-y-4">
                     {data.map((item, index) => {

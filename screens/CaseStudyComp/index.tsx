@@ -79,9 +79,9 @@ const Casestudy = (props: any) => {
             <UXAnalysis uxAnalysis={props.data[9].uxAnalysis} />
           </div>
         )}
-        <div id="learning-improvements">
+        {/* <div id="learning-improvements">
           <ProductShowcase />
-        </div>
+        </div> */}
       </div>
     </div>
   );

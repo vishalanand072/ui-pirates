@@ -12,7 +12,7 @@ export default function StickyTabs() {
     "features-product",
     "visual-ui-elements",
     "ux-analysis",
-    "learning-improvements",
+    // "learning-improvements",
   ];
 
   useEffect(() => {

@@ -52,8 +52,11 @@ const Content = () => {
 
           <hr></hr>
           <p className="text-sm text-gray-500 text-center ">
-            Copyright © 2024 UI Pirates | All Rights Reserved | Terms and
-            Conditions |{" "}
+            Copyright © 2024 UI Pirates | All Rights Reserved |
+            <span className="text-purple-800 cursor-pointer">
+              Terms and Conditions
+            </span>
+            |{" "}
             <span className="text-purple-800 cursor-pointer">
               Privacy Policy
             </span>
