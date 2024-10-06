@@ -275,12 +275,7 @@ const data = [
     },
   },
   {
-    uxAnalysis: [
-      {
-        media:
-          "https://res.cloudinary.com/damm9iwho/image/upload/v1724392061/image_42_atzwpw.svg",
-      },
-    ],
+    uxAnalysis: [],
   },
 ];
 const ION = () => {

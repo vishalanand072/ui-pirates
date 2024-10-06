@@ -155,11 +155,11 @@ const data = [
       font: "Nunito",
       fontDescription:
         "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
-      primaryColor: "#6A4DFF",
-      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+      primaryColor: "#2947A8",
+      colorPilatr: ["#2947A8", "#17C964", "#F5A524", "#F31260", "#33B0FB"],
       gradient: {
-        start: "#6A4DFF",
-        end: "#64B5F6",
+        start: "#1875C3",
+        end: "#33B0FB",
       },
       uiElementId: "UIInfinityAquaSol", //don't edit this id
     },

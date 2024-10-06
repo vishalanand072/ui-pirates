@@ -257,11 +257,11 @@ const data = [
   },
   {
     visualUIElements: {
-      font: "Nunito",
+      font: "Red Hat Display",
       fontDescription:
-        "The Nunito font blends rounded forms with balanced proportions for a friendly and modern look, enhancing readability and perfect for digital interfaces.",
-      primaryColor: "#6A4DFF",
-      colorPilatr: ["#6A4DFF", "#2979FF", "#17C964", "#F5A524", "#F31260"],
+        "The Red Hat Display font offers a modern, professional look, enhancing readability and user experience on digital platforms.",
+      primaryColor: "#7828C8",
+      colorPilatr: ["#7828C8", "#048A81", "#17C964", "#F5A524", "#F31260"],
       gradient: {
         start: "#6A4DFF",
         end: "#64B5F6",

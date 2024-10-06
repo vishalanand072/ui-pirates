@@ -120,31 +120,32 @@ const data = [
   {
     userGroup: [
       {
-        heading: "Business Owners",
+        heading: "Explorers",
         image:
           "https://res.cloudinary.com/damm9iwho/image/upload/v1724781255/ug1_jahgxq.png",
-        list: [
-          { listItem: "Local shop owners, etc." },
-          { listItem: "Small Businesses" },
-        ],
+        list: [{ listItem: "Users browsing for potential flats." }],
         description:
-          "“I want to manage all aspects of my business in one place so that I can save time & improve efficiency.“",
+          "“I want to search for available flats so that I can find options that fit my budget and preferences.“",
       },
       {
-        heading: "Consumers",
+        heading: "Bookers",
         image:
           "https://res.cloudinary.com/damm9iwho/image/upload/v1724781255/ug2_baeyuu.png",
-        list: [{ listItem: "Individuals looking to verify businesses" }],
-        discreption:
-          "“I want to easily search & verify businesses so that I can make informed decisions about where to spend my money.“",
+        list: [
+          {
+            listItem: "Users who have booked a flat and paid the token amount.",
+          },
+        ],
+        description:
+          "“I want to receive confirmation of my booking and payment so that I know my reservation is secured.“",
       },
       {
-        heading: "Freelancers",
+        heading: "Residents",
         image:
-          "urhttps://res.cloudinary.com/damm9iwho/image/upload/v1724781256/ug3_hpyjyv.pngl",
-        list: [{ listItem: "Freelancers using the app for payment" }],
-        discreption:
-          "“I want to manage my finances and verify clients to ensure secure transactions and protect my earnings.“",
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781256/ug3_hpyjyv.png",
+        list: [{ listItem: "Users who have moved in." }],
+        description:
+          "“I want to access and manage household services like cleaning & maintenance so that I can keep my new home in good condition.“",
       },
     ],
   },
@@ -217,7 +218,7 @@ const data = [
       {
         name: "Michael",
         image:
-          "https://res.cloudinary.com/damm9iwho/image/upload/v1724781256/up2_os4x5e.png",
+          "https://res.cloudinary.com/damm9iwho/image/upload/v1728210676/31705032db6ec0fc8aea18190f9f62c9_xghaho.png",
         smallDescription: "31, Resident",
         type: "Individual",
         Gender: "Male",
