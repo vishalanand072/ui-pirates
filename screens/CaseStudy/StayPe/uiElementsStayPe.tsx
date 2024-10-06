@@ -1,15 +1,13 @@
 import Image from "next/image";
-import img1 from "@/public/img1.svg";
-import img2 from "@/public/img2.svg";
-import img3 from "@/public/img3.svg";
-const UIElementsSimpleO = () => {
+
+const UIElementsStayPe = () => {
   return (
     <>
       <div className="mt-8">
         <p className=" text-xl font-semibold mb-3 uppercase">Illustrations</p>
         <div>
           <Image
-            src="https://res.cloudinary.com/damm9iwho/image/upload/v1728206571/simple_cylros.svg"
+            src="https://res.cloudinary.com/damm9iwho/image/upload/v1728210083/staypetop_ydlyl1.svg"
             alt="Solution 1"
             width={300}
             height={250}
@@ -17,13 +15,11 @@ const UIElementsSimpleO = () => {
           />
         </div>
       </div>
-
       <div className="mt-8">
         <p className="text-2xl font-semibold mb-3 uppercase">UI elements</p>
-
         <div>
           <Image
-            src="https://res.cloudinary.com/damm9iwho/image/upload/v1728206566/simple2_v8d0rb.svg"
+            src="https://res.cloudinary.com/damm9iwho/image/upload/v1728210085/staype_opos1c.svg"
             alt="Solution 1"
             width={300}
             height={250}
@@ -35,4 +31,4 @@ const UIElementsSimpleO = () => {
   );
 };
 
-export default UIElementsSimpleO;
+export default UIElementsStayPe;
