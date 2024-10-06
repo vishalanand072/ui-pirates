@@ -59,12 +59,17 @@ const data1 = [
     discription: "Wide range of icons fitting various design needs.",
   },
   {
-    item: "Versatility:",
-    discription: "Wide range of icons fitting various design needs.",
+    item: "Customizability:",
+    discription: "Easily adjustable in size, color, and style.",
   },
   {
-    item: "Versatility:",
-    discription: "Wide range of icons fitting various design needs.",
+    item: "Modern Aesthetic:",
+    discription: "Sleek design aligning with Xperiti's professional look.",
+  },
+  {
+    item: "Ease of Use:",
+    discription:
+      "User-friendly and well-documented for efficient implementation.",
   },
 ];
 const Assets = () => {
