@@ -60,7 +60,7 @@ const PersonasCard = (props: any) => {
                     alt="Client"
                     width={360}
                     height={460}
-                    className="w-full h-full max-md:min-h-[400px]"
+                    className="w-full h-full max-md:min-h-[400px] max-md:max-h-[400px]"
                   />
                   <div className=" absolute bottom-8 left-8 w-full ">
                     <p className="text-white text-8xl font-semibold max-lg:text-6xl max-md:text-3xl max-md:mt-6">
